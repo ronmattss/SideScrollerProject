@@ -20,9 +20,12 @@ namespace SideScrollerProject
         public Movement movement;
         public float runSpeed = 40f;
         public int horizontalMovement = 0;
+        public Transform attackPoint;
+        public float attackRange;
         bool jump = false;
         bool crouch = false;
         public Animator animator;
+        public AttackState attackState;
         // Start is called before the first frame update
 
         // Update is called once per frame
@@ -38,11 +41,11 @@ namespace SideScrollerProject
             }
             if (Input.GetKeyDown(KeyCode.Return))
             {
-              //  if (InputManager.instance.attackCounter == 0)
-               // {
-                    animator.SetBool(AnimatorParams.Attacking.ToString(), true);
+                //  if (InputManager.instance.attackCounter == 0)
+                // {
+                animator.SetBool(AnimatorParams.Attacking.ToString(), true);
 
-              //  }
+                //  }
                 InputManager.instance.attackCounter++;
                 animator.SetInteger(AnimatorParams.AttackCounter.ToString(), InputManager.instance.attackCounter);
             }
@@ -63,12 +66,20 @@ namespace SideScrollerProject
         }
         void FixedUpdate()
         {
-            Debug.Log(Input.GetAxisRaw("Horizontal"));
+            //  Debug.Log(Input.GetAxisRaw("Horizontal"));
             movement.Move((horizontalMovement * runSpeed) * Time.fixedDeltaTime, crouch, jump);
             animator.SetInteger("Moving", (int)horizontalMovement);
             animator.SetInteger("Falling", movement.GetFallVelocity());
             jump = false;
-            Debug.Log(horizontalMovement);
+            //  Debug.Log(horizontalMovement);
+        }
+        void OnDrawGizmosSelected()
+        {
+            Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+        }
+        void Attack()
+        {
+            attackState.RegisterAttack();
         }
     }
 }

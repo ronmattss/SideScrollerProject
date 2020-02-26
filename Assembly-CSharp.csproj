@@ -46,6 +46,7 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scenes\Scripts\Camera\TrackPlayer.cs" />
+     <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Status.cs" />
      <Compile Include="Assets\Scenes\Scripts\Helpers\Singleton.cs" />
      <Compile Include="Assets\Scenes\Scripts\Player\Actions.cs" />
      <Compile Include="Assets\Scenes\Scripts\Player\Actions\InputManager.cs" />

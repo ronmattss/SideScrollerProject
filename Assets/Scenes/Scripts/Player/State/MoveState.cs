@@ -16,7 +16,7 @@ namespace SideScrollerProject
             Transform playerFace = animator.GetComponent<Transform>();
 
             dash.SmallDash(move*playerFace.localScale.x,targetDashDistance);
-            Debug.Log($"Distance:{targetDashDistance}");
+         //   Debug.Log($"Distance:{targetDashDistance}");
         }
 
         public override void OnExit(BaseState state, Animator animator, AnimatorStateInfo stateInfo)
@@ -26,8 +26,11 @@ namespace SideScrollerProject
 
         public override void UpdateAbility(BaseState state, Animator animator, AnimatorStateInfo stateInfo)
         {
-            Debug.Log("MoveState");
+          //  Debug.Log("MoveState");
         }
+
+
+
 
 
 

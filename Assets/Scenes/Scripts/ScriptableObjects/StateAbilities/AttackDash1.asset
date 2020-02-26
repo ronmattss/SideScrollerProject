@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: AttackDash1
   m_EditorClassIdentifier: 
   duration: 0
-  move: 10
+  move: 5
   targetDashDistance: 10

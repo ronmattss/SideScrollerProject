@@ -13,3 +13,9 @@ MonoBehaviour:
   m_Name: Attack
   m_EditorClassIdentifier: 
   duration: 0
+  attackPoint: {fileID: 0}
+  attackRange: 0.62
+  attackDamage: 10
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 1024
