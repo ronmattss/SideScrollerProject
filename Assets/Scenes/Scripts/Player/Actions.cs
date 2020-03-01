@@ -25,21 +25,22 @@ namespace SideScrollerProject
         bool jump = false;
         bool crouch = false;
         public Animator animator;
-        public AttackState attackState;
         // Start is called before the first frame update
 
         // Update is called once per frame
         void Update()
         {
+            // Register Movement Bool
             horizontalMovement = Convert.ToInt16(Input.GetAxisRaw("Horizontal")); //* runSpeed);
 
             if (Input.GetButtonDown("Jump"))
             {
                 jump = true;
                 animator.SetBool("Jumping", true);
+                animator.SetBool(AnimatorParams.Attacking.ToString(),false);
 
             }
-            if (Input.GetKeyDown(KeyCode.Return))
+            if (Input.GetKeyDown(KeyCode.Z))
             {
                 //  if (InputManager.instance.attackCounter == 0)
                 // {
@@ -66,7 +67,10 @@ namespace SideScrollerProject
         }
         void FixedUpdate()
         {
-            //  Debug.Log(Input.GetAxisRaw("Horizontal"));
+            if(animator.GetBool(AnimatorParams.Attacking.ToString()))
+            {
+                horizontalMovement = 0;
+            }            //  Debug.Log(Input.GetAxisRaw("Horizontal"));
             movement.Move((horizontalMovement * runSpeed) * Time.fixedDeltaTime, crouch, jump);
             animator.SetInteger("Moving", (int)horizontalMovement);
             animator.SetInteger("Falling", movement.GetFallVelocity());
@@ -77,9 +81,7 @@ namespace SideScrollerProject
         {
             Gizmos.DrawWireSphere(attackPoint.position, attackRange);
         }
-        void Attack()
-        {
-            attackState.RegisterAttack();
-        }
+
+        // Collect all Interactable objects
     }
 }

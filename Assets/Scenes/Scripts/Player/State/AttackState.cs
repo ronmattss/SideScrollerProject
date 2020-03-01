@@ -17,7 +17,7 @@ namespace SideScrollerProject
         //    public GameObject gameObject;
         public LayerMask enemyLayer;
 
-        public void RegisterAttack()
+        public void RegisterAttack(Animator animator)
         {
             // Register enemies
             Collider2D[] enemyColliders = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayer);
@@ -28,11 +28,14 @@ namespace SideScrollerProject
             {
                 Debug.Log($"Enemy hit: {enemy.name} {counter}");
                 Status enemyStatus = enemy.gameObject.GetComponent<Status>();
+
                 if (enemyStatus == null)
                     return;
                 else
                 {
-                    enemyStatus.TakeDamage(attackDamage);
+
+
+                    enemyStatus.TakeDamage(attackDamage,animator);
                 }
 
             }
@@ -51,13 +54,14 @@ namespace SideScrollerProject
             attackCounter = animator.GetInteger(AnimatorParams.AttackCounter.ToString());
 
             animator.SetBool(AnimatorParams.Attacking.ToString(), false);
+            RegisterAttack(animator);
 
 
 
         }
         public override void UpdateAbility(BaseState state, Animator animator, AnimatorStateInfo stateInfo)
         {
-         //   RegisterAttack();
+            //   
             //  Debug.Log("Attack Call");
         }
 
