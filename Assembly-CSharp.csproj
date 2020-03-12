@@ -46,7 +46,11 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scenes\Scripts\Camera\TrackPlayer.cs" />
+     <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Dialogue\DialogueManager.cs" />
+     <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Dialogue\DialogueTrigger.cs" />
+     <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Dialogue\Dialouge.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\IInteractable.cs" />
+     <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Interaction.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Status.cs" />
      <Compile Include="Assets\Scenes\Scripts\Helpers\Singleton.cs" />
      <Compile Include="Assets\Scenes\Scripts\Player\Actions.cs" />

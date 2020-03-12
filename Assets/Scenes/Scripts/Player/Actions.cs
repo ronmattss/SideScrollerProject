@@ -22,6 +22,8 @@ namespace SideScrollerProject
         public int horizontalMovement = 0;
         public Transform attackPoint;
         public float attackRange;
+        public bool isInDialogue = false;
+        public bool isInteracting = false;
         bool jump = false;
         bool crouch = false;
         public Animator animator;
@@ -30,8 +32,23 @@ namespace SideScrollerProject
         // Update is called once per frame
         void Update()
         {
+
+
             // Register Movement Bool
             horizontalMovement = Convert.ToInt16(Input.GetAxisRaw("Horizontal")); //* runSpeed);
+
+            if(Input.GetKeyDown(KeyCode.E))
+            {
+                if(isInDialogue)
+                {
+                    DialogueManager.instance.DisplayNextSentence();
+                }
+                else if(isInteracting)
+                {
+                    
+                }
+                // Trigger an action
+            }
 
             if (Input.GetButtonDown("Jump"))
             {
@@ -80,6 +97,10 @@ namespace SideScrollerProject
         void OnDrawGizmosSelected()
         {
             Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+        }
+
+        private void OnTriggerStay2D(Collider2D other) {
+            //Display Dialogue
         }
 
         // Collect all Interactable objects
