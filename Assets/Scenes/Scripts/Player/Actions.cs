@@ -22,8 +22,8 @@ namespace SideScrollerProject
         public int horizontalMovement = 0;
         public Transform attackPoint;
         public float attackRange;
-        public bool isInDialogue = false;
         public bool isInteracting = false;
+        public Interactable interactableObject;
         bool jump = false;
         bool crouch = false;
         public Animator animator;
@@ -37,24 +37,20 @@ namespace SideScrollerProject
             // Register Movement Bool
             horizontalMovement = Convert.ToInt16(Input.GetAxisRaw("Horizontal")); //* runSpeed);
 
-            if(Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.E))
             {
-                if(isInDialogue)
+                if (isInteracting)
                 {
-                    DialogueManager.instance.DisplayNextSentence();
+                   interactableObject.Interact(isInteracting);
                 }
-                else if(isInteracting)
-                {
-                    
-                }
-                // Trigger an action
+                
             }
 
             if (Input.GetButtonDown("Jump"))
             {
                 jump = true;
                 animator.SetBool("Jumping", true);
-                animator.SetBool(AnimatorParams.Attacking.ToString(),false);
+                animator.SetBool(AnimatorParams.Attacking.ToString(), false);
 
             }
             if (Input.GetKeyDown(KeyCode.Z))
@@ -84,7 +80,7 @@ namespace SideScrollerProject
         }
         void FixedUpdate()
         {
-            if(animator.GetBool(AnimatorParams.Attacking.ToString()))
+            if (animator.GetBool(AnimatorParams.Attacking.ToString()))
             {
                 horizontalMovement = 0;
             }            //  Debug.Log(Input.GetAxisRaw("Horizontal"));
@@ -99,9 +95,20 @@ namespace SideScrollerProject
             Gizmos.DrawWireSphere(attackPoint.position, attackRange);
         }
 
-        private void OnTriggerStay2D(Collider2D other) {
-            //Display Dialogue
-        }
+        // private void OnTriggerStay2D(Collider2D other)
+        // {
+
+        //     if (other.gameObject.GetComponent<Interactable>() != null)
+        //     {
+        //         // Debug.Log(" Interactable: " + other.tag);
+        //         if (Input.GetKeyDown(KeyCode.E))
+        //         {
+        //             Debug.Log("Pressing E");
+        //             { other.GetComponent<Interactable>().Interact(true); }
+        //         }
+        //     }
+
+        // }
 
         // Collect all Interactable objects
     }
