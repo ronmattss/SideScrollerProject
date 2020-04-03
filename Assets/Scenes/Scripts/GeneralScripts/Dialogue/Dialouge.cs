@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using XNode;
 
 [System.Serializable]
 public class Dialouge
@@ -15,6 +16,8 @@ public class Dialouge
     // choices dialogue
     public string speakerName;
     public string[] sentences;
+    public Dialogue.DialogueGraph dialogue;
+
 
 
 }

@@ -5,12 +5,12 @@ using TMPro;
 
 namespace SideScrollerProject
 {
-    
+
     public class DialogueManager : MonoBehaviour
-    {   
+    {
         public static DialogueManager instance;
         private DialogueManager _instance;
-       public TMP_Text text;
+        public TMP_Text text;
 
         public Queue<string> sentences;
 
@@ -31,7 +31,7 @@ namespace SideScrollerProject
                 sentences.Enqueue(sentence);
             }
             // execute sentences
-           // DisplayNextSentence();
+            // DisplayNextSentence();
             // does it have options?  if there is, execute the action on it : no proceed to the next sentence.
 
         }
@@ -39,13 +39,23 @@ namespace SideScrollerProject
         public void DisplayNextSentence()
         {
             if (sentences.Count == 0)
-            {   Debug.Log("No more Dialouge");
+            {
+                Debug.Log("No more Dialouge");
                 EndDialogue();
                 return;
             }
             string sentence = sentences.Dequeue();
             text.text = sentence;
             Debug.Log(sentence);
+        }
+
+        public void DisplaySentence(string chatDialogue)
+        {
+            if(chatDialogue == " ")
+            {
+                EndDialogue();
+            }
+            text.text = chatDialogue;
         }
 
         public void EndDialogue()

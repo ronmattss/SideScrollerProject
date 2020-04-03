@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Dialogue;
+using XNode;
 
 namespace SideScrollerProject
 {
@@ -16,30 +18,84 @@ namespace SideScrollerProject
         public bool questInteract;
         public bool triggerInteract;
         public Dialouge normalDialogue;
-        public Dialouge firstTimeDialogue;
-        public Dialouge questDialogue;
-        public Dialouge postQuestDialogue;
+        public DialogueGraph dialogue;
+        //  public Chat chatGlobal;
+        public NodePort port = null;
 
         public override void Interact(bool interactable)
         {
             Debug.Log("Calling Interactable");
             if (interactable)
             {
-                // trigger something here
-                
-                DialogueManager.instance.DisplayNextSentence();
+                // check node before displaying 
+                if (dialogue.current != null)
+                {
+                    DialogueManager.instance.DisplaySentence(dialogue.current.text);
+                    dialogue.current = ChatDialogue(dialogue.current);
+                }
+                else
+                {
+                    DialogueManager.instance.DisplaySentence(" ");
+                }
             }
         }
 
-        public void ChooseDialogue()
-        {// there will be types of dialogue
+        void SetUpDialogue()
+        {
+            // get dialogue graph, list all nodes, select a Chat Node//prolly first Node
+            var localDialogueGraph = dialogue;
+            List<Node> dialogueNodes = dialogue.nodes;
+            dialogue.current = (Chat)dialogueNodes[0];
+            // dialogue.current = (Chat)CheckNode(dialogueNodes[0]);
+
 
         }
-        
-        public void interactDialogue()
+
+        public Node CheckNode(Node currentNode)
         {
-            
+            switch (currentNode.name)
+            {
+                case "Chat":
+                    return ChatDialogue((Chat)currentNode);
+                case "Branch":
+                    return null;
+
+                case "Event":
+                    return null;
+                default:
+                    return null;
+
+            }
         }
+
+
+        public Chat ChatDialogue(Chat chat)
+        {
+            NodePort localPort = null;
+            Debug.Log(chat.text); // show text // then go to next Node if there are no multiple answers
+            if (chat.answers.Count == 0)
+            {
+                localPort = chat.GetOutputPort("output");
+
+            }
+            else if (chat.answers.Count > 0)
+            {
+                //  localPort = chat.GetOutputPort("answers "+dialogue.A)
+                //  return (Chat)localPort.Connection.node;
+            }
+            else
+            {
+                // localPort = null;
+                return null;
+            }
+            if (localPort.IsConnected)
+                return (Chat)localPort.Connection.node;
+            return null;
+
+
+        }
+
+
 
         public void TriggerDialogue()
         {
@@ -54,8 +110,9 @@ namespace SideScrollerProject
                 if (other.GetType() == typeof(CircleCollider2D))
                 {
                     interactable = true;
-                    TriggerDialogue();
+                    // TriggerDialogue();
                     Debug.Log("Started Dialogue");
+                    SetUpDialogue();
                     other.GetComponent<Actions>().isInteracting = interactable;
                     other.GetComponent<Actions>().interactableObject = this;
                 }

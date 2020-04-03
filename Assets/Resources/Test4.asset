@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdb377015d9f3714f98c5c28137f025c, type: 3}
+  m_Name: Test4
+  m_EditorClassIdentifier: 
+  nodeLinks:
+  - baseNodeGuid: 115c243a-4cb6-45a3-9795-6f34cc67c356
+    portName: Next
+    targetNodeGuid: 5defddf7-9164-4294-93b1-e54352a35e0b
+  - baseNodeGuid: 5defddf7-9164-4294-93b1-e54352a35e0b
+    portName: Ranom
+    targetNodeGuid: ffb9eb31-fcea-441a-88bc-0f554ddf562f
+  - baseNodeGuid: 5defddf7-9164-4294-93b1-e54352a35e0b
+    portName: Are you Serious?
+    targetNodeGuid: c06013b0-f9db-4214-b753-08a6cf86c726
+  - baseNodeGuid: c06013b0-f9db-4214-b753-08a6cf86c726
+    portName: Yes
+    targetNodeGuid: ffb9eb31-fcea-441a-88bc-0f554ddf562f
+  dialogueNodeData:
+  - guid: 5defddf7-9164-4294-93b1-e54352a35e0b
+    dialogueText: Imma Skeloton Boi
+    postion: {x: 369, y: 359}
+  - guid: ffb9eb31-fcea-441a-88bc-0f554ddf562f
+    dialogueText: YEs
+    postion: {x: 1227, y: 270}
+  - guid: c06013b0-f9db-4214-b753-08a6cf86c726
+    dialogueText: Next thing to do is triggers
+    postion: {x: 785, y: 522}

@@ -45,6 +45,23 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scenes\Dialogue-master\Scripts\CharacterInfo.cs" />
+     <Compile Include="Assets\Scenes\Dialogue-master\Scripts\DialogueGraph.cs" />
+     <Compile Include="Assets\Scenes\Dialogue-master\Scripts\Nodes\Branch.cs" />
+     <Compile Include="Assets\Scenes\Dialogue-master\Scripts\Nodes\Chat.cs" />
+     <Compile Include="Assets\Scenes\Dialogue-master\Scripts\Nodes\DialogueBaseNode.cs" />
+     <Compile Include="Assets\Scenes\Dialogue-master\Scripts\Nodes\Event.cs" />
+     <Compile Include="Assets\Scenes\Dialogue-master\SubGraph.cs" />
+     <Compile Include="Assets\Scenes\Dialogue-master\Submodules\SerializableCallback\Attributes\TargetConstraintAttribute.cs" />
+     <Compile Include="Assets\Scenes\Dialogue-master\Submodules\SerializableCallback\InvokableCallback.cs" />
+     <Compile Include="Assets\Scenes\Dialogue-master\Submodules\SerializableCallback\InvokableCallbackBase.cs" />
+     <Compile Include="Assets\Scenes\Dialogue-master\Submodules\SerializableCallback\InvokableEvent.cs" />
+     <Compile Include="Assets\Scenes\Dialogue-master\Submodules\SerializableCallback\InvokableEventBase.cs" />
+     <Compile Include="Assets\Scenes\Dialogue-master\Submodules\SerializableCallback\SerializableCallback.cs" />
+     <Compile Include="Assets\Scenes\Dialogue-master\Submodules\SerializableCallback\SerializableCallbackBase.cs" />
+     <Compile Include="Assets\Scenes\Dialogue-master\Submodules\SerializableCallback\SerializableEvent.cs" />
+     <Compile Include="Assets\Scenes\Dialogue-master\Submodules\SerializableCallback\SerializableEventBase.cs" />
+     <Compile Include="Assets\Scenes\Dialogue-master\Submodules\SerializableCallback\Test.cs" />
      <Compile Include="Assets\Scenes\Scripts\Camera\TrackPlayer.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Dialogue\DialogueManager.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Dialogue\DialogueTrigger.cs" />
@@ -53,6 +70,8 @@
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Interaction.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Status.cs" />
      <Compile Include="Assets\Scenes\Scripts\Helpers\Singleton.cs" />
+     <Compile Include="Assets\Scenes\Scripts\Node Based Dialogue System\BasicDialogueNode.cs" />
+     <Compile Include="Assets\Scenes\Scripts\Node Based Dialogue System\DialogueNodeGraph.cs" />
      <Compile Include="Assets\Scenes\Scripts\Player\Actions.cs" />
      <Compile Include="Assets\Scenes\Scripts\Player\Actions\InputManager.cs" />
      <Compile Include="Assets\Scenes\Scripts\Player\Movement.cs" />
@@ -62,6 +81,31 @@
      <Compile Include="Assets\Scenes\Scripts\Player\State\IdleState.cs" />
      <Compile Include="Assets\Scenes\Scripts\Player\State\MoveState.cs" />
      <Compile Include="Assets\Scenes\Scripts\Player\State\StateData.cs" />
+     <Compile Include="Assets\Scenes\Scripts\Runtime\DialogueContainer.cs" />
+     <Compile Include="Assets\Scenes\Scripts\Runtime\DialogueNodeData.cs" />
+     <Compile Include="Assets\Scenes\Scripts\Runtime\ExposedProperty.cs" />
+     <Compile Include="Assets\Scenes\Scripts\Runtime\NodeLinkData.cs" />
+     <Compile Include="Assets\xNode\Examples\MathGraph\MathGraph.cs" />
+     <Compile Include="Assets\xNode\Examples\MathGraph\Nodes\DisplayValue.cs" />
+     <Compile Include="Assets\xNode\Examples\MathGraph\Nodes\MathNode.cs" />
+     <Compile Include="Assets\xNode\Examples\MathGraph\Nodes\Vector.cs" />
+     <Compile Include="Assets\xNode\Examples\RuntimeMathGraph\Scripts\Connection.cs" />
+     <Compile Include="Assets\xNode\Examples\RuntimeMathGraph\Scripts\NodeDrag.cs" />
+     <Compile Include="Assets\xNode\Examples\RuntimeMathGraph\Scripts\RuntimeMathGraph.cs" />
+     <Compile Include="Assets\xNode\Examples\RuntimeMathGraph\Scripts\RuntimeNodes\UGUIDisplayValue.cs" />
+     <Compile Include="Assets\xNode\Examples\RuntimeMathGraph\Scripts\RuntimeNodes\UGUIMathBaseNode.cs" />
+     <Compile Include="Assets\xNode\Examples\RuntimeMathGraph\Scripts\RuntimeNodes\UGUIMathNode.cs" />
+     <Compile Include="Assets\xNode\Examples\RuntimeMathGraph\Scripts\RuntimeNodes\UGUIVector.cs" />
+     <Compile Include="Assets\xNode\Examples\RuntimeMathGraph\Scripts\UGUIContextMenu.cs" />
+     <Compile Include="Assets\xNode\Examples\RuntimeMathGraph\Scripts\UGUIPort.cs" />
+     <Compile Include="Assets\xNode\Examples\RuntimeMathGraph\Scripts\UGUITooltip.cs" />
+     <Compile Include="Assets\xNode\Examples\StateMachine\Nodes\StateNode.cs" />
+     <Compile Include="Assets\xNode\Examples\StateMachine\StateGraph.cs" />
+     <Compile Include="Assets\xNode\Scripts\Attributes\NodeEnum.cs" />
+     <Compile Include="Assets\xNode\Scripts\Node.cs" />
+     <Compile Include="Assets\xNode\Scripts\NodeDataCache.cs" />
+     <Compile Include="Assets\xNode\Scripts\NodeGraph.cs" />
+     <Compile Include="Assets\xNode\Scripts\NodePort.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
