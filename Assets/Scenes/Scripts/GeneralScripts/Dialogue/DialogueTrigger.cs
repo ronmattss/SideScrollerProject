@@ -31,11 +31,21 @@ namespace SideScrollerProject
                 if (dialogue.current != null)
                 {
                     DialogueManager.instance.DisplaySentence(dialogue.current.text);
+                    
+                    if(dialogue.current.ListofSpawnables.Count != 0)
+                    {
+                        foreach(Spawnable entity in dialogue.current.ListofSpawnables)
+                        {
+                            SpawnSomething(entity);
+                        }
+                    }
                     dialogue.current = ChatDialogue(dialogue.current);
                 }
                 else
                 {
                     DialogueManager.instance.DisplaySentence(" ");
+                    // if it is a trigger
+                    // trigger function
                 }
             }
         }
@@ -68,6 +78,12 @@ namespace SideScrollerProject
             }
         }
 
+        public void SpawnSomething(Spawnable spawnable)
+        {
+            GameObject spawnObject;
+            spawnObject = Instantiate(spawnable.listOfGameobjects,spawnable.listofPositions,Quaternion.identity);
+        }
+
 
         public Chat ChatDialogue(Chat chat)
         {
@@ -80,6 +96,7 @@ namespace SideScrollerProject
             }
             else if (chat.answers.Count > 0)
             {
+                // display answers
                 //  localPort = chat.GetOutputPort("answers "+dialogue.A)
                 //  return (Chat)localPort.Connection.node;
             }

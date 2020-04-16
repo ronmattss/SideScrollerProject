@@ -56,6 +56,17 @@ namespace SideScrollerProject
                 EndDialogue();
             }
             text.text = chatDialogue;
+            StopAllCoroutines();
+            StartCoroutine(TypeSentence(chatDialogue));
+        }
+        IEnumerator TypeSentence (string sentence)
+        {
+            text.text ="";
+            foreach(char letter in sentence.ToCharArray())
+            {
+                text.text += letter;
+                yield return new WaitForSecondsRealtime(0.015f);
+            }
         }
 
         public void EndDialogue()

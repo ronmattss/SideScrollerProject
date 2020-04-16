@@ -33,8 +33,6 @@ namespace SideScrollerProject
                     return;
                 else
                 {
-
-
                     enemyStatus.TakeDamage(attackDamage,animator);
                 }
 
@@ -52,7 +50,7 @@ namespace SideScrollerProject
             //  Debug.Log(attackPoint.name);
 
             attackCounter = animator.GetInteger(AnimatorParams.AttackCounter.ToString());
-
+            
             animator.SetBool(AnimatorParams.Attacking.ToString(), false);
             RegisterAttack(animator);
 

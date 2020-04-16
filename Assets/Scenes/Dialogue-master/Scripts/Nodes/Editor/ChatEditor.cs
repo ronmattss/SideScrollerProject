@@ -24,6 +24,9 @@ namespace Dialogue {
             GUILayout.Space(-30);
 
             NodeEditorGUILayout.PropertyField(serializedObject.FindProperty("text"), GUIContent.none);
+             EditorGUILayout.Space();
+        
+            NodeEditorGUILayout.PropertyField(serializedObject.FindProperty("ListofSpawnables"), GUIContent.none);
             NodeEditorGUILayout.DynamicPortList("answers", typeof(DialogueBaseNode), serializedObject, NodePort.IO.Output, Node.ConnectionType.Override);
 
             serializedObject.ApplyModifiedProperties();

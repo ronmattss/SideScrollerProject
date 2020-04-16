@@ -16,6 +16,7 @@ public class Movement : MonoBehaviour
 
     const float k_GroundedRadius = .2f; // Radius of the overlap circle to determine if grounded
     private bool m_Grounded;            // Whether or not the player is grounded.
+    int jumpCount = 0;
     const float k_CeilingRadius = .2f; // Radius of the overlap circle to determine if the player can stand up
     public Rigidbody2D m_Rigidbody2D;
     public bool m_FacingRight = true;  // For determining which way the player is currently facing.
@@ -31,6 +32,7 @@ public class Movement : MonoBehaviour
 
     public BoolEvent OnCrouchEvent;
     private bool m_wasCrouching = false;
+    private bool doubleJump = false;
 
     private void Awake()
     {
@@ -46,7 +48,8 @@ public class Movement : MonoBehaviour
     private void FixedUpdate()
     {
         bool wasGrounded = m_Grounded;
-        m_Grounded = false;
+        if (jumpCount == 2)
+            m_Grounded = false;
 
         // The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
         // This can be done using layers instead but Sample Assets will not overwrite your project settings.
@@ -56,6 +59,9 @@ public class Movement : MonoBehaviour
             if (colliders[i].gameObject != gameObject)
             {
                 m_Grounded = true;
+                doubleJump = false;
+                jumpCount = 0;
+                //  OnLandEvent.Invoke();
                 if (!wasGrounded && m_Rigidbody2D.velocity.y < 0)
                     OnLandEvent.Invoke();
             }
@@ -127,12 +133,30 @@ public class Movement : MonoBehaviour
             }
         }
         // If the player should jump...
-        if (m_Grounded && jump)
+        if (m_Grounded && jump && jumpCount <= 2)
         {
             // Add a vertical force to the player.
-            m_Grounded = false;
+
             m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+            jumpCount++;
+            if (jumpCount >= 2)
+            {
+                m_Grounded = false;
+                jumpCount = 0;
+            }
         }
+        // if (!m_Grounded && jump && jumpCount <= 2)
+        // {
+        //     m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+        //     jumpCount++;
+        //     if (jumpCount >= 2)
+        //     {
+        //         m_Grounded = true;
+        //         jumpCount = 0;
+        //     }
+        // }
+
+
     }
 
 
@@ -147,7 +171,7 @@ public class Movement : MonoBehaviour
         transform.localScale = theScale;
     }
 
-    public void SmallDash(float distance,float targetDistance)
+    public void SmallDash(float distance, float targetDistance)
     {
         Vector3 targetVelocity = new Vector2(distance * targetDistance, m_Rigidbody2D.velocity.y);
         // And then smoothing it out and applying it to the character

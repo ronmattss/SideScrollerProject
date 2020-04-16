@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Chat
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 520, y: -72}
+  position: {x: 984, y: -248}
   ports:
     keys:
     - answers
@@ -54,7 +54,19 @@ MonoBehaviour:
   input: {fileID: 0}
   output: {fileID: 0}
   character: {fileID: 0}
-  text: These are restless little shits, so be careful
+  text: err... I did not do anything
+  ListOfGameObjects: []
+  ListOfPositions: []
+  ListofSpawnables:
+  - listOfGameobjects: {fileID: 7999528917321403288, guid: 76d2b24dac59c4142ae1cf1e1c0a3476,
+      type: 3}
+    listofPositions: {x: 18.34, y: 0.01, z: 0}
+  - listOfGameobjects: {fileID: 7999528917321403288, guid: 76d2b24dac59c4142ae1cf1e1c0a3476,
+      type: 3}
+    listofPositions: {x: 23.18, y: 0.01, z: 0}
+  - listOfGameobjects: {fileID: 7999528917321403288, guid: 76d2b24dac59c4142ae1cf1e1c0a3476,
+      type: 3}
+    listofPositions: {x: 14.48, y: 0.01, z: 0}
   answers: []
 --- !u!114 &11400000
 MonoBehaviour:
@@ -72,7 +84,7 @@ MonoBehaviour:
   - {fileID: 732750742977182778}
   - {fileID: 6721826303092000059}
   - {fileID: -8969418015045299955}
-  current: {fileID: 0}
+  current: {fileID: 732750742977182778}
 --- !u!114 &732750742977182778
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -128,6 +140,9 @@ MonoBehaviour:
   output: {fileID: 0}
   character: {fileID: 0}
   text: Things are different right now
+  ListOfGameObjects: []
+  ListOfPositions: []
+  ListofSpawnables: []
   answers: []
 --- !u!114 &6721826303092000059
 MonoBehaviour:
@@ -187,4 +202,7 @@ MonoBehaviour:
   output: {fileID: 0}
   character: {fileID: 0}
   text: The witches are summoning more monsters
+  ListOfGameObjects: []
+  ListOfPositions: []
+  ListofSpawnables: []
   answers: []

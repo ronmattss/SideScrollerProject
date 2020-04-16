@@ -25,6 +25,8 @@ namespace SideScrollerProject
         public bool isInteracting = false;
         public Interactable interactableObject;
         bool jump = false;
+        int jumpCount = 0;
+        bool doubleJump = false;
         bool crouch = false;
         public Animator animator;
         // Start is called before the first frame update
@@ -41,18 +43,19 @@ namespace SideScrollerProject
             {
                 if (isInteracting)
                 {
-                   interactableObject.Interact(isInteracting);
+                    interactableObject.Interact(isInteracting);
                 }
-                
+
             }
 
             if (Input.GetButtonDown("Jump"))
             {
                 jump = true;
+                
                 animator.SetBool("Jumping", true);
                 animator.SetBool(AnimatorParams.Attacking.ToString(), false);
-
             }
+
             if (Input.GetKeyDown(KeyCode.Z))
             {
                 //  if (InputManager.instance.attackCounter == 0)
