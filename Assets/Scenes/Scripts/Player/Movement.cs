@@ -21,6 +21,11 @@ public class Movement : MonoBehaviour
     public Rigidbody2D m_Rigidbody2D;
     public bool m_FacingRight = true;  // For determining which way the player is currently facing.
     public Vector3 m_Velocity = Vector3.zero;
+    public float dashSpeed;
+    private float dashTime;
+    public float startDashTime;
+    public bool isDashing = false;
+    Animator animator;
 
     [Header("Events")]
     [Space]
@@ -36,6 +41,8 @@ public class Movement : MonoBehaviour
 
     private void Awake()
     {
+        dashTime = startDashTime;
+        animator = GetComponent<Animator>();
         m_Rigidbody2D = GetComponent<Rigidbody2D>();
 
         if (OnLandEvent == null)
@@ -47,9 +54,11 @@ public class Movement : MonoBehaviour
 
     private void FixedUpdate()
     {
+
+
         bool wasGrounded = m_Grounded;
-        if (jumpCount == 2)
-            m_Grounded = false;
+        //if (jumpCount == 2)
+        m_Grounded = false;
 
         // The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
         // This can be done using layers instead but Sample Assets will not overwrite your project settings.
@@ -61,6 +70,7 @@ public class Movement : MonoBehaviour
                 m_Grounded = true;
                 doubleJump = false;
                 jumpCount = 0;
+                // animator.SetBool("Jumping",false);
                 //  OnLandEvent.Invoke();
                 if (!wasGrounded && m_Rigidbody2D.velocity.y < 0)
                     OnLandEvent.Invoke();
@@ -69,7 +79,7 @@ public class Movement : MonoBehaviour
     }
 
 
-    public void Move(float move, bool crouch, bool jump)
+    public void Move(float move, float dashSpeed, bool crouch, bool jump)
     {
         // If crouching, check to see if the character can stand up
         if (!crouch)
@@ -133,18 +143,15 @@ public class Movement : MonoBehaviour
             }
         }
         // If the player should jump...
-        if (m_Grounded && jump && jumpCount <= 2)
+        if (jump && jumpCount < 2)
         {
             // Add a vertical force to the player.
 
             m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
             jumpCount++;
-            if (jumpCount >= 2)
-            {
-                m_Grounded = false;
-                jumpCount = 0;
-            }
+
         }
+
         // if (!m_Grounded && jump && jumpCount <= 2)
         // {
         //     m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
@@ -171,12 +178,38 @@ public class Movement : MonoBehaviour
         transform.localScale = theScale;
     }
 
-    public void SmallDash(float distance, float targetDistance)
+    public void SmallDash()
     {
-        Vector3 targetVelocity = new Vector2(distance * targetDistance, m_Rigidbody2D.velocity.y);
+        //  Vector3 targetVelocity = new Vector2(force, m_Rigidbody2D.velocity.y);
         // And then smoothing it out and applying it to the character
-        m_Rigidbody2D.velocity = Vector3.SmoothDamp(m_Rigidbody2D.velocity, targetVelocity, ref m_Velocity, m_MovementSmoothing);
+        //m_Rigidbody2D.velocity = Vector3.SmoothDamp(m_Rigidbody2D.velocity, targetVelocity, ref m_Velocity, m_MovementSmoothing);
+        if (isDashing)
+        {
+            animator.SetBool("isDashing", isDashing);
+            if (dashTime <= 0)
+            {
+                dashTime = startDashTime;
+                isDashing = false;
+                animator.SetBool("isDashing", isDashing);
+                m_Rigidbody2D.velocity = Vector2.zero;
+                
+                
+            }
+            else
+            {
+                dashTime -= Time.deltaTime;
+                if (this.transform.localScale.x > 0)
+                {
+                    m_Rigidbody2D.velocity = Vector2.right * dashSpeed;
+                }
+                else if (this.transform.localScale.x < 0)
+                {
+                    m_Rigidbody2D.velocity = Vector2.left * dashSpeed;
+                }
 
+            }
+
+        }
     }
 
     public int GetFallVelocity()

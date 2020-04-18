@@ -19,6 +19,7 @@ namespace SideScrollerProject
     {
         public Movement movement;
         public float runSpeed = 40f;
+        public float dashForce = 100f;
         public int horizontalMovement = 0;
         public Transform attackPoint;
         public float attackRange;
@@ -51,7 +52,7 @@ namespace SideScrollerProject
             if (Input.GetButtonDown("Jump"))
             {
                 jump = true;
-                
+
                 animator.SetBool("Jumping", true);
                 animator.SetBool(AnimatorParams.Attacking.ToString(), false);
             }
@@ -66,6 +67,11 @@ namespace SideScrollerProject
                 InputManager.instance.attackCounter++;
                 animator.SetInteger(AnimatorParams.AttackCounter.ToString(), InputManager.instance.attackCounter);
             }
+            if (Input.GetKeyDown(KeyCode.X))
+            {
+                movement.isDashing = true;
+            }
+
             if (Input.GetButtonDown("Vertical"))
             {
                 crouch = true;
@@ -87,7 +93,9 @@ namespace SideScrollerProject
             {
                 horizontalMovement = 0;
             }            //  Debug.Log(Input.GetAxisRaw("Horizontal"));
-            movement.Move((horizontalMovement * runSpeed) * Time.fixedDeltaTime, crouch, jump);
+
+            movement.Move((horizontalMovement * runSpeed) * Time.fixedDeltaTime, (dashForce * this.transform.localScale.x), crouch, jump);
+            movement.SmallDash();
             animator.SetInteger("Moving", (int)horizontalMovement);
             animator.SetInteger("Falling", movement.GetFallVelocity());
             jump = false;

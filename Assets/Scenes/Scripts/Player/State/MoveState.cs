@@ -15,7 +15,7 @@ namespace SideScrollerProject
             Movement dash = animator.GetComponentInParent<Movement>();
             Transform playerFace = animator.GetComponent<Transform>();
 
-            dash.SmallDash(move*playerFace.localScale.x,targetDashDistance);
+         //   dash.SmallDash(move*playerFace.localScale.x,targetDashDistance);
          //   Debug.Log($"Distance:{targetDashDistance}");
         }
 

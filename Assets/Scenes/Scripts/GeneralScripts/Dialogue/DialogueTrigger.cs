@@ -19,6 +19,7 @@ namespace SideScrollerProject
         public bool triggerInteract;
         public Dialouge normalDialogue;
         public DialogueGraph dialogue;
+        public bool playerInProximity = false;
         //  public Chat chatGlobal;
         public NodePort port = null;
 
@@ -31,10 +32,10 @@ namespace SideScrollerProject
                 if (dialogue.current != null)
                 {
                     DialogueManager.instance.DisplaySentence(dialogue.current.text);
-                    
-                    if(dialogue.current.ListofSpawnables.Count != 0)
+
+                    if (dialogue.current.ListofSpawnables.Count != 0)
                     {
-                        foreach(Spawnable entity in dialogue.current.ListofSpawnables)
+                        foreach (Spawnable entity in dialogue.current.ListofSpawnables)
                         {
                             SpawnSomething(entity);
                         }
@@ -81,7 +82,7 @@ namespace SideScrollerProject
         public void SpawnSomething(Spawnable spawnable)
         {
             GameObject spawnObject;
-            spawnObject = Instantiate(spawnable.listOfGameobjects,spawnable.listofPositions,Quaternion.identity);
+            spawnObject = Instantiate(spawnable.listOfGameobjects, spawnable.listofPositions, Quaternion.identity);
         }
 
 
@@ -126,12 +127,21 @@ namespace SideScrollerProject
             {
                 if (other.GetType() == typeof(CircleCollider2D))
                 {
-                    interactable = true;
-                    // TriggerDialogue();
-                    Debug.Log("Started Dialogue");
-                    SetUpDialogue();
-                    other.GetComponent<Actions>().isInteracting = interactable;
-                    other.GetComponent<Actions>().interactableObject = this;
+                    if (!playerInProximity)
+                    {
+                        playerInProximity = true;
+                        Debug.Log(other.transform.name);
+                        interactable = true;
+                        // TriggerDialogue();
+                        Debug.Log("Started Dialogue");
+                        SetUpDialogue();
+                        other.GetComponent<Actions>().isInteracting = interactable;
+                        other.GetComponent<Actions>().interactableObject = this;
+                    }
+                    else
+                    {
+
+                    }
                 }
 
             }
@@ -151,6 +161,7 @@ namespace SideScrollerProject
                     other.GetComponent<Actions>().isInteracting = interactable;
 
                     DialogueManager.instance.EndDialogue();
+                    playerInProximity = false;
                 }
 
             }
