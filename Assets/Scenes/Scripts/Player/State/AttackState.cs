@@ -33,7 +33,7 @@ namespace SideScrollerProject
                     return;
                 else
                 {
-                    enemyStatus.TakeDamage(attackDamage,animator);
+                    enemyStatus.TakeDamage(attackDamage);
                 }
 
             }

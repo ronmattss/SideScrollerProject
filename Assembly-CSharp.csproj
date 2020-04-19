@@ -64,6 +64,8 @@
      <Compile Include="Assets\Scenes\Dialogue-master\Submodules\SerializableCallback\Test.cs" />
      <Compile Include="Assets\Scenes\Scripts\Camera\TrackPlayer.cs" />
      <Compile Include="Assets\Scenes\Scripts\EnemyStates\EnemyAttack.cs" />
+     <Compile Include="Assets\Scenes\Scripts\EnemyStates\EnemyDead.cs" />
+     <Compile Include="Assets\Scenes\Scripts\EnemyStates\EnemyHurt.cs" />
      <Compile Include="Assets\Scenes\Scripts\EnemyStates\EnemyIdle.cs" />
      <Compile Include="Assets\Scenes\Scripts\EnemyStates\EnemyMovement.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Dialogue\DialogueManager.cs" />

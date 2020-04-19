@@ -3,7 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-//Base Status Script
+// Status Script
+// Status Script for Enemies
+// all enemies should have this script
+// this script contains all statuses(states) enemies can do
+// along side with its animations
+// 
 namespace SideScrollerProject
 {
     public class Status : MonoBehaviour
@@ -16,7 +21,7 @@ namespace SideScrollerProject
         public float attackRange = 0;
         public int attackDamage = 10;
         public LayerMask playerLayer;
-        int currentHealth;
+        public int currentHealth;
         Animator animator;
         void Start()
         {
@@ -33,7 +38,7 @@ namespace SideScrollerProject
 
 
         void Update()
-        {
+        {   // if player is not on Sight
             if (!animator.GetBool("playerOnSight"))
             {
                 ScanEnemy(playerLayer);
@@ -42,14 +47,19 @@ namespace SideScrollerProject
             {
                 animator.SetBool("isMoving", true);
             }
-            if( target == null)
+            if (target == null)
             {
-                 animator.SetBool("isMoving", false);
-                  animator.SetBool("isIdle", true);
-                   animator.SetBool("playerOnSight", false);
-                   animator.SetBool("playerInRange", false);
-                   
+                animator.SetBool("isMoving", false);
+                animator.SetBool("isIdle", true);
+                animator.SetBool("playerOnSight", false);
+                animator.SetBool("playerInRange", false);
             }
+            if (currentHealth <= 0)
+            {
+             //   Die();
+            }
+
+            animator.SetInteger("health", currentHealth);
             EnemyInRange(playerLayer, animator);
         }
         private void OnDrawGizmosSelected()
@@ -59,40 +69,48 @@ namespace SideScrollerProject
             if (attackPoint != null)
                 Gizmos.DrawWireSphere(attackPoint.position, attackRange);
         }
+        public void Die(Animator animator)
+        {
 
-        public void TakeDamage(int damage, Animator animator)
+        }
+        #region TakeDamage
+        public void TakeDamage(int damage)
         {
             Debug.Log($"Damage:{damage}");
+            animator.SetBool("isHurt", true);
             currentHealth -= damage;
-            Knockback(animator);
+
+            Knockback();
             if (currentHealth <= 0)
             {
-
-                Destroy(this.gameObject);
+                this.gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+               // animator.SetBool("isDead", true);
+                // moving to dead enemy state
+                // Destroy(this.gameObject);
             }
             else
             {
                 //Hurt
                 Debug.Log(this.name + " " + currentHealth);
             }
-
-
         }
+        #endregion
 
-        public void Die(Animator animator)
+        public void Die()
         {
-
+            Destroy(this.gameObject);
         }
-
-        public void Knockback(Animator animator)
+        #region Knockback
+        public void Knockback()
         {
-            Transform playerTransform = animator.GetComponentInParent<Transform>();
-            Vector2 knockback = new Vector2(250 * playerTransform.localScale.x, 100);
+            Transform playerTransform = this.GetComponent<Transform>();
+            // (250) needs to be substituted to a variable, also the 100
+            Vector2 knockback = new Vector2(250 * -playerTransform.localScale.x, 100);
             this.gameObject.GetComponent<Rigidbody2D>().AddForce((knockback), ForceMode2D.Force);
 
         }
-
-
+        #endregion
+        #region ScanEnemy
         private void ScanEnemy(LayerMask playerMask)
         {
 
@@ -118,6 +136,8 @@ namespace SideScrollerProject
                 }
             }
         }
+        #endregion
+        #region EnemyInRange
         private void EnemyInRange(LayerMask playerMask, Animator animator)
         {
             Collider2D[] playerCollider = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, playerLayer);
@@ -136,7 +156,8 @@ namespace SideScrollerProject
                 }
             }
         }
-
+        #endregion
+        #region EnemyAttack 
         public void RegisterAttack(Animator animator)
         {
             // Register enemies
@@ -159,5 +180,6 @@ namespace SideScrollerProject
 
 
         }
+        #endregion
     }
 }

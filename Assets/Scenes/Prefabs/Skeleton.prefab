@@ -170,7 +170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c59cf5ae0cde1164ea6dedbbf6a3ece1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 5
   attackPoint: {fileID: 7999528918066809994}
   searchPoint: {fileID: 7999528916441673198}
   target: {fileID: 0}
@@ -180,6 +180,7 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 256
+  currentHealth: 0
 --- !u!70 &7999528917321403289
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
