@@ -6,7 +6,7 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     [SerializeField] private float m_JumpForce = 400f;                          // Amount of force added when the player jumps.
-    [Range(0, 1)] [SerializeField] private float m_CrouchSpeed = .36f;          // Amount of maxSpeed applied to crouching movement. 1 = 100%
+    [Range(0, 1)] [SerializeField] private float m_CrouchSpeed = 1f;          // Amount of maxSpeed applied to crouching movement. 1 = 100%
     [Range(0, .3f)] [SerializeField] public float m_MovementSmoothing = .05f;  // How much to smooth out the movement
     [SerializeField] private bool m_AirControl = false;                         // Whether or not a player can steer while jumping;
     [SerializeField] private LayerMask m_WhatIsGround;                          // A mask determining what is ground to the character
@@ -25,6 +25,8 @@ public class Movement : MonoBehaviour
     private float dashTime;
     public float startDashTime;
     public bool isDashing = false;
+    public bool isOnOneWayPlatform = false;
+    public bool canGoDown = false;
     Animator animator;
 
     [Header("Events")]
@@ -38,6 +40,7 @@ public class Movement : MonoBehaviour
     public BoolEvent OnCrouchEvent;
     private bool m_wasCrouching = false;
     private bool doubleJump = false;
+    //bool wasGrounded;
 
     private void Awake()
     {
@@ -59,7 +62,6 @@ public class Movement : MonoBehaviour
         bool wasGrounded = m_Grounded;
         //if (jumpCount == 2)
         m_Grounded = false;
-
         // The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
         // This can be done using layers instead but Sample Assets will not overwrite your project settings.
         Collider2D[] colliders = Physics2D.OverlapCircleAll(m_GroundCheck.position, k_GroundedRadius, m_WhatIsGround);
@@ -67,14 +69,30 @@ public class Movement : MonoBehaviour
         {
             if (colliders[i].gameObject != gameObject)
             {
+                Debug.Log(colliders[i].gameObject.transform.name);
                 m_Grounded = true;
                 doubleJump = false;
                 jumpCount = 0;
                 // animator.SetBool("Jumping",false);
                 //  OnLandEvent.Invoke();
-                if (!wasGrounded && m_Rigidbody2D.velocity.y < 0)
+                if (!wasGrounded && m_Rigidbody2D.velocity.y <= 0)
                     OnLandEvent.Invoke();
             }
+            if (colliders[i].gameObject.GetComponent<PlatformEffector2D>() != null)
+            {
+                Debug.Log("is on a platform");
+                isOnOneWayPlatform = true;
+                if (canGoDown)
+                {
+                    colliders[i].gameObject.GetComponent<PlatformEffector2D>().rotationalOffset = 180;
+                }
+            }
+            else
+            {
+                isOnOneWayPlatform = false;
+                canGoDown = false;
+            }
+
         }
     }
 
@@ -95,34 +113,34 @@ public class Movement : MonoBehaviour
         if (m_Grounded || m_AirControl)
         {
 
-            // If crouching
-            if (crouch)
-            {
-                if (!m_wasCrouching)
-                {
-                    m_wasCrouching = true;
-                    OnCrouchEvent.Invoke(true);
-                }
+            // // If crouching
+            // if (crouch)
+            // {
+            //     if (!m_wasCrouching)
+            //     {
+            //         m_wasCrouching = true;
+            //         OnCrouchEvent.Invoke(true);
+            //     }
 
-                // Reduce the speed by the crouchSpeed multiplier
-                move *= m_CrouchSpeed;
+            //     // Reduce the speed by the crouchSpeed multiplier
+            //     move *= m_CrouchSpeed;
 
-                // Disable one of the colliders when crouching
-                if (m_CrouchDisableCollider != null)
-                    m_CrouchDisableCollider.enabled = false;
-            }
-            else
-            {
-                // Enable the collider when not crouching
-                if (m_CrouchDisableCollider != null)
-                    m_CrouchDisableCollider.enabled = true;
+            //     // Disable one of the colliders when crouching
+            //     if (m_CrouchDisableCollider != null)
+            //         m_CrouchDisableCollider.enabled = false;
+            // }
+            // else
+            // {
+            //     // Enable the collider when not crouching
+            //     if (m_CrouchDisableCollider != null)
+            //         m_CrouchDisableCollider.enabled = true;
 
-                if (m_wasCrouching)
-                {
-                    m_wasCrouching = false;
-                    OnCrouchEvent.Invoke(false);
-                }
-            }
+            //     if (m_wasCrouching)
+            //     {
+            //         m_wasCrouching = false;
+            //         OnCrouchEvent.Invoke(false);
+            //     }
+            // }
 
             // Move the character by finding the target velocity
             Vector3 targetVelocity = new Vector2(move * 10f, m_Rigidbody2D.velocity.y);
@@ -192,8 +210,8 @@ public class Movement : MonoBehaviour
                 isDashing = false;
                 animator.SetBool("isDashing", isDashing);
                 m_Rigidbody2D.velocity = Vector2.zero;
-                
-                
+
+
             }
             else
             {

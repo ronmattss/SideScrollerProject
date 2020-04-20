@@ -28,7 +28,7 @@ namespace SideScrollerProject
 
         void Update()
         {
-
+        
         }
         private void OnDrawGizmosSelected()
         {

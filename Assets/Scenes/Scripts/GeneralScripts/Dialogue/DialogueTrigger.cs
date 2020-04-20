@@ -156,7 +156,7 @@ namespace SideScrollerProject
                 if (other.GetType() == typeof(CircleCollider2D))
                 {
                     interactable = false;
-                    TriggerDialogue();
+                   // TriggerDialogue();
                     Debug.Log("Started Dialogue");
                     other.GetComponent<Actions>().isInteracting = interactable;
 

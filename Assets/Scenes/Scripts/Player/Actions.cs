@@ -30,6 +30,9 @@ namespace SideScrollerProject
         bool doubleJump = false;
         bool crouch = false;
         public Animator animator;
+        public MaterialPropertyBlock material;
+
+
         // Start is called before the first frame update
 
         // Update is called once per frame
@@ -48,6 +51,10 @@ namespace SideScrollerProject
                 }
 
             }
+            if (Input.GetKeyDown(KeyCode.DownArrow) && movement.isOnOneWayPlatform)
+            {
+                movement.canGoDown = true;
+            }
 
             if (Input.GetButtonDown("Jump"))
             {
@@ -64,7 +71,7 @@ namespace SideScrollerProject
                 animator.SetBool(AnimatorParams.Attacking.ToString(), true);
 
                 //  }
-                InputManager.instance.attackCounter++;
+//                InputManager.instance.attackCounter++;
                 animator.SetInteger(AnimatorParams.AttackCounter.ToString(), InputManager.instance.attackCounter);
             }
             if (Input.GetKeyDown(KeyCode.X))
@@ -105,6 +112,7 @@ namespace SideScrollerProject
         {
             Gizmos.DrawWireSphere(attackPoint.position, attackRange);
         }
+
 
         // private void OnTriggerStay2D(Collider2D other)
         // {

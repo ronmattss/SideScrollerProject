@@ -23,8 +23,13 @@ namespace SideScrollerProject
         public LayerMask playerLayer;
         public int currentHealth;
         Animator animator;
+        public SpriteRenderer spriteRenderer;
+        public Material materialProperty;
+        public float dissolveValue = 1f;
         void Start()
         {
+            spriteRenderer = this.gameObject.GetComponent<SpriteRenderer>();
+            materialProperty = spriteRenderer.material;
             if (transform.tag == "Enemy")
             {
                 animator = this.gameObject.GetComponent<Animator>();
@@ -54,9 +59,10 @@ namespace SideScrollerProject
                 animator.SetBool("playerOnSight", false);
                 animator.SetBool("playerInRange", false);
             }
+
             if (currentHealth <= 0)
             {
-             //   Die();
+                materialProperty.SetFloat("_Fade",dissolveValue);
             }
 
             animator.SetInteger("health", currentHealth);
