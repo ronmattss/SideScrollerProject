@@ -8,7 +8,8 @@ public class TrackPlayer : MonoBehaviour
 
     public float smoothTimeY;
     public float smoothTimeX;
-
+    public float xOffset = 0;
+    public float yOffset = 0;
     public GameObject player;
     void Start()
     {
@@ -23,8 +24,8 @@ public class TrackPlayer : MonoBehaviour
 
     void FixedUpdate()
     {
-        float posX = Mathf.SmoothDamp(transform.position.x, player.transform.position.x, ref velocity.x, smoothTimeX);
-        float posy = Mathf.SmoothDamp(transform.position.y, player.transform.position.y, ref velocity.y, smoothTimeY);
+        float posX = Mathf.SmoothDamp(transform.position.x, player.transform.position.x - xOffset, ref velocity.x, smoothTimeX);
+        float posy = Mathf.SmoothDamp(transform.position.y, player.transform.position.y - yOffset, ref velocity.y, smoothTimeY);
 
         transform.position = new Vector3(posX, posy, transform.position.z);
     }
