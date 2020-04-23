@@ -14,7 +14,7 @@ public class Movement : MonoBehaviour
     [SerializeField] private Transform m_CeilingCheck;                          // A position marking where to check for ceilings
     [SerializeField] private Collider2D m_CrouchDisableCollider;                // A collider that will be disabled when crouching
 
-    const float k_GroundedRadius = .2f; // Radius of the overlap circle to determine if grounded
+    const float k_GroundedRadius = .1f; // Radius of the overlap circle to determine if grounded
     private bool m_Grounded;            // Whether or not the player is grounded.
     int jumpCount = 0;
     const float k_CeilingRadius = .2f; // Radius of the overlap circle to determine if the player can stand up
@@ -92,6 +92,8 @@ public class Movement : MonoBehaviour
                 isOnOneWayPlatform = false;
                 canGoDown = false;
             }
+            if (m_Grounded && !wasGrounded)
+                animator.SetBool("Jumping", false);
 
         }
     }
@@ -170,6 +172,7 @@ public class Movement : MonoBehaviour
 
         }
 
+
         // if (!m_Grounded && jump && jumpCount <= 2)
         // {
         //     m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
@@ -230,6 +233,13 @@ public class Movement : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Callback to draw gizmos that are pickable and always drawn.
+    /// </summary>
+    void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(m_GroundCheck.position, k_GroundedRadius);
+    }
     public int GetFallVelocity()
     {
         return (int)m_Rigidbody2D.velocity.y;

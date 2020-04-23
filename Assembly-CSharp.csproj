@@ -45,6 +45,10 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\PixelWeatherFX\Scripts\FadeLight.cs" />
+     <Compile Include="Assets\PixelWeatherFX\Scripts\ParticleManager.cs" />
+     <Compile Include="Assets\PixelWeatherFX\Scripts\RotateObject.cs" />
+     <Compile Include="Assets\PixelWeatherFX\Scripts\TranslateObject.cs" />
      <Compile Include="Assets\Scenes\Dialogue-master\Scripts\CharacterInfo.cs" />
      <Compile Include="Assets\Scenes\Dialogue-master\Scripts\DialogueGraph.cs" />
      <Compile Include="Assets\Scenes\Dialogue-master\Scripts\Nodes\Branch.cs" />
