@@ -16,6 +16,7 @@ namespace SideScrollerProject
         private Transform attackPoint;
         private float attackRange;
         public float moveSpeed = 0.5f;
+        
         public LayerMask playerLayer;
                Vector3 refVel = Vector3.zero;
 

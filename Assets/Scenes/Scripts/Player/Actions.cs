@@ -31,11 +31,13 @@ namespace SideScrollerProject
         bool crouch = false;
         public Animator animator;
         public MaterialPropertyBlock material;
+        public PlayerStatus playerStatus;
 
 
         // Start is called before the first frame update
 
         // Update is called once per frame
+        // Refactor This class sometime later
         void Update()
         {
 
@@ -71,12 +73,14 @@ namespace SideScrollerProject
                 animator.SetBool(AnimatorParams.Attacking.ToString(), true);
 
                 //  }
-//                InputManager.instance.attackCounter++;
+                //InputManager.instance.attackCounter++;
                 animator.SetInteger(AnimatorParams.AttackCounter.ToString(), InputManager.instance.attackCounter);
             }
-            if (Input.GetKeyDown(KeyCode.X))
+            if (Input.GetKeyDown(KeyCode.X) && playerStatus.currentResource > 0)
             {
                 movement.isDashing = true;
+                playerStatus.currentResource -= 10;
+                playerStatus.resourceSliderScript.SetValue(playerStatus.currentResource);
             }
 
             if (Input.GetButtonDown("Vertical"))
@@ -112,7 +116,7 @@ namespace SideScrollerProject
         {
             Gizmos.DrawWireSphere(attackPoint.position, attackRange);
         }
-
+        //TODO: I need to make a ability class or somesort of ability manager
 
         // private void OnTriggerStay2D(Collider2D other)
         // {

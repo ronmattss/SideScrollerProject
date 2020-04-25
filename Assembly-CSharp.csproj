@@ -101,6 +101,7 @@
      <Compile Include="Assets\Scenes\Scripts\Runtime\DialogueNodeData.cs" />
      <Compile Include="Assets\Scenes\Scripts\Runtime\ExposedProperty.cs" />
      <Compile Include="Assets\Scenes\Scripts\Runtime\NodeLinkData.cs" />
+     <Compile Include="Assets\Scenes\Scripts\UI\SliderScript.cs" />
      <Compile Include="Assets\xNode\Examples\MathGraph\MathGraph.cs" />
      <Compile Include="Assets\xNode\Examples\MathGraph\Nodes\DisplayValue.cs" />
      <Compile Include="Assets\xNode\Examples\MathGraph\Nodes\MathNode.cs" />

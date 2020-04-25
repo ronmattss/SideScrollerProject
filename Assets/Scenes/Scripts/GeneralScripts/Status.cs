@@ -26,6 +26,7 @@ namespace SideScrollerProject
         public SpriteRenderer spriteRenderer;
         public Material materialProperty;
         public float dissolveValue = 1f;
+        public SliderScript slider;
         void Start()
         {
             spriteRenderer = this.gameObject.GetComponent<SpriteRenderer>();
@@ -39,6 +40,7 @@ namespace SideScrollerProject
 
             // target = this.transform;
             currentHealth = maxHealth;
+            slider.SetMaxValue(maxHealth);
         }
 
 
@@ -85,11 +87,12 @@ namespace SideScrollerProject
             Debug.Log($"Damage:{damage}");
             animator.SetBool("isHurt", true);
             currentHealth -= damage;
-
+            slider.SetValue(currentHealth);
             Knockback();
             if (currentHealth <= 0)
             {
                 this.gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+                Destroy(slider.slider);
                // animator.SetBool("isDead", true);
                 // moving to dead enemy state
                 // Destroy(this.gameObject);
