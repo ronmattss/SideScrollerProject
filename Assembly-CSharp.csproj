@@ -66,6 +66,9 @@
      <Compile Include="Assets\Scenes\Dialogue-master\Submodules\SerializableCallback\SerializableEvent.cs" />
      <Compile Include="Assets\Scenes\Dialogue-master\Submodules\SerializableCallback\SerializableEventBase.cs" />
      <Compile Include="Assets\Scenes\Dialogue-master\Submodules\SerializableCallback\Test.cs" />
+     <Compile Include="Assets\Scenes\Scripts\Ability\Ability.cs" />
+     <Compile Include="Assets\Scenes\Scripts\Ability\AbilityManager.cs" />
+     <Compile Include="Assets\Scenes\Scripts\Ability\Heal.cs" />
      <Compile Include="Assets\Scenes\Scripts\Camera\TrackPlayer.cs" />
      <Compile Include="Assets\Scenes\Scripts\EnemyStates\EnemyAttack.cs" />
      <Compile Include="Assets\Scenes\Scripts\EnemyStates\EnemyDead.cs" />

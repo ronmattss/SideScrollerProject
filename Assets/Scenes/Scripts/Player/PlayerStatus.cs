@@ -23,6 +23,10 @@ namespace SideScrollerProject
         public Actions actions;
         public int currentHealth;
         public int currentResource;
+        public float timeBeforeRegenerating = 3f;
+        public int regenerateRate = 1;
+        public bool canRegenerateResource = true;
+        float countDown;
         void Start()
         {
             healthSliderScript.slider = healthSlider;
@@ -36,6 +40,7 @@ namespace SideScrollerProject
 
             currentHealth = maxHealth;
             currentResource = maxResource;
+            countDown = timeBeforeRegenerating;
 
         }
 
@@ -43,7 +48,7 @@ namespace SideScrollerProject
 
         void Update()
         {
-
+            RegenerateResource();
         }
         private void OnDrawGizmosSelected()
         {
@@ -59,6 +64,7 @@ namespace SideScrollerProject
             currentHealth -= damage;
             healthSliderScript.SetValue(currentHealth);
             Knockback(animator);
+            ResetCountDown();
             if (currentHealth <= 0)
             {
 
@@ -78,7 +84,34 @@ namespace SideScrollerProject
         }
         public void RegenerateResource()
         {
-            // regenerate resource while attacking, not using an ability or not being hurt
+            if (canRegenerateResource)
+            {
+                if (countDown > 0)
+                {
+                    countDown -= Time.deltaTime;
+                }
+                else
+                {
+                    if (currentResource != maxResource)
+                    {
+                        currentResource += regenerateRate;
+                        resourceSliderScript.SetValue(currentResource);
+                    }
+                    else
+                    {
+                        ResetCountDown();
+                    }
+
+                }
+            }
+            else
+            {
+                ResetCountDown();
+            }
+        }
+        public void ResetCountDown()
+        {
+            countDown = timeBeforeRegenerating;
         }
 
         public void Knockback(Animator animator)
@@ -87,6 +120,24 @@ namespace SideScrollerProject
             Vector2 knockback = new Vector2(250 * playerTransform.localScale.x, 100);
             this.gameObject.GetComponent<Rigidbody2D>().AddForce((knockback), ForceMode2D.Force);
 
+        }
+        public void DepleteResourceBar(int value)
+        {
+            currentResource -= value;
+            resourceSliderScript.SetValue(currentResource);
+        }
+        public void ChangeHealthBar(int value)
+        {
+            if (value > 0)
+            {
+                currentHealth += value;
+                healthSliderScript.SetValue(currentHealth);
+            }
+            else
+            {
+                currentHealth -= value;
+                healthSliderScript.SetValue(currentHealth);
+            }
         }
         // Seperate slider functions unique to the player
 

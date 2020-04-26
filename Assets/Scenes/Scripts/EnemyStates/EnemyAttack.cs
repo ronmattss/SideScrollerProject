@@ -8,17 +8,14 @@ namespace SideScrollerProject
     public class EnemyAttack : StateData
     {
         [SerializeField]
-        private Transform attackPoint;
-         float attackRange;
-         int attackDamage = 10;
-        public LayerMask playerLayer;
+      //  private Transform attackPoint;
+    
 
 
 
         public override void OnEnter(BaseState state, Animator animator, AnimatorStateInfo stateInfo)
         {
-            attackPoint = animator.gameObject.GetComponent<Transform>().GetChild(0);
-            animator.gameObject.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+//            animator.gameObject.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
             animator.gameObject.GetComponent<Status>().RegisterAttack(animator);
         }
 

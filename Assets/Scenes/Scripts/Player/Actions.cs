@@ -76,11 +76,13 @@ namespace SideScrollerProject
                 //InputManager.instance.attackCounter++;
                 animator.SetInteger(AnimatorParams.AttackCounter.ToString(), InputManager.instance.attackCounter);
             }
+            
             if (Input.GetKeyDown(KeyCode.X) && playerStatus.currentResource > 0)
             {
                 movement.isDashing = true;
-                playerStatus.currentResource -= 10;
-                playerStatus.resourceSliderScript.SetValue(playerStatus.currentResource);
+                playerStatus.DepleteResourceBar(10);
+                playerStatus.ResetCountDown();
+                // TriggerAbility();
             }
 
             if (Input.GetButtonDown("Vertical"))

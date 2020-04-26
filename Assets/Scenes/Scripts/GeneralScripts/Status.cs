@@ -64,7 +64,7 @@ namespace SideScrollerProject
 
             if (currentHealth <= 0)
             {
-                materialProperty.SetFloat("_Fade",dissolveValue);
+                materialProperty.SetFloat("_Fade", dissolveValue);
             }
 
             animator.SetInteger("health", currentHealth);
@@ -93,7 +93,7 @@ namespace SideScrollerProject
             {
                 this.gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
                 Destroy(slider.slider);
-               // animator.SetBool("isDead", true);
+                // animator.SetBool("isDead", true);
                 // moving to dead enemy state
                 // Destroy(this.gameObject);
             }
@@ -175,15 +175,19 @@ namespace SideScrollerProject
             // Damage enemies
             foreach (Collider2D player in playerCollider)
             {
-                Debug.Log($"Enemy hit: {player.name}");
-                PlayerStatus playerStatus = player.gameObject.GetComponent<PlayerStatus>();
-
-                if (playerStatus == null)
-                    return;
-                else
+                if (!player.isTrigger)
                 {
-                    playerStatus.TakeDamage(attackDamage, animator);
+                    Debug.Log($"Enemy hit: {player.name}");
+                    PlayerStatus playerStatus = player.gameObject.GetComponent<PlayerStatus>();
+
+                    if (playerStatus == null)
+                        return;
+                    else
+                    {
+                        playerStatus.TakeDamage(attackDamage, animator);
+                    }
                 }
+
 
             }
 
