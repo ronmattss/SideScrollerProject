@@ -139,6 +139,7 @@ namespace SideScrollerProject
                 healthSliderScript.SetValue(currentHealth);
             }
         }
+
         // Seperate slider functions unique to the player
 
     }

@@ -112,9 +112,11 @@ namespace SideScrollerProject
         #region Knockback
         public void Knockback()
         {
-            Transform playerTransform = this.GetComponent<Transform>();
+            Transform transform = this.GetComponent<Transform>();
             // (250) needs to be substituted to a variable, also the 100
-            Vector2 knockback = new Vector2(250 * -playerTransform.localScale.x, 100);
+            // fucking FIX THIS
+            float direction = target.localScale.x ;//==1 ? 1:-1;
+            Vector2 knockback = new Vector2(250 * direction, 100);
             this.gameObject.GetComponent<Rigidbody2D>().AddForce((knockback), ForceMode2D.Force);
 
         }

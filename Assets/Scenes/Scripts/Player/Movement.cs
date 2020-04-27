@@ -28,6 +28,9 @@ public class Movement : MonoBehaviour
     public bool isOnOneWayPlatform = false;
     public bool canGoDown = false;
     Animator animator;
+    public SpriteRenderer playerSprite;
+    public Material dashMaterial;
+    public ParticleSystem dashAfterImage;
 
     [Header("Events")]
     [Space]
@@ -207,12 +210,16 @@ public class Movement : MonoBehaviour
         if (isDashing)
         {
             animator.SetBool("isDashing", isDashing);
+            dashMaterial.SetTexture("_MainTex", playerSprite.sprite.texture);
+            dashAfterImage.GetComponent<ParticleSystemRenderer>().material = dashMaterial;
+            dashAfterImage.Play();
             if (dashTime <= 0)
             {
                 dashTime = startDashTime;
                 isDashing = false;
                 animator.SetBool("isDashing", isDashing);
-                m_Rigidbody2D.velocity = Vector2.zero;
+                dashAfterImage.Stop();
+                //  m_Rigidbody2D.velocity = Vector2.zero;
 
 
             }

@@ -11,9 +11,11 @@ namespace SideScrollerProject
     {
         public int healValue = 10;
         public PlayerStatus playerStatus;
+        public ParticleSystem healthParticles;
         public override void Initialize(GameObject obj)
         {
             playerStatus = obj.GetComponent<PlayerStatus>();
+            healthParticles.transform.position = obj.transform.position;
 
         }
 
@@ -24,10 +26,13 @@ namespace SideScrollerProject
 
         private void HealPlayer()
         {
+
             if (playerStatus.currentResource >= depletionValue)
             {
                 playerStatus.DepleteResourceBar(depletionValue);
-
+                ParticleSystem particles = Instantiate(healthParticles, playerStatus.transform.position, Quaternion.identity);
+                particles.GetComponent<TrackPlayer>().player = playerStatus.gameObject;
+                healthParticles.Play();
                 if (healValue + playerStatus.currentHealth <= playerStatus.maxHealth)
                 {
                     playerStatus.ChangeHealthBar(healValue);
@@ -38,8 +43,10 @@ namespace SideScrollerProject
 
                     playerStatus.ChangeHealthBar(reducedHealing);
                 }
+                Destroy(particles, 2);
 
             }
+
 
         }
 

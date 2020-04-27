@@ -16,9 +16,9 @@ namespace SideScrollerProject
         private Transform attackPoint;
         private float attackRange;
         public float moveSpeed = 0.5f;
-        
+
         public LayerMask playerLayer;
-               Vector3 refVel = Vector3.zero;
+        Vector3 refVel = Vector3.zero;
 
 
 
@@ -33,16 +33,17 @@ namespace SideScrollerProject
         }
         private void Flip()
         {
-            if (enemyPosition.position.x > playerPosition.position.x)
-            {
-                enemyPosition.localScale = new Vector3(-1, 1, 1);
-                // moveSpeed *= 1f;
-            }
-            else
-            {
-                enemyPosition.localScale = new Vector3(1, 1, 1);
-                // moveSpeed *= 1f;
-            }
+            if (enemyPosition != null)
+                if (enemyPosition.position.x > playerPosition.position.x)
+                {
+                    enemyPosition.localScale = new Vector3(-1, 1, 1);
+                    // moveSpeed *= 1f;
+                }
+                else
+                {
+                    enemyPosition.localScale = new Vector3(1, 1, 1);
+                    // moveSpeed *= 1f;
+                }
         }
         private void EnemyInRange(LayerMask playerMask, Animator animator)
         {
@@ -67,16 +68,16 @@ namespace SideScrollerProject
             playerPosition = animator.gameObject.GetComponent<Status>().target;
             enemyPosition = animator.gameObject.transform;
             attackPoint = animator.gameObject.GetComponent<Status>().attackPoint;
-            animator.SetBool("isMoving",true);
-            
+            animator.SetBool("isMoving", true);
+
             //addForce???
 
         }
 
         public override void OnExit(BaseState state, Animator animator, AnimatorStateInfo stateInfo)
         {
-             MoveEnemy(animator);
-         //   animator.SetBool("isMoving", false);
+            MoveEnemy(animator);
+            //   animator.SetBool("isMoving", false);
             //  rb.velocity = refVel;
         }
 
@@ -84,7 +85,7 @@ namespace SideScrollerProject
         {
 
             MoveEnemy(animator);
-       //     EnemyInRange(playerLayer, animator);
+            //     EnemyInRange(playerLayer, animator);
         }
     }
 }
