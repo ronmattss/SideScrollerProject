@@ -88,7 +88,8 @@ namespace SideScrollerProject
             animator.SetBool("isHurt", true);
             currentHealth -= damage;
             slider.SetValue(currentHealth);
-            Knockback();
+            if (target != null)
+                Knockback();
             if (currentHealth <= 0)
             {
                 this.gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
@@ -112,10 +113,14 @@ namespace SideScrollerProject
         #region Knockback
         public void Knockback()
         {
+            if (target == null)
+            {
+                return;
+            }
             Transform transform = this.GetComponent<Transform>();
             // (250) needs to be substituted to a variable, also the 100
             // fucking FIX THIS
-            float direction = target.localScale.x ;//==1 ? 1:-1;
+            float direction = target.localScale.x;//==1 ? 1:-1;
             Vector2 knockback = new Vector2(250 * direction, 100);
             this.gameObject.GetComponent<Rigidbody2D>().AddForce((knockback), ForceMode2D.Force);
 

@@ -10,9 +10,12 @@ namespace SideScrollerProject
 {
     public class AbilityManager : MonoBehaviour
     {
+        public string nameOfAbility;
         public KeyCode abilityButton;
         public Image darkMask;
         public TMP_Text coolDownText;
+        public Animator animator;
+        public bool useAnimation;
         [SerializeField] private Ability ability;
         [SerializeField] private Image abilityImage;
         private float coolDownDuration;
@@ -22,13 +25,16 @@ namespace SideScrollerProject
         void Start()
         {
             Initialize(ability);
+            useAnimation = ability.hasAnimation;
+            nameOfAbility = ability.aName;
+            animator = GetComponent<Animator>();
         }
         void Update()
         {
             bool coolDownComplete = (Time.time > nextReadyTime);
             if (coolDownComplete)
             {
-                 AbilityReady(); // UI Display
+                AbilityReady(); // UI Display
                 Debug.Log("Ability Ready");
                 if (Input.GetKeyDown(abilityButton))
                 {
@@ -72,11 +78,23 @@ namespace SideScrollerProject
             coolDownTimeLeft = coolDownDuration;
             darkMask.enabled = true;
             coolDownText.enabled = true;
-
             //abilitySource.Play();
             //abilitySource.clip = ability.aSound;
-            ability.TriggerAbility();
+            if (useAnimation)
+            {
+                animator.SetBool(ability.animatorParameter,true);
+                //Play animation then send the animationTriggerAbility to the State Data
+            }
+            else
+            {
+                ability.TriggerAbility();
+            }
 
+
+        }
+        public void AnimationTriggerAbility()
+        {
+            ability.TriggerAbility();
         }
     }
 }

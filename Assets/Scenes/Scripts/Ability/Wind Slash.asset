@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e4783e1040622d4db9ce3110f04244e, type: 3}
+  m_Name: Wind Slash
+  m_EditorClassIdentifier: 
+  aName: WindSlash
+  animatorParameter: isCasting
+  hasAnimation: 1
+  aSprite: {fileID: 21300000, guid: 7a35197d6fd1b5944a373ef71e2ed23f, type: 3}
+  aBaseCooldown: 3
+  depletionValue: 30
+  duration: 0.5
+  damage: 3
+  speed: 30
+  maxTarget: 5
+  projectile: {fileID: 2124432778311927412, guid: 8ac809a1c232b7d48a6207a0d60f5347,
+    type: 3}

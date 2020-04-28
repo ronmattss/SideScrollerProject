@@ -45,6 +45,14 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\EZ Camera Shake\Demo\Sample Scripts\ShakeByDistance.cs" />
+     <Compile Include="Assets\EZ Camera Shake\Demo\Sample Scripts\ShakeOnKeyPress.cs" />
+     <Compile Include="Assets\EZ Camera Shake\Demo\Sample Scripts\ShakeOnTrigger.cs" />
+     <Compile Include="Assets\EZ Camera Shake\Demo\ShakeDemo.cs" />
+     <Compile Include="Assets\EZ Camera Shake\Scripts\CameraShakeInstance.cs" />
+     <Compile Include="Assets\EZ Camera Shake\Scripts\CameraShakePresets.cs" />
+     <Compile Include="Assets\EZ Camera Shake\Scripts\CameraShaker.cs" />
+     <Compile Include="Assets\EZ Camera Shake\Scripts\Utilities\CameraUtilities.cs" />
      <Compile Include="Assets\PixelWeatherFX\Scripts\FadeLight.cs" />
      <Compile Include="Assets\PixelWeatherFX\Scripts\ParticleManager.cs" />
      <Compile Include="Assets\PixelWeatherFX\Scripts\RotateObject.cs" />
@@ -69,6 +77,10 @@
      <Compile Include="Assets\Scenes\Scripts\Ability\Ability.cs" />
      <Compile Include="Assets\Scenes\Scripts\Ability\AbilityManager.cs" />
      <Compile Include="Assets\Scenes\Scripts\Ability\Heal.cs" />
+     <Compile Include="Assets\Scenes\Scripts\Ability\ProjectileAbility.cs" />
+     <Compile Include="Assets\Scenes\Scripts\Ability\WindSlash.cs" />
+     <Compile Include="Assets\Scenes\Scripts\Ability\WindSlashScript.cs" />
+     <Compile Include="Assets\Scenes\Scripts\Camera\CameraShake.cs" />
      <Compile Include="Assets\Scenes\Scripts\Camera\TrackPlayer.cs" />
      <Compile Include="Assets\Scenes\Scripts\EnemyStates\EnemyAttack.cs" />
      <Compile Include="Assets\Scenes\Scripts\EnemyStates\EnemyDead.cs" />
@@ -93,6 +105,7 @@
      <Compile Include="Assets\Scenes\Scripts\Player\Actions\InputManager.cs" />
      <Compile Include="Assets\Scenes\Scripts\Player\Movement.cs" />
      <Compile Include="Assets\Scenes\Scripts\Player\PlayerStatus.cs" />
+     <Compile Include="Assets\Scenes\Scripts\Player\State\AbilityCastState.cs" />
      <Compile Include="Assets\Scenes\Scripts\Player\State\AttackState.cs" />
      <Compile Include="Assets\Scenes\Scripts\Player\State\BaseState.cs" />
      <Compile Include="Assets\Scenes\Scripts\Player\State\ForceTransitionState.cs" />

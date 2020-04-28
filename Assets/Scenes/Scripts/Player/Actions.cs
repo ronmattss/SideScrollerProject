@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using EZCameraShake;
 
 
 
@@ -80,6 +81,8 @@ namespace SideScrollerProject
             
             if (Input.GetKeyDown(KeyCode.X) && playerStatus.currentResource > 0)
             {
+                // Test Camera Shake
+               // CameraShaker.Instance.ShakeOnce(4,4,.1f,.1f);
                 movement.isDashing = true;
                 playerStatus.DepleteResourceBar(10);
                 playerStatus.ResetCountDown();
