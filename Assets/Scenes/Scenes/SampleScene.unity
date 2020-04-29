@@ -23633,6 +23633,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   maxResource: 100
+  knockbackForce: 250
   attackPoint: {fileID: 0}
   searchPoint: {fileID: 0}
   target: {fileID: 0}

@@ -109,6 +109,7 @@
      <Compile Include="Assets\Scenes\Scripts\Player\State\AttackState.cs" />
      <Compile Include="Assets\Scenes\Scripts\Player\State\BaseState.cs" />
      <Compile Include="Assets\Scenes\Scripts\Player\State\ForceTransitionState.cs" />
+     <Compile Include="Assets\Scenes\Scripts\Player\State\HurtState.cs" />
      <Compile Include="Assets\Scenes\Scripts\Player\State\IdleState.cs" />
      <Compile Include="Assets\Scenes\Scripts\Player\State\MoveState.cs" />
      <Compile Include="Assets\Scenes\Scripts\Player\State\StateData.cs" />

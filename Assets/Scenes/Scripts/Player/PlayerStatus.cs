@@ -10,6 +10,7 @@ namespace SideScrollerProject
     {
         public int maxHealth = 100;
         public int maxResource = 100;
+        public float knockbackForce = 250f;
         public Transform attackPoint;
         public Transform searchPoint;
         public Transform target;
@@ -58,12 +59,13 @@ namespace SideScrollerProject
                 Gizmos.DrawWireSphere(attackPoint.position, attackRange);
         }
 
-        public void TakeDamage(int damage, Animator animator)
+        public void TakeDamage(int damage, Animator enemyAnimator)
         {
             Debug.Log($"Damage:{damage}");
             currentHealth -= damage;
             healthSliderScript.SetValue(currentHealth);
-            Knockback(animator);
+            Knockback(enemyAnimator.GetComponentInParent<Transform>().localScale.x);
+            animator.SetBool("IsHurt",true);
             ResetCountDown();
             if (currentHealth <= 0)
             {
@@ -114,10 +116,9 @@ namespace SideScrollerProject
             countDown = timeBeforeRegenerating;
         }
 
-        public void Knockback(Animator animator)
+        public void Knockback(float direction)
         {
-            Transform playerTransform = animator.GetComponentInParent<Transform>();
-            Vector2 knockback = new Vector2(250 * playerTransform.localScale.x, 100);
+            Vector2 knockback = new Vector2(knockbackForce * direction, 100);
             this.gameObject.GetComponent<Rigidbody2D>().AddForce((knockback), ForceMode2D.Force);
 
         }
