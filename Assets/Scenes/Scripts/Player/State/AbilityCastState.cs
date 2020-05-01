@@ -22,6 +22,10 @@ namespace SideScrollerProject
                 if (a.nameOfAbility.Equals(abilityName) && a.useAnimation)
                 {
                     abilityCaster = a;
+                    if (abilityName == "WindSlash")
+                    {
+                        animator.GetComponent<PlayerStatus>().playerRenderer.material = animator.GetComponent<PlayerStatus>().emissionMaterial;
+                    }
                     return;
                 }
             }
@@ -29,7 +33,12 @@ namespace SideScrollerProject
 
         public override void OnExit(BaseState state, Animator animator, AnimatorStateInfo stateInfo)
         {
+
             cast = 0;
+            if(abilityName == "WindSlash")
+            {
+                animator.GetComponent<PlayerStatus>().playerRenderer.material = animator.GetComponent<PlayerStatus>().baseMaterial;
+            }
             animator.ResetTrigger(animationParameter);
             animator.SetBool(animationParameter, false);
         }

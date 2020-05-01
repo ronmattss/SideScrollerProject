@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 namespace SideScrollerProject
 {
@@ -11,6 +12,8 @@ namespace SideScrollerProject
         public static DialogueManager instance;
         private DialogueManager _instance;
         public TMP_Text text;
+        public GameObject dialoguePlaceHolder;
+        public GameObject interactText;
 
         public Queue<string> sentences;
 
@@ -38,8 +41,9 @@ namespace SideScrollerProject
 
         public void DisplayNextSentence()
         {
-            if (sentences.Count == 0)
+            if (sentences.Count == 0 || sentences.Peek()==" ")
             {
+                
                 Debug.Log("No more Dialouge");
                 EndDialogue();
                 return;
@@ -71,6 +75,7 @@ namespace SideScrollerProject
 
         public void EndDialogue()
         {
+            dialoguePlaceHolder.SetActive(false);
             Debug.Log("Dialogue Ended");
             text.text = "";
         }

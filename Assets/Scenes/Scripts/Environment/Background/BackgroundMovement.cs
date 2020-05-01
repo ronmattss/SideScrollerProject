@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 public class BackgroundMovement : MonoBehaviour
 {
@@ -9,13 +10,14 @@ public class BackgroundMovement : MonoBehaviour
     [SerializeField] bool infiniteHorizontal = false;
     [SerializeField] bool infiniteVertical = false;
 
-    private Transform cameraTransform;
+    public Transform cameraTransform;
     private Vector3 lastCameraPosition;
     float textureUnitSizeX;
     float textureUnitSizeY;
     private void Start()
     {
-        cameraTransform = Camera.main.transform;
+        
+        //cameraTransform = Camera.main.transform;
         lastCameraPosition = cameraTransform.position;
         Sprite sprite = GetComponent<SpriteRenderer>().sprite;
         Texture2D texture = sprite.texture;

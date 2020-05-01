@@ -28,6 +28,9 @@ namespace SideScrollerProject
         public int regenerateRate = 1;
         public bool canRegenerateResource = true;
         float countDown;
+        public SpriteRenderer playerRenderer;
+        public Material baseMaterial;
+        public Material emissionMaterial;
         void Start()
         {
             healthSliderScript.slider = healthSlider;

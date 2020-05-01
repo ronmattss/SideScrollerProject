@@ -58,15 +58,9 @@ MonoBehaviour:
   ListOfGameObjects: []
   ListOfPositions: []
   ListofSpawnables:
-  - listOfGameobjects: {fileID: 7999528917321403288, guid: 76d2b24dac59c4142ae1cf1e1c0a3476,
+  - listOfGameobjects: {fileID: 6984918842666949118, guid: 1cf8014c22755354796e94a0c9af5bea,
       type: 3}
     listofPositions: {x: 18.34, y: 0.01, z: 0}
-  - listOfGameobjects: {fileID: 7999528917321403288, guid: 76d2b24dac59c4142ae1cf1e1c0a3476,
-      type: 3}
-    listofPositions: {x: 23.18, y: 0.01, z: 0}
-  - listOfGameobjects: {fileID: 7999528917321403288, guid: 76d2b24dac59c4142ae1cf1e1c0a3476,
-      type: 3}
-    listofPositions: {x: 14.48, y: 0.01, z: 0}
   answers: []
 --- !u!114 &11400000
 MonoBehaviour:

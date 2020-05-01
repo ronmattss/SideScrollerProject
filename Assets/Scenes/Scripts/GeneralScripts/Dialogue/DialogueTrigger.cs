@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Dialogue;
 using XNode;
+using TMPro;
 
 namespace SideScrollerProject
 {
@@ -14,11 +15,11 @@ namespace SideScrollerProject
         // Start is called before the first frame update
 
 
-        public bool firstTimeInteract;
-        public bool questInteract;
-        public bool triggerInteract;
-        public Dialouge normalDialogue;
-        public DialogueGraph dialogue;
+        public bool queueNextDialogue;
+
+        public DialogueGraph dialogue;      // dialogue(Lore or first time interactions)
+        public DialogueGraph nextDialogue; // Triggers quest triggers?
+
         public bool playerInProximity = false;
         //  public Chat chatGlobal;
         public NodePort port = null;
@@ -31,6 +32,8 @@ namespace SideScrollerProject
                 // check node before displaying 
                 if (dialogue.current != null)
                 {
+                    DialogueManager.instance.interactText.SetActive(false);
+                    DialogueManager.instance.dialoguePlaceHolder.SetActive(true);
                     DialogueManager.instance.DisplaySentence(dialogue.current.text);
 
                     if (dialogue.current.ListofSpawnables.Count != 0)
@@ -45,17 +48,31 @@ namespace SideScrollerProject
                 else
                 {
                     DialogueManager.instance.DisplaySentence(" ");
+                    if (nextDialogue != null)
+                    {
+                        dialogue = nextDialogue;
+                        queueNextDialogue = true;
+                    }
+                    else
+                    {
+                        queueNextDialogue = false;
+                    }
                     // if it is a trigger
                     // trigger function
                 }
             }
         }
+        void Start()
+        {
+            SetUpDialogue(dialogue);
+        }
 
-        void SetUpDialogue()
+        /// <summary>This function accepts a DialogueGraph </summary>
+        void SetUpDialogue(DialogueGraph currDialogue)
         {
             // get dialogue graph, list all nodes, select a Chat Node//prolly first Node
-            var localDialogueGraph = dialogue;
-            List<Node> dialogueNodes = dialogue.nodes;
+            var localDialogueGraph = currDialogue;
+            List<Node> dialogueNodes = currDialogue.nodes;
             dialogue.current = (Chat)dialogueNodes[0];
             // dialogue.current = (Chat)CheckNode(dialogueNodes[0]);
 
@@ -118,23 +135,25 @@ namespace SideScrollerProject
         public void TriggerDialogue()
         {
             // what dialogue to Trigger
-            DialogueManager.instance.StartDialogue(normalDialogue);
+            //    DialogueManager.instance.StartDialogue(normalDialogue);
         }
 
         private void OnTriggerEnter2D(Collider2D other)
         { // activate when player
             if (other.CompareTag("Player"))
             {
+
                 if (other.GetType() == typeof(CircleCollider2D))
                 {
                     if (!playerInProximity)
                     {
+                        DialogueManager.instance.interactText.SetActive(true);
                         playerInProximity = true;
                         Debug.Log(other.transform.name);
                         interactable = true;
                         // TriggerDialogue();
+                        
                         Debug.Log("Started Dialogue");
-                        SetUpDialogue();
                         other.GetComponent<Actions>().isInteracting = interactable;
                         other.GetComponent<Actions>().interactableObject = this;
                     }
@@ -153,15 +172,21 @@ namespace SideScrollerProject
         {
             if (other.CompareTag("Player"))
             {
+
                 if (other.GetType() == typeof(CircleCollider2D))
                 {
+                    DialogueManager.instance.interactText.SetActive(false);
                     interactable = false;
-                   // TriggerDialogue();
+                    // TriggerDialogue();
                     Debug.Log("Started Dialogue");
                     other.GetComponent<Actions>().isInteracting = interactable;
-
+                    DialogueManager.instance.dialoguePlaceHolder.SetActive(false);
                     DialogueManager.instance.EndDialogue();
                     playerInProximity = false;
+                    if(queueNextDialogue)
+                    {
+                        SetUpDialogue(dialogue);
+                    }
                 }
 
             }

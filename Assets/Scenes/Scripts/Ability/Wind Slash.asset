@@ -18,7 +18,7 @@ MonoBehaviour:
   aSprite: {fileID: 21300000, guid: 7a35197d6fd1b5944a373ef71e2ed23f, type: 3}
   aBaseCooldown: 3
   depletionValue: 30
-  duration: 0.5
+  duration: 2
   damage: 3
   speed: 30
   maxTarget: 5
