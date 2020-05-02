@@ -46,6 +46,9 @@ TagManager:
   - name: Background
     uniqueID: 1678740401
     locked: 0
+  - name: aesthetics
+    uniqueID: 3859591989
+    locked: 0
   - name: foreground
     uniqueID: 3115756977
     locked: 0

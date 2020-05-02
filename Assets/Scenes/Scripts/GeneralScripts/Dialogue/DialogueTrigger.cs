@@ -29,6 +29,7 @@ namespace SideScrollerProject
             Debug.Log("Calling Interactable");
             if (interactable)
             {
+                //DialogueManager.instance.SetTransparency(false);
                 // check node before displaying 
                 if (dialogue.current != null)
                 {
@@ -147,12 +148,13 @@ namespace SideScrollerProject
                 {
                     if (!playerInProximity)
                     {
-                        DialogueManager.instance.interactText.SetActive(true);
+                          DialogueManager.instance.interactText.SetActive(true);
+                        DialogueManager.instance.SetTransparency(false);
                         playerInProximity = true;
                         Debug.Log(other.transform.name);
                         interactable = true;
                         // TriggerDialogue();
-                        
+
                         Debug.Log("Started Dialogue");
                         other.GetComponent<Actions>().isInteracting = interactable;
                         other.GetComponent<Actions>().interactableObject = this;
@@ -175,15 +177,16 @@ namespace SideScrollerProject
 
                 if (other.GetType() == typeof(CircleCollider2D))
                 {
-                    DialogueManager.instance.interactText.SetActive(false);
+                    // DialogueManager.instance.interactText.SetActive(false);
                     interactable = false;
                     // TriggerDialogue();
                     Debug.Log("Started Dialogue");
                     other.GetComponent<Actions>().isInteracting = interactable;
-                    DialogueManager.instance.dialoguePlaceHolder.SetActive(false);
+                    DialogueManager.instance.SetTransparency(true);
+                    //DialogueManager.instance.dialoguePlaceHolder.SetActive(false);
                     DialogueManager.instance.EndDialogue();
                     playerInProximity = false;
-                    if(queueNextDialogue)
+                    if (queueNextDialogue)
                     {
                         SetUpDialogue(dialogue);
                     }

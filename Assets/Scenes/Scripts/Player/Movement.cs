@@ -72,7 +72,7 @@ public class Movement : MonoBehaviour
         {
             if (colliders[i].gameObject != gameObject)
             {
-                Debug.Log(colliders[i].gameObject.transform.name);
+//                Debug.Log(colliders[i].gameObject.transform.name);
                 m_Grounded = true;
                 doubleJump = false;
                 jumpCount = 0;

@@ -41,9 +41,9 @@ namespace SideScrollerProject
 
         public void DisplayNextSentence()
         {
-            if (sentences.Count == 0 || sentences.Peek()==" ")
+            if (sentences.Count == 0 || sentences.Peek() == " ")
             {
-                
+
                 Debug.Log("No more Dialouge");
                 EndDialogue();
                 return;
@@ -55,7 +55,7 @@ namespace SideScrollerProject
 
         public void DisplaySentence(string chatDialogue)
         {
-            if(chatDialogue == " ")
+            if (chatDialogue == " ")
             {
                 EndDialogue();
             }
@@ -63,15 +63,45 @@ namespace SideScrollerProject
             StopAllCoroutines();
             StartCoroutine(TypeSentence(chatDialogue));
         }
-        IEnumerator TypeSentence (string sentence)
+        IEnumerator TypeSentence(string sentence)
         {
-            text.text ="";
-            foreach(char letter in sentence.ToCharArray())
+            text.text = "";
+            foreach (char letter in sentence.ToCharArray())
             {
                 text.text += letter;
                 yield return new WaitForSecondsRealtime(0.015f);
             }
         }
+        public void SetTransparency(bool fade)
+        {
+            StartCoroutine(FadeInText(fade));
+        }
+        public IEnumerator FadeInText(bool fade)
+        {
+            StopCoroutine("FadeInText");
+            if (fade)
+            {   //to Transparent
+                // for (float i = 1; i >= 0; i -= Time.deltaTime)
+                // {
+                //     byte x = (byte)i;
+                //     interactText.GetComponent<TMP_Text>().alpha = i * 2;
+                //     Debug.Log("TEXTShit: " + i);
+                interactText.GetComponent<TMP_Text>().alpha = 0;
+                    yield return null;
+               // }
+            }
+            else
+            {   //to Opaque
+                for (float i = 0; i <= 0.5; i += Time.deltaTime)
+                {
+                    byte x = (byte)i;
+                    interactText.GetComponent<TMP_Text>().alpha = i * 2;
+                    yield return null;
+                }
+            }
+        }
+
+
 
         public void EndDialogue()
         {
@@ -80,5 +110,10 @@ namespace SideScrollerProject
             text.text = "";
         }
 
+        Vector4 hexColor(float r, float g, float b, float a)
+        {
+            Vector4 color = new Vector4(r * 255, g * 255, b * 255, a * 255);
+            return color;
+        }
     }
 }

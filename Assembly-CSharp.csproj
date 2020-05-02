@@ -88,6 +88,7 @@
      <Compile Include="Assets\Scenes\Scripts\EnemyStates\EnemyIdle.cs" />
      <Compile Include="Assets\Scenes\Scripts\EnemyStates\EnemyMovement.cs" />
      <Compile Include="Assets\Scenes\Scripts\Environment\Background\BackgroundMovement.cs" />
+     <Compile Include="Assets\Scenes\Scripts\Environment\MovingPlatforms.cs" />
      <Compile Include="Assets\Scenes\Scripts\Environment\OneWayPlatforms.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Dialogue\DialogueManager.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Dialogue\DialogueTrigger.cs" />
@@ -168,6 +169,9 @@
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Users/Shade/Documents/Programming Stuff/Unity/SideScrollerPrototype/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Cinemachine">
+ <HintPath>C:/Users/Shade/Documents/Programming Stuff/Unity/SideScrollerPrototype/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.RenderPipelines.Universal.Shaders">
  <HintPath>C:/Users/Shade/Documents/Programming Stuff/Unity/SideScrollerPrototype/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
  </Reference>
@@ -210,6 +214,9 @@
  <Reference Include="Unity.2D.Tilemap.Editor">
  <HintPath>C:/Users/Shade/Documents/Programming Stuff/Unity/SideScrollerPrototype/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="com.unity.cinemachine.editor">
+ <HintPath>C:/Users/Shade/Documents/Programming Stuff/Unity/SideScrollerPrototype/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.ShaderGraph.Editor">
  <HintPath>C:/Users/Shade/Documents/Programming Stuff/Unity/SideScrollerPrototype/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
  </Reference>
@@ -221,12 +228,6 @@
  </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>C:/Users/Shade/Documents/Programming Stuff/Unity/SideScrollerPrototype/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
- </Reference>
- <Reference Include="Cinemachine">
- <HintPath>C:/Users/Shade/Documents/Programming Stuff/Unity/SideScrollerPrototype/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
- </Reference>
- <Reference Include="com.unity.cinemachine.editor">
- <HintPath>C:/Users/Shade/Documents/Programming Stuff/Unity/SideScrollerPrototype/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>

@@ -21,9 +21,11 @@ namespace SideScrollerProject
         private float coolDownDuration;
         private float nextReadyTime;
         private float coolDownTimeLeft;
+        private PlayerStatus playerStatus;
 
         void Start()
         {
+            playerStatus = GetComponent<PlayerStatus>();
             Initialize(ability);
             useAnimation = ability.hasAnimation;
             nameOfAbility = ability.aName;
@@ -35,7 +37,7 @@ namespace SideScrollerProject
             if (coolDownComplete)
             {
                 AbilityReady(); // UI Display
-                Debug.Log("Ability Ready");
+                                //                Debug.Log("Ability Ready");
                 if (Input.GetKeyDown(abilityButton))
                 {
                     ButtonTriggered();
@@ -74,20 +76,24 @@ namespace SideScrollerProject
 
         void ButtonTriggered()
         {
-            nextReadyTime = coolDownDuration + Time.time;
-            coolDownTimeLeft = coolDownDuration;
-            darkMask.enabled = true;
-            coolDownText.enabled = true;
+
             //abilitySource.Play();
             //abilitySource.clip = ability.aSound;
-            if (useAnimation)
+            if (playerStatus.currentResource >= ability.depletionValue)
             {
-                animator.SetBool(ability.animatorParameter,true);
-                //Play animation then send the animationTriggerAbility to the State Data
-            }
-            else
-            {
-                ability.TriggerAbility();
+                nextReadyTime = coolDownDuration + Time.time;
+                coolDownTimeLeft = coolDownDuration;
+                darkMask.enabled = true;
+                coolDownText.enabled = true;
+                if (useAnimation)
+                {
+                    animator.SetBool(ability.animatorParameter, true);
+                    //Play animation then send the animationTriggerAbility to the State Data
+                }
+                else
+                {
+                    ability.TriggerAbility();
+                }
             }
 
 
