@@ -99,6 +99,9 @@
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Interface\ISpawn.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\PrefabSpawnerScript.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Status.cs" />
+     <Compile Include="Assets\Scenes\Scripts\GeneralScripts\TriggerArea.cs" />
+     <Compile Include="Assets\Scenes\Scripts\Helpers\DoorController.cs" />
+     <Compile Include="Assets\Scenes\Scripts\Helpers\GameEvent.cs" />
      <Compile Include="Assets\Scenes\Scripts\Helpers\Singleton.cs" />
      <Compile Include="Assets\Scenes\Scripts\Helpers\Spawnable.cs" />
      <Compile Include="Assets\Scenes\Scripts\Node Based Dialogue System\BasicDialogueNode.cs" />
