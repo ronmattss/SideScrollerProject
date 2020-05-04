@@ -9,6 +9,7 @@ public class BackgroundMovement : MonoBehaviour
     [SerializeField] Vector2 parallaxEffectMultiplier;
     [SerializeField] bool infiniteHorizontal = false;
     [SerializeField] bool infiniteVertical = false;
+    public static BackgroundMovement instance;
 
     public Transform cameraTransform;
     private Vector3 lastCameraPosition;
@@ -16,7 +17,7 @@ public class BackgroundMovement : MonoBehaviour
     float textureUnitSizeY;
     private void Start()
     {
-        
+        instance = this;
         //cameraTransform = Camera.main.transform;
         lastCameraPosition = cameraTransform.position;
         Sprite sprite = GetComponent<SpriteRenderer>().sprite;
@@ -26,7 +27,7 @@ public class BackgroundMovement : MonoBehaviour
     }
 
     private void LateUpdate()
-    {
+    {   cameraTransform = CameraManager.instance.vCamCurrent.gameObject.transform;
         Vector3 deltaMovement = cameraTransform.position - lastCameraPosition;
 
         transform.position += new Vector3(deltaMovement.x * parallaxEffectMultiplier.x, deltaMovement.y * parallaxEffectMultiplier.y);

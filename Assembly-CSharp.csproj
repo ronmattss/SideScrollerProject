@@ -80,6 +80,7 @@
      <Compile Include="Assets\Scenes\Scripts\Ability\ProjectileAbility.cs" />
      <Compile Include="Assets\Scenes\Scripts\Ability\WindSlash.cs" />
      <Compile Include="Assets\Scenes\Scripts\Ability\WindSlashScript.cs" />
+     <Compile Include="Assets\Scenes\Scripts\Camera\CameraManager.cs" />
      <Compile Include="Assets\Scenes\Scripts\Camera\CameraShake.cs" />
      <Compile Include="Assets\Scenes\Scripts\Camera\TrackPlayer.cs" />
      <Compile Include="Assets\Scenes\Scripts\EnemyStates\EnemyAttack.cs" />

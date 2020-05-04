@@ -22,18 +22,28 @@ public class GameEvent : MonoBehaviour
     public event Action<int> onDoorwayTriggerEnter;
     public void DoorwayTriggerEnter(int id)
     {
-        if(onDoorwayTriggerEnter != null)
+        if (onDoorwayTriggerEnter != null)
         {
             onDoorwayTriggerEnter(id);
         }
-    } 
+    }
 
     public event Action<int> onDoorwayTriggerExit;
+
     public void DoorwayTriggerExit(int id)
     {
-        if(onDoorwayTriggerExit != null)
+        if (onDoorwayTriggerExit != null)
         {
             onDoorwayTriggerExit(id);
         }
     }
+    public event Action<int> onCameraSwitch;
+    public void OnCameraSwitch(int id)
+    {
+        if (onCameraSwitch != null)
+        {
+            onCameraSwitch(id);
+        }
+    }
+    
 }
