@@ -7,7 +7,7 @@ namespace SideScrollerProject
     public class OneWayPlatforms : MonoBehaviour
     {
         private PlatformEffector2D effector2D;
-        float returnTime = 0.2f;
+        float returnTime = 0.1f;
         bool isReturning = false;
 
 

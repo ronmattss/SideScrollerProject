@@ -80,6 +80,7 @@
      <Compile Include="Assets\Scenes\Scripts\Ability\ProjectileAbility.cs" />
      <Compile Include="Assets\Scenes\Scripts\Ability\WindSlash.cs" />
      <Compile Include="Assets\Scenes\Scripts\Ability\WindSlashScript.cs" />
+     <Compile Include="Assets\Scenes\Scripts\Camera\CameraController.cs" />
      <Compile Include="Assets\Scenes\Scripts\Camera\CameraManager.cs" />
      <Compile Include="Assets\Scenes\Scripts\Camera\CameraShake.cs" />
      <Compile Include="Assets\Scenes\Scripts\Camera\TrackPlayer.cs" />
@@ -91,6 +92,7 @@
      <Compile Include="Assets\Scenes\Scripts\Environment\Background\BackgroundMovement.cs" />
      <Compile Include="Assets\Scenes\Scripts\Environment\MovingPlatforms.cs" />
      <Compile Include="Assets\Scenes\Scripts\Environment\OneWayPlatforms.cs" />
+     <Compile Include="Assets\Scenes\Scripts\Environment\Spawner.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Dialogue\DialogueManager.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Dialogue\DialogueTrigger.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Dialogue\Dialouge.cs" />

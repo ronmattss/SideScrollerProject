@@ -16,6 +16,7 @@ namespace SideScrollerProject
         private Transform attackPoint;
         private float attackRange;
         public float moveSpeed = 0.5f;
+        Rigidbody2D rb;
 
         public LayerMask playerLayer;
         Vector3 refVel = Vector3.zero;
@@ -25,10 +26,24 @@ namespace SideScrollerProject
 
         public void MoveEnemy(Animator animator)
         {
-            Rigidbody2D rb = animator.gameObject.GetComponent<Rigidbody2D>();
+            rb = animator.gameObject.GetComponent<Rigidbody2D>();
             Flip();
             Vector2 target = new Vector2(playerPosition.position.x, rb.position.y);
             Vector2 newPos = Vector2.MoveTowards(rb.position, target, moveSpeed * Time.fixedDeltaTime);
+            // if (enemyPosition != null)
+            //     if (enemyPosition.position.x > playerPosition.position.x)
+            //     {
+            //         enemyPosition.localScale = new Vector3(-1, 1, 1);
+            //         rb.velocity = new Vector2(-1 * moveSpeed, -1);
+            //         // moveSpeed *= 1f;
+            //     }
+            //     else
+            //     {
+            //         enemyPosition.localScale = new Vector3(1, 1, 1);
+            //         rb.velocity = new Vector2(1 * moveSpeed, -1);
+            //         // moveSpeed *= 1f;
+            //     }
+            // rb.velocity = newPos;
             rb.MovePosition(newPos);
         }
         private void Flip()

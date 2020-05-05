@@ -8,6 +8,7 @@ public class TriggerArea : MonoBehaviour
 {
     // Start is called before the first frame 
     public int id;
+
     public UnityEvent onTriggerEnter;
     public UnityEvent onTriggerExit;
     private void OnTriggerEnter2D(Collider2D other)
@@ -26,17 +27,13 @@ public class TriggerArea : MonoBehaviour
                 onTriggerExit.Invoke();
     }
 
-    public void TriggerCameraSwitch()
-    {
-        CameraManager.instance.CameraSwap(id);
-       // StartCoroutine(Wait());
-    }
+
 
     IEnumerator Wait()
     {
-        this.gameObject.SetActive(false);
-        yield return new WaitForSeconds(0.02f);
-        this.gameObject.SetActive(true);
+        this.gameObject.GetComponent<BoxCollider2D>().isTrigger = false;
+        yield return new WaitForSeconds(0.2f);
+        this.gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
         yield return null;
     }
 

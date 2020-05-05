@@ -72,7 +72,7 @@ public class Movement : MonoBehaviour
         {
             if (colliders[i].gameObject != gameObject)
             {
-//                Debug.Log(colliders[i].gameObject.transform.name);
+                //                Debug.Log(colliders[i].gameObject.transform.name);
                 m_Grounded = true;
                 doubleJump = false;
                 jumpCount = 0;
@@ -169,8 +169,10 @@ public class Movement : MonoBehaviour
         if (jump && jumpCount < 2)
         {
             // Add a vertical force to the player.
-
-            m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+            if (jumpCount == 0)
+                m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+            else
+                m_Rigidbody2D.AddRelativeForce(new Vector2(0f, 10), ForceMode2D.Impulse);
             jumpCount++;
 
         }
