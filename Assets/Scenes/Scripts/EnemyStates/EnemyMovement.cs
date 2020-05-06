@@ -12,13 +12,16 @@ namespace SideScrollerProject
     public class EnemyMovement : StateData
     {
         private Transform playerPosition;
+
         private Transform enemyPosition;
         private Transform attackPoint;
         private float attackRange;
+        private bool e_Grounded;
         public float moveSpeed = 0.5f;
         Rigidbody2D rb;
 
         public LayerMask playerLayer;
+
         Vector3 refVel = Vector3.zero;
 
 
@@ -30,21 +33,15 @@ namespace SideScrollerProject
             Flip();
             Vector2 target = new Vector2(playerPosition.position.x, rb.position.y);
             Vector2 newPos = Vector2.MoveTowards(rb.position, target, moveSpeed * Time.fixedDeltaTime);
-            // if (enemyPosition != null)
-            //     if (enemyPosition.position.x > playerPosition.position.x)
-            //     {
-            //         enemyPosition.localScale = new Vector3(-1, 1, 1);
-            //         rb.velocity = new Vector2(-1 * moveSpeed, -1);
-            //         // moveSpeed *= 1f;
-            //     }
-            //     else
-            //     {
-            //         enemyPosition.localScale = new Vector3(1, 1, 1);
-            //         rb.velocity = new Vector2(1 * moveSpeed, -1);
-            //         // moveSpeed *= 1f;
-            //     }
-            // rb.velocity = newPos;
-            rb.MovePosition(newPos);
+            if (!e_Grounded)
+            {   animator.ResetTrigger("isMoving");
+                Debug.Log("Aint Grounded");
+                rb.AddForce(Vector2.down * 100);
+            }
+            else
+            {
+                rb.MovePosition(newPos);
+            }
         }
         private void Flip()
         {
@@ -78,16 +75,18 @@ namespace SideScrollerProject
 
 
 
+
         public override void OnEnter(BaseState state, Animator animator, AnimatorStateInfo stateInfo)
         {
             playerPosition = animator.gameObject.GetComponent<Status>().target;
             enemyPosition = animator.gameObject.transform;
             attackPoint = animator.gameObject.GetComponent<Status>().attackPoint;
-            animator.SetBool("isMoving", true);
+            e_Grounded = animator.gameObject.GetComponent<Status>().isGrounded;
+            animator.SetBool("isMoving", true);            //addForce???
 
-            //addForce???
 
         }
+
 
         public override void OnExit(BaseState state, Animator animator, AnimatorStateInfo stateInfo)
         {
@@ -99,7 +98,12 @@ namespace SideScrollerProject
         public override void UpdateAbility(BaseState state, Animator animator, AnimatorStateInfo stateInfo)
         {
 
+
             MoveEnemy(animator);
+
+
+            // not Grounded
+
             //     EnemyInRange(playerLayer, animator);
         }
     }

@@ -16,6 +16,9 @@ namespace SideScrollerProject
         public int maxHealth = 100;
         public Transform attackPoint;
         public Transform searchPoint;
+        public Transform ground;
+        public bool isGrounded;
+        public LayerMask whatIsGround;
         public Transform target;
         public float searchRange = 0;
         public float attackRange = 0;
@@ -42,10 +45,28 @@ namespace SideScrollerProject
             currentHealth = maxHealth;
             slider.SetMaxValue(maxHealth);
         }
+        void OnDrawGizmos()
+        {
+            Gizmos.DrawWireSphere(ground.position, 0.3f);
+        }
+        private void CheckGround()
+        {
+            isGrounded = false;
+            Collider2D[] groundCollider = Physics2D.OverlapCircleAll(ground.position, 0.3f, whatIsGround);
+            foreach (Collider2D g in groundCollider)
+            {
+                isGrounded = true;
+            }
+            if (!isGrounded)
+                this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, -1000));
+        }
+        // will
+
 
 
         void Update()
         {   // if player is not on Sight
+            CheckGround();
             if (!animator.GetBool("playerOnSight"))
             {
                 ScanEnemy(playerLayer);
@@ -201,5 +222,10 @@ namespace SideScrollerProject
 
         }
         #endregion
+        /// <summary>
+        /// Callback to draw gizmos that are pickable and always drawn.
+        /// </summary>
+
+
     }
 }
