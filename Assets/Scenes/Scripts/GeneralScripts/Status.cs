@@ -30,6 +30,12 @@ namespace SideScrollerProject
         public Material materialProperty;
         public float dissolveValue = 1f;
         public SliderScript slider;
+        public Transform pointA;
+        public Transform pointB;
+        public Vector2 nextPoint;
+        private Vector2 pA;
+        private Vector2 pB;
+        public bool isPatrolling = false;
         void Start()
         {
             spriteRenderer = this.gameObject.GetComponent<SpriteRenderer>();
@@ -40,6 +46,12 @@ namespace SideScrollerProject
                 animator.gameObject.SetActive(false);
                 animator.gameObject.SetActive(true);
             }
+            if (pointA && pointB != null)
+            {
+                pA = pointA.position;
+                pB = pointB.position;
+                nextPoint = pA;
+            }
 
             // target = this.transform;
             currentHealth = maxHealth;
@@ -48,6 +60,10 @@ namespace SideScrollerProject
         void OnDrawGizmos()
         {
             Gizmos.DrawWireSphere(ground.position, 0.3f);
+        }
+        public Vector2 ChangeDirection()
+        {
+            return nextPoint = nextPoint != pA ? pA : pB;
         }
         private void CheckGround()
         {
@@ -77,12 +93,36 @@ namespace SideScrollerProject
             }
             if (target == null)
             {
-                animator.SetBool("isMoving", false);
+                //
                 animator.SetBool("isIdle", true);
+                animator.SetBool("isMoving", false);
                 animator.SetBool("playerOnSight", false);
                 animator.SetBool("playerInRange", false);
+                //isPatrolling = true;
             }
+            else
+            {
+                animator.SetBool("isPatrolling", false);
+                isPatrolling = false;
+            }
+            if (isPatrolling && target == null)
+            {
+                animator.SetBool("isPatrolling", true);
+                if (Vector2.Distance(this.transform.position, nextPoint) <= 1)
+                {
+                    Debug.Log("Patrolneed to changeBefore: " + nextPoint);
 
+                    Debug.Log("Patrolneed to changed: " + nextPoint);
+                }
+            }
+            if (isPatrolling)
+                if (Vector2.Distance(this.transform.position, nextPoint) <= 1)
+                {
+                    Debug.Log("Patrolneed to changeBefore: " + nextPoint);
+                    nextPoint = ChangeDirection();
+                    Debug.Log("Patrolneed to changed: " + nextPoint);
+                }
+            Debug.Log("Distance: " + Vector2.Distance(this.transform.position, nextPoint));
             if (currentHealth <= 0)
             {
                 materialProperty.SetFloat("_Fade", dissolveValue);
@@ -163,6 +203,7 @@ namespace SideScrollerProject
                     target = player.transform;
                     if (!player.CompareTag("Player"))
                     { }
+                    animator.SetBool("isPatrolling", false);
                     animator.SetBool("playerOnSight", true);
                     animator.SetBool("isMoving", true);
 

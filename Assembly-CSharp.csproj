@@ -89,6 +89,7 @@
      <Compile Include="Assets\Scenes\Scripts\EnemyStates\EnemyHurt.cs" />
      <Compile Include="Assets\Scenes\Scripts\EnemyStates\EnemyIdle.cs" />
      <Compile Include="Assets\Scenes\Scripts\EnemyStates\EnemyMovement.cs" />
+     <Compile Include="Assets\Scenes\Scripts\EnemyStates\EnemyPatrol.cs" />
      <Compile Include="Assets\Scenes\Scripts\Environment\Background\BackgroundMovement.cs" />
      <Compile Include="Assets\Scenes\Scripts\Environment\MovingPlatforms.cs" />
      <Compile Include="Assets\Scenes\Scripts\Environment\OneWayPlatforms.cs" />
