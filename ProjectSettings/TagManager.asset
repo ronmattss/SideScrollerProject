@@ -55,11 +55,11 @@ TagManager:
   - name: aesthetics
     uniqueID: 3859591989
     locked: 0
-  - name: foreground
-    uniqueID: 3115756977
-    locked: 0
   - name: interactables
     uniqueID: 2844980279
+    locked: 0
+  - name: foreground
+    uniqueID: 3115756977
     locked: 0
   - name: entities
     uniqueID: 3799994879

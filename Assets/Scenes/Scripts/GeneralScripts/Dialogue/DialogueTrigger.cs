@@ -4,6 +4,7 @@ using UnityEngine;
 using Dialogue;
 using XNode;
 using TMPro;
+using UnityEngine.Events;
 
 namespace SideScrollerProject
 {
@@ -19,6 +20,7 @@ namespace SideScrollerProject
 
         public DialogueGraph dialogue;      // dialogue(Lore or first time interactions)
         public DialogueGraph nextDialogue; // Triggers quest triggers?
+        public UnityEvent exitDialogueEvent;
 
         public bool playerInProximity = false;
         //  public Chat chatGlobal;
@@ -27,41 +29,42 @@ namespace SideScrollerProject
         public override void Interact(bool interactable)
         {
             Debug.Log("Calling Interactable");
-            if (interactable)
+            if (!interactable) return;
+            if (dialogue.current != null)
             {
-                //DialogueManager.instance.SetTransparency(false);
-                // check node before displaying 
-                if (dialogue.current != null)
-                {
-                    DialogueManager.instance.interactText.SetActive(false);
-                    DialogueManager.instance.dialoguePlaceHolder.SetActive(true);
-                    DialogueManager.instance.DisplaySentence(dialogue.current.text);
+                DialogueManager.instance.interactText.SetActive(false);
+                DialogueManager.instance.dialoguePlaceHolder.SetActive(true);
+                DialogueManager.instance.DisplaySentence(dialogue.current.text);
 
-                    if (dialogue.current.ListofSpawnables.Count != 0)
+                if (dialogue.current.ListofSpawnables.Count != 0)
+                {
+                    foreach (Spawnable entity in dialogue.current.ListofSpawnables)
                     {
-                        foreach (Spawnable entity in dialogue.current.ListofSpawnables)
-                        {
-                            SpawnSomething(entity);
-                        }
+                        SpawnSomething(entity);
                     }
-                    dialogue.current = ChatDialogue(dialogue.current);
+                }
+                dialogue.current = ChatDialogue(dialogue.current);
+            }
+            else
+            {
+                DialogueManager.instance.DisplaySentence(" ");
+                if (nextDialogue != null)
+                {
+                    dialogue = nextDialogue;
+                    queueNextDialogue = true;
                 }
                 else
                 {
-                    DialogueManager.instance.DisplaySentence(" ");
-                    if (nextDialogue != null)
+                    queueNextDialogue = false;
+                    if (exitDialogueEvent != null)
                     {
-                        dialogue = nextDialogue;
-                        queueNextDialogue = true;
+                        exitDialogueEvent.Invoke();
                     }
-                    else
-                    {
-                        queueNextDialogue = false;
-                    }
-                    // if it is a trigger
-                    // trigger function
                 }
+                // if it is a trigger
+                // trigger function
             }
+
         }
         void Start()
         {
@@ -148,7 +151,7 @@ namespace SideScrollerProject
                 {
                     if (!playerInProximity)
                     {
-                          DialogueManager.instance.interactText.SetActive(true);
+                        DialogueManager.instance.interactText.SetActive(true);
                         DialogueManager.instance.SetTransparency(false);
                         playerInProximity = true;
                         Debug.Log(other.transform.name);
@@ -157,7 +160,7 @@ namespace SideScrollerProject
 
                         Debug.Log("Started Dialogue");
                         other.GetComponent<Actions>().isInteracting = interactable;
-                        other.GetComponent<Actions>().interactableObject = this;
+                        other.GetComponent<Actions>().interactables = this;
                     }
                     else
                     {

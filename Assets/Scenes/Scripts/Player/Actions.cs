@@ -25,7 +25,7 @@ namespace SideScrollerProject
         public Transform attackPoint;
         public float attackRange;
         public bool isInteracting = false;
-        public Interactable interactableObject;
+        public Interactable interactables;
         bool jump = false;
         int jumpCount = 0;
         bool doubleJump = false;
@@ -51,7 +51,7 @@ namespace SideScrollerProject
             {
                 if (isInteracting)
                 {
-                    interactableObject.Interact(isInteracting);
+                    interactables.Interact(isInteracting);
                 }
 
             }
@@ -78,11 +78,11 @@ namespace SideScrollerProject
                 //InputManager.instance.attackCounter++;
                 animator.SetInteger(AnimatorParams.AttackCounter.ToString(), InputManager.instance.attackCounter);
             }
-            
+
             if (Input.GetKeyDown(KeyCode.X) && playerStatus.currentResource > 0)
             {
                 // Test Camera Shake
-               // CameraShaker.Instance.ShakeOnce(4,4,.1f,.1f);
+                // CameraShaker.Instance.ShakeOnce(4,4,.1f,.1f);
                 movement.isDashing = true;
                 playerStatus.DepleteResourceBar(10);
                 playerStatus.ResetCountDown();

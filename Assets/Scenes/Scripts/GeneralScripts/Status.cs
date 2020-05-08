@@ -118,11 +118,11 @@ namespace SideScrollerProject
             if (isPatrolling)
                 if (Vector2.Distance(this.transform.position, nextPoint) <= 1)
                 {
-                    Debug.Log("Patrolneed to changeBefore: " + nextPoint);
+                    //            Debug.Log("Patrolneed to changeBefore: " + nextPoint);
                     nextPoint = ChangeDirection();
-                    Debug.Log("Patrolneed to changed: " + nextPoint);
+                    //           Debug.Log("Patrolneed to changed: " + nextPoint);
                 }
-            Debug.Log("Distance: " + Vector2.Distance(this.transform.position, nextPoint));
+            // Debug.Log("Distance: " + Vector2.Distance(this.transform.position, nextPoint));
             if (currentHealth <= 0)
             {
                 materialProperty.SetFloat("_Fade", dissolveValue);
