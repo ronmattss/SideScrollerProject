@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -36,16 +37,21 @@ namespace SideScrollerProject
         private Vector2 pA;
         private Vector2 pB;
         public bool isPatrolling = false;
+        [Header("Range Properties")]
+        public bool isRange = false;
+
+        public Transform raycastOrigin;
+        public LineRenderer laser;
         void Start()
         {
             spriteRenderer = this.gameObject.GetComponent<SpriteRenderer>();
             materialProperty = spriteRenderer.material;
-            if (transform.tag == "Enemy")
-            {
-                animator = this.gameObject.GetComponent<Animator>();
-                animator.gameObject.SetActive(false);
-                animator.gameObject.SetActive(true);
-            }
+            // if (transform.tag == "Enemy")
+
+            animator = this.gameObject.GetComponent<Animator>();
+            animator.gameObject.SetActive(false);
+            animator.gameObject.SetActive(true);
+
             if (pointA && pointB != null)
             {
                 pA = pointA.position;
@@ -137,6 +143,8 @@ namespace SideScrollerProject
                 Gizmos.DrawWireSphere(searchPoint.position, searchRange);
             if (attackPoint != null)
                 Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+            if (isRange)
+                Gizmos.DrawRay(raycastOrigin.position, Vector2.right);
         }
         public void Die(Animator animator)
         {
@@ -205,6 +213,12 @@ namespace SideScrollerProject
                     { }
                     animator.SetBool("isPatrolling", false);
                     animator.SetBool("playerOnSight", true);
+                    if (isRange)
+                    {
+                        // range attacks here
+                        animator.SetBool("rangeAttack1", true);
+
+                    }
                     animator.SetBool("isMoving", true);
 
                 }
@@ -213,6 +227,26 @@ namespace SideScrollerProject
                     animator.SetBool("playerOnSight", false);
                 }
             }
+        }
+
+        public void RangeAttack()
+        {
+            RaycastHit2D hit = Physics2D.Raycast(raycastOrigin.position, this.transform.right, Mathf.Infinity, playerLayer);
+            laser.gameObject.SetActive(true);
+
+            laser.SetPosition(0, raycastOrigin.localPosition);
+            laser.SetPosition(1, new Vector2(target.position.x, 0));
+            Debug.Log(hit.collider.GetType());
+            // if (hit.collider == null) Debug.Log("nothing hit");
+            //  if (hit.GetType() == typeof(CapsuleCollider2D))
+            // {
+            Debug.Log("Player is in range");
+            PlayerStatus playerStatus = hit.collider.gameObject.GetComponent<PlayerStatus>();
+            playerStatus.TakeDamage(attackDamage, animator);
+            //Wait();
+            //RegisterAttack(this.animator);
+            // }
+
         }
         #endregion
         #region EnemyInRange
@@ -263,6 +297,10 @@ namespace SideScrollerProject
 
         }
         #endregion
+        IEnumerator Wait()
+        {
+            yield return new WaitForSeconds(0.2f);
+        }
         /// <summary>
         /// Callback to draw gizmos that are pickable and always drawn.
         /// </summary>
