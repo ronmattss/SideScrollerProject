@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37419b27a828412478d6fbe08f6b5f15, type: 3}
+  m_Script: {fileID: 11500000, guid: 6971d076aea0e364eb671282af4eb795, type: 3}
   m_Name: WizardHurt
   m_EditorClassIdentifier: 
   duration: 0

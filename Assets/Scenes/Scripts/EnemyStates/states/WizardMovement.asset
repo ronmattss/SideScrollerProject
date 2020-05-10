@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1a8a1c5e617046f4ca4ed24a57f425c4, type: 3}
-  m_Name: New Enemy Movement State
+  m_Name: WizardMovement
   m_EditorClassIdentifier: 
   duration: 0
-  moveSpeed: 0.5
+  moveSpeed: 2
   playerLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256

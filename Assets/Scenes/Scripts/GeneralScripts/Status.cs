@@ -43,7 +43,7 @@ namespace SideScrollerProject
         public Transform raycastOrigin;
         public LineRenderer laser;
         void Start()
-        {
+        {   //laser = GameObject.Find()
             spriteRenderer = this.gameObject.GetComponent<SpriteRenderer>();
             materialProperty = spriteRenderer.material;
             // if (transform.tag == "Enemy")
@@ -216,7 +216,7 @@ namespace SideScrollerProject
                     if (isRange)
                     {
                         // range attacks here
-                        animator.SetBool("rangeAttack1", true);
+                        //   animator.SetBool("rangeAttack1", true);
 
                     }
                     animator.SetBool("isMoving", true);
@@ -231,13 +231,13 @@ namespace SideScrollerProject
 
         public void RangeAttack()
         {
-            RaycastHit2D hit = Physics2D.Raycast(raycastOrigin.position, this.transform.right, Mathf.Infinity, playerLayer);
+            Vector2 raycastDirection = this.transform.localScale.x == -1 ? Vector2.left : Vector2.right;
+            RaycastHit2D hit = Physics2D.Raycast(raycastOrigin.position, target.position - raycastOrigin.position, Mathf.Infinity, playerLayer);
             laser.gameObject.SetActive(true);
-
-            laser.SetPosition(0, raycastOrigin.localPosition);
-            laser.SetPosition(1, new Vector2(target.position.x, 0));
-            Debug.Log(hit.collider.GetType());
-            // if (hit.collider == null) Debug.Log("nothing hit");
+            laser.SetPosition(0, raycastOrigin.position);
+            laser.SetPosition(1, target.position);
+            if (hit.collider == null) Debug.Log("nothing hit");
+            // Debug.Log(hit.collider.GetType());
             //  if (hit.GetType() == typeof(CapsuleCollider2D))
             // {
             Debug.Log("Player is in range");
