@@ -6,6 +6,7 @@ using UnityEngine;
 public class GameEvent : MonoBehaviour
 {
     public static GameEvent instance;
+    bool waiting;
     // Start is called before the first frame update
     void Awake()
     {
@@ -45,5 +46,19 @@ public class GameEvent : MonoBehaviour
             onCameraSwitch(id);
         }
     }
-    
+
+    public void HitFreeze(float duration)
+    {
+        if (waiting) return;
+        Time.timeScale = 0.0f;
+        StartCoroutine(Wait(duration));
+    }
+
+    IEnumerator Wait(float duration)
+    {
+        waiting = true;
+        yield return new WaitForSecondsRealtime(duration);
+        Time.timeScale = 1.0f;
+        waiting = false;
+    }
 }

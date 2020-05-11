@@ -16,6 +16,7 @@ namespace SideScrollerProject
         public int attackDamage = 20;
         //    public GameObject gameObject;
         public LayerMask enemyLayer;
+        bool isHit = false;
 
         public void RegisterAttack(Animator animator)
         {
@@ -35,8 +36,10 @@ namespace SideScrollerProject
                 {
                     enemyStatus.TakeDamage(attackDamage);
                 }
+                isHit = true;
 
             }
+
 
 
         }
@@ -50,7 +53,7 @@ namespace SideScrollerProject
             //  Debug.Log(attackPoint.name);
 
             attackCounter = animator.GetInteger(AnimatorParams.AttackCounter.ToString());
-            
+
             animator.SetBool(AnimatorParams.Attacking.ToString(), false);
             RegisterAttack(animator);
 
@@ -66,6 +69,11 @@ namespace SideScrollerProject
         public override void OnExit(BaseState state, Animator animator, AnimatorStateInfo stateInfo)
         {
 
+            if (isHit)
+            {
+                GameEvent.instance.HitFreeze(0.1f);
+                isHit = false;
+            }
             // if (animator.GetInteger(AnimatorParams.AttackCounter.ToString()) > 1)
             //   {
             // animator.SetBool(AnimatorParams.Attacking.ToString(), true);

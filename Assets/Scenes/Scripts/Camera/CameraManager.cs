@@ -7,9 +7,10 @@ using System.Linq;
 public class CameraManager : MonoBehaviour
 {
     public static CameraManager instance;
-    public CinemachineVirtualCamera vCamCurrent;
     private CinemachineBrain brain;
+    public CinemachineVirtualCamera vCamCurrent;
     public List<CinemachineVirtualCamera> listOfVCam;
+    private CinemachineBasicMultiChannelPerlin camShake;
     public int lastCamera;
     public GameObject player;
     Transform playerTransform;
@@ -24,6 +25,9 @@ public class CameraManager : MonoBehaviour
         brain = Camera.main.GetComponent<CinemachineBrain>();
         vCamCurrent = listOfVCam[0];
         this.lastCamera = 0;
+        camShake = vCamCurrent.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
+      //  vCamCurrent.enabled = false;
+
         // GameEvent.instance.onCameraSwitch += CameraSwap;
         //  Debug.Log("Current Camera Priority" + vCam.m_Priority);
 
@@ -42,14 +46,17 @@ public class CameraManager : MonoBehaviour
         if (direction < 0) //going left
         {
             vCamCurrent = listOfVCam[leftCamera];
-      //      listOfVCam[rightCamera].gameObject.SetActive(false);
+            //      listOfVCam[rightCamera].gameObject.SetActive(false);
         }
         else if (direction > 0)
         {
             vCamCurrent = listOfVCam[rightCamera];
-    //        listOfVCam[leftCamera].gameObject.SetActive(false);
+            //        listOfVCam[leftCamera].gameObject.SetActive(false);
         }
+
         vCamCurrent.gameObject.SetActive(true);
+        camShake = vCamCurrent.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
+        vCamCurrent.enabled = false;
         vCamCurrent.MoveToTopOfPrioritySubqueue();
     }
 
@@ -60,16 +67,29 @@ public class CameraManager : MonoBehaviour
         {
             vCamCurrent = listOfVCam[downCamera];
             Debug.Log("Down");
-  //          listOfVCam[upCamera].gameObject.SetActive(false);
+            //          listOfVCam[upCamera].gameObject.SetActive(false);
         }
         else if (vDirection > 0)
         {
             vCamCurrent = listOfVCam[upCamera];
-//            listOfVCam[downCamera].gameObject.SetActive(false);
+            //            listOfVCam[downCamera].gameObject.SetActive(false);
             Debug.Log("Up");
         }
         vCamCurrent.gameObject.SetActive(true);
+        camShake = vCamCurrent.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
+        vCamCurrent.enabled = false;
         vCamCurrent.MoveToTopOfPrioritySubqueue();
+    }
+    public void ActivateShake()
+    {
+        StartCoroutine(Shake());
+
+    }
+    IEnumerator Shake()
+    {   Debug.Log("Does this works");
+        vCamCurrent.enabled = true;
+        yield return new WaitForSecondsRealtime(0.1f);
+        vCamCurrent.enabled = false;
     }
 
     // Trigger Areas will need store a lastCam index

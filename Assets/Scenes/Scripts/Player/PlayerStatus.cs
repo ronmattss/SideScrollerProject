@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using Cinemachine;
 
 namespace SideScrollerProject
 {
@@ -31,11 +31,13 @@ namespace SideScrollerProject
         public SpriteRenderer playerRenderer;
         public Material baseMaterial;
         public Material emissionMaterial;
+        private CinemachineImpulseSource impulseSource;
         void Start()
         {
             healthSliderScript.slider = healthSlider;
             resourceSliderScript.slider = resourceSlider;
             animator = this.GetComponent<Animator>();
+            impulseSource = GetComponent<CinemachineImpulseSource>();
             animator.gameObject.SetActive(false);
             animator.gameObject.SetActive(true);
             // target = this.transform;
@@ -63,12 +65,13 @@ namespace SideScrollerProject
         }
 
         public void TakeDamage(int damage, Animator enemyAnimator)
-        {
+        {//https://www.youtube.com/watch?v=O2Pg8e2xwzg // Canera Shake
             Debug.Log($"Damage:{damage}");
             currentHealth -= damage;
             healthSliderScript.SetValue(currentHealth);
+            impulseSource.GenerateImpulse();
             Knockback(enemyAnimator.GetComponentInParent<Transform>().localScale.x);
-            animator.SetBool("IsHurt",true);
+            animator.SetBool("IsHurt", true);
             ResetCountDown();
             if (currentHealth <= 0)
             {

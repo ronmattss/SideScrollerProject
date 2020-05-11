@@ -80,7 +80,7 @@ namespace SideScrollerProject
                 isGrounded = true;
             }
             if (!isGrounded)
-                this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, -1000));
+                this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, -500));
         }
         // will
 
