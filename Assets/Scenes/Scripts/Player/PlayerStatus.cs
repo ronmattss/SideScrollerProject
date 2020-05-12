@@ -32,6 +32,9 @@ namespace SideScrollerProject
         public Material baseMaterial;
         public Material emissionMaterial;
         private CinemachineImpulseSource impulseSource;
+
+
+        // x+= (target -x) * .1) // go to target 10% of the value at the time fast -> slow
         void Start()
         {
             healthSliderScript.slider = healthSlider;
@@ -65,7 +68,7 @@ namespace SideScrollerProject
         }
 
         public void TakeDamage(int damage, Animator enemyAnimator)
-        {//https://www.youtube.com/watch?v=O2Pg8e2xwzg // Canera Shake
+        {
             Debug.Log($"Damage:{damage}");
             currentHealth -= damage;
             healthSliderScript.SetValue(currentHealth);
@@ -121,6 +124,7 @@ namespace SideScrollerProject
         {
             countDown = timeBeforeRegenerating;
         }
+
 
         public void Knockback(float direction)
         {

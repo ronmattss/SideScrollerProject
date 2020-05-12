@@ -56,7 +56,7 @@ public class CameraManager : MonoBehaviour
 
         vCamCurrent.gameObject.SetActive(true);
         camShake = vCamCurrent.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
-        vCamCurrent.enabled = false;
+       // vCamCurrent.enabled = false;
         vCamCurrent.MoveToTopOfPrioritySubqueue();
     }
 
@@ -77,7 +77,7 @@ public class CameraManager : MonoBehaviour
         }
         vCamCurrent.gameObject.SetActive(true);
         camShake = vCamCurrent.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
-        vCamCurrent.enabled = false;
+      //  vCamCurrent.enabled = false;
         vCamCurrent.MoveToTopOfPrioritySubqueue();
     }
     public void ActivateShake()

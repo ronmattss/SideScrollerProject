@@ -18,6 +18,11 @@ namespace SideScrollerProject
         public LayerMask enemyLayer;
         bool isHit = false;
 
+        public void FreezeHit()
+        {
+        
+        }
+
         public void RegisterAttack(Animator animator)
         {
             // Register enemies
@@ -35,6 +40,7 @@ namespace SideScrollerProject
                 else
                 {
                     enemyStatus.TakeDamage(attackDamage);
+                    
                 }
                 isHit = true;
 
@@ -69,11 +75,7 @@ namespace SideScrollerProject
         public override void OnExit(BaseState state, Animator animator, AnimatorStateInfo stateInfo)
         {
 
-            if (isHit)
-            {
-                GameEvent.instance.HitFreeze(0.1f);
-                isHit = false;
-            }
+
             // if (animator.GetInteger(AnimatorParams.AttackCounter.ToString()) > 1)
             //   {
             // animator.SetBool(AnimatorParams.Attacking.ToString(), true);
@@ -83,9 +85,6 @@ namespace SideScrollerProject
             //    InputManager.instance.attackCounter = 0;
             // }
             //  animator.SetInteger(AnimatorParams.AttackCounter.ToString(), 2);
-
-
-
         }
 
 

@@ -33,6 +33,7 @@ namespace SideScrollerProject
         public Animator animator;
         public MaterialPropertyBlock material;
         public PlayerStatus playerStatus;
+        public ParticleSystem dustEffect;
 
 
 
@@ -66,6 +67,7 @@ namespace SideScrollerProject
 
                 animator.SetBool("Jumping", true);
                 animator.SetBool(AnimatorParams.Attacking.ToString(), false);
+                PlayerParticleSystemManager.instance.StartParticle(PlayerParticles.JumpDust);
             }
 
             if (Input.GetKeyDown(KeyCode.Z))
@@ -83,6 +85,7 @@ namespace SideScrollerProject
             {
                 // Test Camera Shake
                 // CameraShaker.Instance.ShakeOnce(4,4,.1f,.1f);
+              //  CreateDust();
                 movement.isDashing = true;
                 playerStatus.DepleteResourceBar(10);
                 playerStatus.ResetCountDown();
@@ -102,6 +105,8 @@ namespace SideScrollerProject
         public void OnLanding()
         {
             animator.SetBool("Jumping", false);
+            PlayerParticleSystemManager.instance.StartParticle(PlayerParticles.GroundImpact);
+          //  movement.jumpDust.Play();
 
         }
         void FixedUpdate()
@@ -117,6 +122,11 @@ namespace SideScrollerProject
             animator.SetInteger("Falling", movement.GetFallVelocity());
             jump = false;
             //  Debug.Log(horizontalMovement);
+        }
+
+        void CreateDust()
+        {
+            dustEffect.Play(false);
         }
         void OnDrawGizmosSelected()
         {

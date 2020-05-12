@@ -99,9 +99,11 @@
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Dialogue\DialogueTrigger.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Dialogue\Dialouge.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\EntityManager.cs" />
+     <Compile Include="Assets\Scenes\Scripts\GeneralScripts\FreezeHit.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Interactable.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Interaction.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Interface\ISpawn.cs" />
+     <Compile Include="Assets\Scenes\Scripts\GeneralScripts\PlayerParticleSystemManager.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\PrefabSpawnerScript.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Status.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\TriggerArea.cs" />

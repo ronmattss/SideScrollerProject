@@ -31,7 +31,6 @@ public class Movement : MonoBehaviour
     public SpriteRenderer playerSprite;
     public Material dashMaterial;
     public ParticleSystem dashAfterImage;
-
     [Header("Events")]
     [Space]
 
@@ -96,7 +95,10 @@ public class Movement : MonoBehaviour
                 canGoDown = false;
             }
             if (m_Grounded && !wasGrounded)
+            {
                 animator.SetBool("Jumping", false);
+               // jumpDust.Play();
+            }
 
         }
     }
@@ -172,7 +174,10 @@ public class Movement : MonoBehaviour
             if (jumpCount == 0)
                 m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
             else
+            {
                 m_Rigidbody2D.AddRelativeForce(new Vector2(0f, 10), ForceMode2D.Impulse);
+            //    jumpDust.Play();
+            }
             jumpCount++;
 
         }
@@ -212,9 +217,14 @@ public class Movement : MonoBehaviour
         if (isDashing)
         {
             animator.SetBool("isDashing", isDashing);
+            
             dashMaterial.SetTexture("_MainTex", playerSprite.sprite.texture);
             dashAfterImage.GetComponent<ParticleSystemRenderer>().material = dashMaterial;
-            dashAfterImage.Play();
+             dashAfterImage.GetComponent<ParticleSystemRenderer>().flip = new Vector2(-this.transform.localScale.x,0);
+            PlayerParticleSystemManager.instance.StopAllParticles();
+            PlayerParticleSystemManager.instance.StartParticle(PlayerParticles.DashImage,PlayerParticles.JumpDust);
+
+            //dashAfterImage.Play();
             if (dashTime <= 0)
             {
                 dashTime = startDashTime;
