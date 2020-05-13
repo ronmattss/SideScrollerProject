@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44a3a20bc600ca9449cb2c80d15a07fb, type: 3}
+  m_Name: Hit Effect
+  m_EditorClassIdentifier: 
+  duration: 0
+  transitionValue: 0.8
+  extraHit: {fileID: 3589169178875451150, guid: e542c33fe85c05c41976dade36171ee1,
+    type: 3}

@@ -16,11 +16,14 @@ namespace SideScrollerProject
         public int attackDamage = 20;
         //    public GameObject gameObject;
         public LayerMask enemyLayer;
+        public GameObject hitEffect;
+        public bool flipEffectatX = false;
         bool isHit = false;
+
 
         public void FreezeHit()
         {
-        
+
         }
 
         public void RegisterAttack(Animator animator)
@@ -40,7 +43,19 @@ namespace SideScrollerProject
                 else
                 {
                     enemyStatus.TakeDamage(attackDamage);
-                    
+                    if (hitEffect != null)
+                    {
+                        GameObject hit = Instantiate(hitEffect, enemy.transform.position, Quaternion.identity);
+                        hit.transform.localScale = new Vector2(animator.transform.localScale.x, 1);
+                        LeanTween.scaleY(hit, 3f, 0.3f).setEaseOutExpo();
+                        if (!flipEffectatX)
+                            LeanTween.scaleX(hit, 3f * animator.transform.localScale.x, 0.3f).setEaseOutExpo();
+                        else
+                            LeanTween.scaleX(hit, 3f * -animator.transform.localScale.x, 0.3f).setEaseOutExpo();
+                    }
+
+
+
                 }
                 isHit = true;
 
