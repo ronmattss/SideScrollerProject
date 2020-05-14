@@ -41,11 +41,18 @@ namespace SideScrollerProject
         public bool isRange = false;
 
         public Transform raycastOrigin;
+        public Transform targetLastPosition;
+        public Transform targetInitialPosition;
         public LineRenderer laser;
+        public bool targetLock = false;
+
+        public GameObject playerPosition;
+        public Vector2 finalTargetPosition = Vector2.zero;
         void Start()
         {   //laser = GameObject.Find()
             spriteRenderer = this.gameObject.GetComponent<SpriteRenderer>();
             materialProperty = spriteRenderer.material;
+
             // if (transform.tag == "Enemy")
 
             animator = this.gameObject.GetComponent<Animator>();
@@ -81,6 +88,13 @@ namespace SideScrollerProject
             }
             if (!isGrounded)
                 this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, -500));
+        }
+        public Vector2 LockTarget()
+        {
+            targetLock = true;
+            return targetInitialPosition.position;
+
+
         }
         // will
 
@@ -136,6 +150,7 @@ namespace SideScrollerProject
 
             animator.SetInteger("health", currentHealth);
             EnemyInRange(playerLayer, animator);
+
         }
         private void OnDrawGizmosSelected()
         {
@@ -215,8 +230,8 @@ namespace SideScrollerProject
                     animator.SetBool("playerOnSight", true);
                     if (isRange)
                     {
-                        // range attacks here
-                        //   animator.SetBool("rangeAttack1", true);
+
+
 
                     }
                     animator.SetBool("isMoving", true);
@@ -228,14 +243,15 @@ namespace SideScrollerProject
                 }
             }
         }
+        #endregion
 
         public void RangeAttack()
         {
             Vector2 raycastDirection = this.transform.localScale.x == -1 ? Vector2.left : Vector2.right;
-            RaycastHit2D hit = Physics2D.Raycast(raycastOrigin.position, target.position - raycastOrigin.position, Mathf.Infinity, playerLayer);
+            RaycastHit2D hit = Physics2D.Raycast(raycastOrigin.position, new Vector3(finalTargetPosition.x, finalTargetPosition.y, 0) - raycastOrigin.position, Mathf.Infinity, playerLayer);
             laser.gameObject.SetActive(true);
             laser.SetPosition(0, raycastOrigin.position);
-            laser.SetPosition(1, target.position);
+            laser.SetPosition(1, finalTargetPosition);
             if (hit.collider == null) Debug.Log("nothing hit");
             // Debug.Log(hit.collider.GetType());
             //  if (hit.GetType() == typeof(CapsuleCollider2D))
@@ -248,7 +264,6 @@ namespace SideScrollerProject
             // }
 
         }
-        #endregion
         #region EnemyInRange
         private void EnemyInRange(LayerMask playerMask, Animator animator)
         {
@@ -260,6 +275,14 @@ namespace SideScrollerProject
                 {
                     animator.SetBool("playerInRange", true);
                     animator.SetBool("isMoving", false);
+                    if (targetLock == false)
+                    {
+                        targetInitialPosition = player.transform;
+                        // position = player.transform.position;
+                        playerPosition = player.gameObject;
+                        targetLock = true;
+                    }
+
                     return;
                 }
                 else if (player == null)

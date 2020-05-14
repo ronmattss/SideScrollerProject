@@ -27,8 +27,11 @@ namespace SideScrollerProject
         {
             animator.SetBool("playerInRange", false);
             if (isRange)
+            {
                 animator.GetComponent<Status>().laser.gameObject.SetActive(false);
+                animator.GetComponent<Status>().targetLock = false;
             //  animator.SetBool("isMoving",false);
+            }
         }
 
         public override void UpdateAbility(BaseState state, Animator animator, AnimatorStateInfo stateInfo)
