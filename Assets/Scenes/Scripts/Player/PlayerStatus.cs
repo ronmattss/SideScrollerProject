@@ -88,6 +88,26 @@ namespace SideScrollerProject
             }
 
         }
+        public void TakeDamage(int damage)
+        {
+            Debug.Log($"Damage:{damage}");
+            currentHealth -= damage;
+            healthSliderScript.SetValue(currentHealth);
+            impulseSource.GenerateImpulse();
+            animator.SetBool("IsHurt", true);
+            ResetCountDown();
+            if (currentHealth <= 0)
+            {
+
+                Destroy(this.gameObject);
+            }
+            else
+            {
+                //Hurt
+                Debug.Log(this.name + " " + currentHealth);
+            }
+
+        }
 
         public void Die(Animator animator)
         {

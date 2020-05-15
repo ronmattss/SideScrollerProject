@@ -47,6 +47,17 @@ public class GameEvent : MonoBehaviour
         }
     }
 
+
+    public event Action<int> onSpikeThrust;
+
+    public void OnSpikeThrust(int id)
+    {
+        if (onSpikeThrust != null)
+        {
+            onSpikeThrust(id);
+            
+        }
+    }
     public void HitFreeze(float duration)
     {
         if (waiting) return;
