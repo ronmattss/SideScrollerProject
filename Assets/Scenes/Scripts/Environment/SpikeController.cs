@@ -8,22 +8,78 @@ namespace SideScrollerProject
     public class SpikeController : MonoBehaviour
     {
         bool canDamage = true;
+        public Vector2 hidePosition;
+        public int damage = 10;
+        public Transform teleportPosition;
+        private Vector2 origPosition;
+        private Vector2 nextPos;
+        private Vector2 pA;
+        private Vector2 pB;
+        public bool isOnOrigin = true;
+        public float waitTime = 1;
+        public float timeMoving = 0.5f;
+        public float repeatTime = 2f;
+        public float invokeTime = 1f;
+        public bool teleportToSafePlace = false;
+//        LeanTween tween = new LeanTween();
         // Start is called before the first frame update
         void Start()
         {
+            origPosition = this.transform.position;
+            hidePosition = new Vector2(this.transform.position.x, this.transform.position.y - 3);
+            pA = origPosition;
+            pB = hidePosition;
+            nextPos = pA;
+            InvokeRepeating("StartCoroutineMethod", invokeTime, repeatTime);
+
+
 
         }
 
         // Update is called once per frame
         void Update()
         {
-            StartCoroutine(Spike());
+
+
+
+
+        }
+        void ChangeDirection()
+        {
+            nextPos = nextPos != pA ? pA : pB;
+        }
+        void StartCoroutineMethod()
+        {
+            StartCoroutine(Spikey());
+        }
+
+        IEnumerator Spikey()
+        {
+
+            if (isOnOrigin)
+            {
+                LeanTween.moveY(this.gameObject, hidePosition.y, timeMoving).setEaseInOutQuad();
+                StartCoroutine(Wait());
+                isOnOrigin = false;
+            }
+            else
+            {
+                LeanTween.moveY(this.gameObject, origPosition.y, timeMoving).setEaseInOutQuad();
+                StartCoroutine(Wait());
+                isOnOrigin = true;
+            }
+            if (isOnOrigin)
+                yield return new WaitForSecondsRealtime(waitTime);
+            //   StartCoroutine(Spikey());
+
+
         }
         IEnumerator Wait()
         {
-            canDamage = false;
+
             yield return new WaitForSeconds(1);
             canDamage = true;
+            yield return new WaitForSeconds(1);
         }
         IEnumerator Spike()
         {
@@ -44,8 +100,12 @@ namespace SideScrollerProject
             {
                 if (canDamage)
                 {
-                    other.GetComponent<PlayerStatus>().TakeDamage(10);
+                    other.GetComponent<PlayerStatus>().TakeDamage(damage);
                     StartCoroutine(Wait());
+                    canDamage = false;
+                    if (teleportToSafePlace)
+                        other.transform.position = teleportPosition.position;
+
                 }
             }
         }
