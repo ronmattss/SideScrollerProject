@@ -21,15 +21,19 @@ namespace SideScrollerProject
         public float repeatTime = 2f;
         public float invokeTime = 1f;
         public bool teleportToSafePlace = false;
-//        LeanTween tween = new LeanTween();
+        public bool moveVertical = true;
+        public float position = 3;
+
+        //        LeanTween tween = new LeanTween();
         // Start is called before the first frame update
         void Start()
         {
             origPosition = this.transform.position;
-            hidePosition = new Vector2(this.transform.position.x, this.transform.position.y - 3);
+            //hidePosition = new Vector2(this.transform.position.x, this.transform.position.y - 3);
             pA = origPosition;
             pB = hidePosition;
             nextPos = pA;
+
             InvokeRepeating("StartCoroutineMethod", invokeTime, repeatTime);
 
 
@@ -50,15 +54,18 @@ namespace SideScrollerProject
         }
         void StartCoroutineMethod()
         {
-            StartCoroutine(Spikey());
+            if (moveVertical)
+                StartCoroutine(SpikeyMoveVertical());
+            else
+            StartCoroutine(SpikeyMoveHorizontal());
         }
 
-        IEnumerator Spikey()
+        IEnumerator SpikeyMoveVertical()
         {
 
             if (isOnOrigin)
             {
-                LeanTween.moveY(this.gameObject, hidePosition.y, timeMoving).setEaseInOutQuad();
+                LeanTween.moveY(this.gameObject, position, timeMoving).setEaseInOutQuad();
                 StartCoroutine(Wait());
                 isOnOrigin = false;
             }
@@ -72,6 +79,24 @@ namespace SideScrollerProject
                 yield return new WaitForSecondsRealtime(waitTime);
             //   StartCoroutine(Spikey());
 
+
+        }
+
+        IEnumerator SpikeyMoveHorizontal()
+        {
+            if (isOnOrigin)
+            {
+                LeanTween.moveX(this.gameObject, position, timeMoving).setEaseInOutQuad();
+                StartCoroutine(Wait());
+                isOnOrigin = false;
+            }
+            else
+            {
+                LeanTween.moveX(this.gameObject, origPosition.x, timeMoving).setEaseInOutQuad();
+                StartCoroutine(Wait());
+                isOnOrigin = true;
+            }
+            yield return new WaitForSecondsRealtime(waitTime);
 
         }
         IEnumerator Wait()
