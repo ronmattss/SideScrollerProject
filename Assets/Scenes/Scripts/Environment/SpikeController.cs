@@ -57,7 +57,7 @@ namespace SideScrollerProject
             if (moveVertical)
                 StartCoroutine(SpikeyMoveVertical());
             else
-            StartCoroutine(SpikeyMoveHorizontal());
+                StartCoroutine(SpikeyMoveHorizontal());
         }
 
         IEnumerator SpikeyMoveVertical()
@@ -65,7 +65,7 @@ namespace SideScrollerProject
 
             if (isOnOrigin)
             {
-                LeanTween.moveY(this.gameObject, position, timeMoving).setEaseInOutQuad();
+                LeanTween.moveY(this.gameObject, this.transform.position.y - position, timeMoving).setEaseInOutQuad();
                 StartCoroutine(Wait());
                 isOnOrigin = false;
             }
@@ -86,7 +86,7 @@ namespace SideScrollerProject
         {
             if (isOnOrigin)
             {
-                LeanTween.moveX(this.gameObject, position, timeMoving).setEaseInOutQuad();
+                LeanTween.moveX(this.gameObject, this.transform.position.x - position, timeMoving).setEaseInOutQuad();
                 StartCoroutine(Wait());
                 isOnOrigin = false;
             }

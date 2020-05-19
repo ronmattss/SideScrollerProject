@@ -44,12 +44,15 @@ namespace SideScrollerProject
         public Transform targetLastPosition;
         public Transform targetInitialPosition;
         public LineRenderer laser;
+        public GameObject line;
         public bool targetLock = false;
 
         public GameObject playerPosition;
         public Vector2 finalTargetPosition = Vector2.zero;
         void Start()
-        {   //laser = GameObject.Find()
+        {
+            line = GameObject.Find("Line");
+            laser = line.GetComponent<LineRenderer>();
             spriteRenderer = this.gameObject.GetComponent<SpriteRenderer>();
             materialProperty = spriteRenderer.material;
 
@@ -85,9 +88,19 @@ namespace SideScrollerProject
             foreach (Collider2D g in groundCollider)
             {
                 isGrounded = true;
+                if (!animator.GetBool("isMoving"))
+                {
+
+                }
             }
             if (!isGrounded)
-                this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, -500));
+            {
+                // this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, -10));
+                //if (animator.GetBool("isMoving"))
+
+                animator.SetBool("isIdle", true);
+
+            }
         }
         public Vector2 LockTarget()
         {
@@ -130,9 +143,9 @@ namespace SideScrollerProject
                 animator.SetBool("isPatrolling", true);
                 if (Vector2.Distance(this.transform.position, nextPoint) <= 1)
                 {
-                    Debug.Log("Patrolneed to changeBefore: " + nextPoint);
+                    // Debug.Log("Patrolneed to changeBefore: " + nextPoint);
 
-                    Debug.Log("Patrolneed to changed: " + nextPoint);
+                    //                    Debug.Log("Patrolneed to changed: " + nextPoint);
                 }
             }
             if (isPatrolling)
@@ -250,15 +263,24 @@ namespace SideScrollerProject
             Vector2 raycastDirection = this.transform.localScale.x == -1 ? Vector2.left : Vector2.right;
             RaycastHit2D hit = Physics2D.Raycast(raycastOrigin.position, new Vector3(finalTargetPosition.x, finalTargetPosition.y, 0) - raycastOrigin.position, Mathf.Infinity, playerLayer);
             laser.gameObject.SetActive(true);
-            laser.SetPosition(0, raycastOrigin.position);
-            laser.SetPosition(1, finalTargetPosition);
+            laser.SetPosition(0, Vector2.zero);
+            laser.SetPosition(1, finalTargetPosition - new Vector2(raycastOrigin.position.x, raycastOrigin.position.y));
+            Debug.Log("positions: " + raycastOrigin.localPosition + " " + raycastOrigin.position);
             if (hit.collider == null) Debug.Log("nothing hit");
             // Debug.Log(hit.collider.GetType());
             //  if (hit.GetType() == typeof(CapsuleCollider2D))
             // {
             Debug.Log("Player is in range");
-            PlayerStatus playerStatus = hit.collider.gameObject.GetComponent<PlayerStatus>();
-            playerStatus.TakeDamage(attackDamage, animator);
+
+            try
+            {
+                PlayerStatus playerStatus = hit.collider.gameObject.GetComponent<PlayerStatus>();
+                playerStatus.TakeDamage(attackDamage, animator);
+            }
+            catch (NullReferenceException)
+            {
+                Debug.Log("enemy miss");
+            }
             //Wait();
             //RegisterAttack(this.animator);
             // }
