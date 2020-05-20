@@ -171,6 +171,17 @@ namespace SideScrollerProject
             }
         }
 
+
+
+        public int GetHealth()
+        {
+            return currentHealth;
+        }
+        public int GetResource()
+        {
+            return currentResource;
+        }
+
         // Seperate slider functions unique to the player
 
     }

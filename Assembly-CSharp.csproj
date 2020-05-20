@@ -134,6 +134,7 @@
      <Compile Include="Assets\Scenes\Scripts\Environment\OneWayPlatforms.cs" />
      <Compile Include="Assets\Scenes\Scripts\Environment\Spawner.cs" />
      <Compile Include="Assets\Scenes\Scripts\Environment\SpikeController.cs" />
+     <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Buff.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Dialogue\DialogueManager.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Dialogue\DialogueTrigger.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Dialogue\Dialouge.cs" />

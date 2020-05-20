@@ -90,7 +90,7 @@ namespace SideScrollerProject
                 isGrounded = true;
                 if (!animator.GetBool("isMoving"))
                 {
-
+                    
                 }
             }
             if (!isGrounded)

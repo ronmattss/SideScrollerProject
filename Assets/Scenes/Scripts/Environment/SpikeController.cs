@@ -23,6 +23,7 @@ namespace SideScrollerProject
         public bool teleportToSafePlace = false;
         public bool moveVertical = true;
         public float position = 3;
+        public bool spikeMove = true;
 
         //        LeanTween tween = new LeanTween();
         // Start is called before the first frame update
@@ -34,7 +35,8 @@ namespace SideScrollerProject
             pB = hidePosition;
             nextPos = pA;
 
-            InvokeRepeating("StartCoroutineMethod", invokeTime, repeatTime);
+            if (spikeMove)
+                InvokeRepeating("StartCoroutineMethod", invokeTime, repeatTime);
 
 
 

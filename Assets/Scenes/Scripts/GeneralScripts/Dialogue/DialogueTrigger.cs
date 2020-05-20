@@ -52,6 +52,7 @@ namespace SideScrollerProject
                 {
                     dialogue = nextDialogue;
                     queueNextDialogue = true;
+                    nextDialogue = null;
                 }
                 else
                 {

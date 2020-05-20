@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: Player Heal
   m_EditorClassIdentifier: 
   aName: Instant Heal
+  animatorParameter: isCasting
+  hasAnimation: 0
   aSprite: {fileID: 21300000, guid: a1443664cab9c514a8575e8c121719bb, type: 3}
   aBaseCooldown: 10
   depletionValue: 60
-  healValue: 50
+  healValue: 10
   playerStatus: {fileID: 0}
   healthParticles: {fileID: 732921079465664317, guid: 2c033444c3e570a4da80ada6f438baff,
     type: 3}

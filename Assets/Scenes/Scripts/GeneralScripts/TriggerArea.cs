@@ -22,7 +22,7 @@ public class TriggerArea : MonoBehaviour
     private void OnTriggerExit2D(Collider2D other)
     {
 
-        if (other.GetType() == typeof(CapsuleCollider2D))
+        if (other.GetType() == typeof(CapsuleCollider2D) && other.tag == "Player")
             if (onTriggerExit != null)
                 onTriggerExit.Invoke();
     }
