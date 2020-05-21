@@ -11,6 +11,7 @@ namespace SideScrollerProject
 
     // we can show the first dialogue
     // but the next sentences will be triggered by the player
+    // REFACTOR THIS
     public class DialogueTrigger : Interactable
     {
         // Start is called before the first frame update
@@ -36,7 +37,7 @@ namespace SideScrollerProject
                 DialogueManager.instance.dialoguePlaceHolder.SetActive(true);
                 DialogueManager.instance.DisplaySentence(dialogue.current.text);
 
-                if (dialogue.current.ListofSpawnables.Count != 0)
+                if (dialogue.current.ListofSpawnables != null)
                 {
                     foreach (Spawnable entity in dialogue.current.ListofSpawnables)
                     {
@@ -53,9 +54,10 @@ namespace SideScrollerProject
                     dialogue = nextDialogue;
                     queueNextDialogue = true;
                     nextDialogue = null;
+                   // interactable = false;
                 }
                 else
-                {
+                {   
                     queueNextDialogue = false;
                     if (exitDialogueEvent != null)
                     {

@@ -20,7 +20,7 @@ namespace SideScrollerProject
 
         public override void OnExit(BaseState state, Animator animator, AnimatorStateInfo stateInfo)
         {
-            if (Random.Range(0, 100) > 50)
+            if (Random.Range(0, 100) > 20)
                 animator.GetComponent<WizardBoss>().Teleport();
         }
 

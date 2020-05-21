@@ -24,6 +24,8 @@ public class Movement : MonoBehaviour
     public float dashSpeed;
     private float dashTime;
     public float startDashTime;
+    public int dashCoolDown = 1;
+    public int dashCoolDownStart;
     public bool isDashing = false;
     public bool isOnOneWayPlatform = false;
     public bool canGoDown = false;
@@ -42,11 +44,19 @@ public class Movement : MonoBehaviour
     public BoolEvent OnCrouchEvent;
     private bool m_wasCrouching = false;
     private bool doubleJump = false;
+    public int dashCount = 2;
+    public int availableDash;
+    private AudioSource source;
+    public AudioClip dashSound;
+    public AudioClip jumpSound;
     //bool wasGrounded;
 
     private void Awake()
     {
+        source = GetComponent<AudioSource>();
         dashTime = startDashTime;
+        dashCoolDownStart = dashCoolDown;
+        availableDash = dashCount;
         animator = GetComponent<Animator>();
         m_Rigidbody2D = GetComponent<Rigidbody2D>();
 
@@ -97,7 +107,7 @@ public class Movement : MonoBehaviour
             if (m_Grounded && !wasGrounded)
             {
                 animator.SetBool("Jumping", false);
-               // jumpDust.Play();
+                // jumpDust.Play();
             }
 
         }
@@ -176,8 +186,10 @@ public class Movement : MonoBehaviour
             else
             {
                 m_Rigidbody2D.AddRelativeForce(new Vector2(0f, 10), ForceMode2D.Impulse);
-            //    jumpDust.Play();
+                //    jumpDust.Play();
             }
+            source.clip = jumpSound;
+            source.Play();
             jumpCount++;
 
         }
@@ -217,12 +229,14 @@ public class Movement : MonoBehaviour
         if (isDashing)
         {
             animator.SetBool("isDashing", isDashing);
-            
+
             dashMaterial.SetTexture("_MainTex", playerSprite.sprite.texture);
             dashAfterImage.GetComponent<ParticleSystemRenderer>().material = dashMaterial;
-             dashAfterImage.GetComponent<ParticleSystemRenderer>().flip = new Vector2(-this.transform.localScale.x,0);
+            dashAfterImage.GetComponent<ParticleSystemRenderer>().flip = new Vector2(-this.transform.localScale.x, 0);
             PlayerParticleSystemManager.instance.StopAllParticles();
-            PlayerParticleSystemManager.instance.StartParticle(PlayerParticles.DashImage,PlayerParticles.JumpDust);
+            PlayerParticleSystemManager.instance.StartParticle(PlayerParticles.DashImage, PlayerParticles.JumpDust);
+            // source.clip = dashSound;
+            //  source.Play();
 
             //dashAfterImage.Play();
             if (dashTime <= 0)
@@ -246,10 +260,26 @@ public class Movement : MonoBehaviour
                 {
                     m_Rigidbody2D.velocity = Vector2.left * dashSpeed;
                 }
-
+                
             }
 
+
         }
+    }
+    public void Recharge()
+    {
+        StartCoroutine(RechargeDash());
+    }
+    IEnumerator RechargeDash()
+    {
+        yield return new WaitForSeconds(dashCoolDown);
+        availableDash = dashCount;
+        yield return null;
+    }
+    public void DashSound()
+    {
+        source.clip = dashSound;
+        source.Play();
     }
 
     /// <summary>

@@ -37,6 +37,7 @@ namespace SideScrollerProject
 
 
 
+
         // Start is called before the first frame update
 
         // Update is called once per frame
@@ -48,7 +49,7 @@ namespace SideScrollerProject
             // Register Movement Bool
             horizontalMovement = Convert.ToInt16(Input.GetAxisRaw("Horizontal")); //* runSpeed);
 
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.F))
             {
                 if (isInteracting)
                 {
@@ -81,13 +82,18 @@ namespace SideScrollerProject
                 animator.SetInteger(AnimatorParams.AttackCounter.ToString(), InputManager.instance.attackCounter);
             }
 
-            if (Input.GetKeyDown(KeyCode.X) && playerStatus.currentResource > 0)
+            if (Input.GetKeyDown(KeyCode.X) && movement.availableDash > 0)
             {
                 // Test Camera Shake
                 // CameraShaker.Instance.ShakeOnce(4,4,.1f,.1f);
-              //  CreateDust();
+                //  CreateDust();
                 movement.isDashing = true;
-                playerStatus.DepleteResourceBar(10);
+                movement.availableDash--;
+                if (movement.isDashing)
+                {
+                    movement.DashSound();
+                }
+                // playerStatus.DepleteResourceBar(10);
                 playerStatus.ResetCountDown();
                 // TriggerAbility();
             }
@@ -100,13 +106,15 @@ namespace SideScrollerProject
             {
                 crouch = false;
             }
+            if (movement.availableDash <= 0)
+                movement.Recharge();
 
         }
         public void OnLanding()
         {
             animator.SetBool("Jumping", false);
             PlayerParticleSystemManager.instance.StartParticle(PlayerParticles.GroundImpact);
-          //  movement.jumpDust.Play();
+            //  movement.jumpDust.Play();
 
         }
         void FixedUpdate()

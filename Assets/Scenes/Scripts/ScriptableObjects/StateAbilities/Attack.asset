@@ -21,3 +21,5 @@ MonoBehaviour:
     m_Bits: 512
   hitEffect: {fileID: 6767871930310856726, guid: f3359c6e7561ce048953122bc595e8b4,
     type: 3}
+  flipEffectatX: 0
+  sound: {fileID: 8300000, guid: ca4f9702a3d6ee94ba80fdc970853459, type: 3}

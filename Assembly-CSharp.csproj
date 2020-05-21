@@ -149,6 +149,7 @@
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\TriggerArea.cs" />
      <Compile Include="Assets\Scenes\Scripts\Helpers\DoorController.cs" />
      <Compile Include="Assets\Scenes\Scripts\Helpers\GameEvent.cs" />
+     <Compile Include="Assets\Scenes\Scripts\Helpers\LevelManager.cs" />
      <Compile Include="Assets\Scenes\Scripts\Helpers\Singleton.cs" />
      <Compile Include="Assets\Scenes\Scripts\Helpers\Spawnable.cs" />
      <Compile Include="Assets\Scenes\Scripts\Node Based Dialogue System\BasicDialogueNode.cs" />

@@ -410,6 +410,19 @@ MonoBehaviour:
   materialProperty: {fileID: 0}
   dissolveValue: 1
   slider: {fileID: 800043475485624264}
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  nextPoint: {x: 0, y: 0}
+  isPatrolling: 0
+  isRange: 0
+  raycastOrigin: {fileID: 0}
+  targetLastPosition: {fileID: 0}
+  targetInitialPosition: {fileID: 0}
+  laser: {fileID: 0}
+  line: {fileID: 0}
+  targetLock: 0
+  playerPosition: {fileID: 0}
+  finalTargetPosition: {x: 0, y: 0}
 --- !u!70 &7999528917321403289
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

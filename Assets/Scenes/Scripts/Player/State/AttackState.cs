@@ -19,7 +19,8 @@ namespace SideScrollerProject
         public GameObject hitEffect;
         public bool flipEffectatX = false;
         bool isHit = false;
-
+        AudioSource audio;
+        public AudioClip sound;
 
         public void FreezeHit()
         {
@@ -74,9 +75,14 @@ namespace SideScrollerProject
             //  Debug.Log(attackPoint.name);
 
             attackCounter = animator.GetInteger(AnimatorParams.AttackCounter.ToString());
+            audio = animator.GetComponent<AudioSource>();
+            audio.clip = sound;
+            audio.Play();
+            RegisterAttack(animator);
 
             animator.SetBool(AnimatorParams.Attacking.ToString(), false);
-            RegisterAttack(animator);
+
+
 
 
 
