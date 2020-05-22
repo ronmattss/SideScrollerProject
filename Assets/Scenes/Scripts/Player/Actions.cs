@@ -28,6 +28,10 @@ namespace SideScrollerProject
         public Interactable interactables;
         bool jump = false;
         int jumpCount = 0;
+        public float jumpTime;
+        public float jumpForce;
+        private float jumpTimeCounter;
+        private bool isJumping;
         bool doubleJump = false;
         bool crouch = false;
         public Animator animator;
@@ -48,7 +52,7 @@ namespace SideScrollerProject
 
             // Register Movement Bool
             horizontalMovement = Convert.ToInt16(Input.GetAxisRaw("Horizontal")); //* runSpeed);
-
+            movement.xMovement = horizontalMovement *(runSpeed /10);
             if (Input.GetKeyDown(KeyCode.F))
             {
                 if (isInteracting)
@@ -60,15 +64,6 @@ namespace SideScrollerProject
             if (Input.GetKeyDown(KeyCode.DownArrow) && movement.isOnOneWayPlatform)
             {
                 movement.canGoDown = true;
-            }
-
-            if (Input.GetButtonDown("Jump"))
-            {
-                jump = true;
-
-                animator.SetBool("Jumping", true);
-                animator.SetBool(AnimatorParams.Attacking.ToString(), false);
-                PlayerParticleSystemManager.instance.StartParticle(PlayerParticles.JumpDust);
             }
 
             if (Input.GetKeyDown(KeyCode.Z))
@@ -109,11 +104,40 @@ namespace SideScrollerProject
             if (movement.availableDash <= 0)
                 movement.Recharge();
 
+            if (movement.m_Grounded && Input.GetButtonDown("Jump"))
+            {
+                movement.m_Rigidbody2D.velocity = Vector2.up * jumpForce;
+                isJumping = true;
+                jump = true;
+                jumpTimeCounter = jumpTime;
+
+                animator.SetBool("Jumping", true);
+                animator.SetBool(AnimatorParams.Attacking.ToString(), false);
+                PlayerParticleSystemManager.instance.StartParticle(PlayerParticles.JumpDust);
+            }
+            // if (Input.GetButton("Jump") && isJumping == true)
+            // {
+            //     if (jumpTimeCounter > 0)
+            //     {
+            //         movement.m_Rigidbody2D.velocity = Vector2.up * jumpForce;
+            //         jumpTimeCounter -= Time.deltaTime;
+            //     }
+            //     else
+            //     {
+            //         isJumping = false;
+            //     }
+            // }
+            // if (Input.GetKeyUp("Jump"))
+            // {
+            //     isJumping = false;
+            // }
+
         }
         public void OnLanding()
         {
             animator.SetBool("Jumping", false);
             PlayerParticleSystemManager.instance.StartParticle(PlayerParticles.GroundImpact);
+            isJumping = false;
             //  movement.jumpDust.Play();
 
         }

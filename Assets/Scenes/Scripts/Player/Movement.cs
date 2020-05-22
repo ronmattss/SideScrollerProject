@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    [SerializeField] private float m_JumpForce = 400f;                          // Amount of force added when the player jumps.
+    //  [SerializeField] private float m_JumpForce = 400f;                          // Amount of force added when the player jumps.
     [Range(0, 1)] [SerializeField] private float m_CrouchSpeed = 1f;          // Amount of maxSpeed applied to crouching movement. 1 = 100%
     [Range(0, .3f)] [SerializeField] public float m_MovementSmoothing = .05f;  // How much to smooth out the movement
     [SerializeField] private bool m_AirControl = false;                         // Whether or not a player can steer while jumping;
@@ -15,7 +15,7 @@ public class Movement : MonoBehaviour
     [SerializeField] private Collider2D m_CrouchDisableCollider;                // A collider that will be disabled when crouching
 
     const float k_GroundedRadius = .1f; // Radius of the overlap circle to determine if grounded
-    private bool m_Grounded;            // Whether or not the player is grounded.
+    public bool m_Grounded;            // Whether or not the player is grounded.
     int jumpCount = 0;
     const float k_CeilingRadius = .2f; // Radius of the overlap circle to determine if the player can stand up
     public Rigidbody2D m_Rigidbody2D;
@@ -49,6 +49,13 @@ public class Movement : MonoBehaviour
     private AudioSource source;
     public AudioClip dashSound;
     public AudioClip jumpSound;
+
+    public float jumpForce;
+    public bool isJumping;
+    public bool jump;
+    private float jumpTimeCounter;
+    public float jumpTime;
+    public float xMovement;
     //bool wasGrounded;
 
     private void Awake()
@@ -65,6 +72,40 @@ public class Movement : MonoBehaviour
 
         if (OnCrouchEvent == null)
             OnCrouchEvent = new BoolEvent();
+    }
+
+    private void Update()
+    {
+        if (m_Grounded && Input.GetButtonDown("Jump"))
+        {
+            m_Rigidbody2D.velocity = new Vector2(xMovement, 1 * jumpForce);
+            isJumping = true;
+            jump = true;
+            jumpTimeCounter = jumpTime;
+
+            animator.SetBool("Jumping", true);
+            animator.SetBool(AnimatorParams.Attacking.ToString(), false);
+            PlayerParticleSystemManager.instance.StartParticle(PlayerParticles.JumpDust);
+            source.clip = jumpSound;
+            source.Play();
+        }
+        if (Input.GetButton("Jump") && isJumping == true)
+        {
+            if (jumpTimeCounter > 0)
+            {
+                m_Rigidbody2D.velocity = new Vector2(xMovement, 1 * jumpForce);
+                jumpTimeCounter -= Time.deltaTime;
+            }
+            else
+            {
+                isJumping = false;
+            }
+        }
+        if (Input.GetButtonUp("Jump"))
+        {
+            Debug.Log("UP");
+            isJumping = false;
+        }
     }
 
     private void FixedUpdate()
@@ -178,21 +219,22 @@ public class Movement : MonoBehaviour
             }
         }
         // If the player should jump...
-        if (jump && jumpCount < 2)
+        /*if (jump && jumpCount < 2)
         {
             // Add a vertical force to the player.
             if (jumpCount == 0)
-                m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+               m_Rigidbody2D.velocity += new Vector2(0,10);
+               // m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
             else
             {
-                m_Rigidbody2D.AddRelativeForce(new Vector2(0f, 10), ForceMode2D.Impulse);
+                m_Rigidbody2D.velocity += new Vector2(0,10);
                 //    jumpDust.Play();
             }
             source.clip = jumpSound;
             source.Play();
             jumpCount++;
 
-        }
+        }*/
 
 
         // if (!m_Grounded && jump && jumpCount <= 2)
@@ -260,7 +302,7 @@ public class Movement : MonoBehaviour
                 {
                     m_Rigidbody2D.velocity = Vector2.left * dashSpeed;
                 }
-                
+
             }
 
 
