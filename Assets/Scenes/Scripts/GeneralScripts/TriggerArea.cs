@@ -13,7 +13,7 @@ public class TriggerArea : MonoBehaviour
     public UnityEvent onTriggerExit;
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.GetType() == typeof(CapsuleCollider2D))
+        if (other.GetType() == typeof(CapsuleCollider2D)&& other.tag == "Player")
             if (onTriggerEnter != null)
                 onTriggerEnter.Invoke(); // instead of GameEvent.instance.DoorwayTriggerEnter(id); 
 

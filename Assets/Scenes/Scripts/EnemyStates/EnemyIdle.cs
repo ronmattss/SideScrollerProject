@@ -78,6 +78,7 @@ namespace SideScrollerProject
         public override void OnEnter(BaseState state, Animator animator, AnimatorStateInfo stateInfo)
         {
             animator.SetBool("isIdle", true);
+            animator.SetBool("isAttacking", false);
             this.animator = animator;
             searchPoint = animator.gameObject.GetComponent<Status>().searchPoint;
             searchRange = animator.gameObject.GetComponent<Status>().searchRange;
@@ -85,13 +86,14 @@ namespace SideScrollerProject
             attackRange = animator.gameObject.GetComponent<Status>().attackRange;
             playerLayer = animator.gameObject.GetComponent<Status>().playerLayer;
             status = animator.gameObject.GetComponent<Status>();
+            animator.gameObject.layer = 9;
         }
 
         public override void UpdateAbility(BaseState state, Animator animator, AnimatorStateInfo stateInfo)
         {
 
-        //    ScanEnemy(playerLayer);
-         //   EnemyInRange(playerLayer, animator);
+            //    ScanEnemy(playerLayer);
+            //   EnemyInRange(playerLayer, animator);
 
         }
 

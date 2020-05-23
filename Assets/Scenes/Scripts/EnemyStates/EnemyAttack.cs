@@ -30,6 +30,8 @@ namespace SideScrollerProject
             {
                 animator.GetComponent<Status>().laser.gameObject.SetActive(false);
                 animator.GetComponent<Status>().targetLock = false;
+                animator.SetBool("isAttacking",false);
+                animator.gameObject.layer = 9;
             //  animator.SetBool("isMoving",false);
             }
         }
