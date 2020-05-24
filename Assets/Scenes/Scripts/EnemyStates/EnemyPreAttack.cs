@@ -12,7 +12,7 @@ namespace SideScrollerProject
         public override void OnEnter(BaseState state, Animator animator, AnimatorStateInfo stateInfo)
         {
             animator.SetBool("isAttacking", true);
-            animator.gameObject.layer = 14;
+            //animator.gameObject.layer = 14;
         }
 
         public override void OnExit(BaseState state, Animator animator, AnimatorStateInfo stateInfo)

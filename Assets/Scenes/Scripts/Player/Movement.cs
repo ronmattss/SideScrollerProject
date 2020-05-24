@@ -33,6 +33,7 @@ public class Movement : MonoBehaviour
     public SpriteRenderer playerSprite;
     public Material dashMaterial;
     public ParticleSystem dashAfterImage;
+    public Vector2 playerVelocity;
     [Header("Events")]
     [Space]
 
@@ -67,6 +68,7 @@ public class Movement : MonoBehaviour
         animator = GetComponent<Animator>();
         m_Rigidbody2D = GetComponent<Rigidbody2D>();
 
+
         if (OnLandEvent == null)
             OnLandEvent = new UnityEvent();
 
@@ -76,6 +78,7 @@ public class Movement : MonoBehaviour
 
     private void Update()
     {
+        playerVelocity = m_Rigidbody2D.velocity;
         if (m_Grounded && Input.GetButtonDown("Jump"))
         {
             m_Rigidbody2D.velocity = new Vector2(xMovement, 1 * jumpForce);
@@ -201,9 +204,13 @@ public class Movement : MonoBehaviour
             // }
 
             // Move the character by finding the target velocity
-            Vector3 targetVelocity = new Vector2(move * 10f, m_Rigidbody2D.velocity.y);
+  //          Vector3 targetVelocity = new Vector2(move * 10f, m_Rigidbody2D.velocity.y);
             // And then smoothing it out and applying it to the character
-            m_Rigidbody2D.velocity = Vector3.SmoothDamp(m_Rigidbody2D.velocity, targetVelocity, ref m_Velocity, m_MovementSmoothing);
+//m_Rigidbody2D.velocity = Vector3.SmoothDamp(m_Rigidbody2D.velocity, targetVelocity, ref m_Velocity, m_MovementSmoothing);
+
+            Vector2 movement = m_Rigidbody2D.velocity;
+            movement.x = Mathf.Lerp(movement.x, move *10, 1f);
+            m_Rigidbody2D.velocity = movement;
 
             // If the input is moving the player right and the player is facing left...
             if (move > 0 && !m_FacingRight)

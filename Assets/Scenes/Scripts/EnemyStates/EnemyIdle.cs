@@ -86,7 +86,7 @@ namespace SideScrollerProject
             attackRange = animator.gameObject.GetComponent<Status>().attackRange;
             playerLayer = animator.gameObject.GetComponent<Status>().playerLayer;
             status = animator.gameObject.GetComponent<Status>();
-            animator.gameObject.layer = 9;
+           
         }
 
         public override void UpdateAbility(BaseState state, Animator animator, AnimatorStateInfo stateInfo)

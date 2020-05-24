@@ -182,7 +182,8 @@ namespace SideScrollerProject
         public void TakeDamage(int damage)
         {
             Debug.Log($"Damage:{damage}");
-            animator.SetBool("isHurt", true);
+            if (!animator.GetBool("isAttacking"))
+                animator.SetBool("isHurt", true);
             currentHealth -= damage;
             slider.SetValue(currentHealth);
             if (target != null)
@@ -191,7 +192,7 @@ namespace SideScrollerProject
             {
                 this.gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
                 Destroy(slider.slider);
-                // animator.SetBool("isDead", true);
+                 animator.SetBool("isDead", true);
                 // moving to dead enemy state
                 // Destroy(this.gameObject);
             }
@@ -293,7 +294,7 @@ namespace SideScrollerProject
 
             foreach (Collider2D player in playerCollider)
             {
-                if (player.CompareTag("Player"))
+                if (player.CompareTag("Player") && player.GetType() == typeof(CapsuleCollider2D))
                 {
                     animator.SetBool("playerInRange", true);
 
