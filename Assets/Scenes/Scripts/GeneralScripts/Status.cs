@@ -192,7 +192,31 @@ namespace SideScrollerProject
             {
                 this.gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
                 Destroy(slider.slider);
-                 animator.SetBool("isDead", true);
+                animator.SetBool("isDead", true);
+                // moving to dead enemy state
+                // Destroy(this.gameObject);
+            }
+            else
+            {
+                //Hurt
+                Debug.Log(this.name + " " + currentHealth);
+            }
+        }
+        public void TakeDamage(int damage, bool knockback)
+        {
+            Debug.Log($"Damage:{damage}");
+            if (!animator.GetBool("isAttacking"))
+                animator.SetBool("isHurt", true);
+            currentHealth -= damage;
+            slider.SetValue(currentHealth);
+            if (target != null)
+                if (knockback)
+                    Knockback();
+            if (currentHealth <= 0)
+            {
+                this.gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+                Destroy(slider.slider);
+                animator.SetBool("isDead", true);
                 // moving to dead enemy state
                 // Destroy(this.gameObject);
             }

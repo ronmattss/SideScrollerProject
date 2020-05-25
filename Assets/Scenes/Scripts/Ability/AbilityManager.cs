@@ -31,6 +31,10 @@ namespace SideScrollerProject
             nameOfAbility = ability.aName;
             animator = GetComponent<Animator>();
         }
+        public Ability GetAbility()
+        {
+            return ability;
+        }
         void Update()
         {
             bool coolDownComplete = (Time.time > nextReadyTime);

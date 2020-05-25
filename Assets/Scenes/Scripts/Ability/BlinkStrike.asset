@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c50215f843015c44a294ebcad750362, type: 3}
+  m_Name: BlinkStrike
+  m_EditorClassIdentifier: 
+  aName: BlinkStrike
+  animatorParameter: isBlinking
+  hasAnimation: 1
+  aSprite: {fileID: 21300000, guid: 7a35197d6fd1b5944a373ef71e2ed23f, type: 3}
+  aBaseCooldown: 10
+  depletionValue: 40
+  range: 10
+  damage: 20
+  whatToHit:
+    serializedVersion: 2
+    m_Bits: 512
+  splash: {fileID: 6306605076042603286, guid: ae54adf26e76265448cbe2759afa2f17, type: 3}

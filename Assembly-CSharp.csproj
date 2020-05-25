@@ -109,6 +109,7 @@
      <Compile Include="Assets\Scenes\Dialogue-master\Submodules\SerializableCallback\Test.cs" />
      <Compile Include="Assets\Scenes\Scripts\Ability\Ability.cs" />
      <Compile Include="Assets\Scenes\Scripts\Ability\AbilityManager.cs" />
+     <Compile Include="Assets\Scenes\Scripts\Ability\AlphaStrike.cs" />
      <Compile Include="Assets\Scenes\Scripts\Ability\Heal.cs" />
      <Compile Include="Assets\Scenes\Scripts\Ability\ProjectileAbility.cs" />
      <Compile Include="Assets\Scenes\Scripts\Ability\WindSlash.cs" />
@@ -118,6 +119,7 @@
      <Compile Include="Assets\Scenes\Scripts\Camera\CameraShake.cs" />
      <Compile Include="Assets\Scenes\Scripts\Camera\TrackPlayer.cs" />
      <Compile Include="Assets\Scenes\Scripts\Effects\HitEffect.cs" />
+     <Compile Include="Assets\Scenes\Scripts\Effects\Splash.cs" />
      <Compile Include="Assets\Scenes\Scripts\Effects\TestTween.cs" />
      <Compile Include="Assets\Scenes\Scripts\EnemyStates\EnemyAttack.cs" />
      <Compile Include="Assets\Scenes\Scripts\EnemyStates\EnemyDead.cs" />
@@ -162,6 +164,8 @@
      <Compile Include="Assets\Scenes\Scripts\Player\State\AbilityCastState.cs" />
      <Compile Include="Assets\Scenes\Scripts\Player\State\AttackState.cs" />
      <Compile Include="Assets\Scenes\Scripts\Player\State\BaseState.cs" />
+     <Compile Include="Assets\Scenes\Scripts\Player\State\BlinkReady.cs" />
+     <Compile Include="Assets\Scenes\Scripts\Player\State\BlinkSlash.cs" />
      <Compile Include="Assets\Scenes\Scripts\Player\State\ForceTransitionState.cs" />
      <Compile Include="Assets\Scenes\Scripts\Player\State\HurtState.cs" />
      <Compile Include="Assets\Scenes\Scripts\Player\State\IdleState.cs" />
