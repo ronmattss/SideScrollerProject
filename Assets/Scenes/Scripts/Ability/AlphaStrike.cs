@@ -72,7 +72,7 @@ namespace SideScrollerProject
         public void BlinkPlayer()
         {
             Vector3 direction = parent.transform.localScale.x == -1 ? Vector2.left : Vector2.right;
-            direction *= 4;
+            direction *= 3;
             parent.transform.position = listOfDamagables[listOfDamagables.Count - 1].gameObject.transform.position + direction;
             LeanTween.move(this.parent, listOfDamagables[listOfDamagables.Count - 1].gameObject.transform.position + direction, 0.2f);
             LeanTween.move(Camera.main.gameObject, listOfDamagables[listOfDamagables.Count - 1].gameObject.transform.position + direction, 0.2f);
