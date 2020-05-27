@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace SideScrollerProject
@@ -65,17 +66,45 @@ namespace SideScrollerProject
             foreach (GameObject enemy in listOfDamagables)
             {
                 enemy.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-                enemy.GetComponent<Animator>().SetBool("isIdle", true);
+                if (enemy.TryGetComponent(out Animator anim))
+                {
+                    anim.SetBool("isIdle", true);
+                    anim.SetBool("isMoving", false);
+                    anim.SetBool("playerOnSight", false);
+                    anim.SetBool("playerInRange", false);
+                }
             }
         }
+        // Refactor this, Blink to the last enemy
 
+        public bool r(GameObject g)
+        {
+            if (g.CompareTag("Enemy")) return true;
+            else return false;
+        }
         public void BlinkPlayer()
         {
             Vector3 direction = parent.transform.localScale.x == -1 ? Vector2.left : Vector2.right;
             direction *= 3;
-            parent.transform.position = listOfDamagables[listOfDamagables.Count - 1].gameObject.transform.position + direction;
-            LeanTween.move(this.parent, listOfDamagables[listOfDamagables.Count - 1].gameObject.transform.position + direction, 0.2f);
-            LeanTween.move(Camera.main.gameObject, listOfDamagables[listOfDamagables.Count - 1].gameObject.transform.position + direction, 0.2f);
+            Vector3 pos;
+            try
+            {
+                pos = listOfDamagables[listOfDamagables.FindLastIndex(g => g.CompareTag("Enemy"))].transform.position + direction;
+            }
+            catch (System.ArgumentOutOfRangeException e)
+            {
+                Debug.Log(e.ActualValue);
+                pos = listOfDamagables[listOfDamagables.Count - 1].gameObject.transform.position + direction;
+            }
+
+
+
+            parent.transform.position = pos + direction;
+            // parent.transform.position = listOfDamagables[listOfDamagables.FindLastIndex(g => g.CompareTag("Enemy"))].transform.position;
+
+            LeanTween.move(this.parent, pos, 0.2f);
+            Debug.Log("What is: " + listOfDamagables[listOfDamagables.Count - 1].transform.name);
+            LeanTween.move(Camera.main.gameObject, pos + direction, 0.2f);
         }
         #endregion
         #region StrikeState
@@ -83,7 +112,14 @@ namespace SideScrollerProject
         {
             foreach (GameObject enemy in listOfDamagables)
             {
-                enemy.GetComponent<Status>().TakeDamage(damage, false);
+                if (enemy.TryGetComponent(out Status enemyStatus))
+                    enemyStatus.TakeDamage(damage, false);
+
+                if (enemy.TryGetComponent(out Breakable b))
+                {
+                    b.hit = 0;
+                }
+
 
             }
             listOfDamagables.Clear();

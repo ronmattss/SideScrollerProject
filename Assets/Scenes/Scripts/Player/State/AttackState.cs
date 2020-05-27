@@ -36,9 +36,16 @@ namespace SideScrollerProject
             counter++;
             foreach (Collider2D enemy in enemyColliders)
             {
-                Debug.Log($"Enemy hit: {enemy.name} {counter}");
+                Debug.Log($"Enemy hit: {enemy.name} {counter}{enemy.tag}");
                 Status enemyStatus = enemy.gameObject.GetComponent<Status>();
 
+
+                if (enemy.tag == "Breakables")
+                {
+                    if (enemy.TryGetComponent(out Breakable b))
+                        b.hit--;
+                    Debug.Log("eeeee");
+                }
                 if (enemyStatus == null)
                     return;
                 else
@@ -54,9 +61,11 @@ namespace SideScrollerProject
                         else
                             LeanTween.scaleX(hit, 3f * -animator.transform.localScale.x, 0.3f).setEaseOutExpo();
                     }
-
-
-
+                }
+                if (enemy.tag == "Breakables")
+                {
+                    enemy.GetComponent<Breakable>().hit--;
+                    Debug.Log("eeeee");
                 }
                 isHit = true;
 

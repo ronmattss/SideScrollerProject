@@ -132,9 +132,11 @@
      <Compile Include="Assets\Scenes\Scripts\EnemyStates\PostAttackWizard.cs" />
      <Compile Include="Assets\Scenes\Scripts\EnemyStates\WizardBoss.cs" />
      <Compile Include="Assets\Scenes\Scripts\Environment\Background\BackgroundMovement.cs" />
+     <Compile Include="Assets\Scenes\Scripts\Environment\Breakable.cs" />
      <Compile Include="Assets\Scenes\Scripts\Environment\InteractableObject.cs" />
      <Compile Include="Assets\Scenes\Scripts\Environment\MovingPlatforms.cs" />
      <Compile Include="Assets\Scenes\Scripts\Environment\OneWayPlatforms.cs" />
+     <Compile Include="Assets\Scenes\Scripts\Environment\Pickable.cs" />
      <Compile Include="Assets\Scenes\Scripts\Environment\Spawner.cs" />
      <Compile Include="Assets\Scenes\Scripts\Environment\SpikeController.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Buff.cs" />

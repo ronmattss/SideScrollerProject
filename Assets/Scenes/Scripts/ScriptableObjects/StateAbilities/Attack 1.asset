@@ -18,7 +18,7 @@ MonoBehaviour:
   attackDamage: 1
   enemyLayer:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 33280
   hitEffect: {fileID: 6767871930310856726, guid: f3359c6e7561ce048953122bc595e8b4,
     type: 3}
   flipEffectatX: 1

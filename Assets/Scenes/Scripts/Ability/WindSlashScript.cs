@@ -59,6 +59,13 @@ namespace SideScrollerProject
                 enemyStatus.TakeDamage(damage);
                 entitiesPassed++;
             }
+            else if (other.tag == "Breakables")
+            {
+                if (other.TryGetComponent(out Breakable b))
+                {
+                    b.hit = 0;
+                }
+            }
 
 
         }

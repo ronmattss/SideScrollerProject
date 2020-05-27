@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using TMPro;
 
 namespace SideScrollerProject
@@ -11,6 +12,7 @@ namespace SideScrollerProject
         public bool playerIsInProximity = false;
         public GameObject interactText;
         public GameObject someRandomShit;
+        public UnityEvent interactEvent;
 
         public void Start()
         {
@@ -25,6 +27,7 @@ namespace SideScrollerProject
                 this.interactable = false;
             else
                 this.interactable = true;
+            interactEvent.Invoke();
             someRandomShit.SetActive(this.interactable);
 
 

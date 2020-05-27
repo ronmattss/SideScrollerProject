@@ -7,6 +7,7 @@ TagManager:
   - Enemy
   - Interactable
   - Splash
+  - Breakables
   layers:
   - Default
   - TransparentFX
@@ -23,7 +24,7 @@ TagManager:
   - PostProcess
   - Ground
   - Invulnerable
-  - 
+  - Breakables
   - 
   - 
   - 
@@ -62,14 +63,14 @@ TagManager:
   - name: foreground
     uniqueID: 3115756977
     locked: 0
+  - name: objects
+    uniqueID: 398305203
+    locked: 0
   - name: entities
     uniqueID: 3799994879
     locked: 0
   - name: ParticleEffects
     uniqueID: 1971012313
-    locked: 0
-  - name: objects
-    uniqueID: 398305203
     locked: 0
   - name: UI
     uniqueID: 4274663365

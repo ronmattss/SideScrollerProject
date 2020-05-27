@@ -40,10 +40,7 @@ namespace SideScrollerProject
 
         public override void UpdateAbility(BaseState state, Animator animator, AnimatorStateInfo stateInfo)
         {
-            if (stateInfo.normalizedTime >= whenToCast)
-            {
-
-            }
+            strike.FreezeEnemyPositions();
 
         }
     }
