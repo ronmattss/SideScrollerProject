@@ -14,11 +14,12 @@ namespace SideScrollerProject
         List<GameObject> parts = new List<GameObject>();
         void Start()
         {
-            for (int i = 0; i < transform.childCount; i++)
-            {
-                parts.Add(transform.GetChild(i).gameObject);
-                parts[i].SetActive(false);
-            }
+            if (this.transform.childCount > 0)
+                for (int i = 0; i < transform.childCount; i++)
+                {
+                    parts.Add(transform.GetChild(i).gameObject);
+                    parts[i].SetActive(false);
+                }
 
         }
 

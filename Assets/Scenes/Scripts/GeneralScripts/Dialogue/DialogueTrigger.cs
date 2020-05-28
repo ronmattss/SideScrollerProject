@@ -12,16 +12,21 @@ namespace SideScrollerProject
     // we can show the first dialogue
     // but the next sentences will be triggered by the player
     // REFACTOR THIS
+    // this should activate in the
     public class DialogueTrigger : Interactable
     {
         // Start is called before the first frame update
 
 
         public bool queueNextDialogue;
+        public bool loopDialogue;
+
 
         public DialogueGraph dialogue;      // dialogue(Lore or first time interactions)
         public DialogueGraph nextDialogue; // Triggers quest triggers?
         public UnityEvent exitDialogueEvent;
+
+        // looping Dialogue
 
         public bool playerInProximity = false;
         //  public Chat chatGlobal;
@@ -31,6 +36,7 @@ namespace SideScrollerProject
         {
             Debug.Log("Calling Interactable");
             if (!interactable) return;
+            // first Dialogue
             if (dialogue.current != null)
             {
                 DialogueManager.instance.interactText.SetActive(false);
@@ -46,19 +52,23 @@ namespace SideScrollerProject
                 }
                 dialogue.current = ChatDialogue(dialogue.current);
             }
+            // after dialogue is finished
             else
             {
                 DialogueManager.instance.DisplaySentence(" ");
+                // Something wrong here // if next dialogue is null then loop or exit dialogue?
                 if (nextDialogue != null)
                 {
                     dialogue = nextDialogue;
                     queueNextDialogue = true;
                     nextDialogue = null;
-                   // interactable = false;
+                    // interactable = false;
                 }
-                else
-                {   
-                    queueNextDialogue = false;
+                else // if null then loop or exit
+                {
+
+                    queueNextDialogue = loopDialogue;
+
                     if (exitDialogueEvent != null)
                     {
                         exitDialogueEvent.Invoke();

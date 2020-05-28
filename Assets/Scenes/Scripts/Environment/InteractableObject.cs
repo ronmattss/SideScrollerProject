@@ -6,6 +6,7 @@ using TMPro;
 
 namespace SideScrollerProject
 {
+    // Refactor this
     public class InteractableObject : Interactable
     {
 
