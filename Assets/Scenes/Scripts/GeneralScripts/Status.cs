@@ -287,6 +287,7 @@ namespace SideScrollerProject
         {
             Vector2 raycastDirection = this.transform.localScale.x == -1 ? Vector2.left : Vector2.right;
             RaycastHit2D hit = Physics2D.Raycast(raycastOrigin.position, new Vector3(finalTargetPosition.x, finalTargetPosition.y, 0) - raycastOrigin.position, Mathf.Infinity, playerLayer);
+           // Instantiate projectile
             laser.gameObject.SetActive(true);
             laser.SetPosition(0, Vector2.zero);
             laser.SetPosition(1, finalTargetPosition - new Vector2(raycastOrigin.position.x, raycastOrigin.position.y));

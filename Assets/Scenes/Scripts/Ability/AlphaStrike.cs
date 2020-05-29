@@ -85,7 +85,7 @@ namespace SideScrollerProject
         public void BlinkPlayer()
         {
             Vector3 direction = parent.transform.localScale.x == -1 ? Vector2.left : Vector2.right;
-            direction *= 3;
+            direction *= 2;
             Vector3 pos;
             try
             {
@@ -94,7 +94,17 @@ namespace SideScrollerProject
             catch (System.ArgumentOutOfRangeException e)
             {
                 Debug.Log(e.ActualValue);
-                pos = listOfDamagables[listOfDamagables.Count - 1].gameObject.transform.position + direction;
+                try
+                {
+                    pos = listOfDamagables[listOfDamagables.Count - 1].gameObject.transform.position + direction;
+                }
+                catch (System.ArgumentOutOfRangeException ex)
+                {
+                    // do nothing
+                    Debug.Log(ex.ActualValue);
+                    pos = parent.transform.position;
+
+                }
             }
 
 
@@ -103,7 +113,7 @@ namespace SideScrollerProject
             // parent.transform.position = listOfDamagables[listOfDamagables.FindLastIndex(g => g.CompareTag("Enemy"))].transform.position;
 
             LeanTween.move(this.parent, pos, 0.2f);
-            Debug.Log("What is: " + listOfDamagables[listOfDamagables.Count - 1].transform.name);
+//            Debug.Log("What is: " + listOfDamagables[listOfDamagables.Count - 1].transform.name);
             LeanTween.move(Camera.main.gameObject, pos + direction, 0.2f);
         }
         #endregion
