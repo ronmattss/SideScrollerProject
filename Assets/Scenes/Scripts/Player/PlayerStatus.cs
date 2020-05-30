@@ -32,6 +32,7 @@ namespace SideScrollerProject
         public Material baseMaterial;
         public Material emissionMaterial;
         private CinemachineImpulseSource impulseSource;
+        public CinemachineImpulseSource attackSource;
 
 
         // x+= (target -x) * .1) // go to target 10% of the value at the time fast -> slow
@@ -46,6 +47,7 @@ namespace SideScrollerProject
             // target = this.transform;
             healthSliderScript.SetMaxValue(maxHealth);
             resourceSliderScript.SetMaxValue(maxResource);
+            
 
             currentHealth = maxHealth;
             currentResource = maxResource;
@@ -58,6 +60,7 @@ namespace SideScrollerProject
         void Update()
         {
             RegenerateResource();
+           // impulseSource.GenerateImpulse();
         }
         private void OnDrawGizmosSelected()
         {

@@ -61,6 +61,7 @@ namespace SideScrollerProject
                         else
                             LeanTween.scaleX(hit, 3f * -animator.transform.localScale.x, 0.3f).setEaseOutExpo();
                     }
+                    
                 }
                 if (enemy.tag == "Breakables")
                 {

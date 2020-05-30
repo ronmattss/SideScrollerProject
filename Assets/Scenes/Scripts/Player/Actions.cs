@@ -51,8 +51,7 @@ namespace SideScrollerProject
 
 
             // Register Movement Bool
-            horizontalMovement = Convert.ToInt16(Input.GetAxisRaw("Horizontal")); //* runSpeed);
-            movement.xMovement = horizontalMovement *(runSpeed /10);
+
             if (Input.GetKeyDown(KeyCode.F))
             {
                 if (isInteracting)
@@ -131,6 +130,8 @@ namespace SideScrollerProject
             // {
             //     isJumping = false;
             // }
+            horizontalMovement = Convert.ToInt16(Input.GetAxisRaw("Horizontal")); //* runSpeed);
+            movement.xMovement = horizontalMovement * (runSpeed / 10);
 
         }
         public void OnLanding()

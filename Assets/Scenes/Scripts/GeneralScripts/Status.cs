@@ -12,6 +12,11 @@ using UnityEngine;
 // 
 namespace SideScrollerProject
 {
+
+    [RequireComponent(typeof(Rigidbody2D))]
+    [RequireComponent(typeof(CapsuleCollider2D))]
+    [RequireComponent(typeof(SliderScript))]
+    [RequireComponent(typeof(Animator))]
     public class Status : MonoBehaviour
     {
         public int maxHealth = 100;
@@ -51,10 +56,13 @@ namespace SideScrollerProject
         public Vector2 finalTargetPosition = Vector2.zero;
         void Start()
         {
+
             line = GameObject.Find("Line");
-            laser = line.GetComponent<LineRenderer>();
+            if (line != null)
+                laser = line.GetComponent<LineRenderer>();
             spriteRenderer = this.gameObject.GetComponent<SpriteRenderer>();
             materialProperty = spriteRenderer.material;
+            animator = gameObject.GetComponent<Animator>();
 
             // if (transform.tag == "Enemy")
 
@@ -249,8 +257,13 @@ namespace SideScrollerProject
         }
         #endregion
         #region ScanEnemy
+        // Redoot this 
+        // Change to Line Cast or RayCast
         private void ScanEnemy(LayerMask playerMask)
         {
+            // Line Cast with range
+            // if enemy is in range or 3/4 of the whole cast
+            // attack
 
             Collider2D[] playerCollider = Physics2D.OverlapCircleAll(searchPoint.position, searchRange, playerLayer);
 
@@ -287,7 +300,7 @@ namespace SideScrollerProject
         {
             Vector2 raycastDirection = this.transform.localScale.x == -1 ? Vector2.left : Vector2.right;
             RaycastHit2D hit = Physics2D.Raycast(raycastOrigin.position, new Vector3(finalTargetPosition.x, finalTargetPosition.y, 0) - raycastOrigin.position, Mathf.Infinity, playerLayer);
-           // Instantiate projectile
+            // Instantiate projectile
             laser.gameObject.SetActive(true);
             laser.SetPosition(0, Vector2.zero);
             laser.SetPosition(1, finalTargetPosition - new Vector2(raycastOrigin.position.x, raycastOrigin.position.y));
@@ -312,31 +325,55 @@ namespace SideScrollerProject
             // }
 
         }
+
+        // Splitted how enemies see you in range
+        // Wizard is now bugged
         #region EnemyInRange
         private void EnemyInRange(LayerMask playerMask, Animator animator)
         {
-            Collider2D[] playerCollider = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, playerLayer);
-
-            foreach (Collider2D player in playerCollider)
+            
+            if (isRange)
             {
-                if (player.CompareTag("Player") && player.GetType() == typeof(CapsuleCollider2D))
+                float range = 5;
+                Vector2 raycastDirection = this.transform.localScale.x == -1 ? Vector2.left : Vector2.right;
+                RaycastHit2D hit = Physics2D.Linecast(raycastOrigin.position, new Vector2(raycastDirection.x * range, raycastOrigin.position.y), playerLayer);
+                Debug.DrawLine(raycastOrigin.position, new Vector2(raycastDirection.x + range + raycastOrigin.position.x, raycastOrigin.position.y), Color.blue);
+                if (hit.collider.CompareTag("Player")) // well idk wat i DID WIP
                 {
                     animator.SetBool("playerInRange", true);
-
                     animator.SetBool("isMoving", false);
-                    if (targetLock == false)
-                    {
-                        targetInitialPosition = player.transform;
-                        // position = player.transform.position;
-                        playerPosition = player.gameObject;
-                        targetLock = true;
-                    }
-
                     return;
                 }
-                else if (player == null)
+                else if (hit.collider == null)
                 {
                     animator.SetBool("isMoving", false);
+                }
+            }
+            else
+            {
+                Collider2D[] playerCollider = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, playerLayer);
+                foreach (Collider2D player in playerCollider)
+                {
+                    if (player.CompareTag("Player") && player.GetType() == typeof(CapsuleCollider2D))
+                    {
+                        animator.SetBool("playerInRange", true);
+
+                        animator.SetBool("isMoving", false);
+                        // Wizard Targetting, Refactoring....
+                        if (targetLock == false)
+                        {
+                            targetInitialPosition = player.transform;
+                            // position = player.transform.position;
+                            playerPosition = player.gameObject;
+                            targetLock = true;
+                        }
+
+                        return;
+                    }
+                    else if (player == null)
+                    {
+                        animator.SetBool("isMoving", false);
+                    }
                 }
             }
         }
