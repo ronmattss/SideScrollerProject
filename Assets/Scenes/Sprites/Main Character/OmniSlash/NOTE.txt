@@ -1,0 +1,13 @@
+Gayahin mo yung palette na nasa Pop up for the glow sa slashes.
+
+arnis glow - orange based glow
+spirit power - light blue based glow
+
+yung sa trail ng dash/blink, one line is orange based and the other is blue
+
+yung sa energy gather and explosions, ikaw na bahala kung ano best color ng glow. Blue-ish, orange-ish or aa new one.
+
+
+Sequence:
+
+Pop up >>>> first 2 frames >>>> Blackout >>>> the rest

@@ -1,0 +1,260 @@
+fileFormatVersion: 2
+guid: cc0e1346c2390ee41bd8336c722884fe
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7613866628637296192
+    second: MC Cmbo1Atk3 sheet_0
+  - first:
+      213: -6770352965035148225
+    second: MC Cmbo1Atk3 sheet_1
+  - first:
+      213: 1364832456687671882
+    second: MC Cmbo1Atk3 sheet_2
+  - first:
+      213: 6848644157560343431
+    second: MC Cmbo1Atk3 sheet_3
+  - first:
+      213: 608120631581505509
+    second: MC Cmbo1Atk3 sheet_4
+  - first:
+      213: 4404618609985989853
+    second: MC Cmbo1Atk3 sheet_5
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 34
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MC Cmbo1Atk3 sheet_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 11
+        width: 54
+        height: 61
+      alignment: 9
+      pivot: {x: 0.63633627, y: 0.573592}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c97fd824ac165690800000000000000
+      internalID: -7613866628637296192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC Cmbo1Atk3 sheet_1
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 11
+        width: 41
+        height: 62
+      alignment: 9
+      pivot: {x: 0.5963518, y: 0.55502784}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3c311369dfda02a0800000000000000
+      internalID: -6770352965035148225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC Cmbo1Atk3 sheet_2
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 11
+        width: 80
+        height: 71
+      alignment: 9
+      pivot: {x: 0.6189615, y: 0.4719583}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4adace53ebd0f210800000000000000
+      internalID: 1364832456687671882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC Cmbo1Atk3 sheet_3
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 11
+        width: 80
+        height: 71
+      alignment: 9
+      pivot: {x: 0.6189615, y: 0.4719583}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78b407c53954b0f50800000000000000
+      internalID: 6848644157560343431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC Cmbo1Atk3 sheet_4
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 11
+        width: 64
+        height: 71
+      alignment: 9
+      pivot: {x: 0.77290964, y: 0.4735792}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e770021e7a707800800000000000000
+      internalID: 608120631581505509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC Cmbo1Atk3 sheet_5
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 11
+        width: 62
+        height: 71
+      alignment: 9
+      pivot: {x: 0.79817593, y: 0.47803593}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddc2a430a49502d30800000000000000
+      internalID: 4404618609985989853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

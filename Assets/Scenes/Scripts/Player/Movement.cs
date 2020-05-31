@@ -31,6 +31,7 @@ public class Movement : MonoBehaviour
     public bool canGoDown = false;
     Animator animator;
     public SpriteRenderer playerSprite;
+    public Sprite sprite;
     public Material dashMaterial;
     public ParticleSystem dashAfterImage;
     public Vector2 playerVelocity;
@@ -276,10 +277,9 @@ public class Movement : MonoBehaviour
         // And then smoothing it out and applying it to the character
         //m_Rigidbody2D.velocity = Vector3.SmoothDamp(m_Rigidbody2D.velocity, targetVelocity, ref m_Velocity, m_MovementSmoothing);
         if (isDashing)
-        {
+        {   playerSprite.sprite = sprite;
             animator.SetBool("isDashing", isDashing);
-
-            dashMaterial.SetTexture("_MainTex", playerSprite.sprite.texture);
+            dashMaterial.SetTexture("_MainTex", sprite.texture);
             dashAfterImage.GetComponent<ParticleSystemRenderer>().material = dashMaterial;
             dashAfterImage.GetComponent<ParticleSystemRenderer>().flip = new Vector2(-this.transform.localScale.x, 0);
             PlayerParticleSystemManager.instance.StopAllParticles();

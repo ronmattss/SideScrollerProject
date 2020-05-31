@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: WindSlashAbility
   m_EditorClassIdentifier: 
   duration: 0
-  whenToCast: 0.2
+  whenToCast: 0.5
   abilityName: WindSlash
   animationParameter: isCasting

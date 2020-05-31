@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ArcherMovement
   m_EditorClassIdentifier: 
   duration: 0
-  moveSpeed: 0.5
+  moveSpeed: 2
   playerLayer:
     serializedVersion: 2
     m_Bits: 256

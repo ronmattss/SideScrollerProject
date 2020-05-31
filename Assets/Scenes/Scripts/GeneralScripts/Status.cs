@@ -54,6 +54,9 @@ namespace SideScrollerProject
 
         public GameObject playerPosition;
         public Vector2 finalTargetPosition = Vector2.zero;
+        public GameObject arrowPrefab;
+        public AudioSource bowDraw;
+        public float range = 7;
         void Start()
         {
 
@@ -265,32 +268,53 @@ namespace SideScrollerProject
             // if enemy is in range or 3/4 of the whole cast
             // attack
 
-            Collider2D[] playerCollider = Physics2D.OverlapCircleAll(searchPoint.position, searchRange, playerLayer);
-
-            foreach (Collider2D player in playerCollider)
+            if (isRange)
             {
-                // Debug.Log("IS DIS WORKING " + animator.GetComponent<Transform>().name);
+                Vector2 raycastDirection = this.transform.localScale.x == -1 ? Vector2.left : Vector2.right;
+                RaycastHit2D hit = Physics2D.Linecast(raycastOrigin.position, new Vector2(raycastDirection.x * range + raycastOrigin.position.x, raycastOrigin.position.y), playerLayer);
+                Debug.DrawLine(raycastOrigin.position, new Vector2(raycastDirection.x * range + raycastOrigin.position.x, raycastOrigin.position.y), Color.blue);
 
-                if (player.CompareTag("Player"))
+                Debug.Log("Name: " + hit.collider.name);
+                if (hit.collider.CompareTag("Player")) // well idk wat i DID WIP
                 {
-                    //Debug.Log("Detected: " + player.tag + " " + c + " From " + animator.gameObject.transform.name);
-                    target = player.transform;
-                    if (!player.CompareTag("Player"))
-                    { }
+                    target = hit.collider.transform;
                     animator.SetBool("isPatrolling", false);
                     animator.SetBool("playerOnSight", true);
-                    if (isRange)
+                    return;
+                }
+                else if (hit.collider == null)
+                {
+                    animator.SetBool("isMoving", false);
+                }
+
+            }
+            else
+            {
+                Collider2D[] playerCollider = Physics2D.OverlapCircleAll(searchPoint.position, searchRange, playerLayer);
+
+                foreach (Collider2D player in playerCollider)
+                {
+                    // Debug.Log("IS DIS WORKING " + animator.GetComponent<Transform>().name);
+
+                    if (player.CompareTag("Player"))
                     {
+                        //Debug.Log("Detected: " + player.tag + " " + c + " From " + animator.gameObject.transform.name);
+                        target = player.transform;
+                        if (!player.CompareTag("Player"))
+                        { }
+                        animator.SetBool("isPatrolling", false);
+                        animator.SetBool("playerOnSight", true);
+                        if (isRange)
+                        {
 
-
+                        }
+                        animator.SetBool("isMoving", true);
 
                     }
-                    animator.SetBool("isMoving", true);
-
-                }
-                else
-                {
-                    animator.SetBool("playerOnSight", false);
+                    else
+                    {
+                        animator.SetBool("playerOnSight", false);
+                    }
                 }
             }
         }
@@ -299,11 +323,12 @@ namespace SideScrollerProject
         public void RangeAttack()
         {
             Vector2 raycastDirection = this.transform.localScale.x == -1 ? Vector2.left : Vector2.right;
-            RaycastHit2D hit = Physics2D.Raycast(raycastOrigin.position, new Vector3(finalTargetPosition.x, finalTargetPosition.y, 0) - raycastOrigin.position, Mathf.Infinity, playerLayer);
-            // Instantiate projectile
-            laser.gameObject.SetActive(true);
-            laser.SetPosition(0, Vector2.zero);
-            laser.SetPosition(1, finalTargetPosition - new Vector2(raycastOrigin.position.x, raycastOrigin.position.y));
+            RaycastHit2D hit = Physics2D.Linecast(raycastOrigin.position, new Vector2(raycastDirection.x * range + raycastOrigin.position.x, raycastOrigin.position.y), playerLayer);
+            Debug.DrawLine(raycastOrigin.position, new Vector2(raycastDirection.x * range + raycastOrigin.position.x, raycastOrigin.position.y), Color.blue);
+            //Instantiate projectile
+            //laser.gameObject.SetActive(true);
+            //laser.SetPosition(0, Vector2.zero);
+            //laser.SetPosition(1, finalTargetPosition - new Vector2(raycastOrigin.position.x, raycastOrigin.position.y));
             Debug.Log("positions: " + raycastOrigin.localPosition + " " + raycastOrigin.position);
             if (hit.collider == null) Debug.Log("nothing hit");
             // Debug.Log(hit.collider.GetType());
@@ -312,9 +337,13 @@ namespace SideScrollerProject
             Debug.Log("Player is in range");
 
             try
-            {
-                PlayerStatus playerStatus = hit.collider.gameObject.GetComponent<PlayerStatus>();
-                playerStatus.TakeDamage(attackDamage, animator);
+            { // Instantiate Projectile
+                GameObject arrow = Instantiate(arrowPrefab, attackPoint.position, Quaternion.identity);
+                Projectile proj = arrow.GetComponent<Projectile>();
+                bowDraw.Play();
+                proj.Launch(raycastDirection.x);
+                //PlayerStatus playerStatus = hit.collider.gameObject.GetComponent<PlayerStatus>();
+                //playerStatus.TakeDamage(attackDamage, animator);
             }
             catch (NullReferenceException)
             {
@@ -331,13 +360,14 @@ namespace SideScrollerProject
         #region EnemyInRange
         private void EnemyInRange(LayerMask playerMask, Animator animator)
         {
-            
+
             if (isRange)
             {
-                float range = 5;
                 Vector2 raycastDirection = this.transform.localScale.x == -1 ? Vector2.left : Vector2.right;
-                RaycastHit2D hit = Physics2D.Linecast(raycastOrigin.position, new Vector2(raycastDirection.x * range, raycastOrigin.position.y), playerLayer);
-                Debug.DrawLine(raycastOrigin.position, new Vector2(raycastDirection.x + range + raycastOrigin.position.x, raycastOrigin.position.y), Color.blue);
+                RaycastHit2D hit = Physics2D.Linecast(raycastOrigin.position, new Vector2(raycastDirection.x * range + raycastOrigin.position.x, raycastOrigin.position.y), playerLayer);
+                Debug.DrawLine(raycastOrigin.position, new Vector2(raycastDirection.x * range + raycastOrigin.position.x, raycastOrigin.position.y), Color.red);
+                //if (hit.collider != null)
+                Debug.Log("Name: " + hit.collider.name);
                 if (hit.collider.CompareTag("Player")) // well idk wat i DID WIP
                 {
                     animator.SetBool("playerInRange", true);

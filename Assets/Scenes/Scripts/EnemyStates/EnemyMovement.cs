@@ -57,20 +57,7 @@ namespace SideScrollerProject
                     // moveSpeed *= 1f;
                 }
         }
-        private void EnemyInRange(LayerMask playerMask, Animator animator)
-        {
-            Collider2D[] playerCollider = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, playerLayer);
 
-            foreach (Collider2D player in playerCollider)
-            {
-                if (player.CompareTag("Player"))
-                {
-                    animator.SetBool("playerInRange", true);
-                    animator.SetBool("isMoving", false);
-                    return;
-                }
-            }
-        }
 
 
 
