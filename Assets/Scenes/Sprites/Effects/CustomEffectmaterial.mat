@@ -10,7 +10,7 @@ Material:
   m_Name: CustomEffectmaterial
   m_Shader: {fileID: -6465566751694194690, guid: 155cd0984d91d0042b9ddf09fa3ec6bf,
     type: 3}
-  m_ShaderKeywords: 
+  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0

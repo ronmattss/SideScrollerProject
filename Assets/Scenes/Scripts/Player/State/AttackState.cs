@@ -24,7 +24,7 @@ namespace SideScrollerProject
 
         public void FreezeHit()
         {
-
+            
         }
 
         public void RegisterAttack(Animator animator)
@@ -71,6 +71,7 @@ namespace SideScrollerProject
                 isHit = true;
 
             }
+            LevelManager.instance.FreezeHit();
 
 
 

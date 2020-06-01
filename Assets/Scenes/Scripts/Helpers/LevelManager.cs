@@ -5,11 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
+    public static LevelManager instance;
     public GameObject player;
     public GameObject wizard;
     void Start()
     {
-
+        instance = this;
     }
 
     // Update is called once per frame
@@ -25,5 +26,19 @@ public class LevelManager : MonoBehaviour
         yield return new WaitForSeconds(3);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         StopAllCoroutines();
+    }
+    public void FreezeHit()
+    {
+        StartCoroutine(FreezeLevel());
+    }
+
+    IEnumerator FreezeLevel()
+    {
+
+        Time.timeScale = 0.00f;
+        yield return new WaitForSecondsRealtime(0.01f);
+        Time.timeScale = 1f;
+
+
     }
 }

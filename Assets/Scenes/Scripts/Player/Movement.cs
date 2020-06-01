@@ -5,6 +5,37 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
+    [SerializeField]
+    LayerMask lmWalls;
+    [SerializeField]
+    float fJumpVelocity = 5;
+
+    Rigidbody2D rigid;
+
+    float fJumpPressedRemember = 0;
+    [SerializeField]
+    float fJumpPressedRememberTime = 0.2f;
+
+    float fGroundedRemember = 0;
+    [SerializeField]
+    float fGroundedRememberTime = 0.25f;
+
+    [SerializeField]
+    float fHorizontalAcceleration = 1;
+    [SerializeField]
+    [Range(0, 1)]
+    float fHorizontalDampingBasic = 0.5f;
+    [SerializeField]
+    [Range(0, 1)]
+    float fHorizontalDampingWhenStopping = 0.5f;
+    [SerializeField]
+    [Range(0, 1)]
+    float fHorizontalDampingWhenTurning = 0.5f;
+
+    [SerializeField]
+    [Range(0, 1)]
+    float fCutJumpHeight = 0.5f;
+
     //  [SerializeField] private float m_JumpForce = 400f;                          // Amount of force added when the player jumps.
     [Range(0, 1)] [SerializeField] private float m_CrouchSpeed = 1f;          // Amount of maxSpeed applied to crouching movement. 1 = 100%
     [Range(0, .3f)] [SerializeField] public float m_MovementSmoothing = .05f;  // How much to smooth out the movement
@@ -13,14 +44,13 @@ public class Movement : MonoBehaviour
     [SerializeField] private Transform m_GroundCheck;                           // A position marking where to check if the player is grounded.
     [SerializeField] private Transform m_CeilingCheck;                          // A position marking where to check for ceilings
     [SerializeField] private Collider2D m_CrouchDisableCollider;                // A collider that will be disabled when crouching
-
+    public static Movement instance;
     const float k_GroundedRadius = .1f; // Radius of the overlap circle to determine if grounded
     public bool m_Grounded;            // Whether or not the player is grounded.
     int jumpCount = 0;
     const float k_CeilingRadius = .2f; // Radius of the overlap circle to determine if the player can stand up
     public Rigidbody2D m_Rigidbody2D;
     public bool m_FacingRight = true;  // For determining which way the player is currently facing.
-    public Vector3 m_Velocity = Vector3.zero;
     public float dashSpeed;
     private float dashTime;
     public float startDashTime;
@@ -62,6 +92,7 @@ public class Movement : MonoBehaviour
 
     private void Awake()
     {
+        instance = this;
         source = GetComponent<AudioSource>();
         dashTime = startDashTime;
         dashCoolDownStart = dashCoolDown;
@@ -79,36 +110,45 @@ public class Movement : MonoBehaviour
 
     private void Update()
     {
+        Jump();
+    }
+    public void Jump()
+    {
         playerVelocity = m_Rigidbody2D.velocity;
-        if (m_Grounded && Input.GetButtonDown("Jump"))
+        fGroundedRemember -= Time.deltaTime;
+        if (m_Grounded)
         {
-            m_Rigidbody2D.velocity = new Vector2(xMovement, 1 * jumpForce);
-            isJumping = true;
-            jump = true;
-            jumpTimeCounter = jumpTime;
+            fGroundedRemember = fGroundedRememberTime;
+            // m_Rigidbody2D.velocity = new Vector2(xMovement, 1 * jumpForce);
+            // isJumping = true;
+            // jump = true;
+            // jumpTimeCounter = jumpTime;
 
+
+        }
+        fJumpPressedRemember -= Time.deltaTime;
+        if (Input.GetButtonDown("Jump"))
+        {
+            fJumpPressedRemember = fJumpPressedRememberTime;
+        }
+        if (Input.GetButtonUp("Jump"))
+        {
+            if (m_Rigidbody2D.velocity.y > 0)
+            {
+                m_Rigidbody2D.velocity = new Vector2(m_Rigidbody2D.velocity.x, m_Rigidbody2D.velocity.y * fCutJumpHeight);
+            }
+        }
+
+        if ((fJumpPressedRemember > 0) && (fGroundedRemember > 0))
+        {
+            fJumpPressedRemember = 0;
+            fGroundedRemember = 0;
+            m_Rigidbody2D.velocity = new Vector2(m_Rigidbody2D.velocity.x, fJumpVelocity);
             animator.SetBool("Jumping", true);
             animator.SetBool(AnimatorParams.Attacking.ToString(), false);
             PlayerParticleSystemManager.instance.StartParticle(PlayerParticles.JumpDust);
             source.clip = jumpSound;
             source.Play();
-        }
-        if (Input.GetButton("Jump") && isJumping == true)
-        {
-            if (jumpTimeCounter > 0)
-            {
-                m_Rigidbody2D.velocity = new Vector2(xMovement, 1 * jumpForce);
-                jumpTimeCounter -= Time.deltaTime;
-            }
-            else
-            {
-                isJumping = false;
-            }
-        }
-        if (Input.GetButtonUp("Jump"))
-        {
-            Debug.Log("UP");
-            isJumping = false;
         }
     }
 
@@ -156,6 +196,7 @@ public class Movement : MonoBehaviour
             }
 
         }
+        //       Jump();
     }
 
 
@@ -205,13 +246,21 @@ public class Movement : MonoBehaviour
             // }
 
             // Move the character by finding the target velocity
-  //          Vector3 targetVelocity = new Vector2(move * 10f, m_Rigidbody2D.velocity.y);
+            //          Vector3 targetVelocity = new Vector2(move * 10f, m_Rigidbody2D.velocity.y);
             // And then smoothing it out and applying it to the character
-//m_Rigidbody2D.velocity = Vector3.SmoothDamp(m_Rigidbody2D.velocity, targetVelocity, ref m_Velocity, m_MovementSmoothing);
+            //m_Rigidbody2D.velocity = Vector3.SmoothDamp(m_Rigidbody2D.velocity, targetVelocity, ref m_Velocity, m_MovementSmoothing);
 
             Vector2 movement = m_Rigidbody2D.velocity;
-            movement.x = Mathf.Lerp(movement.x, move *10, 1f);
-            m_Rigidbody2D.velocity = movement;
+            float fHorizontalVelocity = m_Rigidbody2D.velocity.x;
+            fHorizontalVelocity += (move);
+            if (Mathf.Abs(move) < 0.01f)
+                fHorizontalVelocity *= Mathf.Pow(1f - fHorizontalDampingWhenStopping, Time.deltaTime * 10f);
+            else if (Mathf.Sign(move) != Mathf.Sign(fHorizontalVelocity))
+                fHorizontalVelocity *= Mathf.Pow(1f - fHorizontalDampingWhenTurning, Time.deltaTime * 10f);
+            else
+                fHorizontalVelocity *= Mathf.Pow(1f - fHorizontalDampingBasic, Time.deltaTime * 10f);
+
+            m_Rigidbody2D.velocity = new Vector2(fHorizontalVelocity, m_Rigidbody2D.velocity.y);
 
             // If the input is moving the player right and the player is facing left...
             if (move > 0 && !m_FacingRight)
@@ -277,7 +326,8 @@ public class Movement : MonoBehaviour
         // And then smoothing it out and applying it to the character
         //m_Rigidbody2D.velocity = Vector3.SmoothDamp(m_Rigidbody2D.velocity, targetVelocity, ref m_Velocity, m_MovementSmoothing);
         if (isDashing)
-        {   playerSprite.sprite = sprite;
+        {
+            playerSprite.sprite = sprite;
             animator.SetBool("isDashing", isDashing);
             dashMaterial.SetTexture("_MainTex", sprite.texture);
             dashAfterImage.GetComponent<ParticleSystemRenderer>().material = dashMaterial;

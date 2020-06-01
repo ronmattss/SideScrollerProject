@@ -139,6 +139,7 @@
      <Compile Include="Assets\Scenes\Scripts\Environment\Pickable.cs" />
      <Compile Include="Assets\Scenes\Scripts\Environment\Spawner.cs" />
      <Compile Include="Assets\Scenes\Scripts\Environment\SpikeController.cs" />
+     <Compile Include="Assets\Scenes\Scripts\GeneralScripts\AudioManager.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Buff.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Dialogue\DialogueManager.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Dialogue\DialogueTrigger.cs" />
@@ -151,6 +152,7 @@
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\PlayerParticleSystemManager.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\PrefabSpawnerScript.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Projectile.cs" />
+     <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Sound.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Status.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\TriggerArea.cs" />
      <Compile Include="Assets\Scenes\Scripts\Helpers\DoorController.cs" />
@@ -162,6 +164,7 @@
      <Compile Include="Assets\Scenes\Scripts\Node Based Dialogue System\DialogueNodeGraph.cs" />
      <Compile Include="Assets\Scenes\Scripts\Player\Actions.cs" />
      <Compile Include="Assets\Scenes\Scripts\Player\Actions\InputManager.cs" />
+     <Compile Include="Assets\Scenes\Scripts\Player\Jump.cs" />
      <Compile Include="Assets\Scenes\Scripts\Player\Movement.cs" />
      <Compile Include="Assets\Scenes\Scripts\Player\PlayerStatus.cs" />
      <Compile Include="Assets\Scenes\Scripts\Player\State\AbilityCastState.cs" />

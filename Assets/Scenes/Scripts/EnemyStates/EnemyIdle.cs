@@ -85,7 +85,6 @@ namespace SideScrollerProject
             attackPoint = animator.gameObject.GetComponent<Status>().attackPoint;
             attackRange = animator.gameObject.GetComponent<Status>().attackRange;
             playerLayer = animator.gameObject.GetComponent<Status>().playerLayer;
-            status = animator.gameObject.GetComponent<Status>();
            
         }
 

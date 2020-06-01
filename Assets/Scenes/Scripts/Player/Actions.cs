@@ -103,7 +103,7 @@ namespace SideScrollerProject
             if (movement.availableDash <= 0)
                 movement.Recharge();
 
-            if (movement.m_Grounded && Input.GetButtonDown("Jump"))
+           /* if (movement.m_Grounded && Input.GetButtonDown("Jump"))
             {
                 movement.m_Rigidbody2D.velocity = Vector2.up * jumpForce;
                 isJumping = true;
@@ -113,7 +113,7 @@ namespace SideScrollerProject
                 animator.SetBool("Jumping", true);
                 animator.SetBool(AnimatorParams.Attacking.ToString(), false);
                 PlayerParticleSystemManager.instance.StartParticle(PlayerParticles.JumpDust);
-            }
+            }*/
             // if (Input.GetButton("Jump") && isJumping == true)
             // {
             //     if (jumpTimeCounter > 0)

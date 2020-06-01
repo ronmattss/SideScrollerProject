@@ -17,6 +17,7 @@ namespace SideScrollerProject
     [RequireComponent(typeof(CapsuleCollider2D))]
     [RequireComponent(typeof(SliderScript))]
     [RequireComponent(typeof(Animator))]
+    [RequireComponent(typeof(AudioSource))]
     public class Status : MonoBehaviour
     {
         public int maxHealth = 100;
@@ -51,7 +52,7 @@ namespace SideScrollerProject
         public LineRenderer laser;
         public GameObject line;
         public bool targetLock = false;
-
+        private bool changeColor = false;
         public GameObject playerPosition;
         public Vector2 finalTargetPosition = Vector2.zero;
         public GameObject arrowPrefab;
@@ -83,6 +84,12 @@ namespace SideScrollerProject
             // target = this.transform;
             currentHealth = maxHealth;
             slider.SetMaxValue(maxHealth);
+            spriteRenderer.material.SetColor("_Color", Color.black);
+        }
+        void LateUpdate()
+        {
+            if (changeColor)
+                StartCoroutine(ChangeColor());
         }
         void OnDrawGizmos()
         {
@@ -126,6 +133,7 @@ namespace SideScrollerProject
 
         void Update()
         {   // if player is not on Sight
+
             CheckGround();
             if (!animator.GetBool("playerOnSight"))
             {
@@ -176,6 +184,14 @@ namespace SideScrollerProject
             EnemyInRange(playerLayer, animator);
 
         }
+        IEnumerator ChangeColor()
+        {
+            spriteRenderer.color = Color.black;
+            Debug.Log("Changed " + spriteRenderer.color.ToString());
+            yield return new WaitForSeconds(0.05f);
+            spriteRenderer.color = Color.white;
+            changeColor = false;
+        }
         private void OnDrawGizmosSelected()
         {
             if (searchPoint != null)
@@ -192,6 +208,8 @@ namespace SideScrollerProject
         #region TakeDamage
         public void TakeDamage(int damage)
         {
+            changeColor = true;
+            AudioManager.instance.Play("HitSFX");
             Debug.Log($"Damage:{damage}");
             if (!animator.GetBool("isAttacking"))
                 animator.SetBool("isHurt", true);
@@ -215,6 +233,8 @@ namespace SideScrollerProject
         }
         public void TakeDamage(int damage, bool knockback)
         {
+            changeColor = true;
+            AudioManager.instance.Play("HitSFX");
             Debug.Log($"Damage:{damage}");
             if (!animator.GetBool("isAttacking"))
                 animator.SetBool("isHurt", true);
