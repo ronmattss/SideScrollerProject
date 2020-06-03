@@ -208,8 +208,9 @@ namespace SideScrollerProject
         #region TakeDamage
         public void TakeDamage(int damage)
         {
-            changeColor = true;
-            AudioManager.instance.Play("HitSFX");
+            LevelManager.instance.FreezeHit();
+            StartCoroutine(Wait());
+
             Debug.Log($"Damage:{damage}");
             if (!animator.GetBool("isAttacking"))
                 animator.SetBool("isHurt", true);
@@ -221,7 +222,11 @@ namespace SideScrollerProject
             {
                 this.gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
                 Destroy(slider.slider);
-                animator.SetBool("isDead", true);
+
+                EffectsManager.instance.Spawn(animator.gameObject.transform.position, "DeathHitfx");
+                EffectsManager.instance.Spawn(animator.gameObject.transform.position, "DeadFx");
+                Destroy(this.gameObject);
+                // animator.SetBool("isDead", true);
                 // moving to dead enemy state
                 // Destroy(this.gameObject);
             }
@@ -247,7 +252,10 @@ namespace SideScrollerProject
             {
                 this.gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
                 Destroy(slider.slider);
-                animator.SetBool("isDead", true);
+                EffectsManager.instance.Spawn(animator.gameObject.transform.position, "DeathHitfx");
+                EffectsManager.instance.Spawn(animator.gameObject.transform.position, "DeadFx");
+                Destroy(this.gameObject);
+                //animator.SetBool("isDead", true);
                 // moving to dead enemy state
                 // Destroy(this.gameObject);
             }
@@ -458,7 +466,10 @@ namespace SideScrollerProject
         #endregion
         IEnumerator Wait()
         {
-            yield return new WaitForSeconds(0.2f);
+            AudioManager.instance.Play("HitSFX");
+            changeColor = true;
+            while (Time.timeScale != 1.0f)
+                yield return new WaitForSeconds(0.2f);
         }
         /// <summary>
         /// Callback to draw gizmos that are pickable and always drawn.

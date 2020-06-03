@@ -24,11 +24,12 @@ namespace SideScrollerProject
 
         public void FreezeHit()
         {
-            
+
         }
 
         public void RegisterAttack(Animator animator)
         {
+            int enemyCount = 0;
             // Register enemies
             Collider2D[] enemyColliders = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayer);
 
@@ -54,6 +55,7 @@ namespace SideScrollerProject
                     if (hitEffect != null)
                     {
                         GameObject hit = Instantiate(hitEffect, enemy.transform.position, Quaternion.identity);
+                        EffectsManager.instance.Spawn(enemy.transform.position, "Hitfx");
                         hit.transform.localScale = new Vector2(animator.transform.localScale.x, 1);
                         LeanTween.scaleY(hit, 3f, 0.3f).setEaseOutExpo();
                         if (!flipEffectatX)
@@ -61,7 +63,7 @@ namespace SideScrollerProject
                         else
                             LeanTween.scaleX(hit, 3f * -animator.transform.localScale.x, 0.3f).setEaseOutExpo();
                     }
-                    
+
                 }
                 if (enemy.tag == "Breakables")
                 {
@@ -69,9 +71,14 @@ namespace SideScrollerProject
                     Debug.Log("eeeee");
                 }
                 isHit = true;
+                enemyCount++;
 
             }
-            LevelManager.instance.FreezeHit();
+            if (enemyCount > 0)
+            {
+                EffectsManager.instance.Shake();
+                LevelManager.instance.FreezeHit();
+            }
 
 
 

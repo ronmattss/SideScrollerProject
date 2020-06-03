@@ -8,6 +8,8 @@ public class LevelManager : MonoBehaviour
     public static LevelManager instance;
     public GameObject player;
     public GameObject wizard;
+    public float timeStopDuration = 0.025f;
+    bool isFreeze;
     void Start()
     {
         instance = this;
@@ -29,15 +31,21 @@ public class LevelManager : MonoBehaviour
     }
     public void FreezeHit()
     {
+        if (isFreeze)
+            return;
         StartCoroutine(FreezeLevel());
     }
 
     IEnumerator FreezeLevel()
     {
-
+        isFreeze = true;
         Time.timeScale = 0.00f;
-        yield return new WaitForSecondsRealtime(0.01f);
+        Debug.Log(System.DateTime.Now.ToLongTimeString() + " " + System.DateTime.Now.Millisecond + " Time Scale: " + Time.timeScale);
+        yield return new WaitForSecondsRealtime(timeStopDuration);
         Time.timeScale = 1f;
+        Debug.Log(System.DateTime.Now.ToLongTimeString() + " " + System.DateTime.Now.Millisecond + " Time Scale: " + Time.timeScale);
+
+        isFreeze = false;
 
 
     }

@@ -9,7 +9,10 @@ namespace SideScrollerProject
     {
         public override void OnEnter(BaseState state, Animator animator, AnimatorStateInfo stateInfo)
         {
-
+               
+            Destroy(animator.GetComponent<Status>());
+            Destroy(animator.GetComponent<CapsuleCollider2D>());
+            Destroy(animator.GetComponent<Rigidbody2D>());
         }
 
         public override void OnExit(BaseState state, Animator animator, AnimatorStateInfo stateInfo)
