@@ -16,9 +16,15 @@ namespace SideScrollerProject
         Rigidbody2D rb;
         SpriteRenderer slashRenderer;
         Material material;
-
+        public Buff instaKill;
+        private BuffGiver b;
+        [SerializeField] private BuffInstaKill timed;
         void Start()
         {
+
+            b = this.gameObject.AddComponent<BuffGiver>();
+
+
         }
         void Update()
         {
@@ -55,9 +61,19 @@ namespace SideScrollerProject
         {
             if (other.CompareTag("Enemy"))
             {
+
+
+                b.receiver = other.gameObject;
+
+                if (other.GetComponent<BuffReceiver>() == null)
+                    other.gameObject.AddComponent<BuffReceiver>();
+                // b.buffsToGive.Add(instaKill.InitializeBuff(b.receiver));
+                b.GiveBuff(instaKill);
+                timed = (BuffInstaKill)b.t;
                 enemyStatus = other.GetComponent<Status>();
                 enemyStatus.TakeDamage(damage);
                 entitiesPassed++;
+
             }
             else if (other.tag == "Breakables")
             {
@@ -65,6 +81,15 @@ namespace SideScrollerProject
                 {
                     b.hit = 0;
                 }
+            }
+
+
+        }
+        void OnTriggerExit2D(Collider2D other)
+        {
+            if (other.CompareTag("Enemy"))
+            {
+                b.receiver = null;
             }
 
 

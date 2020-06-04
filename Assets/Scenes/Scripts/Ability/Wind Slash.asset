@@ -21,6 +21,6 @@ MonoBehaviour:
   duration: 2
   damage: 3
   speed: 30
-  maxTarget: 2
+  maxTarget: 3
   projectile: {fileID: 2124432778311927412, guid: 8ac809a1c232b7d48a6207a0d60f5347,
     type: 3}

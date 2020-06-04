@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using System;
 
 namespace SideScrollerProject
 {
@@ -51,12 +52,23 @@ namespace SideScrollerProject
             RaycastHit2D[] hit = Physics2D.LinecastAll(parent.transform.position, new Vector2(direction.x * range + parent.transform.position.x, parent.transform.position.y), whatToHit);
             foreach (RaycastHit2D enemy in hit)
             {
+
                 if (enemy.collider == null) return;
-                listOfDamagables.Add(enemy.collider.gameObject);
+                if (!isInList(enemy.collider.gameObject.name))
+                    listOfDamagables.Add(enemy.collider.gameObject);
 
             }
             Debug.Log(listOfDamagables.Count);
             //   RaycastHit2D hit = Physics2D.Raycast(raycastOrigin.position, new Vector3(finalTargetPosition.x, finalTargetPosition.y, 0) - raycastOrigin.position, Mathf.Infinity, playerLayer);
+        }
+        public bool isInList(string name)
+        {
+            foreach (GameObject e in listOfDamagables)
+            {
+                if (e.name == name)
+                    return true;
+            }
+            return false;
         }
 
         // will be called in the Sheathe weapon Exit State
@@ -113,7 +125,7 @@ namespace SideScrollerProject
             // parent.transform.position = listOfDamagables[listOfDamagables.FindLastIndex(g => g.CompareTag("Enemy"))].transform.position;
 
             LeanTween.move(this.parent, pos, 0.2f);
-//            Debug.Log("What is: " + listOfDamagables[listOfDamagables.Count - 1].transform.name);
+            //            Debug.Log("What is: " + listOfDamagables[listOfDamagables.Count - 1].transform.name);
             LeanTween.move(Camera.main.gameObject, pos + direction, 0.2f);
         }
         #endregion

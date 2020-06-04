@@ -185,6 +185,8 @@ namespace SideScrollerProject
             return currentResource;
         }
 
+
+
         // Seperate slider functions unique to the player
 
     }

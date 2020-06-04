@@ -87,8 +87,8 @@ namespace SideScrollerProject
                 //     interactText.GetComponent<TMP_Text>().alpha = i * 2;
                 //     Debug.Log("TEXTShit: " + i);
                 interactText.GetComponent<TMP_Text>().alpha = 0;
-                    yield return null;
-               // }
+                yield return null;
+                // }
             }
             else
             {   //to Opaque
@@ -99,6 +99,14 @@ namespace SideScrollerProject
                     yield return null;
                 }
             }
+        }
+        public void DisableInteractText()
+        {
+            if (interactText.GetComponent<TMP_Text>().alpha <= 255)
+                interactText.GetComponent<TMP_Text>().alpha = 0;
+            else
+                interactText.GetComponent<TMP_Text>().alpha = 255;
+
         }
 
 

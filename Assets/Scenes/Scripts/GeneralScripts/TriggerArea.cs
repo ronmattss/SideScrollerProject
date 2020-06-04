@@ -7,9 +7,11 @@ using UnityEngine.Events;
 public class TriggerArea : MonoBehaviour
 {
     // Start is called before the first frame 
+    // Note for using Observer pattern
+    // Call the GameEvent.instance."Function()" of your event
     public int id;
 
-    public UnityEvent onTriggerEnter;
+    public UnityEvent onTriggerEnter;       // you can call GameEvent.instance.DoorwayTriggerEnter here(id)
     public UnityEvent onTriggerExit;
     private void OnTriggerEnter2D(Collider2D other)
     {
