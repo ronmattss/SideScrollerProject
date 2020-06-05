@@ -58,16 +58,17 @@ namespace SideScrollerProject
         public GameObject arrowPrefab;
         public AudioSource bowDraw;
         public float range = 7;
+        private Rigidbody2D rb;
         void Start()
         {
-
+            LeanTween.init(3000);
             line = GameObject.Find("Line");
             if (line != null)
                 laser = line.GetComponent<LineRenderer>();
             spriteRenderer = this.gameObject.GetComponent<SpriteRenderer>();
             materialProperty = spriteRenderer.material;
             animator = gameObject.GetComponent<Animator>();
-
+            rb = GetComponent<Rigidbody2D>();
             // if (transform.tag == "Enemy")
 
             animator = this.gameObject.GetComponent<Animator>();
@@ -167,13 +168,36 @@ namespace SideScrollerProject
                     //                    Debug.Log("Patrolneed to changed: " + nextPoint);
                 }
             }
+            if ((isRange && isPatrolling) && target == null)
+            {
+                animator.SetBool("isPatrolling", true);
+                if (Vector2.Distance(this.transform.position, nextPoint) <= 1)
+                {
+                    // Debug.Log("Patrolneed to changeBefore: " + nextPoint);
+
+                    //                    Debug.Log("Patrolneed to changed: " + nextPoint);
+                }
+            }
             if (isPatrolling)
+            {
                 if (Vector2.Distance(this.transform.position, nextPoint) <= 1)
                 {
                     //            Debug.Log("Patrolneed to changeBefore: " + nextPoint);
                     nextPoint = ChangeDirection();
                     //           Debug.Log("Patrolneed to changed: " + nextPoint);
                 }
+                Patrol(this.animator, this.transform, nextPoint, rb, 1);
+            }
+            if (isPatrolling && isRange)
+            {
+                if (Vector2.Distance(this.transform.position, nextPoint) <= 1)
+                {
+                    //            Debug.Log("Patrolneed to changeBefore: " + nextPoint);
+                    nextPoint = ChangeDirection();
+                    //           Debug.Log("Patrolneed to changed: " + nextPoint);
+                }
+                Patrol(this.animator, this.transform, nextPoint, rb, 1);
+            }
             // Debug.Log("Distance: " + Vector2.Distance(this.transform.position, nextPoint));
             if (currentHealth <= 0)
             {
@@ -302,18 +326,19 @@ namespace SideScrollerProject
                 RaycastHit2D hit = Physics2D.Linecast(raycastOrigin.position, new Vector2(raycastDirection.x * range + raycastOrigin.position.x, raycastOrigin.position.y), playerLayer);
                 Debug.DrawLine(raycastOrigin.position, new Vector2(raycastDirection.x * range + raycastOrigin.position.x, raycastOrigin.position.y), Color.blue);
 
-                Debug.Log("Name: " + hit.collider.name);
-                if (hit.collider.CompareTag("Player")) // well idk wat i DID WIP
-                {
-                    target = hit.collider.transform;
-                    animator.SetBool("isPatrolling", false);
-                    animator.SetBool("playerOnSight", true);
-                    return;
-                }
-                else if (hit.collider == null)
-                {
-                    animator.SetBool("isMoving", false);
-                }
+                // Debug.Log("Name: " + hit.collider.name);
+                if (hit.collider != null)
+                    if (hit.collider.CompareTag("Player")) // well idk wat i DID WIP
+                    {
+                        target = hit.collider.transform;
+                        animator.SetBool("isPatrolling", false);
+                        animator.SetBool("playerOnSight", true);
+                        return;
+                    }
+                    else if (hit.collider == null)
+                    {
+                        animator.SetBool("isMoving", false);
+                    }
 
             }
             else
@@ -395,17 +420,18 @@ namespace SideScrollerProject
                 RaycastHit2D hit = Physics2D.Linecast(raycastOrigin.position, new Vector2(raycastDirection.x * range + raycastOrigin.position.x, raycastOrigin.position.y), playerLayer);
                 Debug.DrawLine(raycastOrigin.position, new Vector2(raycastDirection.x * range + raycastOrigin.position.x, raycastOrigin.position.y), Color.red);
                 //if (hit.collider != null)
-                Debug.Log("Name: " + hit.collider.name);
-                if (hit.collider.CompareTag("Player")) // well idk wat i DID WIP
-                {
-                    animator.SetBool("playerInRange", true);
-                    animator.SetBool("isMoving", false);
-                    return;
-                }
-                else if (hit.collider == null)
-                {
-                    animator.SetBool("isMoving", false);
-                }
+                // Debug.Log("Name: " + hit.collider.name);
+                if (hit.collider != null)
+                    if (hit.collider.CompareTag("Player")) // well idk wat i DID WIP
+                    {
+                        animator.SetBool("playerInRange", true);
+                        animator.SetBool("isMoving", false);
+                        return;
+                    }
+                    else if (hit.collider == null)
+                    {
+                        animator.SetBool("isMoving", false);
+                    }
             }
             else
             {
@@ -464,6 +490,43 @@ namespace SideScrollerProject
 
         }
         #endregion
+
+
+
+
+
+
+
+
+
+
+        public void Patrol(Animator animator, Transform thisTransform, Vector2 currentPoint, Rigidbody2D rb, float moveSpeed)
+        {
+
+            Flip(thisTransform, currentPoint);
+            Vector2 target = new Vector2(currentPoint.x, thisTransform.position.y);
+            Vector2 newPos = Vector2.MoveTowards(rb.position, target, moveSpeed * Time.fixedDeltaTime);
+            this.gameObject.transform.position = newPos;//rb.velocity = new Vector2(newPos.x, 0);
+            rb.velocity = new Vector2(thisTransform.localScale.x * UnityEngine.Random.Range(0.5f, 1.1f), 0);
+            //rb.MovePosition(newPos);
+            // thisTransform.LeanMoveX(newPos.x,0.5f);
+            //            Debug.Log(thisTransform.position.x <= currentPoint.x);
+
+        }
+        private void Flip(Transform self, Vector2 patrolPoint)
+        {
+            if (self != null)
+                if (self.position.x > patrolPoint.x)
+                {
+                    self.localScale = new Vector3(-1, 1, 1);
+                    // moveSpeed *= 1f;
+                }
+                else
+                {
+                    self.localScale = new Vector3(1, 1, 1);
+                    // moveSpeed *= 1f;
+                }
+        }
         IEnumerator Wait()
         {
             AudioManager.instance.Play("HitSFX");

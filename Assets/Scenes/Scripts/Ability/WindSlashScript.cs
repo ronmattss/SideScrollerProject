@@ -68,7 +68,8 @@ namespace SideScrollerProject
                 if (other.GetComponent<BuffReceiver>() == null)
                     other.gameObject.AddComponent<BuffReceiver>();
                 // b.buffsToGive.Add(instaKill.InitializeBuff(b.receiver));
-                b.GiveBuff(instaKill);
+                 other.gameObject.GetComponent<BuffReceiver>().AddBuff(instaKill.InitializeBuff(other.gameObject));
+                //b.GiveBuff(instaKill);
                 timed = (BuffInstaKill)b.t;
                 enemyStatus = other.GetComponent<Status>();
                 enemyStatus.TakeDamage(damage);

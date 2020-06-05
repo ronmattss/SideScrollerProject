@@ -24,7 +24,7 @@ namespace SideScrollerProject
 
         protected override void ApplyEffect()
         {
-            toKillObj.GetComponent<Status>().TakeDamage(1);
+            toKillObj.GetComponent<Status>().TakeDamage(10);
         }
 
 
