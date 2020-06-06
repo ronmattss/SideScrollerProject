@@ -15,6 +15,7 @@ namespace SideScrollerProject
         public GameObject[] enemiesToBeSpawned;
         public List<Transform> patrolPoints;
         public List<GameObject> spawnedEnemies = new List<GameObject>();
+        public bool lastSpawn = false;
         // Start is called before the first frame update
         void Start()
         {
@@ -33,16 +34,23 @@ namespace SideScrollerProject
         void Update()
         {
             if (waveCounter > waves)
+            {
                 Destroy(this.gameObject);
+                return;
+            }
             else
             {
+
                 if (spawnedEnemies.Count == 0)
                 {
-                    for (; numberToSpawnCounter > 0; numberToSpawnCounter--)
+                    if (waveCounter < waves)
                     {
-                        Spawn();
+                        for (; numberToSpawnCounter > 0; numberToSpawnCounter--)
+                        {
+                            Spawn();
+                        }
+                        numberToSpawnCounter = numberToSpawn;
                     }
-                    numberToSpawnCounter = numberToSpawn;
                     waveCounter++;
                 }
                 else
@@ -64,6 +72,7 @@ namespace SideScrollerProject
                 {
                     Debug.Log("Collection is being Modified");
                 }
+
             }
 
 
@@ -87,13 +96,15 @@ namespace SideScrollerProject
             foreach (var enemy in spawnedEnemies)
             {
                 enemy.transform.parent = null;
-                GameObject x = Instantiate(template, patrolPoints[0].position, Quaternion.identity);
-                GameObject y = Instantiate(template, patrolPoints[1].position, Quaternion.identity);
+                GameObject x = Instantiate(template, new Vector3(patrolPoints[0].position.x, enemy.transform.position.y, 0), Quaternion.identity);
+                GameObject y = Instantiate(template, new Vector3(patrolPoints[1].position.x, enemy.transform.position.y, 0), Quaternion.identity);
                 x.name = "PosA" + enemy.GetInstanceID() + Random.Range(0, 100);
                 y.name = "PosB" + enemy.GetInstanceID() + Random.Range(0, 100);
                 enemy.GetComponent<Status>().pointA = x.transform;
                 enemy.GetComponent<Status>().pointB = y.transform;
                 enemy.GetComponent<Status>().isPatrolling = true;
+                Destroy(x);
+                Destroy(y);
 
             }
         }

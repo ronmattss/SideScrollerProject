@@ -14,6 +14,7 @@ namespace SideScrollerProject
         public GameObject interactText;
         public GameObject someRandomShit;
         public UnityEvent interactEvent;
+        public GameObject player;
 
         public void Start()
         {
@@ -38,6 +39,7 @@ namespace SideScrollerProject
             Debug.Log(other.transform.name);
             if (other.transform.tag == "Player")
             {
+                player = other.gameObject;
                 if (interactText != null)
                 {
                     interactText.SetActive(true);
@@ -65,6 +67,7 @@ namespace SideScrollerProject
                 }
             }
         }
+
 
 
     }

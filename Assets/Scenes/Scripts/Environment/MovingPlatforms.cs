@@ -5,50 +5,93 @@ using UnityEngine;
 public class MovingPlatforms : MonoBehaviour
 {
     // Start is called before the first frame update
-    public GameObject posA;
-    public GameObject posB;
-    private Vector3 pA;
-    private Vector3 pB;
-    Vector3 nextPos;
-    public float speed;
-    public float waitTime;
-    public bool movesVertical;
-    public Rigidbody2D rb;
+    public Vector2 otherPostion;
+    private Vector2 origPosition;
+    private Vector2 nextPos;
+    private Vector2 pA;
+    private Vector2 pB;
+    public bool isOnOrigin = true;
+    public float waitTime = 1;
+    public float timeMoving = 0.5f;
+    public float repeatTime = 2f;
+    public float invokeTime = 1f;
+    public bool teleportToSafePlace = false;
+    public bool moveVertical = true;
+    public float position = 3;
+    public bool spikeMove = true;
 
     List<Vector3> locations = new List<Vector3>();
     Vector3 currentPosition;
     void Start()
     {
-        pA = posA.transform.position;
-        pB = posB.transform.position;
-        currentPosition = this.transform.localPosition;
-        nextPos = pB;
-        posA.transform.parent = null;
-        posB.transform.parent = null;
+        origPosition = this.transform.position;
+        //hidePosition = new Vector2(this.transform.position.x, this.transform.position.y - 3);
+        pA = origPosition;
+        pB = otherPostion;
+        nextPos = pA;
+
+        if (spikeMove)
+            InvokeRepeating("StartCoroutineMethod", invokeTime, repeatTime);
     }
 
     // Update is called once per frame
-    void FixedUpdate()
-    {
-        MovePlatform();
 
-    }
     //       Vector3 currentPosition = this.transform.position;
-
-    //      this.gameObject.transform.position = Vector3.Lerp(currentPosition, locations[locationCount], Mathf.SmoothStep(0f, 1f, Mathf.PingPong(Time.time / secondsForOneLength, 1f)));
-    void MovePlatform()
-    {
-
-
-        this.gameObject.transform.localPosition = Vector3.MoveTowards(transform.localPosition, nextPos, speed * Time.deltaTime);
-
-        if (Vector3.Distance(transform.localPosition, nextPos) <= 0.1)
-            ChangeDirection();
-        // StartCoroutine(Wait());
-    }
     void ChangeDirection()
     {
         nextPos = nextPos != pA ? pA : pB;
+    }
+    void StartCoroutineMethod()
+    {
+        if (moveVertical)
+            StartCoroutine(PlatformMoveVertical());
+        else
+            StartCoroutine(PlatformMoveHorizontal());
+    }
+    IEnumerator PlatformMoveVertical()
+    {
+
+        if (isOnOrigin)
+        {
+            LeanTween.moveY(this.gameObject, this.transform.position.y - position, timeMoving).setEaseInOutSine();
+            StartCoroutine(Wait());
+            isOnOrigin = false;
+        }
+        else
+        {
+            LeanTween.moveY(this.gameObject, origPosition.y, timeMoving).setEaseInOutSine();
+            StartCoroutine(Wait());
+            isOnOrigin = true;
+        }
+        if (isOnOrigin)
+            yield return new WaitForSecondsRealtime(waitTime);
+        //   StartCoroutine(Spikey());
+
+
+    }
+
+    IEnumerator PlatformMoveHorizontal()
+    {
+        if (isOnOrigin)
+        {
+            LeanTween.moveX(this.gameObject, this.transform.position.x - position, timeMoving).setEaseInOutQuad();
+            StartCoroutine(Wait());
+            isOnOrigin = false;
+        }
+        else
+        {
+            LeanTween.moveX(this.gameObject, origPosition.x, timeMoving).setEaseInOutQuad();
+            StartCoroutine(Wait());
+            isOnOrigin = true;
+        }
+        yield return new WaitForSecondsRealtime(waitTime);
+
+    }
+    IEnumerator Wait()
+    {
+
+        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(1);
     }
     private void OnCollisionEnter2D(Collision2D other)
     {
@@ -68,11 +111,5 @@ public class MovingPlatforms : MonoBehaviour
 
 
     // IENumerator
-
-    IEnumerator Wait()
-    {
-        // StopCoroutine(MovePlatform());
-        yield return new WaitForSeconds(waitTime);
-    }
 
 }

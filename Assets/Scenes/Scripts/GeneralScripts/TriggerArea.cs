@@ -13,6 +13,7 @@ public class TriggerArea : MonoBehaviour
 
     public UnityEvent onTriggerEnter;       // you can call GameEvent.instance.DoorwayTriggerEnter here(id)
     public UnityEvent onTriggerExit;
+    public UnityEvent onDestroyEvent;
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.GetType() == typeof(CapsuleCollider2D)&& other.tag == "Player")
@@ -37,6 +38,13 @@ public class TriggerArea : MonoBehaviour
         yield return new WaitForSeconds(0.2f);
         this.gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
         yield return null;
+    }
+    /// <summary>
+    /// This function is called when the MonoBehaviour will be destroyed.
+    /// </summary>
+    void OnDestroy()
+    {
+        onDestroyEvent.Invoke();
     }
 
 

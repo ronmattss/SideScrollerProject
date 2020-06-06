@@ -1,7 +1,28 @@
 fileFormatVersion: 2
 guid: 2ae4eacaeb3960e498c1c86427bcb34c
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 5116752338829078566
+    second: witchSprite2-Sheet-Sheet-Sheet_0
+  - first:
+      213: 6180553786313493143
+    second: witchSprite2-Sheet-Sheet-Sheet_1
+  - first:
+      213: -2477612733280906901
+    second: witchSprite2-Sheet-Sheet-Sheet_2
+  - first:
+      213: -2749993821628461621
+    second: witchSprite2-Sheet-Sheet-Sheet_3
+  - first:
+      213: 3532863052307335970
+    second: witchSprite2-Sheet-Sheet-Sheet_4
+  - first:
+      213: 3673964408271004063
+    second: witchSprite2-Sheet-Sheet-Sheet_5
+  - first:
+      213: 1023392922633909059
+    second: witchSprite2-Sheet-Sheet-Sheet_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -31,7 +52,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -40,12 +61,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 36
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -71,9 +92,180 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: witchSprite2-Sheet-Sheet-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 12
+        width: 43
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6207e87742b520740800000000000000
+      internalID: 5116752338829078566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witchSprite2-Sheet-Sheet-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 12
+        width: 43
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79a49643cecb5c550800000000000000
+      internalID: 6180553786313493143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witchSprite2-Sheet-Sheet-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 11
+        width: 43
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b619ec59850cd9dd0800000000000000
+      internalID: -2477612733280906901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witchSprite2-Sheet-Sheet-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 10
+        width: 43
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcd0157703f06d9d0800000000000000
+      internalID: -2749993821628461621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witchSprite2-Sheet-Sheet-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 10
+        width: 43
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22b81e86a30470130800000000000000
+      internalID: 3532863052307335970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witchSprite2-Sheet-Sheet-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 11
+        width: 43
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f91eb60f92b8cf230800000000000000
+      internalID: 3673964408271004063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witchSprite2-Sheet-Sheet-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 12
+        width: 43
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3433e33e072d33e00800000000000000
+      internalID: 1023392922633909059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

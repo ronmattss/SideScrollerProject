@@ -142,6 +142,7 @@
      <Compile Include="Assets\Scenes\Scripts\Environment\Pickable.cs" />
      <Compile Include="Assets\Scenes\Scripts\Environment\Spawner.cs" />
      <Compile Include="Assets\Scenes\Scripts\Environment\SpikeController.cs" />
+     <Compile Include="Assets\Scenes\Scripts\Events The Event Handler can&apos;t Handle\TeleportPlayer.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\AudioManager.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Buffs\Buff.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Buffs\BuffGiver.cs" />

@@ -377,9 +377,9 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.016920447
+  m_TransitionDuration: 0
   m_TransitionOffset: 0
-  m_ExitTime: 0.9784264
+  m_ExitTime: 0
   m_HasExitTime: 0
   m_HasFixedDuration: 0
   m_InterruptionSource: 0
@@ -971,7 +971,10 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 4
     m_ConditionEvent: Falling
-    m_EventTreshold: -5
+    m_EventTreshold: 0
+  - m_ConditionMode: 1
+    m_ConditionEvent: Jumping
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 3140509573897698427}
   m_Solo: 0
@@ -979,8 +982,8 @@ AnimatorStateTransition:
   m_IsExit: 0
   serializedVersion: 3
   m_TransitionDuration: 0
-  m_TransitionOffset: 0
-  m_ExitTime: 0.75
+  m_TransitionOffset: 0.10441155
+  m_ExitTime: 0.990224
   m_HasExitTime: 1
   m_HasFixedDuration: 1
   m_InterruptionSource: 0

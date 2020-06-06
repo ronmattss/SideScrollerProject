@@ -49,4 +49,9 @@ public class LevelManager : MonoBehaviour
 
 
     }
+
+    public void TeleportPlayer(Vector3 location)
+    {
+        player.transform.position = location;
+    }
 }

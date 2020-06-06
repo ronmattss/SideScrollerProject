@@ -4869,7 +4869,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.45
+      scalar: 0.3
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -6249,8 +6249,8 @@ ParticleSystem:
         m_NumAlphaKeys: 2
   UVModule:
     serializedVersion: 2
-    enabled: 0
-    mode: 0
+    enabled: 1
+    mode: 1
     timeMode: 0
     fps: 30
     frameOverTime:
@@ -6368,7 +6368,14 @@ ParticleSystem:
     uvChannelMask: -1
     rowMode: 1
     sprites:
-    - sprite: {fileID: 0}
+    - sprite: {fileID: 7332429124783556027, guid: 4a7a040a1b5bfc64993ae7a6ac261fee,
+        type: 3}
+    - sprite: {fileID: -4931588185476187501, guid: 4a7a040a1b5bfc64993ae7a6ac261fee,
+        type: 3}
+    - sprite: {fileID: 7610930204718435096, guid: 4a7a040a1b5bfc64993ae7a6ac261fee,
+        type: 3}
+    - sprite: {fileID: -5822104362322622342, guid: 4a7a040a1b5bfc64993ae7a6ac261fee,
+        type: 3}
     flipU: 0
     flipV: 0
   VelocityModule:
@@ -6915,7 +6922,7 @@ ParticleSystem:
     speedModifier:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 1.5
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -11021,8 +11028,8 @@ ParticleSystem:
         m_NumAlphaKeys: 2
   UVModule:
     serializedVersion: 2
-    enabled: 0
-    mode: 0
+    enabled: 1
+    mode: 1
     timeMode: 0
     fps: 30
     frameOverTime:
@@ -11140,6 +11147,10 @@ ParticleSystem:
     uvChannelMask: -1
     rowMode: 1
     sprites:
+    - sprite: {fileID: 7332429124783556027, guid: 4a7a040a1b5bfc64993ae7a6ac261fee,
+        type: 3}
+    - sprite: {fileID: -4931588185476187501, guid: 4a7a040a1b5bfc64993ae7a6ac261fee,
+        type: 3}
     - sprite: {fileID: 0}
     flipU: 0
     flipV: 0
@@ -14468,7 +14479,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5642469677499370797}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.003, y: -1.091, z: -1.4462891}
+  m_LocalPosition: {x: -0.148, y: -0.973, z: -1.4462891}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5642469678187045271}
@@ -14532,6 +14543,7 @@ GameObject:
   - component: {fileID: 3622997279038760955}
   - component: {fileID: 3622997279038760954}
   - component: {fileID: 3622997279038760953}
+  - component: {fileID: 9221021263863542040}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -14546,7 +14558,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5642469678187045275}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -14598,7 +14610,8 @@ SpriteRenderer:
   m_SortingLayerID: -494972417
   m_SortingLayer: 8
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: e46e909ff31da6c45bc6022814e72007, type: 3}
+  m_Sprite: {fileID: 6554137426866347744, guid: d6ea7d5571a5f864499cbf3975ecc909,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -14678,8 +14691,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.18722975}
-  m_Size: {x: 0.54, y: 1.7926233}
+  m_Offset: {x: -0.16204414, y: -0.0039920807}
+  m_Size: {x: 0.51128346, y: 1.9622192}
   m_Direction: 0
 --- !u!114 &5642469678187045264
 MonoBehaviour:
@@ -14756,6 +14769,7 @@ MonoBehaviour:
   playerRenderer: {fileID: 5642469678187045270}
   baseMaterial: {fileID: 2100000, guid: 81a0212976c2fae46917cb24fdac516d, type: 2}
   emissionMaterial: {fileID: 2100000, guid: c7a2b978b3030f14db3a581a930f9f12, type: 2}
+  attackSource: {fileID: 9221021263863542040}
 --- !u!114 &5642469678187045266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14768,6 +14782,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02da6907247e6f64b958a04d6a69898a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lmWalls:
+    serializedVersion: 2
+    m_Bits: 0
+  fJumpVelocity: 18
+  fJumpPressedRememberTime: 0.2
+  fGroundedRememberTime: 0.25
+  fHorizontalAcceleration: 1
+  fHorizontalDampingBasic: 0.79
+  fHorizontalDampingWhenStopping: 1
+  fHorizontalDampingWhenTurning: 1
+  fCutJumpHeight: 0.161
   m_CrouchSpeed: 0.36
   m_MovementSmoothing: 0.05
   m_AirControl: 1
@@ -14780,15 +14805,15 @@ MonoBehaviour:
   m_Grounded: 0
   m_Rigidbody2D: {fileID: 0}
   m_FacingRight: 1
-  m_Velocity: {x: 0, y: 0, z: 0}
   dashSpeed: 30
-  startDashTime: 0.1
+  startDashTime: 0.05
   dashCoolDown: 1
   dashCoolDownStart: 0
   isDashing: 0
   isOnOneWayPlatform: 0
   canGoDown: 0
   playerSprite: {fileID: 5642469678187045270}
+  sprite: {fileID: 3052755089347634624, guid: 1950ce4b19710974db9890f74c98bd0a, type: 3}
   dashMaterial: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   dashAfterImage: {fileID: 5598217501552414462}
   playerVelocity: {x: 0, y: 0}
@@ -14831,7 +14856,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movement: {fileID: 5642469678187045266}
-  runSpeed: 30
+  runSpeed: 150
   dashForce: 50
   horizontalMovement: 0
   attackPoint: {fileID: 5642469677579342954}
@@ -14932,7 +14957,7 @@ MonoBehaviour:
   - {x: -0.2603898, y: -0.6481222, z: 0}
   m_ShapePathHash: 1031613069
   m_Mesh: {fileID: 0}
-  m_InstanceId: 17870
+  m_InstanceId: -38600
 --- !u!114 &3583090393796434138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15124,3 +15149,44 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &9221021263863542040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5642469678187045275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 180ecf9b41d478f468eb3e9083753217, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ImpulseDefinition:
+    m_ImpulseChannel: -1
+    m_RawSignal: {fileID: 11400000, guid: 517b22b290d822c47862b934621367fe, type: 2}
+    m_AmplitudeGain: 1
+    m_FrequencyGain: 50
+    m_RepeatMode: 0
+    m_Randomize: 1
+    m_TimeEnvelope:
+      m_AttackShape:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_DecayShape:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_AttackTime: 0
+      m_SustainTime: 0.2
+      m_DecayTime: 0.7
+      m_ScaleWithImpact: 1
+      m_HoldForever: 0
+    m_ImpactRadius: 100
+    m_DirectionMode: 0
+    m_DissipationMode: 2
+    m_DissipationDistance: 1000
