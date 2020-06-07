@@ -133,12 +133,19 @@ namespace SideScrollerProject
 
 
         void Update()
-        {   // if player is not on Sight
+        {
 
             CheckGround();
+            // if player is not on Sight
             if (!animator.GetBool("playerOnSight"))
             {
                 ScanEnemy(playerLayer);
+            }
+            else if (target != null && isRange)
+            {
+
+                animator.SetBool("isMoving", false);
+                Flip(this.transform,target.position);
             }
             else
             {
@@ -335,7 +342,7 @@ namespace SideScrollerProject
                         animator.SetBool("playerOnSight", true);
                         return;
                     }
-                    else if (hit.collider == null)
+                    else if (hit.collider == null && target != null)
                     {
                         animator.SetBool("isMoving", false);
                     }
