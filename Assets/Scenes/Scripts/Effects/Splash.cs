@@ -16,13 +16,14 @@ namespace SideScrollerProject
 
         public override void OnExit(BaseState state, Animator animator, AnimatorStateInfo stateInfo)
         {
-            animator.gameObject.SetActive(false);
+                Destroy(animator.gameObject);
+
         }
 
 
         public override void UpdateAbility(BaseState state, Animator animator, AnimatorStateInfo stateInfo)
         {
-
+          
         }
     }
 }

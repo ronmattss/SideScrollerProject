@@ -14,6 +14,7 @@ public class TriggerArea : MonoBehaviour
     public UnityEvent onTriggerEnter;       // you can call GameEvent.instance.DoorwayTriggerEnter here(id)
     public UnityEvent onTriggerExit;
     public UnityEvent onDestroyEvent;
+    public UnityEvent onCallEvent;
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.GetType() == typeof(CapsuleCollider2D)&& other.tag == "Player")
@@ -29,7 +30,10 @@ public class TriggerArea : MonoBehaviour
             if (onTriggerExit != null)
                 onTriggerExit.Invoke();
     }
-
+    public void TriggerEvent()
+    {
+        onCallEvent.Invoke();
+    }
 
 
     IEnumerator Wait()

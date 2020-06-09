@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: BlinkSlash
   m_EditorClassIdentifier: 
   duration: 0
-  whenToCast: 0.8
+  whenToCast: 0.95
   abilityName: BlinkStrike
   animationParameter: isBlinking

@@ -1,7 +1,364 @@
 fileFormatVersion: 2
 guid: 70b464ebbbc2fb74193123dabcbbc88a
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 4023297001301081684
+    second: OmniSlash Effects Sheet_0
+  - first:
+      213: 1090678295078351453
+    second: OmniSlash Effects Sheet_1
+  - first:
+      213: 2293583394716426245
+    second: OmniSlash Effects Sheet_2
+  - first:
+      213: 6729499714282259714
+    second: OmniSlash Effects Sheet_3
+  - first:
+      213: 1287645232735827761
+    second: OmniSlash Effects Sheet_4
+  - first:
+      213: 5898206141613780389
+    second: OmniSlash Effects Sheet_5
+  - first:
+      213: -6130860779709029753
+    second: OmniSlash Effects Sheet_6
+  - first:
+      213: -2491911965059452172
+    second: OmniSlash Effects Sheet_7
+  - first:
+      213: -8344459599159488266
+    second: OmniSlash Effects Sheet_8
+  - first:
+      213: 6432817018151795327
+    second: OmniSlash Effects Sheet_9
+  - first:
+      213: 7412444295836684004
+    second: OmniSlash Effects Sheet_10
+  - first:
+      213: -2331003671757576234
+    second: OmniSlash Effects Sheet_11
+  - first:
+      213: -9184673653244569864
+    second: OmniSlash Effects Sheet_12
+  - first:
+      213: -8114139627414426176
+    second: OmniSlash Effects Sheet_13
+  - first:
+      213: -5775367656098799314
+    second: OmniSlash Effects Sheet_14
+  - first:
+      213: -3625613415339477383
+    second: OmniSlash Effects Sheet_15
+  - first:
+      213: -9149956488692087726
+    second: OmniSlash Effects Sheet_16
+  - first:
+      213: 6752551465120062458
+    second: OmniSlash Effects Sheet_17
+  - first:
+      213: -787731109081606625
+    second: OmniSlash Effects Sheet_18
+  - first:
+      213: -2928441393097034417
+    second: OmniSlash Effects Sheet_19
+  - first:
+      213: -7673303843279194759
+    second: OmniSlash Effects Sheet_20
+  - first:
+      213: 7820937589924669714
+    second: OmniSlash Effects Sheet_21
+  - first:
+      213: 1547461717149381329
+    second: OmniSlash Effects Sheet_22
+  - first:
+      213: 2095276900395814320
+    second: OmniSlash Effects Sheet_23
+  - first:
+      213: 26190465091912838
+    second: OmniSlash Effects Sheet_24
+  - first:
+      213: 449964399901717734
+    second: OmniSlash Effects Sheet_25
+  - first:
+      213: 3989870767307966299
+    second: OmniSlash Effects Sheet_26
+  - first:
+      213: 60527769954510040
+    second: OmniSlash Effects Sheet_27
+  - first:
+      213: 5959232898274665746
+    second: OmniSlash Effects Sheet_28
+  - first:
+      213: 1474078835890762357
+    second: OmniSlash Effects Sheet_29
+  - first:
+      213: -7999014108008085437
+    second: OmniSlash Effects Sheet_30
+  - first:
+      213: -1785103169772568898
+    second: OmniSlash Effects Sheet_31
+  - first:
+      213: -8008273085039916213
+    second: OmniSlash Effects Sheet_32
+  - first:
+      213: -5802122403332382990
+    second: OmniSlash Effects Sheet_33
+  - first:
+      213: -4203881587990222494
+    second: OmniSlash Effects Sheet_34
+  - first:
+      213: 7275653691750772419
+    second: OmniSlash Effects Sheet_35
+  - first:
+      213: 5608543300706690729
+    second: OmniSlash Effects Sheet_36
+  - first:
+      213: -1023831878785508173
+    second: OmniSlash Effects Sheet_37
+  - first:
+      213: -1258304465262329060
+    second: OmniSlash Effects Sheet_38
+  - first:
+      213: 7951798739348348562
+    second: OmniSlash Effects Sheet_39
+  - first:
+      213: -151534447508322897
+    second: OmniSlash Effects Sheet_40
+  - first:
+      213: -1670812083794898394
+    second: OmniSlash Effects Sheet_41
+  - first:
+      213: 3386984375162209343
+    second: OmniSlash Effects Sheet_42
+  - first:
+      213: 1679420661300202508
+    second: OmniSlash Effects Sheet_43
+  - first:
+      213: 5949321045877388614
+    second: OmniSlash Effects Sheet_44
+  - first:
+      213: 5587817737857862862
+    second: OmniSlash Effects Sheet_45
+  - first:
+      213: 5149006432301064031
+    second: OmniSlash Effects Sheet_46
+  - first:
+      213: 2403281517090413406
+    second: OmniSlash Effects Sheet_47
+  - first:
+      213: -1760169144532835242
+    second: OmniSlash Effects Sheet_48
+  - first:
+      213: 628001023339546626
+    second: OmniSlash Effects Sheet_49
+  - first:
+      213: -4326934659193568144
+    second: OmniSlash Effects Sheet_50
+  - first:
+      213: -2991550820713417599
+    second: OmniSlash Effects Sheet_51
+  - first:
+      213: 7262787145493037817
+    second: OmniSlash Effects Sheet_52
+  - first:
+      213: -6808363405803533266
+    second: OmniSlash Effects Sheet_53
+  - first:
+      213: -7119373894308803676
+    second: OmniSlash Effects Sheet_54
+  - first:
+      213: -5843805571061392927
+    second: OmniSlash Effects Sheet_55
+  - first:
+      213: 443696508980490333
+    second: OmniSlash Effects Sheet_56
+  - first:
+      213: 7339367536147701703
+    second: OmniSlash Effects Sheet_57
+  - first:
+      213: 5767379133531061047
+    second: OmniSlash Effects Sheet_58
+  - first:
+      213: -7398504846007239627
+    second: OmniSlash Effects Sheet_59
+  - first:
+      213: -4250298994583267054
+    second: OmniSlash Effects Sheet_60
+  - first:
+      213: 2624065602804465964
+    second: OmniSlash Effects Sheet_61
+  - first:
+      213: 651514742986797678
+    second: OmniSlash Effects Sheet_62
+  - first:
+      213: 5132298175667051226
+    second: OmniSlash Effects Sheet_63
+  - first:
+      213: -6194171209494568982
+    second: OmniSlash Effects Sheet_64
+  - first:
+      213: 7887599220198175266
+    second: OmniSlash Effects Sheet_65
+  - first:
+      213: 7988191671698301620
+    second: OmniSlash Effects Sheet_66
+  - first:
+      213: -4648171896314320231
+    second: OmniSlash Effects Sheet_67
+  - first:
+      213: 1275054347326527514
+    second: OmniSlash Effects Sheet_68
+  - first:
+      213: 2280543196772937639
+    second: OmniSlash Effects Sheet_69
+  - first:
+      213: -1474701287332918760
+    second: OmniSlash Effects Sheet_70
+  - first:
+      213: -2783288328814104376
+    second: OmniSlash Effects Sheet_71
+  - first:
+      213: -7318994017223937029
+    second: OmniSlash Effects Sheet_72
+  - first:
+      213: -6785194917182946872
+    second: OmniSlash Effects Sheet_73
+  - first:
+      213: 7546410205737294768
+    second: OmniSlash Effects Sheet_74
+  - first:
+      213: 4667634063490062985
+    second: OmniSlash Effects Sheet_75
+  - first:
+      213: -820096703471526972
+    second: OmniSlash Effects Sheet_76
+  - first:
+      213: 3868550432081592129
+    second: OmniSlash Effects Sheet_77
+  - first:
+      213: -7127740954591416008
+    second: OmniSlash Effects Sheet_78
+  - first:
+      213: -4378481326885496431
+    second: OmniSlash Effects Sheet_79
+  - first:
+      213: 5359527435430068987
+    second: OmniSlash Effects Sheet_80
+  - first:
+      213: -8567752285817841189
+    second: OmniSlash Effects Sheet_81
+  - first:
+      213: -6155711568144527219
+    second: OmniSlash Effects Sheet_82
+  - first:
+      213: 6823243663399562201
+    second: OmniSlash Effects Sheet_83
+  - first:
+      213: 3053242530175821565
+    second: OmniSlash Effects Sheet_84
+  - first:
+      213: 5002064113015743721
+    second: OmniSlash Effects Sheet_85
+  - first:
+      213: -5508686508077559023
+    second: OmniSlash Effects Sheet_86
+  - first:
+      213: -5818342736783123152
+    second: OmniSlash Effects Sheet_87
+  - first:
+      213: -3328535364856173357
+    second: OmniSlash Effects Sheet_88
+  - first:
+      213: 2338212515015558949
+    second: OmniSlash Effects Sheet_89
+  - first:
+      213: 5516257806719743170
+    second: OmniSlash Effects Sheet_90
+  - first:
+      213: -8270384560478005039
+    second: OmniSlash Effects Sheet_91
+  - first:
+      213: 4069918060257097525
+    second: OmniSlash Effects Sheet_92
+  - first:
+      213: -4617420650059902116
+    second: OmniSlash Effects Sheet_93
+  - first:
+      213: 8612704910476947233
+    second: OmniSlash Effects Sheet_94
+  - first:
+      213: -4890957355091332396
+    second: OmniSlash Effects Sheet_95
+  - first:
+      213: 2278444611144521933
+    second: OmniSlash Effects Sheet_96
+  - first:
+      213: 5047394413056049387
+    second: OmniSlash Effects Sheet_97
+  - first:
+      213: 725883444044494787
+    second: OmniSlash Effects Sheet_98
+  - first:
+      213: 4925500800418011257
+    second: OmniSlash Effects Sheet_99
+  - first:
+      213: 2031425523415644044
+    second: OmniSlash Effects Sheet_100
+  - first:
+      213: 3712339318529866275
+    second: OmniSlash Effects Sheet_101
+  - first:
+      213: 3273779059908546826
+    second: OmniSlash Effects Sheet_102
+  - first:
+      213: -2622385989676416447
+    second: OmniSlash Effects Sheet_103
+  - first:
+      213: -8512034185899550660
+    second: OmniSlash Effects Sheet_104
+  - first:
+      213: 1491138522940307168
+    second: OmniSlash Effects Sheet_105
+  - first:
+      213: 1103888749141556071
+    second: OmniSlash Effects Sheet_106
+  - first:
+      213: -5360245116671100914
+    second: OmniSlash Effects Sheet_107
+  - first:
+      213: -7017696019117976501
+    second: OmniSlash Effects Sheet_108
+  - first:
+      213: -7690357195281416713
+    second: OmniSlash Effects Sheet_109
+  - first:
+      213: -8261203169662500073
+    second: OmniSlash Effects Sheet_110
+  - first:
+      213: -6307955582540930915
+    second: OmniSlash Effects Sheet_111
+  - first:
+      213: 947486198257686753
+    second: OmniSlash Effects Sheet_112
+  - first:
+      213: 3970409264186755338
+    second: OmniSlash Effects Sheet_113
+  - first:
+      213: -8672080683280929062
+    second: OmniSlash Effects Sheet_114
+  - first:
+      213: -8075939908700538766
+    second: OmniSlash Effects Sheet_115
+  - first:
+      213: 7764397203547047999
+    second: OmniSlash Effects Sheet_116
+  - first:
+      213: -8976163505861073824
+    second: OmniSlash Effects Sheet_117
+  - first:
+      213: -3690469794780935949
+    second: OmniSlash Effects Sheet_118
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -31,21 +388,21 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
-    wrapU: 1
-    wrapV: 1
-    wrapW: 1
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 50
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -64,7 +421,31 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -73,7 +454,2506 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 1298
+        y: 49
+        width: 35
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45ef17c6e4f95d730800000000000000
+      internalID: 4023297001301081684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 1543
+        y: 49
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d52bf56712ed22f00800000000000000
+      internalID: 1090678295078351453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1788
+        y: 20
+        width: 46
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 500aec012f174df10800000000000000
+      internalID: 2293583394716426245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 2038
+        y: 20
+        width: 46
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20503e1f55cf36d50800000000000000
+      internalID: 6729499714282259714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 2194
+        y: 46
+        width: 40
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 137b1f55482aed110800000000000000
+      internalID: 1287645232735827761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 2290
+        y: 20
+        width: 45
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5adaaea5c33aad150800000000000000
+      internalID: 5898206141613780389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 2447
+        y: 46
+        width: 41
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 782a1128a9ecaeaa0800000000000000
+      internalID: -6130860779709029753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 2503
+        y: 47
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f2f51f3543fa6dd0800000000000000
+      internalID: -2491911965059452172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 2545
+        y: 20
+        width: 46
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f010859436823c80800000000000000
+      internalID: -8344459599159488266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 2704
+        y: 46
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7a7608def4f54950800000000000000
+      internalID: 6432817018151795327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 2719
+        y: 8
+        width: 85
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ee47b270da4ed660800000000000000
+      internalID: 7412444295836684004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 2802
+        y: 15
+        width: 52
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d722ceb28c96afd0800000000000000
+      internalID: -2331003671757576234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 2917
+        y: 81
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f6d77099fb798080800000000000000
+      internalID: -9184673653244569864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 2976
+        y: 46
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cdea0adff8c46f80800000000000000
+      internalID: -8114139627414426176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 2991
+        y: 8
+        width: 95
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2163fa47b5c9dfa0800000000000000
+      internalID: -5775367656098799314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 3076
+        y: 15
+        width: 54
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 976bccddecb3fadc0800000000000000
+      internalID: -3625613415339477383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 3187
+        y: 81
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2544a355d03d40180800000000000000
+      internalID: -9149956488692087726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 3257
+        y: 78
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afb560ee7c1e5bd50800000000000000
+      internalID: 6752551465120062458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 3270
+        y: 49
+        width: 22
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f169aa8daba6115f0800000000000000
+      internalID: -787731109081606625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 3285
+        y: 8
+        width: 63
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f45b6ea81161c57d0800000000000000
+      internalID: -2928441393097034417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 3355
+        y: 68
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97534b73fc2f28590800000000000000
+      internalID: -7673303843279194759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 3373
+        y: 83
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 219a5f90d4d898c60800000000000000
+      internalID: 7820937589924669714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 3380
+        y: 80
+        width: 5
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d27432ab30b97510800000000000000
+      internalID: 1547461717149381329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 3385
+        y: 78
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bd8c2a5d3be31d10800000000000000
+      internalID: 2095276900395814320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 24
+        width: 211
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6844e48d61c0d5000800000000000000
+      internalID: 26190465091912838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 19
+        width: 206
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e4b6b9dc389e3600800000000000000
+      internalID: 449964399901717734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 42
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b574b19d25ede5730800000000000000
+      internalID: 3989870767307966299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 15
+        width: 130
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d46f23afa907d000800000000000000
+      internalID: 60527769954510040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 42
+        width: 29
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 215ab736fb273b250800000000000000
+      internalID: 5959232898274665746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 46
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 572b03824eaf47410800000000000000
+      internalID: 1474078835890762357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 47
+        width: 64
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34807d2ac0bcdf090800000000000000
+      internalID: -7999014108008085437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 42
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebe384eff1a0a37e0800000000000000
+      internalID: -1785103169772568898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 46
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4bcfdd0f06ecd090800000000000000
+      internalID: -8008273085039916213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 1256
+        y: 47
+        width: 40
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fe99064a68ba7fa0800000000000000
+      internalID: -5802122403332382990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 1379
+        y: 39
+        width: 30
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 269a90608ffc8a5c0800000000000000
+      internalID: -4203881587990222494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 1445
+        y: 46
+        width: 40
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ce609d0c7058f460800000000000000
+      internalID: 7275653691750772419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 1501
+        y: 47
+        width: 39
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a6e40aaa6c85dd40800000000000000
+      internalID: 5608543300706690729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 1624
+        y: 42
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bcd44ba45e9ac1f0800000000000000
+      internalID: -1023831878785508173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 1690
+        y: 46
+        width: 41
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1340c071ca998ee0800000000000000
+      internalID: -1258304465262329060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 1746
+        y: 47
+        width: 39
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29ed140b2d67a5e60800000000000000
+      internalID: 7951798739348348562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 1874
+        y: 42
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa5080d0934a5edf0800000000000000
+      internalID: -151534447508322897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 46
+        width: 41
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62299fa134510d8e0800000000000000
+      internalID: -1670812083794898394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 1996
+        y: 47
+        width: 39
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f34875d185cf00f20800000000000000
+      internalID: 3386984375162209343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 2126
+        y: 42
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0c004981308e4710800000000000000
+      internalID: 1679420661300202508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 2249
+        y: 47
+        width: 39
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 645f64a68fb309250800000000000000
+      internalID: 5949321045877388614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 2379
+        y: 41
+        width: 34
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecc05a680aaeb8d40800000000000000
+      internalID: 5587817737857862862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 2631
+        y: 39
+        width: 46
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5f918fc112f47740800000000000000
+      internalID: 5149006432301064031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 2903
+        y: 34
+        width: 46
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5b9f618ecb2a5120800000000000000
+      internalID: 2403281517090413406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 3177
+        y: 66
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65464832d7f9297e0800000000000000
+      internalID: -1760169144532835242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 3184
+        y: 69
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2084cba7a9b17b800800000000000000
+      internalID: 628001023339546626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 3197
+        y: 69
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07401704ad3a3f3c0800000000000000
+      internalID: -4326934659193568144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 3202
+        y: 71
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18439d3e060eb76d0800000000000000
+      internalID: -2991550820713417599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 3204
+        y: 56
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f2c26ecd6a9ac460800000000000000
+      internalID: 7262787145493037817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 3251
+        y: 69
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2ccf4ffd85d381a0800000000000000
+      internalID: -6808363405803533266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 3346
+        y: 66
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4abc886c927e23d90800000000000000
+      internalID: -7119373894308803676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 3383
+        y: 49
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e9df608bc1a6eea0800000000000000
+      internalID: -5843805571061392927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 3174
+        y: 56
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d50fcd5cf93582600800000000000000
+      internalID: 443696508980490333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_57
+      rect:
+        serializedVersion: 2
+        x: 3251
+        y: 64
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cf1e1473ebaad560800000000000000
+      internalID: 7339367536147701703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_58
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 19
+        width: 32
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73b7e1bd3c8d90050800000000000000
+      internalID: 5767379133531061047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_59
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 19
+        width: 34
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53c7bb0aa0b335990800000000000000
+      internalID: -7398504846007239627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_60
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 19
+        width: 34
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2191aae5597e305c0800000000000000
+      internalID: -4250298994583267054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_61
+      rect:
+        serializedVersion: 2
+        x: 1406
+        y: 14
+        width: 36
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c214b7a43cd8a6420800000000000000
+      internalID: 2624065602804465964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_62
+      rect:
+        serializedVersion: 2
+        x: 1548
+        y: 20
+        width: 41
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6278a5f435aa0900800000000000000
+      internalID: 651514742986797678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_63
+      rect:
+        serializedVersion: 2
+        x: 1651
+        y: 19
+        width: 34
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ada150aaff5993740800000000000000
+      internalID: 5132298175667051226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_64
+      rect:
+        serializedVersion: 2
+        x: 1901
+        y: 17
+        width: 34
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aefdf146a12e90aa0800000000000000
+      internalID: -6194171209494568982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_65
+      rect:
+        serializedVersion: 2
+        x: 2155
+        y: 19
+        width: 33
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2227f8253b1667d60800000000000000
+      internalID: 7887599220198175266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_66
+      rect:
+        serializedVersion: 2
+        x: 2408
+        y: 15
+        width: 34
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b2af4d8002cbde60800000000000000
+      internalID: 7988191671698301620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_67
+      rect:
+        serializedVersion: 2
+        x: 2667
+        y: 10
+        width: 37
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99a2b3199406e7fb0800000000000000
+      internalID: -4648171896314320231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_68
+      rect:
+        serializedVersion: 2
+        x: 2902
+        y: 49
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1817b16c27e1b110800000000000000
+      internalID: 1275054347326527514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_69
+      rect:
+        serializedVersion: 2
+        x: 2935
+        y: 10
+        width: 43
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7afa59264fd16af10800000000000000
+      internalID: 2280543196772937639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_70
+      rect:
+        serializedVersion: 2
+        x: 2966
+        y: 54
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81ac5b21efec88be0800000000000000
+      internalID: -1474701287332918760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_71
+      rect:
+        serializedVersion: 2
+        x: 3172
+        y: 37
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c07b8de206cf59d0800000000000000
+      internalID: -2783288328814104376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_72
+      rect:
+        serializedVersion: 2
+        x: 3194
+        y: 29
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf3782218b5bd6a90800000000000000
+      internalID: -7318994017223937029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_73
+      rect:
+        serializedVersion: 2
+        x: 3224
+        y: 46
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c1468d1c2526d1a0800000000000000
+      internalID: -6785194917182946872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_74
+      rect:
+        serializedVersion: 2
+        x: 3231
+        y: 44
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bb9a5a791c3ab860800000000000000
+      internalID: 7546410205737294768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_75
+      rect:
+        serializedVersion: 2
+        x: 3236
+        y: 49
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98a96d75374c6c040800000000000000
+      internalID: 4667634063490062985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_76
+      rect:
+        serializedVersion: 2
+        x: 3243
+        y: 44
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cb5c1ca46e6e94f0800000000000000
+      internalID: -820096703471526972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_77
+      rect:
+        serializedVersion: 2
+        x: 3263
+        y: 46
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14f38eb1f1adfa530800000000000000
+      internalID: 3868550432081592129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_78
+      rect:
+        serializedVersion: 2
+        x: 3273
+        y: 47
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 831339ebd5d251d90800000000000000
+      internalID: -7127740954591416008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_79
+      rect:
+        serializedVersion: 2
+        x: 3349
+        y: 46
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1991f4f6e628c33c0800000000000000
+      internalID: -4378481326885496431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_80
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 44
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf205c87ecdd06a40800000000000000
+      internalID: 5359527435430068987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_81
+      rect:
+        serializedVersion: 2
+        x: 1303
+        y: 20
+        width: 41
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd95940a0ba391980800000000000000
+      internalID: -8567752285817841189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_82
+      rect:
+        serializedVersion: 2
+        x: 2462
+        y: 8
+        width: 83
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d809bf071f4829aa0800000000000000
+      internalID: -6155711568144527219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_83
+      rect:
+        serializedVersion: 2
+        x: 3189
+        y: 42
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dbadd4f5f701be50800000000000000
+      internalID: 6823243663399562201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_84
+      rect:
+        serializedVersion: 2
+        x: 3214
+        y: 34
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df6ae3887eb4f5a20800000000000000
+      internalID: 3053242530175821565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_85
+      rect:
+        serializedVersion: 2
+        x: 3236
+        y: 37
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e468080fc6ea6540800000000000000
+      internalID: 5002064113015743721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_86
+      rect:
+        serializedVersion: 2
+        x: 3285
+        y: 37
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 113dc03aec63d83b0800000000000000
+      internalID: -5508686508077559023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_87
+      rect:
+        serializedVersion: 2
+        x: 3351
+        y: 31
+        width: 22
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03d51989b18114fa0800000000000000
+      internalID: -5818342736783123152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_88
+      rect:
+        serializedVersion: 2
+        x: 3392
+        y: 42
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dc2c6398baaec1d0800000000000000
+      internalID: -3328535364856173357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_89
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 34
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52700eed4eff27020800000000000000
+      internalID: 2338212515015558949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_90
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 37
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c47103bf3fad8c40800000000000000
+      internalID: 5516257806719743170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_91
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 15
+        width: 51
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d855d48f01b93d80800000000000000
+      internalID: -8270384560478005039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_92
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 14
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 537329699e04b7830800000000000000
+      internalID: 4069918060257097525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_93
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 15
+        width: 51
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5350a60260abefb0800000000000000
+      internalID: -4617420650059902116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_94
+      rect:
+        serializedVersion: 2
+        x: 1267
+        y: 14
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12fad38eb79768770800000000000000
+      internalID: 8612704910476947233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_95
+      rect:
+        serializedVersion: 2
+        x: 1460
+        y: 14
+        width: 51
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d2723ee234df1cb0800000000000000
+      internalID: -4890957355091332396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_96
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 14
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc81ca75d49ae9f10800000000000000
+      internalID: 2278444611144521933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_97
+      rect:
+        serializedVersion: 2
+        x: 1705
+        y: 15
+        width: 51
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be04f77f972fb0640800000000000000
+      internalID: 5047394413056049387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_98
+      rect:
+        serializedVersion: 2
+        x: 1758
+        y: 14
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c7fb9e752bd21a00800000000000000
+      internalID: 725883444044494787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_99
+      rect:
+        serializedVersion: 2
+        x: 1955
+        y: 10
+        width: 51
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97851dda1e4ea5440800000000000000
+      internalID: 4925500800418011257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_100
+      rect:
+        serializedVersion: 2
+        x: 2008
+        y: 14
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c87f9d620c2113c10800000000000000
+      internalID: 2031425523415644044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_101
+      rect:
+        serializedVersion: 2
+        x: 2207
+        y: 12
+        width: 51
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32a30bef0f0e48330800000000000000
+      internalID: 3712339318529866275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_102
+      rect:
+        serializedVersion: 2
+        x: 2261
+        y: 14
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0116f2b5bcce6d20800000000000000
+      internalID: 3273779059908546826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_103
+      rect:
+        serializedVersion: 2
+        x: 3263
+        y: 32
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 142406d16d96b9bd0800000000000000
+      internalID: -2622385989676416447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_104
+      rect:
+        serializedVersion: 2
+        x: 3273
+        y: 34
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c38d971b10e2fd980800000000000000
+      internalID: -8512034185899550660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_105
+      rect:
+        serializedVersion: 2
+        x: 3349
+        y: 37
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e6f1c2169691b410800000000000000
+      internalID: 1491138522940307168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_106
+      rect:
+        serializedVersion: 2
+        x: 3383
+        y: 19
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76bf12cf7fcc15f00800000000000000
+      internalID: 1103888749141556071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_107
+      rect:
+        serializedVersion: 2
+        x: 3231
+        y: 12
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e08fbc757759c95b0800000000000000
+      internalID: -5360245116671100914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_108
+      rect:
+        serializedVersion: 2
+        x: 3263
+        y: 27
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b44dcc6e6a22c9e90800000000000000
+      internalID: -7017696019117976501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_109
+      rect:
+        serializedVersion: 2
+        x: 3268
+        y: 27
+        width: 9
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fdb16b40ec564590800000000000000
+      internalID: -7690357195281416713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_110
+      rect:
+        serializedVersion: 2
+        x: 3314
+        y: 8
+        width: 35
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7138fe6ac7f4a5d80800000000000000
+      internalID: -8261203169662500073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_111
+      rect:
+        serializedVersion: 2
+        x: 3363
+        y: 15
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d90a4b391d3a578a0800000000000000
+      internalID: -6307955582540930915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_112
+      rect:
+        serializedVersion: 2
+        x: 3206
+        y: 15
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e81cb46da5262d00800000000000000
+      internalID: 947486198257686753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_113
+      rect:
+        serializedVersion: 2
+        x: 3262
+        y: 12
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0985cc803ab91730800000000000000
+      internalID: 3970409264186755338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_114
+      rect:
+        serializedVersion: 2
+        x: 3275
+        y: 12
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ade6381b09496a780800000000000000
+      internalID: -8672080683280929062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_115
+      rect:
+        serializedVersion: 2
+        x: 3351
+        y: 20
+        width: 9
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 278f082f07f7cef80800000000000000
+      internalID: -8075939908700538766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_116
+      rect:
+        serializedVersion: 2
+        x: 3219
+        y: 10
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f38457c7e1ea0cb60800000000000000
+      internalID: 7764397203547047999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_117
+      rect:
+        serializedVersion: 2
+        x: 3241
+        y: 10
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 064635369d24e6380800000000000000
+      internalID: -8976163505861073824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OmniSlash Effects Sheet_118
+      rect:
+        serializedVersion: 2
+        x: 3280
+        y: 8
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f806cb4641d8ccc0800000000000000
+      internalID: -3690469794780935949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

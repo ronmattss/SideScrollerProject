@@ -25,6 +25,10 @@ namespace SideScrollerProject
         List<GameObject> listOfDamagables = new List<GameObject>();
         public LayerMask whatToHit;
         public GameObject splash;
+        public GameObject popUp;
+        public GameObject omniHit;
+        public float whenToTriggerSplash = 0;
+        public float whenToTriggerFX = 0;
         public override void Initialize(GameObject obj)
         {
             parent = obj;
@@ -59,6 +63,7 @@ namespace SideScrollerProject
 
             }
             Debug.Log(listOfDamagables.Count);
+            parent.transform.GetChild(6).gameObject.SetActive(true);
             //   RaycastHit2D hit = Physics2D.Raycast(raycastOrigin.position, new Vector3(finalTargetPosition.x, finalTargetPosition.y, 0) - raycastOrigin.position, Mathf.Infinity, playerLayer);
         }
         public bool isInList(string name)
@@ -80,10 +85,7 @@ namespace SideScrollerProject
                 enemy.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
                 if (enemy.TryGetComponent(out Animator anim))
                 {
-                    anim.SetBool("isIdle", true);
-                    anim.SetBool("isMoving", false);
-                    anim.SetBool("playerOnSight", false);
-                    anim.SetBool("playerInRange", false);
+                    anim.SetBool("isBeingAttacked", true);
                 }
             }
         }
@@ -141,17 +143,75 @@ namespace SideScrollerProject
                 {
                     b.hit = 0;
                 }
+                if (enemy.TryGetComponent(out Animator anim))
+                {
+                    anim.SetBool("isBeingAttacked", false);
+                }
 
 
             }
             listOfDamagables.Clear();
+  //          Destroy(popUp.gameObject);
+//            Destroy(splash.gameObject);
         }
         #endregion
         public void SetSplash()
         {
             GameObject splashObject = Instantiate(splash, this.parent.transform.position, Quaternion.identity);
             splashObject.transform.parent = Camera.main.transform;
+            splashObject.transform.localPosition = new Vector3(-0.029f, -0.054f, 10);
+            splashObject.transform.localScale = new Vector3(1.265934f, 1.308018f, 1);
+
+            // ScaleSplash(splashObject);
             splashObject.SetActive(true);
+        }
+        public void SpawnHit()
+        {
+            int last = listOfDamagables.Count;
+            GameObject x = Instantiate(omniHit, listOfDamagables[0].transform.position, Quaternion.identity);
+            x.transform.localScale = new Vector3(Vector3.Distance(listOfDamagables[0].transform.position, listOfDamagables[last-1].transform.position), 3f, 1);
+
+
+        }
+        public void OpenPopUp()
+        {
+            Debug.Log("pop");
+            GameObject pop = Instantiate(popUp, this.parent.transform.position, Quaternion.identity);
+            pop.transform.parent = Camera.main.transform;
+            pop.transform.localPosition = new Vector3(-2.51f, -1.44f, 10);
+            if (parent.transform.localScale.x == -1)
+            {
+                pop.transform.localPosition = new Vector3(2.47f, -1.44f, 10);
+                pop.transform.localScale = new Vector3(-1, 1, 1);
+            }
+            // ScaleSplash(pop);
+            pop.SetActive(true);
+        }
+
+        public void ScaleSplash(GameObject obj)
+        {
+            Transform transform = obj.transform;
+            SpriteRenderer sr = obj.GetComponent<SpriteRenderer>();
+            if (sr == null) return;
+
+            transform.localScale = new Vector3(1, 1, 1);
+
+            float width = sr.sprite.bounds.size.x;
+            float height = sr.sprite.bounds.size.y;
+
+
+            float worldScreenHeight = Camera.main.orthographicSize * 2f;
+            float worldScreenWidth = worldScreenHeight / Screen.height * Screen.width;
+
+            Vector3 xWidth = transform.localScale;
+            xWidth.x = worldScreenWidth / width;
+            transform.localScale = xWidth;
+            //transform.localScale.x = worldScreenWidth / width;
+            Vector3 yHeight = transform.localScale;
+            yHeight.y = worldScreenHeight / height;
+            transform.localScale = yHeight;
+            //transform.localScale.y = worldScreenHeight / height;
+
         }
 
         // Update is called once per frame

@@ -23,4 +23,8 @@ MonoBehaviour:
   whatToHit:
     serializedVersion: 2
     m_Bits: 33280
-  splash: {fileID: 6306605076042603286, guid: ae54adf26e76265448cbe2759afa2f17, type: 3}
+  splash: {fileID: 6800945782239864337, guid: 39b00553f5d17964d998e2a5a4acb7eb, type: 3}
+  popUp: {fileID: 877090640595105126, guid: 0bea57f5c5221524c8b1cd90ecb99671, type: 3}
+  omniHit: {fileID: 4513102058164686434, guid: 0ab7f656f997b3a4b8202050a0261be5, type: 3}
+  whenToTriggerSplash: 0
+  whenToTriggerFX: 0

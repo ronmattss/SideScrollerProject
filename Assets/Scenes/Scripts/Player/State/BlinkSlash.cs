@@ -11,6 +11,7 @@ namespace SideScrollerProject
         public float whenToCast = 0;
         public string abilityName = "ability";
         public string animationParameter = "isBlinking";
+        private bool hit = true;
         AbilityManager abilityCaster;
         AlphaStrike strike;
         public override void OnEnter(BaseState state, Animator animator, AnimatorStateInfo stateInfo)
@@ -24,7 +25,7 @@ namespace SideScrollerProject
                     if (abilityName == "BlinkStrike")
                     {
                         strike = (AlphaStrike)abilityCaster.GetAbility();
-
+                        strike.SpawnHit();
                         // animator.GetComponent<PlayerStatus>().playerRenderer.material = animator.GetComponent<PlayerStatus>().emissionMaterial;
                     }
                     return;
@@ -36,11 +37,20 @@ namespace SideScrollerProject
         {
             strike.StrikeEnemies();
             animator.SetBool(animationParameter, false);
+            animator.SetBool("isSlashing", false);
+            animator.gameObject.transform.GetChild(6).gameObject.SetActive(false);
         }
 
         public override void UpdateAbility(BaseState state, Animator animator, AnimatorStateInfo stateInfo)
         {
-            strike.FreezeEnemyPositions();
+            if (stateInfo.normalizedTime >= whenToCast)
+            {
+
+                hit = false;
+            }
+            if (strike.splash.activeSelf)
+                strike.FreezeEnemyPositions();
+
 
         }
     }

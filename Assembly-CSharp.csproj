@@ -111,6 +111,7 @@
      <Compile Include="Assets\Scenes\Scripts\Ability\AbilityManager.cs" />
      <Compile Include="Assets\Scenes\Scripts\Ability\AlphaStrike.cs" />
      <Compile Include="Assets\Scenes\Scripts\Ability\Heal.cs" />
+     <Compile Include="Assets\Scenes\Scripts\Ability\OmniSlashChangeMaterial.cs" />
      <Compile Include="Assets\Scenes\Scripts\Ability\ProjectileAbility.cs" />
      <Compile Include="Assets\Scenes\Scripts\Ability\WindSlash.cs" />
      <Compile Include="Assets\Scenes\Scripts\Ability\WindSlashScript.cs" />
@@ -121,6 +122,7 @@
      <Compile Include="Assets\Scenes\Scripts\Effects\Effect.cs" />
      <Compile Include="Assets\Scenes\Scripts\Effects\EffectsManager.cs" />
      <Compile Include="Assets\Scenes\Scripts\Effects\HitEffect.cs" />
+     <Compile Include="Assets\Scenes\Scripts\Effects\OmniSlashSFX.cs" />
      <Compile Include="Assets\Scenes\Scripts\Effects\ParticleSpawnDespawn.cs" />
      <Compile Include="Assets\Scenes\Scripts\Effects\Splash.cs" />
      <Compile Include="Assets\Scenes\Scripts\Effects\TestTween.cs" />
@@ -219,6 +221,7 @@
      <None Include="Assets\LeanTween\ReadMe.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
      <None Include="Assets\Scenes\Sprites\Free Pixel Art Forest\Contact.txt" />
+     <None Include="Assets\Scenes\Sprites\SG Game 1 Spritesheets\OmniSlash\NOTE.txt" />
      <None Include="Assets\LeanTween\License.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\Scenes\Sprites\Free Pixel Art Forest\readme.txt" />
