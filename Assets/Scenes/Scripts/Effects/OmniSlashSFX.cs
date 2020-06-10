@@ -9,9 +9,10 @@ namespace SideScrollerProject
     {
 
         bool didPlay = true;
+        public string audio;
         public override void OnEnter(BaseState state, Animator animator, AnimatorStateInfo stateInfo)
         {
-            AudioManager.instance.Play("Swoosh1");
+            AudioManager.instance.Play(audio);
         }
 
         public override void OnExit(BaseState state, Animator animator, AnimatorStateInfo stateInfo)

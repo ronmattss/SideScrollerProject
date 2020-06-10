@@ -41,7 +41,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   listStateData:
-  - {fileID: 11400000, guid: 9961f163658f51547ab1568eb72460f7, type: 2}
+  - {fileID: 11400000, guid: a68e2e54f97a1eb4fa56e7d9fa3e6145, type: 2}
   - {fileID: 11400000, guid: fa49133d08e4e814eb8e56b449cb414d, type: 2}
 --- !u!91 &9100000
 AnimatorController:

@@ -46,6 +46,7 @@ namespace SideScrollerProject
             if (stateInfo.normalizedTime >= whenToCast)
             {
 
+                AudioManager.instance.Play("OmniHitsSFX");
                 hit = false;
             }
             if (strike.splash.activeSelf)
