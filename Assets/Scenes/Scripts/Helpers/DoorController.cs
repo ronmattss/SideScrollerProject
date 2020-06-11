@@ -11,6 +11,7 @@ public class DoorController : MonoBehaviour
     {
         GameEvent.instance.onDoorwayTriggerEnter += OnDoorwayOpen;
         GameEvent.instance.onDoorwayTriggerExit += OnDoorwayExit;
+        GameEvent.instance.onKeyInteract += OnDoorwayUnlock;
     }
 
     // Update is called once per frame
@@ -26,9 +27,25 @@ public class DoorController : MonoBehaviour
         Debug.Log("Am I working?");
     }
 
+    private void OnDoorwayUnlock(int id, int key)
+    {
+        if (this.id == id)
+            if (id != key)
+            {
+                // UI Manager Display something
+                // prolly pick a dialogue
+            }
+            else
+            {
+                Debug.Log("WTF DOOR");// disable this or trigger something
+                this.gameObject.SetActive(false);
+            }
+    }
+
     private void OnDestroy()
     {
         GameEvent.instance.onDoorwayTriggerEnter -= OnDoorwayOpen;
         GameEvent.instance.onDoorwayTriggerExit -= OnDoorwayExit;
+        GameEvent.instance.onKeyInteract -= OnDoorwayUnlock;
     }
 }

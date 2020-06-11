@@ -51,7 +51,8 @@ namespace SideScrollerProject
 
 
             // Register Movement Bool
-
+            horizontalMovement = Convert.ToInt16(Input.GetAxisRaw("Horizontal")); //* runSpeed);
+            movement.xMovement = horizontalMovement * (runSpeed / 10);
             if (Input.GetKeyDown(KeyCode.F))
             {
                 if (isInteracting)
@@ -70,10 +71,15 @@ namespace SideScrollerProject
                 //  if (InputManager.instance.attackCounter == 0)
                 // {
                 animator.SetBool(AnimatorParams.Attacking.ToString(), true);
+                animator.SetInteger(AnimatorParams.AttackCounter.ToString(), InputManager.instance.attackCounter);
+                if (Input.GetAxisRaw("Horizontal") != 0)
+                {
+                    horizontalMovement = Convert.ToInt16(Input.GetAxisRaw("Horizontal")); //* runSpeed);
+                    movement.xMovement = horizontalMovement * (runSpeed / 10);
+                }
 
                 //  }
                 //InputManager.instance.attackCounter++;
-                animator.SetInteger(AnimatorParams.AttackCounter.ToString(), InputManager.instance.attackCounter);
             }
 
             if (Input.GetKeyDown(KeyCode.X) && movement.availableDash > 0)
@@ -103,17 +109,17 @@ namespace SideScrollerProject
             if (movement.availableDash <= 0)
                 movement.Recharge();
 
-           /* if (movement.m_Grounded && Input.GetButtonDown("Jump"))
-            {
-                movement.m_Rigidbody2D.velocity = Vector2.up * jumpForce;
-                isJumping = true;
-                jump = true;
-                jumpTimeCounter = jumpTime;
+            /* if (movement.m_Grounded && Input.GetButtonDown("Jump"))
+             {
+                 movement.m_Rigidbody2D.velocity = Vector2.up * jumpForce;
+                 isJumping = true;
+                 jump = true;
+                 jumpTimeCounter = jumpTime;
 
-                animator.SetBool("Jumping", true);
-                animator.SetBool(AnimatorParams.Attacking.ToString(), false);
-                PlayerParticleSystemManager.instance.StartParticle(PlayerParticles.JumpDust);
-            }*/
+                 animator.SetBool("Jumping", true);
+                 animator.SetBool(AnimatorParams.Attacking.ToString(), false);
+                 PlayerParticleSystemManager.instance.StartParticle(PlayerParticles.JumpDust);
+             }*/
             // if (Input.GetButton("Jump") && isJumping == true)
             // {
             //     if (jumpTimeCounter > 0)
@@ -130,8 +136,7 @@ namespace SideScrollerProject
             // {
             //     isJumping = false;
             // }
-            horizontalMovement = Convert.ToInt16(Input.GetAxisRaw("Horizontal")); //* runSpeed);
-            movement.xMovement = horizontalMovement * (runSpeed / 10);
+
 
         }
         public void OnLanding()

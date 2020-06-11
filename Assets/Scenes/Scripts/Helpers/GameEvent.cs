@@ -47,6 +47,16 @@ public class GameEvent : MonoBehaviour
         }
     }
 
+    public  event Action<int,int> onKeyInteract;
+    public void OnKeyInteract(int id, int key)
+    {
+        if(onCameraSwitch != null)
+        {
+            onKeyInteract(id,key);
+        }
+    }
+
+
 
     public event Action<int> onSpikeThrust;
 
@@ -64,6 +74,7 @@ public class GameEvent : MonoBehaviour
         Time.timeScale = 0.0f;
         StartCoroutine(Wait(duration));
     }
+
 
     IEnumerator Wait(float duration)
     {

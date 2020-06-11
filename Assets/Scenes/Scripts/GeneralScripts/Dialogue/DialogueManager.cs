@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 namespace SideScrollerProject
 {
-
+    // UI manager?
     public class DialogueManager : MonoBehaviour
     {
         public static DialogueManager instance;

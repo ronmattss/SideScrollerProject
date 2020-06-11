@@ -79,6 +79,7 @@ Transform:
   - {fileID: 737943484391365143}
   - {fileID: 737943483230847448}
   - {fileID: 737943484093911546}
+  - {fileID: 737943483744836911}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -195,6 +196,42 @@ MonoBehaviour:
   - name: HitSFX
     clip: {fileID: 8300000, guid: 0a6e3ed7a8ae23e419366aba0125f4d0, type: 3}
     volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Swoosh1
+    clip: {fileID: 8300000, guid: dc70e7fda89271844bb9a8fb57787d69, type: 3}
+    volume: 1
+    pitch: 1.25
+    loop: 0
+    source: {fileID: 0}
+  - name: Swoosh2
+    clip: {fileID: 8300000, guid: 0a6e3ed7a8ae23e419366aba0125f4d0, type: 3}
+    volume: 0.54
+    pitch: 0.29
+    loop: 0
+    source: {fileID: 0}
+  - name: Swoosh3
+    clip: {fileID: 8300000, guid: 0a6e3ed7a8ae23e419366aba0125f4d0, type: 3}
+    volume: 0.59
+    pitch: 0.2
+    loop: 0
+    source: {fileID: 0}
+  - name: OmniCharge
+    clip: {fileID: 8300000, guid: f62998a8852891f468f03ad91e408c64, type: 3}
+    volume: 0.59
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: OmniHitsSFX
+    clip: {fileID: 8300000, guid: 4a1bea5b0b22b324fbcd0c3b11c4a564, type: 3}
+    volume: 0.59
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: OmniSlashSFX
+    clip: {fileID: 8300000, guid: 6199254156b12bb45b63efbcf3b6e9fe, type: 3}
+    volume: 0.59
     pitch: 1
     loop: 0
     source: {fileID: 0}
@@ -401,3 +438,78 @@ MonoBehaviour:
   player: {fileID: 0}
   wizard: {fileID: 0}
   timeStopDuration: 0.025
+--- !u!1001 &6391317442373901758
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 737943482690831696}
+    m_Modifications:
+    - target: {fileID: 5949034010013892753, guid: b4c1a25d329b92e4f97a3886548fb8e7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.565649
+      objectReference: {fileID: 0}
+    - target: {fileID: 5949034010013892753, guid: b4c1a25d329b92e4f97a3886548fb8e7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.2976649
+      objectReference: {fileID: 0}
+    - target: {fileID: 5949034010013892753, guid: b4c1a25d329b92e4f97a3886548fb8e7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -17.798777
+      objectReference: {fileID: 0}
+    - target: {fileID: 5949034010013892753, guid: b4c1a25d329b92e4f97a3886548fb8e7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5949034010013892753, guid: b4c1a25d329b92e4f97a3886548fb8e7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5949034010013892753, guid: b4c1a25d329b92e4f97a3886548fb8e7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5949034010013892753, guid: b4c1a25d329b92e4f97a3886548fb8e7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5949034010013892753, guid: b4c1a25d329b92e4f97a3886548fb8e7,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5949034010013892753, guid: b4c1a25d329b92e4f97a3886548fb8e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5949034010013892753, guid: b4c1a25d329b92e4f97a3886548fb8e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5949034010013892753, guid: b4c1a25d329b92e4f97a3886548fb8e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5949034010013892847, guid: b4c1a25d329b92e4f97a3886548fb8e7,
+        type: 3}
+      propertyPath: m_Name
+      value: GameEventManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b4c1a25d329b92e4f97a3886548fb8e7, type: 3}
+--- !u!4 &737943483744836911 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5949034010013892753, guid: b4c1a25d329b92e4f97a3886548fb8e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 6391317442373901758}
+  m_PrefabAsset: {fileID: 0}

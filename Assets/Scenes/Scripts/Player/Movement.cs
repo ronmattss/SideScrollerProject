@@ -216,40 +216,6 @@ public class Movement : MonoBehaviour
         if (m_Grounded || m_AirControl)
         {
 
-            // // If crouching
-            // if (crouch)
-            // {
-            //     if (!m_wasCrouching)
-            //     {
-            //         m_wasCrouching = true;
-            //         OnCrouchEvent.Invoke(true);
-            //     }
-
-            //     // Reduce the speed by the crouchSpeed multiplier
-            //     move *= m_CrouchSpeed;
-
-            //     // Disable one of the colliders when crouching
-            //     if (m_CrouchDisableCollider != null)
-            //         m_CrouchDisableCollider.enabled = false;
-            // }
-            // else
-            // {
-            //     // Enable the collider when not crouching
-            //     if (m_CrouchDisableCollider != null)
-            //         m_CrouchDisableCollider.enabled = true;
-
-            //     if (m_wasCrouching)
-            //     {
-            //         m_wasCrouching = false;
-            //         OnCrouchEvent.Invoke(false);
-            //     }
-            // }
-
-            // Move the character by finding the target velocity
-            //          Vector3 targetVelocity = new Vector2(move * 10f, m_Rigidbody2D.velocity.y);
-            // And then smoothing it out and applying it to the character
-            //m_Rigidbody2D.velocity = Vector3.SmoothDamp(m_Rigidbody2D.velocity, targetVelocity, ref m_Velocity, m_MovementSmoothing);
-
             Vector2 movement = m_Rigidbody2D.velocity;
             float fHorizontalVelocity = m_Rigidbody2D.velocity.x;
             fHorizontalVelocity += (move);
@@ -275,36 +241,7 @@ public class Movement : MonoBehaviour
                 Flip();
             }
         }
-        // If the player should jump...
-        /*if (jump && jumpCount < 2)
-        {
-            // Add a vertical force to the player.
-            if (jumpCount == 0)
-               m_Rigidbody2D.velocity += new Vector2(0,10);
-               // m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
-            else
-            {
-                m_Rigidbody2D.velocity += new Vector2(0,10);
-                //    jumpDust.Play();
-            }
-            source.clip = jumpSound;
-            source.Play();
-            jumpCount++;
-
-        }*/
-
-
-        // if (!m_Grounded && jump && jumpCount <= 2)
-        // {
-        //     m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
-        //     jumpCount++;
-        //     if (jumpCount >= 2)
-        //     {
-        //         m_Grounded = true;
-        //         jumpCount = 0;
-        //     }
-        // }
-
+     
 
     }
 
@@ -319,12 +256,11 @@ public class Movement : MonoBehaviour
         theScale.x *= -1;
         transform.localScale = theScale;
     }
+ 
 
     public void SmallDash()
     {
-        //  Vector3 targetVelocity = new Vector2(force, m_Rigidbody2D.velocity.y);
-        // And then smoothing it out and applying it to the character
-        //m_Rigidbody2D.velocity = Vector3.SmoothDamp(m_Rigidbody2D.velocity, targetVelocity, ref m_Velocity, m_MovementSmoothing);
+
         if (isDashing)
         {
             playerSprite.sprite = sprite;

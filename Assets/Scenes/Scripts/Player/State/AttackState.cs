@@ -89,9 +89,13 @@ namespace SideScrollerProject
 
         public override void OnEnter(BaseState state, Animator animator, AnimatorStateInfo stateInfo)
         {
-            attackPoint = animator.gameObject.GetComponent<Transform>().GetChild(0);
+            Rigidbody2D rb = animator.gameObject.GetComponent<Rigidbody2D>(); ;
+            Transform playerFace = animator.gameObject.transform;
+
+            rb.AddForce(new Vector2(7f * playerFace.localScale.x, rb.velocity.y), ForceMode2D.Impulse);
             //  Debug.Log(attackPoint.name);
 
+            attackPoint = animator.gameObject.GetComponent<Transform>().GetChild(0);
             attackCounter = animator.GetInteger(AnimatorParams.AttackCounter.ToString());
             audio = animator.GetComponent<AudioSource>();
             audio.clip = sound;
