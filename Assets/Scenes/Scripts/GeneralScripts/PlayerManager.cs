@@ -6,6 +6,8 @@ namespace SideScrollerProject
 {
     public class PlayerManager : MonoBehaviour
     {
+        public AbilityManager[] playerAbilityManager;
+
         public static PlayerManager instance { get; private set; }
         public GameObject player;
         void Awake()
@@ -17,7 +19,31 @@ namespace SideScrollerProject
                 Destroy(this.gameObject);
                 return;
             }
+            player = GameObject.Find("Player");
+            playerAbilityManager = GetPlayerAbilities();
 
+        }
+
+        public void EnableDisableSkill(int abilityIndex)
+        {
+            AbilityManager[] ability = GetPlayerAbilities();
+            for (int i = 0; i < ability.Length; i++)
+            {
+                if (abilityIndex == i)
+                {
+                    if (ability[i].enabled)
+                    {
+                        ability[i].abilityImage.gameObject.SetActive(false);
+                        ability[i].enabled = false;
+                    }
+                    else
+                    {
+                        ability[i].abilityImage.gameObject.SetActive(true);
+                        ability[i].enabled = true;
+                    }
+                }
+
+            }
         }
 
         public PlayerStatus GetPlayerStatus()
@@ -44,6 +70,10 @@ namespace SideScrollerProject
             }
             return null;
 
+        }
+        public AbilityManager[] GetPlayerAbilities()
+        {
+            return player.GetComponents<AbilityManager>();
         }
 
 

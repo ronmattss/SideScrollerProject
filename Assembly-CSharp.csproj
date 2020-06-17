@@ -138,6 +138,7 @@
      <Compile Include="Assets\Scenes\Scripts\EnemyStates\WizardBoss.cs" />
      <Compile Include="Assets\Scenes\Scripts\Environment\Background\BackgroundMovement.cs" />
      <Compile Include="Assets\Scenes\Scripts\Environment\Breakable.cs" />
+     <Compile Include="Assets\Scenes\Scripts\Environment\CollapsingPlatform.cs" />
      <Compile Include="Assets\Scenes\Scripts\Environment\InteractableObject.cs" />
      <Compile Include="Assets\Scenes\Scripts\Environment\MovingPlatforms.cs" />
      <Compile Include="Assets\Scenes\Scripts\Environment\OneWayPlatforms.cs" />

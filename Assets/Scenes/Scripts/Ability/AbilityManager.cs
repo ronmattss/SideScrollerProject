@@ -17,7 +17,7 @@ namespace SideScrollerProject
         public Animator animator;
         public bool useAnimation;
         [SerializeField] private Ability ability;
-        [SerializeField] private Image abilityImage;
+        public Image abilityImage;
         private float coolDownDuration;
         private float nextReadyTime;
         private float coolDownTimeLeft;
