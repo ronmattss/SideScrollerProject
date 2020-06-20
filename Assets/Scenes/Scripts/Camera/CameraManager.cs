@@ -16,6 +16,7 @@ public class CameraManager : MonoBehaviour
     Transform playerTransform;
     float vDirection = 0;
     float direction = 0;
+    float shakeLength = 10;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,12 +27,16 @@ public class CameraManager : MonoBehaviour
         vCamCurrent = listOfVCam[0];
         this.lastCamera = 0;
         camShake = vCamCurrent.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
-      //  vCamCurrent.enabled = false;
+        //  vCamCurrent.enabled = false;
 
         // GameEvent.instance.onCameraSwitch += CameraSwap;
         //  Debug.Log("Current Camera Priority" + vCam.m_Priority);
 
 
+    }
+    void Update()
+    {
+        camShake.m_FrequencyGain += (0 - camShake.m_FrequencyGain) * Time.deltaTime * (10 - shakeLength);
     }
 
     // Update is called once per frame
@@ -56,7 +61,7 @@ public class CameraManager : MonoBehaviour
 
         vCamCurrent.gameObject.SetActive(true);
         camShake = vCamCurrent.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
-       // vCamCurrent.enabled = false;
+        // vCamCurrent.enabled = false;
         vCamCurrent.MoveToTopOfPrioritySubqueue();
     }
 
@@ -77,7 +82,7 @@ public class CameraManager : MonoBehaviour
         }
         vCamCurrent.gameObject.SetActive(true);
         camShake = vCamCurrent.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
-      //  vCamCurrent.enabled = false;
+        //  vCamCurrent.enabled = false;
         vCamCurrent.MoveToTopOfPrioritySubqueue();
     }
     public void ActivateShake()
@@ -86,7 +91,8 @@ public class CameraManager : MonoBehaviour
 
     }
     IEnumerator Shake()
-    {   Debug.Log("Does this works");
+    {
+        Debug.Log("Does this works");
         vCamCurrent.enabled = true;
         yield return new WaitForSecondsRealtime(0.1f);
         vCamCurrent.enabled = false;
@@ -138,11 +144,14 @@ public class CameraManager : MonoBehaviour
 
     public void ChangeActiveCamera(int id)
     {
-        foreach (CinemachineVirtualCamera cam in listOfVCam)
-        {
-            if (cam != vCamCurrent)
-                cam.gameObject.SetActive(false);
-        }
+        vCamCurrent.gameObject.SetActive(false);
+        // foreach (CinemachineVirtualCamera cam in listOfVCam)
+        //// {
+        // if (cam != vCamCurrent)
+        // cam.gameObject.SetActive(false);
+        vCamCurrent = listOfVCam[id];
+        vCamCurrent.MoveToTopOfPrioritySubqueue();
+        ////}
     }
     public int IndexOfCamera()
     {
@@ -150,6 +159,11 @@ public class CameraManager : MonoBehaviour
         return vCamIndex;
     }
 
+    public void Shake(float shake, float length)
+    {
+        shakeLength = length;
+        camShake.m_FrequencyGain = shake;
+    }
     /// <summary>
     /// This function is called when the MonoBehaviour will be destroyed.
     /// </summary>

@@ -16,6 +16,7 @@ namespace SideScrollerProject
         public List<Transform> patrolPoints;
         public List<GameObject> spawnedEnemies = new List<GameObject>();
         public bool lastSpawn = false;
+        private int spawnNumber = 0;
         // Start is called before the first frame update
         void Start()
         {
@@ -79,17 +80,20 @@ namespace SideScrollerProject
         }
 
         void Spawn()
+
         {
             int randNum = Random.Range(0, transformPositions.Count);
             Vector3 localPosition = transformPositions[randNum];
 
             GameObject spawnedEnemy = Instantiate(enemiesToBeSpawned[Random.Range(0, enemiesToBeSpawned.Length)], transformPositions[Random.Range(0, transformPositions.Count)], Quaternion.identity);
             spawnedEnemy.transform.parent = this.transform;
+            spawnedEnemy.name = spawnedEnemy.name + spawnNumber+Random.Range(0,200);
             spawnedEnemies.Add(spawnedEnemy);
             if (patrolPoints.Count > 0)
             {
                 SetPatrolPoints();
             }
+            spawnNumber++;
         }
         void SetPatrolPoints()
         {
