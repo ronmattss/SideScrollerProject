@@ -76,6 +76,7 @@ namespace SideScrollerProject
             currentHealth -= damage;
             healthSliderScript.SetValue(currentHealth);
             impulseSource.GenerateImpulse();
+            CameraManager.instance.Shake(10,0.2f);
             Knockback(enemyAnimator.GetComponentInParent<Transform>().localScale.x);
             animator.SetBool("IsHurt", true);
             ResetCountDown();
@@ -96,7 +97,7 @@ namespace SideScrollerProject
             Debug.Log($"Damage:{damage}");
             currentHealth -= damage;
             healthSliderScript.SetValue(currentHealth);
-            impulseSource.GenerateImpulse();
+           // impulseSource.GenerateImpulse();
             animator.SetBool("IsHurt", true);
             ResetCountDown();
             if (currentHealth <= 0)

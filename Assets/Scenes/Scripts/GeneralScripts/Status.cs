@@ -24,7 +24,10 @@ namespace SideScrollerProject
         public Transform attackPoint;
         public Transform searchPoint;
         public Transform ground;
+        public Transform groundPatrolChecker;
+        public Transform LineRendererLocation;
         public bool isGrounded;
+        public bool iSGroundPatrolCheckerGrounded = true;
         public LayerMask whatIsGround;
         public Transform target;
         public float searchRange = 0;
@@ -95,6 +98,9 @@ namespace SideScrollerProject
         void OnDrawGizmos()
         {
             Gizmos.DrawWireSphere(ground.position, 0.3f);
+            Gizmos.DrawRay(groundPatrolChecker.position, Vector2.down);
+            Gizmos.DrawRay(LineRendererLocation.position,Vector2.down);
+            Debug.DrawLine(LineRendererLocation.position, new Vector2(LineRendererLocation.position.x + 3, LineRendererLocation.position.y));
         }
         public Vector2 ChangeDirection()
         {
@@ -121,6 +127,21 @@ namespace SideScrollerProject
 
             }
         }
+
+        private void CheckGroundPoint()
+        {
+           // iSGroundPatrolCheckerGrounded = false;
+            RaycastHit2D groundCollider = Physics2D.Raycast(groundPatrolChecker.position,Vector2.down,1,whatIsGround);
+            if(groundCollider.collider != null)
+            {
+                iSGroundPatrolCheckerGrounded = true;
+                Debug.Log("Ground Check Collider: "+ groundCollider.transform.name);
+            }
+            else{
+                iSGroundPatrolCheckerGrounded = false;
+            }
+
+        }
         public Vector2 LockTarget()
         {
             targetLock = true;
@@ -136,6 +157,7 @@ namespace SideScrollerProject
         {
 
             CheckGround();
+            CheckGroundPoint();
             // if player is not on Sight
             if (!animator.GetBool("playerOnSight"))
             {
@@ -145,7 +167,7 @@ namespace SideScrollerProject
             {
 
                 animator.SetBool("isMoving", false);
-                Flip(this.transform,target.position);
+                Flip(this.transform, target.position);
             }
             else
             {
@@ -193,7 +215,8 @@ namespace SideScrollerProject
                     nextPoint = ChangeDirection();
                     //           Debug.Log("Patrolneed to changed: " + nextPoint);
                 }
-                Patrol(this.animator, this.transform, nextPoint, rb, 1);
+                //Patrol(this.animator, this.transform, nextPoint, rb, 1);
+                Patrol(this.transform, rb, 2);
             }
             if (isPatrolling && isRange)
             {
@@ -203,7 +226,8 @@ namespace SideScrollerProject
                     nextPoint = ChangeDirection();
                     //           Debug.Log("Patrolneed to changed: " + nextPoint);
                 }
-                Patrol(this.animator, this.transform, nextPoint, rb, 1);
+                // Patrol(this.animator, this.transform, nextPoint, rb, 1);
+                Patrol(this.transform, rb, 2);
             }
             // Debug.Log("Distance: " + Vector2.Distance(this.transform.position, nextPoint));
             if (currentHealth <= 0)
@@ -506,7 +530,8 @@ namespace SideScrollerProject
 
 
 
-
+        // instead of going to two points, go to the left or right until one of the condition is met
+        // if isGround == false flip || wall distance <= 2
         public void Patrol(Animator animator, Transform thisTransform, Vector2 currentPoint, Rigidbody2D rb, float moveSpeed)
         {
 
@@ -520,10 +545,34 @@ namespace SideScrollerProject
             //            Debug.Log(thisTransform.position.x <= currentPoint.x);
 
         }
+        public void Patrol(Transform thisTransform, Rigidbody2D rigidbody, float moveSpeed)
+        {
+            RaycastHit2D lineHit = Physics2D.Linecast(LineRendererLocation.position, new Vector2(LineRendererLocation.position.x + 3, LineRendererLocation.position.y), whatIsGround);
+            if (iSGroundPatrolCheckerGrounded == false || lineHit.collider != null)
+            {
+                Flip(thisTransform);
+            }
+            //rb.MovePosition(new Vector2(thisTransform.position.x+(1*this.transform.localScale.x),this.transform.position.y));
+            rb.velocity = new Vector2( thisTransform.localScale.x * moveSpeed, 0);
+        }
         private void Flip(Transform self, Vector2 patrolPoint)
         {
             if (self != null)
                 if (self.position.x > patrolPoint.x)
+                {
+                    self.localScale = new Vector3(-1, 1, 1);
+                    // moveSpeed *= 1f;
+                }
+                else
+                {
+                    self.localScale = new Vector3(1, 1, 1);
+                    // moveSpeed *= 1f;
+                }
+        }
+        private void Flip(Transform self)
+        {
+            if (self != null)
+                if (self.localScale.x == 1)
                 {
                     self.localScale = new Vector3(-1, 1, 1);
                     // moveSpeed *= 1f;
@@ -541,9 +590,7 @@ namespace SideScrollerProject
             while (Time.timeScale != 1.0f)
                 yield return new WaitForSeconds(0.2f);
         }
-        /// <summary>
-        /// Callback to draw gizmos that are pickable and always drawn.
-        /// </summary>
+
 
 
     }

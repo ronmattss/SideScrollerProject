@@ -11,7 +11,7 @@ namespace SideScrollerProject
         // Start is called before the first frame update
         public override void OnEnter(BaseState state, Animator animator, AnimatorStateInfo stateInfo)
         {
-            animator.SetBool("isAttacking", true);
+         //   animator.SetBool("isAttacking", true);
             //animator.gameObject.layer = 14;
         }
 

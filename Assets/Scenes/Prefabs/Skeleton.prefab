@@ -1,5 +1,65 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &624047981019190335
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6386182796227385553}
+  m_Layer: 0
+  m_Name: LinePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6386182796227385553
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624047981019190335}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7999528917321403236}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &925264729660088811
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5353968811764418176}
+  m_Layer: 0
+  m_Name: GroundPatrolCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5353968811764418176
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 925264729660088811}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.36421776, y: -1.018, z: -0.69862294}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7999528917321403236}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6111456644046586069
 GameObject:
   m_ObjectHideFlags: 0
@@ -284,6 +344,8 @@ Transform:
   - {fileID: 7999528918066809994}
   - {fileID: 7999528916441673198}
   - {fileID: 7830250877000469022}
+  - {fileID: 5353968811764418176}
+  - {fileID: 6386182796227385553}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -324,7 +386,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -494972417
-  m_SortingLayer: 7
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: 4723107735738678597, guid: 3b521928f1930c6498770d92ca4e9acf,
     type: 3}
@@ -390,11 +452,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c59cf5ae0cde1164ea6dedbbf6a3ece1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 5
+  maxHealth: 3
   attackPoint: {fileID: 7999528918066809994}
   searchPoint: {fileID: 7999528916441673198}
   ground: {fileID: 3379201789976481259}
+  groundPatrolChecker: {fileID: 5353968811764418176}
+  LineRendererLocation: {fileID: 6386182796227385553}
   isGrounded: 0
+  iSGroundPatrolCheckerGrounded: 1
   whatIsGround:
     serializedVersion: 2
     m_Bits: 8192
@@ -423,6 +488,9 @@ MonoBehaviour:
   targetLock: 0
   playerPosition: {fileID: 0}
   finalTargetPosition: {x: 0, y: 0}
+  arrowPrefab: {fileID: 0}
+  bowDraw: {fileID: 0}
+  range: 7
 --- !u!70 &7999528917321403289
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

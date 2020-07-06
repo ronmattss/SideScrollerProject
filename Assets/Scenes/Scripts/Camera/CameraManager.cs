@@ -47,6 +47,7 @@ public class CameraManager : MonoBehaviour
     }
     public void SwapCameraHorizontally(int leftCamera, int rightCamera)
     {
+        vCamCurrent.gameObject.SetActive(false);
         //if camera is on left 
         if (direction < 0) //going left
         {
@@ -67,6 +68,7 @@ public class CameraManager : MonoBehaviour
 
     public void SwapCameraVertically(int upCamera, int downCamera)
     {
+        vCamCurrent.gameObject.SetActive(false);
         //if camera is on left 
         if (vDirection <= 0) //going left
         {
@@ -150,6 +152,7 @@ public class CameraManager : MonoBehaviour
         // if (cam != vCamCurrent)
         // cam.gameObject.SetActive(false);
         vCamCurrent = listOfVCam[id];
+        vCamCurrent.gameObject.SetActive(true);
         vCamCurrent.MoveToTopOfPrioritySubqueue();
         ////}
     }
@@ -160,9 +163,11 @@ public class CameraManager : MonoBehaviour
     }
 
     public void Shake(float shake, float length)
-    {
+    {Debug.Log($"SHAKINGGGGGGGGGGG + {vCamCurrent.name}");
+        camShake = vCamCurrent.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
+vCamCurrent.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_FrequencyGain = shake;
         shakeLength = length;
-        camShake.m_FrequencyGain = shake;
+        camShake.m_FrequencyGain += 10;
     }
     /// <summary>
     /// This function is called when the MonoBehaviour will be destroyed.

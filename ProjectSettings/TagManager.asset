@@ -69,9 +69,12 @@ TagManager:
   - name: entities
     uniqueID: 3799994879
     locked: 0
+  - name: UI
+    uniqueID: 4274663365
+    locked: 0
   - name: ParticleEffects
     uniqueID: 1971012313
     locked: 0
-  - name: UI
-    uniqueID: 4274663365
+  - name: foregroundclutter
+    uniqueID: 357911209
     locked: 0
