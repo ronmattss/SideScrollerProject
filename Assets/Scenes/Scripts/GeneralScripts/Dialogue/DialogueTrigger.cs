@@ -21,7 +21,6 @@ namespace SideScrollerProject
         public bool queueNextDialogue;
         public bool loopDialogue;
 
-
         public DialogueGraph dialogue;      // dialogue(Lore or first time interactions)
         public DialogueGraph nextDialogue; // Triggers quest triggers?
         public UnityEvent exitDialogueEvent;
@@ -33,7 +32,7 @@ namespace SideScrollerProject
         public NodePort port = null;
 
         public override void Interact(bool interactable)
-        {
+        {   PlayerManager.instance.GetPlayerAction().canMove = false;
             Debug.Log("Calling Interactable");
             if (!interactable) return;
             // first Dialogue
@@ -76,6 +75,7 @@ namespace SideScrollerProject
                 }
                 // if it is a trigger
                 // trigger function
+                    PlayerManager.instance.GetPlayerAction().canMove = true;
             }
 
         }
@@ -92,7 +92,6 @@ namespace SideScrollerProject
             List<Node> dialogueNodes = currDialogue.nodes;
             dialogue.current = (Chat)dialogueNodes[0];
             // dialogue.current = (Chat)CheckNode(dialogueNodes[0]);
-
 
         }
 
@@ -145,14 +144,6 @@ namespace SideScrollerProject
             return null;
 
 
-        }
-
-
-
-        public void TriggerDialogue()
-        {
-            // what dialogue to Trigger
-            //    DialogueManager.instance.StartDialogue(normalDialogue);
         }
 
         private void OnTriggerEnter2D(Collider2D other)

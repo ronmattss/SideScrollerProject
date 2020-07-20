@@ -5,7 +5,6 @@ using System;
 using EZCameraShake;
 
 
-
 // TODO:
 //
 /*
@@ -34,6 +33,11 @@ namespace SideScrollerProject
         private bool isJumping;
         bool doubleJump = false;
         bool crouch = false;
+        public bool canJump = true;
+        public bool canMove = true;
+        public bool canDash = true;
+        public bool canAttack = true;
+
         public Animator animator;
         public MaterialPropertyBlock material;
         public PlayerStatus playerStatus;
@@ -49,10 +53,6 @@ namespace SideScrollerProject
         void Update()
         {
 
-
-            // Register Movement Bool
-            horizontalMovement = Convert.ToInt16(Input.GetAxisRaw("Horizontal")); //* runSpeed);
-            movement.xMovement = horizontalMovement * (runSpeed / 10);
             if (Input.GetKeyDown(KeyCode.F))
             {
                 if (isInteracting)
@@ -61,51 +61,57 @@ namespace SideScrollerProject
                 }
 
             }
-            if (Input.GetKeyDown(KeyCode.DownArrow) && movement.isOnOneWayPlatform)
+            // Register Movement Bool
+            if (canMove)// ifplayer can move
             {
-                movement.canGoDown = true;
-            }
+                horizontalMovement = Convert.ToInt16(Input.GetAxisRaw("Horizontal")); //* runSpeed);
+                movement.xMovement = horizontalMovement * (runSpeed / 10);
 
-            if (Input.GetKeyDown(KeyCode.Z))
-            {
-                //  if (InputManager.instance.attackCounter == 0)
-                // {
-                animator.SetBool(AnimatorParams.Attacking.ToString(), true);
-                animator.SetInteger(AnimatorParams.AttackCounter.ToString(), InputManager.instance.attackCounter);
-                if (Input.GetAxisRaw("Horizontal") != 0)
+                if (Input.GetKeyDown(KeyCode.DownArrow) && movement.isOnOneWayPlatform)
                 {
-                    horizontalMovement = Convert.ToInt16(Input.GetAxisRaw("Horizontal")); //* runSpeed);
-                    movement.xMovement = horizontalMovement * (runSpeed / 10);
+                    movement.canGoDown = true;
                 }
 
-                //  }
-                //InputManager.instance.attackCounter++;
-            }
-
-            if (Input.GetKeyDown(KeyCode.X) && movement.availableDash > 0)
-            {
-                // Test Camera Shake
-                // CameraShaker.Instance.ShakeOnce(4,4,.1f,.1f);
-                //  CreateDust();
-                movement.isDashing = true;
-                movement.availableDash--;
-                if (movement.isDashing)
+                if (Input.GetKeyDown(KeyCode.Z) && canAttack)
                 {
-                    movement.DashSound();
-                }
-                // playerStatus.DepleteResourceBar(10);
-                playerStatus.ResetCountDown();
-                // TriggerAbility();
-            }
+                    //  if (InputManager.instance.attackCounter == 0)
+                    // {
+                    animator.SetBool(AnimatorParams.Attacking.ToString(), true);
+                    animator.SetInteger(AnimatorParams.AttackCounter.ToString(), InputManager.instance.attackCounter);
+                    if (Input.GetAxisRaw("Horizontal") != 0)
+                    {
+                        horizontalMovement = Convert.ToInt16(Input.GetAxisRaw("Horizontal")); //* runSpeed);
+                        movement.xMovement = horizontalMovement * (runSpeed / 10);
+                    }
 
-            if (Input.GetButtonDown("Vertical"))
-            {
-                crouch = true;
+                    //  }
+                    //InputManager.instance.attackCounter++;
+                }
+
+                if (Input.GetKeyDown(KeyCode.X) && movement.availableDash > 0 && canDash)
+                {
+                    // Test Camera Shake
+                    // CameraShaker.Instance.ShakeOnce(4,4,.1f,.1f);
+                    //  CreateDust();
+                    movement.isDashing = true;
+                    movement.availableDash--;
+                    if (movement.isDashing)
+                    {
+                        movement.DashSound();
+                    }
+                    // playerStatus.DepleteResourceBar(10);
+                    playerStatus.ResetCountDown();
+                    // TriggerAbility();
+                }
             }
-            else if (Input.GetButtonUp("Vertical"))
-            {
-                crouch = false;
-            }
+            // if (Input.GetButtonDown("Vertical"))
+            // {
+            //     crouch = true;
+            // }
+            // else if (Input.GetButtonUp("Vertical"))
+            // {
+            //     crouch = false;
+            // }
             if (movement.availableDash <= 0)
                 movement.Recharge();
 

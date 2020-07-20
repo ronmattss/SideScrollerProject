@@ -116,6 +116,7 @@
      <Compile Include="Assets\Scenes\Scripts\Ability\WindSlash.cs" />
      <Compile Include="Assets\Scenes\Scripts\Ability\WindSlashScript.cs" />
      <Compile Include="Assets\Scenes\Scripts\Camera\CameraController.cs" />
+     <Compile Include="Assets\Scenes\Scripts\Camera\CameraLockAxis.cs" />
      <Compile Include="Assets\Scenes\Scripts\Camera\CameraManager.cs" />
      <Compile Include="Assets\Scenes\Scripts\Camera\CameraShake.cs" />
      <Compile Include="Assets\Scenes\Scripts\Camera\TrackPlayer.cs" />
@@ -174,12 +175,14 @@
      <Compile Include="Assets\Scenes\Scripts\Helpers\LevelManager.cs" />
      <Compile Include="Assets\Scenes\Scripts\Helpers\Singleton.cs" />
      <Compile Include="Assets\Scenes\Scripts\Helpers\Spawnable.cs" />
+     <Compile Include="Assets\Scenes\Scripts\Items\Item.cs" />
      <Compile Include="Assets\Scenes\Scripts\Node Based Dialogue System\BasicDialogueNode.cs" />
      <Compile Include="Assets\Scenes\Scripts\Node Based Dialogue System\DialogueNodeGraph.cs" />
      <Compile Include="Assets\Scenes\Scripts\Player\Actions.cs" />
      <Compile Include="Assets\Scenes\Scripts\Player\Actions\InputManager.cs" />
      <Compile Include="Assets\Scenes\Scripts\Player\Jump.cs" />
      <Compile Include="Assets\Scenes\Scripts\Player\Movement.cs" />
+     <Compile Include="Assets\Scenes\Scripts\Player\PlayerInventory.cs" />
      <Compile Include="Assets\Scenes\Scripts\Player\PlayerStatus.cs" />
      <Compile Include="Assets\Scenes\Scripts\Player\State\AbilityCastState.cs" />
      <Compile Include="Assets\Scenes\Scripts\Player\State\AttackState.cs" />
@@ -225,6 +228,7 @@
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
      <None Include="Assets\Scenes\Sprites\Free Pixel Art Forest\Contact.txt" />
      <None Include="Assets\Scenes\Sprites\SG Game 1 Spritesheets\OmniSlash\NOTE.txt" />
+     <None Include="Assets\Scenes\Sprites\BackGround\caveBG\notice.txt" />
      <None Include="Assets\LeanTween\License.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\Scenes\Sprites\Free Pixel Art Forest\readme.txt" />

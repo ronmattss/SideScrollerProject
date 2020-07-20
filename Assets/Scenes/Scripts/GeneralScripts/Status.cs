@@ -209,26 +209,26 @@ namespace SideScrollerProject
             }
             if (isPatrolling)
             {
-                if (Vector2.Distance(this.transform.position, nextPoint) <= 1)
-                {
-                    //            Debug.Log("Patrolneed to changeBefore: " + nextPoint);
-                    nextPoint = ChangeDirection();
-                    //           Debug.Log("Patrolneed to changed: " + nextPoint);
-                }
+                // if (Vector2.Distance(this.transform.position, nextPoint) <= 1)
+                // {
+                //     //            Debug.Log("Patrolneed to changeBefore: " + nextPoint);
+                //     nextPoint = ChangeDirection();
+                //     //           Debug.Log("Patrolneed to changed: " + nextPoint);
+                // }
                 //Patrol(this.animator, this.transform, nextPoint, rb, 1);
                 Patrol(this.transform, rb, 2);
             }
-            if (isPatrolling && isRange)
-            {
-                if (Vector2.Distance(this.transform.position, nextPoint) <= 1)
-                {
-                    //            Debug.Log("Patrolneed to changeBefore: " + nextPoint);
-                    nextPoint = ChangeDirection();
-                    //           Debug.Log("Patrolneed to changed: " + nextPoint);
-                }
-                // Patrol(this.animator, this.transform, nextPoint, rb, 1);
-                Patrol(this.transform, rb, 2);
-            }
+            // if (isPatrolling && isRange)
+            // {
+            //     // if (Vector2.Distance(this.transform.position, nextPoint) <= 1)
+            //     // {
+            //     //     //            Debug.Log("Patrolneed to changeBefore: " + nextPoint);
+            //     //     nextPoint = ChangeDirection();
+            //     //     //           Debug.Log("Patrolneed to changed: " + nextPoint);
+            //     // }
+            //     // Patrol(this.animator, this.transform, nextPoint, rb, 1);
+            //     Patrol(this.transform, rb, 2);
+            // }
             // Debug.Log("Distance: " + Vector2.Distance(this.transform.position, nextPoint));
             if (currentHealth <= 0)
             {
@@ -521,15 +521,6 @@ namespace SideScrollerProject
 
         }
         #endregion
-
-
-
-
-
-
-
-
-
         // instead of going to two points, go to the left or right until one of the condition is met
         // if isGround == false flip || wall distance <= 2
         public void Patrol(Animator animator, Transform thisTransform, Vector2 currentPoint, Rigidbody2D rb, float moveSpeed)
@@ -546,8 +537,8 @@ namespace SideScrollerProject
 
         }
         public void Patrol(Transform thisTransform, Rigidbody2D rigidbody, float moveSpeed)
-        {
-            RaycastHit2D lineHit = Physics2D.Linecast(LineRendererLocation.position, new Vector2(LineRendererLocation.position.x + 3, LineRendererLocation.position.y), whatIsGround);
+        {Debug.Log($"{this.transform.name } is patrolling");
+            RaycastHit2D lineHit = Physics2D.Linecast(LineRendererLocation.position, new Vector2(LineRendererLocation.position.x + 3 , LineRendererLocation.position.y), whatIsGround);
             if (iSGroundPatrolCheckerGrounded == false || lineHit.collider != null)
             {
                 Flip(thisTransform);
@@ -582,6 +573,7 @@ namespace SideScrollerProject
                     self.localScale = new Vector3(1, 1, 1);
                     // moveSpeed *= 1f;
                 }
+        Debug.Log($"{this.transform.name } is flipping");
         }
         IEnumerator Wait()
         {

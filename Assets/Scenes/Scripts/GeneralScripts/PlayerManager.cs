@@ -24,7 +24,7 @@ namespace SideScrollerProject
 
         }
 
-        public void EnableDisableSkill(int abilityIndex)
+        public void EnableDisableSkill(int abilityIndex) // should also be changeable via Ability name
         {
             AbilityManager[] ability = GetPlayerAbilities();
             for (int i = 0; i < ability.Length; i++)
@@ -75,7 +75,6 @@ namespace SideScrollerProject
         {
             return player.GetComponents<AbilityManager>();
         }
-
 
     }
 }

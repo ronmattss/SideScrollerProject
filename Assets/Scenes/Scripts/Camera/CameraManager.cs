@@ -10,6 +10,7 @@ public class CameraManager : MonoBehaviour
     private CinemachineBrain brain;
     public CinemachineVirtualCamera vCamCurrent;
     public List<CinemachineVirtualCamera> listOfVCam;
+
     private CinemachineBasicMultiChannelPerlin camShake;
     public int lastCamera;
     public GameObject player;
@@ -17,6 +18,10 @@ public class CameraManager : MonoBehaviour
     float vDirection = 0;
     float direction = 0;
     float shakeLength = 10;
+    public float defaultScreenY = 0.82f;
+    public float defaultScreenX = 0.5f;
+    public float changedYUp = 0.90f;
+    public float changedYDown = 0.23f;
     // Start is called before the first frame update
     void Start()
     {
@@ -44,6 +49,31 @@ public class CameraManager : MonoBehaviour
     {
         direction = playerTransform.localScale.x;
         vDirection = player.GetComponent<Animator>().GetInteger("Falling");
+        Look();
+    }
+
+    public void Look()
+    {
+        if (Input.GetKey(KeyCode.UpArrow))
+        {
+
+            vCamCurrent.GetCinemachineComponent<CinemachineFramingTransposer>().m_ScreenY = changedYUp;
+        }
+        else if (Input.GetKey(KeyCode.DownArrow))
+        {
+            vCamCurrent.GetCinemachineComponent<CinemachineFramingTransposer>().m_ScreenY = changedYDown;
+        }
+        else
+        {
+            vCamCurrent.GetCinemachineComponent<CinemachineFramingTransposer>().m_ScreenY = defaultScreenY;
+        }
+    }
+    public void ChangeLookCamera(int camIndex)
+    {
+        vCamCurrent.gameObject.SetActive(false);
+        vCamCurrent = listOfVCam[camIndex];
+        vCamCurrent.gameObject.SetActive(true);
+        vCamCurrent.MoveToTopOfPrioritySubqueue();
     }
     public void SwapCameraHorizontally(int leftCamera, int rightCamera)
     {
@@ -163,9 +193,10 @@ public class CameraManager : MonoBehaviour
     }
 
     public void Shake(float shake, float length)
-    {Debug.Log($"SHAKINGGGGGGGGGGG + {vCamCurrent.name}");
+    {
+        Debug.Log($"SHAKINGGGGGGGGGGG + {vCamCurrent.name}");
         camShake = vCamCurrent.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
-vCamCurrent.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_FrequencyGain = shake;
+        vCamCurrent.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_FrequencyGain = shake;
         shakeLength = length;
         camShake.m_FrequencyGain += 10;
     }
