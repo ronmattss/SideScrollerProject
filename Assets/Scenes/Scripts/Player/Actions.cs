@@ -18,6 +18,7 @@ namespace SideScrollerProject
     public class Actions : MonoBehaviour
     {
         public Movement movement;
+        public MaskController thirdEye;
         public float runSpeed = 40f;
         public float dashForce = 100f;
         public int horizontalMovement = 0;
@@ -46,6 +47,7 @@ namespace SideScrollerProject
 
 
 
+
         // Start is called before the first frame update
 
         // Update is called once per frame
@@ -70,6 +72,10 @@ namespace SideScrollerProject
                 if (Input.GetKeyDown(KeyCode.DownArrow) && movement.isOnOneWayPlatform)
                 {
                     movement.canGoDown = true;
+                }
+                if (Input.GetKeyUp(KeyCode.S))
+                {
+                    thirdEye.ResizeObject();
                 }
 
                 if (Input.GetKeyDown(KeyCode.Z) && canAttack)

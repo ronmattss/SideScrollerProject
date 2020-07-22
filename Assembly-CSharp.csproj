@@ -181,6 +181,7 @@
      <Compile Include="Assets\Scenes\Scripts\Player\Actions.cs" />
      <Compile Include="Assets\Scenes\Scripts\Player\Actions\InputManager.cs" />
      <Compile Include="Assets\Scenes\Scripts\Player\Jump.cs" />
+     <Compile Include="Assets\Scenes\Scripts\Player\MaskController.cs" />
      <Compile Include="Assets\Scenes\Scripts\Player\Movement.cs" />
      <Compile Include="Assets\Scenes\Scripts\Player\PlayerInventory.cs" />
      <Compile Include="Assets\Scenes\Scripts\Player\PlayerStatus.cs" />
