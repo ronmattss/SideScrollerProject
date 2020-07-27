@@ -98,6 +98,7 @@ namespace SideScrollerProject
             currentHealth -= damage;
             healthSliderScript.SetValue(currentHealth);
            // impulseSource.GenerateImpulse();
+            CameraManager.instance.Shake(10,0.2f);
             animator.SetBool("IsHurt", true);
             ResetCountDown();
             if (currentHealth <= 0)

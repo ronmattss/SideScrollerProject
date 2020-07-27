@@ -1,0 +1,1244 @@
+fileFormatVersion: 2
+guid: d83911bbd0389b14ca1f92d051271aaf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1033475991992766017
+    second: Grass&Flowers Damaged 1_0
+  - first:
+      213: -3094036618631307618
+    second: Grass&Flowers Damaged 1_1
+  - first:
+      213: -5066113643727310131
+    second: Grass&Flowers Damaged 1_2
+  - first:
+      213: 7578163878249407536
+    second: Grass&Flowers Damaged 1_3
+  - first:
+      213: 5204826127463370021
+    second: Grass&Flowers Damaged 1_4
+  - first:
+      213: 8434049126162741210
+    second: Grass&Flowers Damaged 1_5
+  - first:
+      213: -3422314048153201070
+    second: Grass&Flowers Damaged 1_6
+  - first:
+      213: 3356543998096370572
+    second: Grass&Flowers Damaged 1_7
+  - first:
+      213: 7107558977532668921
+    second: Grass&Flowers Damaged 1_8
+  - first:
+      213: -6568728091950646312
+    second: Grass&Flowers Damaged 1_9
+  - first:
+      213: -9041587660909233272
+    second: Grass&Flowers Damaged 1_10
+  - first:
+      213: -8144222305709389260
+    second: Grass&Flowers Damaged 1_11
+  - first:
+      213: -4577595504659008183
+    second: Grass&Flowers Damaged 1_12
+  - first:
+      213: 2438007390381967678
+    second: Grass&Flowers Damaged 1_13
+  - first:
+      213: -568392242724353142
+    second: Grass&Flowers Damaged 1_14
+  - first:
+      213: 5517957195440177053
+    second: Grass&Flowers Damaged 1_15
+  - first:
+      213: 3687602538415599589
+    second: Grass&Flowers Damaged 1_16
+  - first:
+      213: 6524786736105290704
+    second: Grass&Flowers Damaged 1_17
+  - first:
+      213: -1308628578582859901
+    second: Grass&Flowers Damaged 1_18
+  - first:
+      213: 5459173951894864856
+    second: Grass&Flowers Damaged 1_19
+  - first:
+      213: 7152546863286118440
+    second: Grass&Flowers Damaged 1_20
+  - first:
+      213: 932254968586481471
+    second: Grass&Flowers Damaged 1_21
+  - first:
+      213: 3832030611006467712
+    second: Grass&Flowers Damaged 1_22
+  - first:
+      213: -3368789905995459674
+    second: Grass&Flowers Damaged 1_23
+  - first:
+      213: 1151749314623116218
+    second: Grass&Flowers Damaged 1_24
+  - first:
+      213: 3353888517582078148
+    second: Grass&Flowers Damaged 1_25
+  - first:
+      213: -5035627434777953357
+    second: Grass&Flowers Damaged 1_26
+  - first:
+      213: 7198319456550149765
+    second: Grass&Flowers Damaged 1_27
+  - first:
+      213: 7395824165213788723
+    second: Grass&Flowers Damaged 1_28
+  - first:
+      213: -4279175040068165421
+    second: Grass&Flowers Damaged 1_29
+  - first:
+      213: -2576520160924926391
+    second: Grass&Flowers Damaged 1_30
+  - first:
+      213: -5503000043145916596
+    second: Grass&Flowers Damaged 1_31
+  - first:
+      213: -6580866378255171944
+    second: Grass&Flowers Damaged 1_32
+  - first:
+      213: 2291356927175172166
+    second: Grass&Flowers Damaged 1_33
+  - first:
+      213: 6091333314753559141
+    second: Grass&Flowers Damaged 1_34
+  - first:
+      213: 3622448585841397211
+    second: Grass&Flowers Damaged 1_35
+  - first:
+      213: -8128558743275657892
+    second: Grass&Flowers Damaged 1_36
+  - first:
+      213: 8038123598892289786
+    second: Grass&Flowers Damaged 1_37
+  - first:
+      213: 2182697996631067829
+    second: Grass&Flowers Damaged 1_38
+  - first:
+      213: -318855559612792316
+    second: Grass&Flowers Damaged 1_39
+  - first:
+      213: 8710892382089524191
+    second: Grass&Flowers Damaged 1_40
+  - first:
+      213: -375809308520245256
+    second: Grass&Flowers Damaged 1_41
+  - first:
+      213: 8708984766316235422
+    second: Grass&Flowers Damaged 1_42
+  - first:
+      213: -7448159533520136363
+    second: Grass&Flowers Damaged 1_43
+  - first:
+      213: -4792621314279602706
+    second: Grass&Flowers Damaged 1_44
+  - first:
+      213: -5628946101117162659
+    second: Grass&Flowers Damaged 1_45
+  - first:
+      213: -3884271014456664675
+    second: Grass&Flowers Damaged 1_46
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 44
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Grass&Flowers Damaged 1_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 222
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb170659f0b58a1f0800000000000000
+      internalID: -1033475991992766017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass&Flowers Damaged 1_1
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 222
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9e1e689616cf05d0800000000000000
+      internalID: -3094036618631307618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass&Flowers Damaged 1_2
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 223
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc2bfd18b7c81b9b0800000000000000
+      internalID: -5066113643727310131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass&Flowers Damaged 1_3
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 226
+        width: 4
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 034a0cc75eb0b2960800000000000000
+      internalID: 7578163878249407536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass&Flowers Damaged 1_4
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 220
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52d402d59c14b3840800000000000000
+      internalID: 5204826127463370021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass&Flowers Damaged 1_5
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 201
+        width: 38
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad7bf17aef2cb0570800000000000000
+      internalID: 8434049126162741210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass&Flowers Damaged 1_6
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 211
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 256dff1618f7180d0800000000000000
+      internalID: -3422314048153201070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass&Flowers Damaged 1_7
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 215
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8be0878bf6d49e20800000000000000
+      internalID: 3356543998096370572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass&Flowers Damaged 1_8
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 206
+        width: 10
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fb29fb8b3f13a260800000000000000
+      internalID: 7107558977532668921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass&Flowers Damaged 1_9
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 207
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dbf62d5a9037d4a0800000000000000
+      internalID: -6568728091950646312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass&Flowers Damaged 1_10
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 202
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88b33f14de3d58280800000000000000
+      internalID: -9041587660909233272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass&Flowers Damaged 1_11
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 204
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43a016086f8e9fe80800000000000000
+      internalID: -8144222305709389260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass&Flowers Damaged 1_12
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 172
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 945ff53442d1970c0800000000000000
+      internalID: -4577595504659008183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass&Flowers Damaged 1_13
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 173
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e398e7fedca85d120800000000000000
+      internalID: 2438007390381967678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass&Flowers Damaged 1_14
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 186
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8bc357444aac18f0800000000000000
+      internalID: -568392242724353142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass&Flowers Damaged 1_15
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 183
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9fb50875d8b39c40800000000000000
+      internalID: 5517957195440177053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass&Flowers Damaged 1_16
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 175
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ef271f88fefc2330800000000000000
+      internalID: 3687602538415599589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass&Flowers Damaged 1_17
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 181
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0db7cb877f2bc8a50800000000000000
+      internalID: 6524786736105290704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass&Flowers Damaged 1_18
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 164
+        width: 9
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38fe4aebd31d6dde0800000000000000
+      internalID: -1308628578582859901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass&Flowers Damaged 1_19
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 139
+        width: 38
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d342c909c1e2cb40800000000000000
+      internalID: 5459173951894864856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass&Flowers Damaged 1_20
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 147
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 828e081f973f24360800000000000000
+      internalID: 7152546863286118440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass&Flowers Damaged 1_21
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 155
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3fa0b264f800fc00800000000000000
+      internalID: 932254968586481471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass&Flowers Damaged 1_22
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 154
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08ea679a98b1e2530800000000000000
+      internalID: 3832030611006467712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass&Flowers Damaged 1_23
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 147
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a3183add67af31d0800000000000000
+      internalID: -3368789905995459674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass&Flowers Damaged 1_24
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 142
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab3196046e5dbff00800000000000000
+      internalID: 1151749314623116218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass&Flowers Damaged 1_25
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 80
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c0cdba46d76b8e20800000000000000
+      internalID: 3353888517582078148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass&Flowers Damaged 1_26
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 87
+        width: 33
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bb39d8278bdd1ab0800000000000000
+      internalID: -5035627434777953357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass&Flowers Damaged 1_27
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 81
+        width: 38
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58e547b486195e360800000000000000
+      internalID: 7198319456550149765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass&Flowers Damaged 1_28
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 102
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33a51dcb4ee33a660800000000000000
+      internalID: 7395824165213788723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass&Flowers Damaged 1_29
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 103
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d0e40d19f05d94c0800000000000000
+      internalID: -4279175040068165421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass&Flowers Damaged 1_30
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 105
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94eff6b809c5e3cd0800000000000000
+      internalID: -2576520160924926391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass&Flowers Damaged 1_31
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 92
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4f045ded9a61a3b0800000000000000
+      internalID: -5503000043145916596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass&Flowers Damaged 1_32
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 97
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89ef9c955e01ca4a0800000000000000
+      internalID: -6580866378255171944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass&Flowers Damaged 1_33
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 89
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64028e13cf88ccf10800000000000000
+      internalID: 2291356927175172166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass&Flowers Damaged 1_34
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 30
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56a73626063c88450800000000000000
+      internalID: 6091333314753559141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass&Flowers Damaged 1_35
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 21
+        width: 38
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdd4138dbc5854230800000000000000
+      internalID: 3622448585841397211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass&Flowers Damaged 1_36
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 38
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c55a823d3ee813f80800000000000000
+      internalID: -8128558743275657892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass&Flowers Damaged 1_37
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 38
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afec8ac43d62d8f60800000000000000
+      internalID: 8038123598892289786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass&Flowers Damaged 1_38
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 41
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bcc62573408a4e10800000000000000
+      internalID: 2182697996631067829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass&Flowers Damaged 1_39
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 41
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4020f92de82339bf0800000000000000
+      internalID: -318855559612792316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass&Flowers Damaged 1_40
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 35
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd33a1f187e43e870800000000000000
+      internalID: 8710892382089524191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass&Flowers Damaged 1_41
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 16
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f79d5ecc6bd8caf0800000000000000
+      internalID: -375809308520245256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass&Flowers Damaged 1_42
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 13
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9a4196b0878cd870800000000000000
+      internalID: 8708984766316235422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass&Flowers Damaged 1_43
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 27
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 557d716cd52d2a890800000000000000
+      internalID: -7448159533520136363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass&Flowers Damaged 1_44
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 6
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee5066b9e403d7db0800000000000000
+      internalID: -4792621314279602706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass&Flowers Damaged 1_45
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 18
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5b671f2857f1e1b0800000000000000
+      internalID: -5628946101117162659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass&Flowers Damaged 1_46
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 8
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9dd6f3971c481ac0800000000000000
+      internalID: -3884271014456664675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

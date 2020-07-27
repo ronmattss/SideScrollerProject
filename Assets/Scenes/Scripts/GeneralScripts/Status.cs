@@ -58,7 +58,8 @@ namespace SideScrollerProject
         private bool changeColor = false;
         public GameObject playerPosition;
         public Vector2 finalTargetPosition = Vector2.zero;
-        public GameObject arrowPrefab;
+        public bool travelsOnOneAxis;
+        public GameObject projectilePrefab;
         public AudioSource bowDraw;
         public float range = 7;
         private Rigidbody2D rb;
@@ -99,7 +100,7 @@ namespace SideScrollerProject
         {
             Gizmos.DrawWireSphere(ground.position, 0.3f);
             Gizmos.DrawRay(groundPatrolChecker.position, Vector2.down);
-            Gizmos.DrawRay(LineRendererLocation.position,Vector2.down);
+            Gizmos.DrawRay(LineRendererLocation.position, Vector2.down);
             Debug.DrawLine(LineRendererLocation.position, new Vector2(LineRendererLocation.position.x + 3, LineRendererLocation.position.y));
         }
         public Vector2 ChangeDirection()
@@ -130,14 +131,15 @@ namespace SideScrollerProject
 
         private void CheckGroundPoint()
         {
-           // iSGroundPatrolCheckerGrounded = false;
-            RaycastHit2D groundCollider = Physics2D.Raycast(groundPatrolChecker.position,Vector2.down,1,whatIsGround);
-            if(groundCollider.collider != null)
+            // iSGroundPatrolCheckerGrounded = false;
+            RaycastHit2D groundCollider = Physics2D.Raycast(groundPatrolChecker.position, Vector2.down, 1, whatIsGround);
+            if (groundCollider.collider != null)
             {
                 iSGroundPatrolCheckerGrounded = true;
-                Debug.Log("Ground Check Collider: "+ groundCollider.transform.name);
+                Debug.Log("Ground Check Collider: " + groundCollider.transform.name);
             }
-            else{
+            else
+            {
                 iSGroundPatrolCheckerGrounded = false;
             }
 
@@ -359,6 +361,7 @@ namespace SideScrollerProject
 
                 // Debug.Log("Name: " + hit.collider.name);
                 if (hit.collider != null)
+                {
                     if (hit.collider.CompareTag("Player")) // well idk wat i DID WIP
                     {
                         target = hit.collider.transform;
@@ -370,6 +373,7 @@ namespace SideScrollerProject
                     {
                         animator.SetBool("isMoving", false);
                     }
+                }
 
             }
             else
@@ -409,6 +413,12 @@ namespace SideScrollerProject
             Vector2 raycastDirection = this.transform.localScale.x == -1 ? Vector2.left : Vector2.right;
             RaycastHit2D hit = Physics2D.Linecast(raycastOrigin.position, new Vector2(raycastDirection.x * range + raycastOrigin.position.x, raycastOrigin.position.y), playerLayer);
             Debug.DrawLine(raycastOrigin.position, new Vector2(raycastDirection.x * range + raycastOrigin.position.x, raycastOrigin.position.y), Color.blue);
+            GameObject arrow = Instantiate(projectilePrefab, attackPoint.position, Quaternion.identity);
+            Projectile proj = arrow.GetComponent<Projectile>();
+            if (target != null && !travelsOnOneAxis)
+            {
+                proj.Launch(target.position, raycastDirection.x);
+            }
             //Instantiate projectile
             //laser.gameObject.SetActive(true);
             //laser.SetPosition(0, Vector2.zero);
@@ -422,10 +432,12 @@ namespace SideScrollerProject
 
             try
             { // Instantiate Projectile
-                GameObject arrow = Instantiate(arrowPrefab, attackPoint.position, Quaternion.identity);
-                Projectile proj = arrow.GetComponent<Projectile>();
+
                 bowDraw.Play();
-                proj.Launch(raycastDirection.x);
+                if (travelsOnOneAxis)
+                    proj.Launch(raycastDirection.x); // if basic left or right projectile like the Archer
+                else
+                    proj.Launch(target.position, raycastDirection.x); // if it target locks (Not Homing)
                 //PlayerStatus playerStatus = hit.collider.gameObject.GetComponent<PlayerStatus>();
                 //playerStatus.TakeDamage(attackDamage, animator);
             }
@@ -449,10 +461,15 @@ namespace SideScrollerProject
             {
                 Vector2 raycastDirection = this.transform.localScale.x == -1 ? Vector2.left : Vector2.right;
                 RaycastHit2D hit = Physics2D.Linecast(raycastOrigin.position, new Vector2(raycastDirection.x * range + raycastOrigin.position.x, raycastOrigin.position.y), playerLayer);
+                if (target != null && !travelsOnOneAxis)
+                {
+                    hit = Physics2D.Linecast(raycastOrigin.position, new Vector2(raycastDirection.x  + target.position.x, target.position.y),playerLayer);
+                    Debug.DrawLine(raycastOrigin.position, new Vector2(raycastDirection.x  + target.position.x, target.position.y), Color.red);
+                }
                 Debug.DrawLine(raycastOrigin.position, new Vector2(raycastDirection.x * range + raycastOrigin.position.x, raycastOrigin.position.y), Color.red);
                 //if (hit.collider != null)
                 // Debug.Log("Name: " + hit.collider.name);
-                if (hit.collider != null)
+                if (hit.collider != null) // overwrite if projectile
                     if (hit.collider.CompareTag("Player")) // well idk wat i DID WIP
                     {
                         animator.SetBool("playerInRange", true);
@@ -537,14 +554,14 @@ namespace SideScrollerProject
 
         }
         public void Patrol(Transform thisTransform, Rigidbody2D rigidbody, float moveSpeed)
-        {Debug.Log($"{this.transform.name } is patrolling");
-            RaycastHit2D lineHit = Physics2D.Linecast(LineRendererLocation.position, new Vector2(LineRendererLocation.position.x + 3 , LineRendererLocation.position.y), whatIsGround);
+        {//Debug.Log($"{this.transform.name } is patrolling");
+            RaycastHit2D lineHit = Physics2D.Linecast(LineRendererLocation.position, new Vector2(LineRendererLocation.position.x + 3, LineRendererLocation.position.y), whatIsGround);
             if (iSGroundPatrolCheckerGrounded == false || lineHit.collider != null)
             {
                 Flip(thisTransform);
             }
             //rb.MovePosition(new Vector2(thisTransform.position.x+(1*this.transform.localScale.x),this.transform.position.y));
-            rb.velocity = new Vector2( thisTransform.localScale.x * moveSpeed, 0);
+            rb.velocity = new Vector2(thisTransform.localScale.x * moveSpeed, 0);
         }
         private void Flip(Transform self, Vector2 patrolPoint)
         {
@@ -573,7 +590,7 @@ namespace SideScrollerProject
                     self.localScale = new Vector3(1, 1, 1);
                     // moveSpeed *= 1f;
                 }
-        Debug.Log($"{this.transform.name } is flipping");
+            //      Debug.Log($"{this.transform.name } is flipping");
         }
         IEnumerator Wait()
         {

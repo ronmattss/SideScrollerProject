@@ -1,0 +1,5594 @@
+fileFormatVersion: 2
+guid: eac586208c38b634d8613f636dc93362
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4511488157673038479
+    second: Itachipng_0
+  - first:
+      213: 3650758189264372472
+    second: Itachipng_1
+  - first:
+      213: -5946555352852131746
+    second: Itachipng_2
+  - first:
+      213: 3437628912769272752
+    second: Itachipng_3
+  - first:
+      213: -1987207036237173760
+    second: Itachipng_4
+  - first:
+      213: 6307575397865030569
+    second: Itachipng_5
+  - first:
+      213: -8999223869034876084
+    second: Itachipng_6
+  - first:
+      213: 948064984659307750
+    second: Itachipng_7
+  - first:
+      213: 2946296915189833586
+    second: Itachipng_8
+  - first:
+      213: -2672363470141045975
+    second: Itachipng_9
+  - first:
+      213: -5918670861157342635
+    second: Itachipng_10
+  - first:
+      213: 870434486841612080
+    second: Itachipng_11
+  - first:
+      213: 973097309512060856
+    second: Itachipng_12
+  - first:
+      213: -7581769353760166429
+    second: Itachipng_13
+  - first:
+      213: -4224006746073436139
+    second: Itachipng_14
+  - first:
+      213: -4251907575473719876
+    second: Itachipng_15
+  - first:
+      213: 8175812340940654450
+    second: Itachipng_16
+  - first:
+      213: -4726930094624955514
+    second: Itachipng_17
+  - first:
+      213: -2802680136134280742
+    second: Itachipng_18
+  - first:
+      213: -5593367647856060246
+    second: Itachipng_19
+  - first:
+      213: 4772328150571632307
+    second: Itachipng_20
+  - first:
+      213: 3912675414827405005
+    second: Itachipng_21
+  - first:
+      213: -8210201337046364579
+    second: Itachipng_22
+  - first:
+      213: 1887288522978094338
+    second: Itachipng_23
+  - first:
+      213: 2010682637511095048
+    second: Itachipng_24
+  - first:
+      213: 4845363746149120934
+    second: Itachipng_25
+  - first:
+      213: -5149826432844805473
+    second: Itachipng_26
+  - first:
+      213: -3317748215897170633
+    second: Itachipng_27
+  - first:
+      213: -6397424560533961848
+    second: Itachipng_28
+  - first:
+      213: 2908846981010629231
+    second: Itachipng_29
+  - first:
+      213: -1579220944091418481
+    second: Itachipng_30
+  - first:
+      213: -7056365015652796454
+    second: Itachipng_31
+  - first:
+      213: 1870145074006914251
+    second: Itachipng_32
+  - first:
+      213: -7877861817984268046
+    second: Itachipng_33
+  - first:
+      213: -5276682321162718318
+    second: Itachipng_34
+  - first:
+      213: 1607766730687972088
+    second: Itachipng_35
+  - first:
+      213: -2255012533131048133
+    second: Itachipng_36
+  - first:
+      213: 7978972952234995430
+    second: Itachipng_37
+  - first:
+      213: -2646239384738686862
+    second: Itachipng_38
+  - first:
+      213: -8283649624036910670
+    second: Itachipng_39
+  - first:
+      213: 4287780532250679024
+    second: Itachipng_40
+  - first:
+      213: 6496174376030123751
+    second: Itachipng_41
+  - first:
+      213: 4142539060818693859
+    second: Itachipng_42
+  - first:
+      213: -5584617616625421907
+    second: Itachipng_43
+  - first:
+      213: -3584350699983810110
+    second: Itachipng_44
+  - first:
+      213: 6361642160977656825
+    second: Itachipng_45
+  - first:
+      213: -4135655842051157389
+    second: Itachipng_46
+  - first:
+      213: 5980808014194086114
+    second: Itachipng_47
+  - first:
+      213: -2054344694844545022
+    second: Itachipng_48
+  - first:
+      213: -4562294506262680057
+    second: Itachipng_49
+  - first:
+      213: 1892793613591275826
+    second: Itachipng_50
+  - first:
+      213: 2472381665563011675
+    second: Itachipng_51
+  - first:
+      213: 2602488074425409139
+    second: Itachipng_52
+  - first:
+      213: 4264960753520461484
+    second: Itachipng_53
+  - first:
+      213: 5388422926909285436
+    second: Itachipng_54
+  - first:
+      213: -3815666101902482993
+    second: Itachipng_55
+  - first:
+      213: 5476445230612809144
+    second: Itachipng_56
+  - first:
+      213: -7335958476034099957
+    second: Itachipng_57
+  - first:
+      213: 1791270007887293363
+    second: Itachipng_58
+  - first:
+      213: 6755885261758869464
+    second: Itachipng_59
+  - first:
+      213: 3853716714982918575
+    second: Itachipng_60
+  - first:
+      213: 1011923105734423538
+    second: Itachipng_61
+  - first:
+      213: 1295792472493715814
+    second: Itachipng_62
+  - first:
+      213: -4689823734685266574
+    second: Itachipng_63
+  - first:
+      213: 7139688040991406009
+    second: Itachipng_64
+  - first:
+      213: -7287694099383392640
+    second: Itachipng_65
+  - first:
+      213: -7591576311231935184
+    second: Itachipng_66
+  - first:
+      213: -6126234511745380937
+    second: Itachipng_67
+  - first:
+      213: 6203280846926190786
+    second: Itachipng_68
+  - first:
+      213: 6279189890075943010
+    second: Itachipng_69
+  - first:
+      213: 4742561277291914024
+    second: Itachipng_70
+  - first:
+      213: -3929470712047673697
+    second: Itachipng_71
+  - first:
+      213: 8331296649192995532
+    second: Itachipng_72
+  - first:
+      213: 6006008100580154359
+    second: Itachipng_73
+  - first:
+      213: -2504029080140235961
+    second: Itachipng_74
+  - first:
+      213: 2472477769612599163
+    second: Itachipng_75
+  - first:
+      213: 4581200087968050782
+    second: Itachipng_76
+  - first:
+      213: -622482663799376036
+    second: Itachipng_77
+  - first:
+      213: 8231083895159409660
+    second: Itachipng_78
+  - first:
+      213: 3705121692054141593
+    second: Itachipng_79
+  - first:
+      213: 8087159141890666406
+    second: Itachipng_80
+  - first:
+      213: -9073321147850909036
+    second: Itachipng_81
+  - first:
+      213: -8732497017266060607
+    second: Itachipng_82
+  - first:
+      213: -1189870017241932456
+    second: Itachipng_83
+  - first:
+      213: 3887221686067754550
+    second: Itachipng_84
+  - first:
+      213: -2441311199757512832
+    second: Itachipng_85
+  - first:
+      213: -5189959599972638678
+    second: Itachipng_86
+  - first:
+      213: 3958026327123093423
+    second: Itachipng_87
+  - first:
+      213: -2523392580056406663
+    second: Itachipng_88
+  - first:
+      213: -299307026090330477
+    second: Itachipng_89
+  - first:
+      213: -87371916727794098
+    second: Itachipng_90
+  - first:
+      213: -8450435993912604115
+    second: Itachipng_91
+  - first:
+      213: -5381499978624237596
+    second: Itachipng_92
+  - first:
+      213: 5425166894186974490
+    second: Itachipng_93
+  - first:
+      213: -969287170842421510
+    second: Itachipng_94
+  - first:
+      213: -16171732968507993
+    second: Itachipng_95
+  - first:
+      213: -3182600659154625079
+    second: Itachipng_96
+  - first:
+      213: 7995739727570135045
+    second: Itachipng_97
+  - first:
+      213: 2664620726458771853
+    second: Itachipng_98
+  - first:
+      213: 6333933595930878877
+    second: Itachipng_99
+  - first:
+      213: 1336328349815663733
+    second: Itachipng_100
+  - first:
+      213: 3988626033160178882
+    second: Itachipng_101
+  - first:
+      213: -4669336307435790888
+    second: Itachipng_102
+  - first:
+      213: 7127168910510124017
+    second: Itachipng_103
+  - first:
+      213: -7318227406596552428
+    second: Itachipng_104
+  - first:
+      213: -3820912049890438561
+    second: Itachipng_105
+  - first:
+      213: -7652529083531061362
+    second: Itachipng_106
+  - first:
+      213: -9133581380464640741
+    second: Itachipng_107
+  - first:
+      213: -1739350245991032828
+    second: Itachipng_108
+  - first:
+      213: -925649986593857236
+    second: Itachipng_109
+  - first:
+      213: -116342105039748046
+    second: Itachipng_110
+  - first:
+      213: 1918154563762046406
+    second: Itachipng_111
+  - first:
+      213: 4673154176329095184
+    second: Itachipng_112
+  - first:
+      213: 1186472313823357731
+    second: Itachipng_113
+  - first:
+      213: -1866696683125360281
+    second: Itachipng_114
+  - first:
+      213: 28413584404895877
+    second: Itachipng_115
+  - first:
+      213: -3287416977401146804
+    second: Itachipng_116
+  - first:
+      213: 4892381081825002331
+    second: Itachipng_117
+  - first:
+      213: -8530133989594309528
+    second: Itachipng_118
+  - first:
+      213: -4691490178731981700
+    second: Itachipng_119
+  - first:
+      213: -6199341753682021909
+    second: Itachipng_120
+  - first:
+      213: 552346230477669325
+    second: Itachipng_121
+  - first:
+      213: -5548850626963617763
+    second: Itachipng_122
+  - first:
+      213: 6907662634281263108
+    second: Itachipng_123
+  - first:
+      213: 6345985961415302669
+    second: Itachipng_124
+  - first:
+      213: 234908077662198997
+    second: Itachipng_125
+  - first:
+      213: 6645128314503859830
+    second: Itachipng_126
+  - first:
+      213: 6142015070130192177
+    second: Itachipng_127
+  - first:
+      213: 4261574957176748404
+    second: Itachipng_128
+  - first:
+      213: 990703404779385144
+    second: Itachipng_129
+  - first:
+      213: -1262474882949102679
+    second: Itachipng_130
+  - first:
+      213: -7048001917614865083
+    second: Itachipng_131
+  - first:
+      213: 2875319020087887243
+    second: Itachipng_132
+  - first:
+      213: -4922441622076095787
+    second: Itachipng_133
+  - first:
+      213: -5641473744636431903
+    second: Itachipng_134
+  - first:
+      213: 4428207203606598062
+    second: Itachipng_135
+  - first:
+      213: 7583864220154360498
+    second: Itachipng_136
+  - first:
+      213: 1668328567159943537
+    second: Itachipng_137
+  - first:
+      213: -3449475065785883656
+    second: Itachipng_138
+  - first:
+      213: 4805284519849843117
+    second: Itachipng_139
+  - first:
+      213: 2487651297079533254
+    second: Itachipng_140
+  - first:
+      213: -4626131844997431584
+    second: Itachipng_141
+  - first:
+      213: 2564224626655893337
+    second: Itachipng_142
+  - first:
+      213: -8257851280637591053
+    second: Itachipng_143
+  - first:
+      213: -5317693091085489250
+    second: Itachipng_144
+  - first:
+      213: 3433677834391402326
+    second: Itachipng_145
+  - first:
+      213: -8428857206614352730
+    second: Itachipng_146
+  - first:
+      213: 8346416265463871240
+    second: Itachipng_147
+  - first:
+      213: 1361974571417378988
+    second: Itachipng_148
+  - first:
+      213: -2304641938024576582
+    second: Itachipng_149
+  - first:
+      213: -3850376228034329368
+    second: Itachipng_150
+  - first:
+      213: -786642357827275437
+    second: Itachipng_151
+  - first:
+      213: 7380681860166318545
+    second: Itachipng_152
+  - first:
+      213: -7941191027224638253
+    second: Itachipng_153
+  - first:
+      213: 955416155353788573
+    second: Itachipng_154
+  - first:
+      213: 24365144350728629
+    second: Itachipng_155
+  - first:
+      213: -3686041153675137414
+    second: Itachipng_156
+  - first:
+      213: 1223845947494133695
+    second: Itachipng_157
+  - first:
+      213: 621848008477580221
+    second: Itachipng_158
+  - first:
+      213: 5707198335308881302
+    second: Itachipng_159
+  - first:
+      213: -6562223314532591592
+    second: Itachipng_160
+  - first:
+      213: -7124304676404884926
+    second: Itachipng_161
+  - first:
+      213: 6067409169063000833
+    second: Itachipng_162
+  - first:
+      213: 5960044958855962201
+    second: Itachipng_163
+  - first:
+      213: 3082310861746486983
+    second: Itachipng_164
+  - first:
+      213: 1150407534396475154
+    second: Itachipng_165
+  - first:
+      213: 2950706748236896780
+    second: Itachipng_166
+  - first:
+      213: -8601974673970281977
+    second: Itachipng_167
+  - first:
+      213: 5415120067354682612
+    second: Itachipng_168
+  - first:
+      213: -7630482728608214484
+    second: Itachipng_169
+  - first:
+      213: -124820834028312393
+    second: Itachipng_170
+  - first:
+      213: 2863754925898447697
+    second: Itachipng_171
+  - first:
+      213: 8873704307968381537
+    second: Itachipng_172
+  - first:
+      213: -6745747389789672145
+    second: Itachipng_173
+  - first:
+      213: 4290940491954906932
+    second: Itachipng_174
+  - first:
+      213: 1440333384540144730
+    second: Itachipng_175
+  - first:
+      213: 8590511755464137889
+    second: Itachipng_176
+  - first:
+      213: -7781424551764987180
+    second: Itachipng_177
+  - first:
+      213: -8582508290241566272
+    second: Itachipng_178
+  - first:
+      213: 3527772655781944676
+    second: Itachipng_179
+  - first:
+      213: -631329909430875292
+    second: Itachipng_180
+  - first:
+      213: 4627583057581928491
+    second: Itachipng_181
+  - first:
+      213: -3508990782377419123
+    second: Itachipng_182
+  - first:
+      213: 7481431334270557677
+    second: Itachipng_183
+  - first:
+      213: -6867631355242643870
+    second: Itachipng_184
+  - first:
+      213: -619086859473681576
+    second: Itachipng_185
+  - first:
+      213: -6163255748992213852
+    second: Itachipng_186
+  - first:
+      213: -2627084430469587824
+    second: Itachipng_187
+  - first:
+      213: 3136151873601995732
+    second: Itachipng_188
+  - first:
+      213: -7834561850335974819
+    second: Itachipng_189
+  - first:
+      213: -312447875595755403
+    second: Itachipng_190
+  - first:
+      213: 217608476810552475
+    second: Itachipng_191
+  - first:
+      213: -3766810836156445542
+    second: Itachipng_192
+  - first:
+      213: 4917811094143529677
+    second: Itachipng_193
+  - first:
+      213: 5536260495140555336
+    second: Itachipng_194
+  - first:
+      213: -9110735570878323202
+    second: Itachipng_195
+  - first:
+      213: -4823857627045410330
+    second: Itachipng_196
+  - first:
+      213: -2024365819608771294
+    second: Itachipng_197
+  - first:
+      213: -4824729188408660179
+    second: Itachipng_198
+  - first:
+      213: 3863236170283138792
+    second: Itachipng_199
+  - first:
+      213: 5736533251821207112
+    second: Itachipng_200
+  - first:
+      213: 4877430840870808661
+    second: Itachipng_201
+  - first:
+      213: -6156283307823205681
+    second: Itachipng_202
+  - first:
+      213: 2336144605710374811
+    second: Itachipng_0
+  - first:
+      213: -7411826995715153324
+    second: Itachipng_1
+  - first:
+      213: 5919589642374870599
+    second: Itachipng_2
+  - first:
+      213: -8847541289444219142
+    second: Itachipng_3
+  - first:
+      213: -4511085349407903063
+    second: Itachipng_4
+  - first:
+      213: 2840184156229868977
+    second: Itachipng_5
+  - first:
+      213: -6729115779680260270
+    second: Itachipng_6
+  - first:
+      213: -5950414009858325411
+    second: Itachipng_8
+  - first:
+      213: 7869561347817735253
+    second: Itachipng_9
+  - first:
+      213: 41619423427111843
+    second: Itachipng_10
+  - first:
+      213: 6108555528507705031
+    second: Itachipng_11
+  - first:
+      213: 2502551235045758873
+    second: Itachipng_12
+  - first:
+      213: 4612363741054486007
+    second: Itachipng_13
+  - first:
+      213: 5415435854730131858
+    second: Itachipng_14
+  - first:
+      213: 3521737512892702921
+    second: Itachipng_15
+  - first:
+      213: 2113858866647075808
+    second: Itachipng_16
+  - first:
+      213: -6342926950857427397
+    second: Itachipng_17
+  - first:
+      213: 8384028466791059852
+    second: Itachipng_18
+  - first:
+      213: 7551405637602192103
+    second: Itachipng_19
+  - first:
+      213: 174070848979522466
+    second: Itachipng_20
+  - first:
+      213: -8935056131820734242
+    second: Itachipng_21
+  - first:
+      213: 6676240944059237426
+    second: Itachipng_22
+  - first:
+      213: 3651008127220980439
+    second: Itachipng_23
+  - first:
+      213: 3777311153878793034
+    second: Itachipng_24
+  - first:
+      213: 8361524487245892566
+    second: Itachipng_25
+  - first:
+      213: -7082742480957469355
+    second: Itachipng_26
+  - first:
+      213: 7697377159832379193
+    second: Itachipng_27
+  - first:
+      213: -679637822787397442
+    second: Itachipng_28
+  - first:
+      213: -2437209216110706361
+    second: Itachipng_29
+  - first:
+      213: -6022735585022561263
+    second: Itachipng_30
+  - first:
+      213: 2203694032586100642
+    second: Itachipng_31
+  - first:
+      213: -866203281160455975
+    second: Itachipng_32
+  - first:
+      213: 9095667433537739367
+    second: Itachipng_33
+  - first:
+      213: -6866383901655152437
+    second: Itachipng_34
+  - first:
+      213: 9069233262404568009
+    second: Itachipng_35
+  - first:
+      213: 4822830509221680100
+    second: Itachipng_36
+  - first:
+      213: 4124167483705437892
+    second: Itachipng_37
+  - first:
+      213: -1292561993260511924
+    second: Itachipng_38
+  - first:
+      213: -1363667451010340985
+    second: Itachipng_39
+  - first:
+      213: -3711507948103048920
+    second: Itachipng_40
+  - first:
+      213: -4143866064977681761
+    second: Itachipng_41
+  - first:
+      213: 5169517071234251499
+    second: Itachipng_42
+  - first:
+      213: 8814683568861758668
+    second: Itachipng_43
+  - first:
+      213: 8817845270702614373
+    second: Itachipng_44
+  - first:
+      213: 4172657519160334445
+    second: Itachipng_45
+  - first:
+      213: -1216242791029893512
+    second: Itachipng_46
+  - first:
+      213: 3727140379182451499
+    second: Itachipng_47
+  - first:
+      213: -4194767801395508535
+    second: Itachipng_48
+  - first:
+      213: 8374291547573515341
+    second: Itachipng_49
+  - first:
+      213: 3799333965864393267
+    second: Itachipng_50
+  - first:
+      213: -3844205751586686922
+    second: Itachipng_51
+  - first:
+      213: -8112998994333037187
+    second: Itachipng_52
+  - first:
+      213: -478052059491070666
+    second: Itachipng_53
+  - first:
+      213: 7253078625842702105
+    second: Itachipng_54
+  - first:
+      213: 7928194135241144424
+    second: Itachipng_55
+  - first:
+      213: -7503479228280649895
+    second: Itachipng_56
+  - first:
+      213: 6966907659067507927
+    second: Itachipng_57
+  - first:
+      213: 93545739263648661
+    second: Itachipng_58
+  - first:
+      213: 1169466590622707774
+    second: Itachipng_59
+  - first:
+      213: 807443790122719903
+    second: Itachipng_60
+  - first:
+      213: -4874361503929134965
+    second: Itachipng_61
+  - first:
+      213: -552975607437634059
+    second: Itachipng_62
+  - first:
+      213: 4057170332680333836
+    second: Itachipng_63
+  - first:
+      213: -5644660836393046441
+    second: Itachipng_64
+  - first:
+      213: -1595543511030422773
+    second: Itachipng_65
+  - first:
+      213: 1376795127320685346
+    second: Itachipng_66
+  - first:
+      213: -7999663119181348211
+    second: Itachipng_67
+  - first:
+      213: 1943320799859819763
+    second: Itachipng_68
+  - first:
+      213: -7794010594047886682
+    second: Itachipng_69
+  - first:
+      213: 3196679821863761518
+    second: Itachipng_70
+  - first:
+      213: -6993398589606314998
+    second: Itachipng_71
+  - first:
+      213: 4196358070123640265
+    second: Itachipng_72
+  - first:
+      213: -4109395404571967622
+    second: Itachipng_73
+  - first:
+      213: -5990777079233093488
+    second: Itachipng_74
+  - first:
+      213: 3075398703901609822
+    second: Itachipng_75
+  - first:
+      213: -8418312356111940825
+    second: Itachipng_76
+  - first:
+      213: 6555718449722460476
+    second: Itachipng_77
+  - first:
+      213: 2696945962128126710
+    second: Itachipng_78
+  - first:
+      213: -6617757314966560085
+    second: Itachipng_79
+  - first:
+      213: 9022147424994704685
+    second: Itachipng_80
+  - first:
+      213: -7050459531351576022
+    second: Itachipng_81
+  - first:
+      213: -3108218007566165082
+    second: Itachipng_82
+  - first:
+      213: -6211333739686990974
+    second: Itachipng_83
+  - first:
+      213: -4109108205376377095
+    second: Itachipng_84
+  - first:
+      213: 7071472578303840036
+    second: Itachipng_85
+  - first:
+      213: 4394837155108185772
+    second: Itachipng_86
+  - first:
+      213: -3399313329307222763
+    second: Itachipng_87
+  - first:
+      213: -3654446640384010233
+    second: Itachipng_88
+  - first:
+      213: 5078840393510356784
+    second: Itachipng_89
+  - first:
+      213: 8524785520039576748
+    second: Itachipng_90
+  - first:
+      213: 1617314758270223698
+    second: Itachipng_91
+  - first:
+      213: 754541748506793214
+    second: Itachipng_92
+  - first:
+      213: -1680027703449143329
+    second: Itachipng_93
+  - first:
+      213: 1270277510041561542
+    second: Itachipng_94
+  - first:
+      213: 3291133590600894699
+    second: Itachipng_95
+  - first:
+      213: 3543798017424225707
+    second: Itachipng_96
+  - first:
+      213: 5701205098353534877
+    second: Itachipng_97
+  - first:
+      213: -7059351532845430470
+    second: Itachipng_98
+  - first:
+      213: -3742405209572769227
+    second: Itachipng_99
+  - first:
+      213: -7943698016128520934
+    second: Itachipng_100
+  - first:
+      213: 6566678710049851234
+    second: Itachipng_101
+  - first:
+      213: -1453833225159897456
+    second: Itachipng_102
+  - first:
+      213: 3133095842642342249
+    second: Itachipng_103
+  - first:
+      213: 9111350005928491474
+    second: Itachipng_104
+  - first:
+      213: -3885103726793162556
+    second: Itachipng_105
+  - first:
+      213: 3788800046043336445
+    second: Itachipng_106
+  - first:
+      213: -2207464830047911747
+    second: Itachipng_107
+  - first:
+      213: -817587251048113673
+    second: Itachipng_108
+  - first:
+      213: -5748079242225550814
+    second: Itachipng_109
+  - first:
+      213: -2158749505785264172
+    second: Itachipng_110
+  - first:
+      213: -2585772328913636293
+    second: Itachipng_111
+  - first:
+      213: -7741858998222300929
+    second: Itachipng_112
+  - first:
+      213: 2728104860776683087
+    second: Itachipng_113
+  - first:
+      213: 615778716244892195
+    second: Itachipng_114
+  - first:
+      213: -1250387345359513709
+    second: Itachipng_115
+  - first:
+      213: -3902755509717733966
+    second: Itachipng_116
+  - first:
+      213: -3874666410995447871
+    second: Itachipng_117
+  - first:
+      213: -6128878352345388667
+    second: Itachipng_118
+  - first:
+      213: -215071377328498349
+    second: Itachipng_119
+  - first:
+      213: 624854720688631060
+    second: Itachipng_120
+  - first:
+      213: -6875734289062402059
+    second: Itachipng_121
+  - first:
+      213: -1122017388203874953
+    second: Itachipng_122
+  - first:
+      213: -9093608093284059589
+    second: Itachipng_123
+  - first:
+      213: -2098083801274943755
+    second: Itachipng_124
+  - first:
+      213: 3368627898893918159
+    second: Itachipng_125
+  - first:
+      213: -1949723525312080828
+    second: Itachipng_126
+  - first:
+      213: 775684399193028554
+    second: Itachipng_127
+  - first:
+      213: 2890828865152466333
+    second: Itachipng_128
+  - first:
+      213: -1236342157876269117
+    second: Itachipng_129
+  - first:
+      213: 689631962580519650
+    second: Itachipng_130
+  - first:
+      213: -715506899746669766
+    second: Itachipng_131
+  - first:
+      213: 6336028935717750894
+    second: Itachipng_132
+  - first:
+      213: -8626080772870717056
+    second: Itachipng_133
+  - first:
+      213: -2157110362555565100
+    second: Itachipng_134
+  - first:
+      213: 4049736112768566019
+    second: Itachipng_135
+  - first:
+      213: -5983229507074893804
+    second: Itachipng_136
+  - first:
+      213: 8171425214564570532
+    second: Itachipng_137
+  - first:
+      213: -7735547780434148374
+    second: Itachipng_138
+  - first:
+      213: -9105546201313897275
+    second: Itachipng_139
+  - first:
+      213: -8568637748039530940
+    second: Itachipng_140
+  - first:
+      213: -7305233658427241286
+    second: Itachipng_141
+  - first:
+      213: -5572732947233251333
+    second: Itachipng_142
+  - first:
+      213: -3510512217040852911
+    second: Itachipng_143
+  - first:
+      213: 5766844668601914861
+    second: Itachipng_144
+  - first:
+      213: 7413336079491749031
+    second: Itachipng_145
+  - first:
+      213: 274619717691372314
+    second: Itachipng_146
+  - first:
+      213: 8064351646813729281
+    second: Itachipng_147
+  - first:
+      213: 6471023178477670531
+    second: Itachipng_148
+  - first:
+      213: -1717311379652237290
+    second: Itachipng_149
+  - first:
+      213: 2573120024119882440
+    second: Itachipng_150
+  - first:
+      213: 1283563825727143906
+    second: Itachipng_151
+  - first:
+      213: 6106902772064172596
+    second: Itachipng_152
+  - first:
+      213: -7485882264873403934
+    second: Itachipng_153
+  - first:
+      213: -301024643312655991
+    second: Itachipng_154
+  - first:
+      213: 542993356538828661
+    second: Itachipng_155
+  - first:
+      213: -5123858850889870476
+    second: Itachipng_156
+  - first:
+      213: -4181012879123366071
+    second: Itachipng_157
+  - first:
+      213: 4256098675454432762
+    second: Itachipng_158
+  - first:
+      213: -388810547670251032
+    second: Itachipng_159
+  - first:
+      213: -2575167129996492594
+    second: Itachipng_160
+  - first:
+      213: 280441373035036147
+    second: Itachipng_161
+  - first:
+      213: -8626877712635896183
+    second: Itachipng_162
+  - first:
+      213: 6528119365303398352
+    second: Itachipng_163
+  - first:
+      213: 5608420282470482527
+    second: Itachipng_164
+  - first:
+      213: -273943486461802387
+    second: Itachipng_165
+  - first:
+      213: -5878586209064708648
+    second: Itachipng_166
+  - first:
+      213: -5655275372221574871
+    second: Itachipng_167
+  - first:
+      213: 2135634929811160992
+    second: Itachipng_168
+  - first:
+      213: -8868992439889697807
+    second: Itachipng_169
+  - first:
+      213: -5550032266254365203
+    second: Itachipng_170
+  - first:
+      213: 6996707593921070455
+    second: Itachipng_171
+  - first:
+      213: -5482048360180274218
+    second: Itachipng_172
+  - first:
+      213: 7785813828639383144
+    second: Itachipng_173
+  - first:
+      213: -7146546386965573730
+    second: Itachipng_174
+  - first:
+      213: -116869673358873463
+    second: Itachipng_175
+  - first:
+      213: 4801310571823163912
+    second: Itachipng_176
+  - first:
+      213: 2146473316987544031
+    second: Itachipng_177
+  - first:
+      213: 5241671822289683445
+    second: Itachipng_178
+  - first:
+      213: -727019509470434799
+    second: Itachipng_179
+  - first:
+      213: 8164685877160834477
+    second: Itachipng_180
+  - first:
+      213: -8990091699887839142
+    second: Itachipng_181
+  - first:
+      213: -7886934878896622593
+    second: Itachipng_182
+  - first:
+      213: -217654752544431868
+    second: Itachipng_183
+  - first:
+      213: 9870971270108989
+    second: Itachipng_184
+  - first:
+      213: -7997470081824559605
+    second: Itachipng_185
+  - first:
+      213: -3902395545928737818
+    second: Itachipng_186
+  - first:
+      213: 1658443624724791647
+    second: Itachipng_187
+  - first:
+      213: 1219614613719488397
+    second: Itachipng_188
+  - first:
+      213: -4836927414974616717
+    second: Itachipng_189
+  - first:
+      213: 1759515662566383929
+    second: Itachipng_190
+  - first:
+      213: 100942670643750603
+    second: Itachipng_191
+  - first:
+      213: 3408525826259056739
+    second: Itachipng_192
+  - first:
+      213: -843067861315361854
+    second: Itachipng_193
+  - first:
+      213: -1649969503436933677
+    second: Itachipng_194
+  - first:
+      213: -417743900112306869
+    second: Itachipng_195
+  - first:
+      213: 3834277787518576550
+    second: Itachipng_196
+  - first:
+      213: -4486475891184938011
+    second: Itachipng_197
+  - first:
+      213: 6407595764650258935
+    second: Itachipng_198
+  - first:
+      213: 7912531972155211307
+    second: Itachipng_199
+  - first:
+      213: 6613709307299558506
+    second: Itachipng_200
+  - first:
+      213: -3353798478106059766
+    second: Itachipng_201
+  - first:
+      213: 6842785347461207063
+    second: Itachipng_202
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Itachipng_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 1647
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b97df473427ab6020800000000000000
+      internalID: 2336144605710374811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 1647
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4526fbfed96e32990800000000000000
+      internalID: -7411826995715153324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_2
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 1647
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 746f5d99a6b962250800000000000000
+      internalID: 5919589642374870599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_3
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 1647
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af66313d218373580800000000000000
+      internalID: -8847541289444219142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_4
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 1647
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a2b21586c76561c0800000000000000
+      internalID: -4511085349407903063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 1647
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bd16c0317c5a6720800000000000000
+      internalID: 2840184156229868977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_6
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 1647
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25faeabc9d06d92a0800000000000000
+      internalID: -6729115779680260270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_7
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 1318
+        width: 368
+        height: 361
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ecaa9a9414382d00800000000000000
+      internalID: 948064984659307750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_8
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 1532
+        width: 112
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5403e31cf1eb6da0800000000000000
+      internalID: -5950414009858325411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_9
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1502
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55402d2e95c463d60800000000000000
+      internalID: 7869561347817735253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_10
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 1502
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ab212525acd39000800000000000000
+      internalID: 41619423427111843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_11
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 1502
+        width: 20
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c6437f73e2f5c450800000000000000
+      internalID: 6108555528507705031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_12
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 1502
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9971e15d619dab220800000000000000
+      internalID: 2502551235045758873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_13
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 1502
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f5c1789268620040800000000000000
+      internalID: 4612363741054486007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_14
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 1414
+        width: 29
+        height: 65
+      alignment: 9
+      pivot: {x: 0.5655, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2997a19b73e772b40800000000000000
+      internalID: 5415435854730131858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_15
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 1414
+        width: 26
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c02328eb99bfd030800000000000000
+      internalID: 3521737512892702921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_16
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1414
+        width: 26
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eb0fc3807fe55d10800000000000000
+      internalID: 2113858866647075808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_17
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 1414
+        width: 27
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3634e16b8569f7a0800000000000000
+      internalID: -6342926950857427397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_18
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 1387
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8118d5587d0a5470800000000000000
+      internalID: 8384028466791059852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_19
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 1387
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ea29281b6bfbc860800000000000000
+      internalID: 7551405637602192103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_20
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 1387
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a3dc2fc38c6a6200800000000000000
+      internalID: 174070848979522466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_21
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1385
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed836aeb9cd400480800000000000000
+      internalID: -8935056131820734242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_22
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 1385
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 234c19134c5c6ac50800000000000000
+      internalID: 6676240944059237426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_23
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 1385
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7da121f3c8cfaa230800000000000000
+      internalID: 3651008127220980439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_24
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 1385
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4bf01d3b74bb6430800000000000000
+      internalID: 3777311153878793034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_25
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 1314
+        width: 48
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.66}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6db850b483a1a0470800000000000000
+      internalID: 8361524487245892566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_26
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 1319
+        width: 56
+        height: 45
+      alignment: 9
+      pivot: {x: 0.5, y: 0.66}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55d06f25d3b05bd90800000000000000
+      internalID: -7082742480957469355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_27
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 1315
+        width: 57
+        height: 47
+      alignment: 9
+      pivot: {x: 0.5, y: 0.66}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93f93029eb392da60800000000000000
+      internalID: 7697377159832379193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_28
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 1315
+        width: 45
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.66}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb856d440017196f0800000000000000
+      internalID: -679637822787397442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_29
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 1319
+        width: 54
+        height: 45
+      alignment: 9
+      pivot: {x: 0.5, y: 0.66}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 741c96e712b4d2ed0800000000000000
+      internalID: -2437209216110706361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_30
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 1315
+        width: 58
+        height: 47
+      alignment: 9
+      pivot: {x: 0.5, y: 0.66}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11430ae25e1fa6ca0800000000000000
+      internalID: -6022735585022561263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_31
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 1306
+        width: 35
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2af41f50c08159e10800000000000000
+      internalID: 2203694032586100642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_32
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 1306
+        width: 34
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d8372384b0aaf3f0800000000000000
+      internalID: -866203281160455975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_33
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 1306
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76a1b13075d4a3e70800000000000000
+      internalID: 9095667433537739367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_34
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 1306
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc8426a9834b5b0a0800000000000000
+      internalID: -6866383901655152437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_35
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 1299
+        width: 44
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c308cee9936cdd70800000000000000
+      internalID: 9069233262404568009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_36
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 1283
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e31312bbc22ee240800000000000000
+      internalID: 4822830509221680100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_37
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1283
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ceaa74c97cfb3930800000000000000
+      internalID: 4124167483705437892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_38
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 1283
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4d498527b5ef0ee0800000000000000
+      internalID: -1292561993260511924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_39
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 1283
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78724c6ada7431de0800000000000000
+      internalID: -1363667451010340985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_40
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1283
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82167448f231e7cc0800000000000000
+      internalID: -3711507948103048920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_41
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 1283
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f92a530e4c70e76c0800000000000000
+      internalID: -4143866064977681761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_42
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 1279
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bea3c331360ddb740800000000000000
+      internalID: 5169517071234251499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_43
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 1279
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc44a71f00c045a70800000000000000
+      internalID: 8814683568861758668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_44
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 1279
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56766940e874f5a70800000000000000
+      internalID: 8817845270702614373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_45
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 1279
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d681aeee7e148e930800000000000000
+      internalID: 4172657519160334445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_46
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 1279
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 876980020a90f1fe0800000000000000
+      internalID: -1216242791029893512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_47
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 1279
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2b4f297d6679b330800000000000000
+      internalID: 3727140379182451499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_48
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 1279
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ca0392d8e039c5c0800000000000000
+      internalID: -4194767801395508535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_49
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 1279
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d44fcaa2bc5773470800000000000000
+      internalID: 8374291547573515341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_50
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 1279
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33a5c6abc12f9b430800000000000000
+      internalID: 3799333965864393267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_51
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 1199
+        width: 33
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63879258c33a6aac0800000000000000
+      internalID: -3844205751586686922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_52
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 1199
+        width: 40
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7d8daf2666d86f80800000000000000
+      internalID: -8112998994333037187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_53
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 1204
+        width: 45
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63d04e94f2e9d59f0800000000000000
+      internalID: -478052059491070666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_54
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 1199
+        width: 67
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 917255de49c18a460800000000000000
+      internalID: 7253078625842702105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_55
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 1195
+        width: 69
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86832658f8a960e60800000000000000
+      internalID: 7928194135241144424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_56
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 1192
+        width: 44
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9574fc2a5694ed790800000000000000
+      internalID: -7503479228280649895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_57
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 1206
+        width: 49
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d4caa98a9d6fa060800000000000000
+      internalID: 6966907659067507927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_58
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1206
+        width: 49
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 593af0faa575c4100800000000000000
+      internalID: 93545739263648661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_59
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 1169
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e30f0c60ba7ca3010800000000000000
+      internalID: 1169466590622707774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_60
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 1169
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9a1c5e59dd943b00800000000000000
+      internalID: 807443790122719903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_61
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 1169
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b801773a90aca5cb0800000000000000
+      internalID: -4874361503929134965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_62
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 1169
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f559356d9f6358f0800000000000000
+      internalID: -552975607437634059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_63
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 1169
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0a2aa8fbe6fd4830800000000000000
+      internalID: 4057170332680333836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_64
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 1169
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75eab3140e22aa1b0800000000000000
+      internalID: -5644660836393046441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_65
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 1085
+        width: 31
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b032a5951ad7bd9e0800000000000000
+      internalID: -1595543511030422773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_66
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 1085
+        width: 39
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22b207cafdb5b1310800000000000000
+      internalID: 1376795127320685346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_67
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 1085
+        width: 45
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d820762f6cc7bf090800000000000000
+      internalID: -7999663119181348211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_68
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 1085
+        width: 40
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f4c548a8ff08fa10800000000000000
+      internalID: 1943320799859819763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_69
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 1085
+        width: 67
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aaf42eb8ac16d390800000000000000
+      internalID: -7794010594047886682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_70
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 1085
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6639da7c53ec5c20800000000000000
+      internalID: 3196679821863761518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_71
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 1085
+        width: 56
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0c3ccd090572fe90800000000000000
+      internalID: -6993398589606314998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_72
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 1085
+        width: 49
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c530187e657c3a30800000000000000
+      internalID: 4196358070123640265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_73
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 1085
+        width: 37
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7f7ddce6ae78f6c0800000000000000
+      internalID: -4109395404571967622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_74
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 1085
+        width: 47
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09062c7acfb7cdca0800000000000000
+      internalID: -5990777079233093488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_75
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 1085
+        width: 64
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5f80c8b3d20eaa20800000000000000
+      internalID: 3075398703901609822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_76
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 1085
+        width: 63
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7238aa5a3852c2b80800000000000000
+      internalID: -8418312356111940825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_77
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 1085
+        width: 41
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c398e2342379afa50800000000000000
+      internalID: 6555718449722460476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_78
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 1057
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f23213401a7d6520800000000000000
+      internalID: 2696945962128126710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_79
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 1059
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba2ecafc8c00924a0800000000000000
+      internalID: -6617757314966560085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_80
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 1057
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2db30a184b153d70800000000000000
+      internalID: 9022147424994704685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_81
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 1057
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a22b582496cb72e90800000000000000
+      internalID: -7050459531351576022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_82
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 1057
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6abdb8ea0346dd4d0800000000000000
+      internalID: -3108218007566165082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_83
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 1057
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28bee807fd8ecc9a0800000000000000
+      internalID: -6211333739686990974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_84
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 1057
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fee5e2bbd389f6c0800000000000000
+      internalID: -4109108205376377095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_85
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 1057
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42f47bcf7dae22260800000000000000
+      internalID: 7071472578303840036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_86
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 1057
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca669e39b199dfc30800000000000000
+      internalID: 4394837155108185772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_87
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 1057
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51d746e898633d0d0800000000000000
+      internalID: -3399313329307222763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_88
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 1057
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7089a45842cc84dc0800000000000000
+      internalID: -3654446640384010233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_89
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 1053
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0370716dd6aab7640800000000000000
+      internalID: 5078840393510356784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_90
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 1055
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca44a54a34f1e4670800000000000000
+      internalID: 8524785520039576748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_91
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 1053
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25581b8243bd17610800000000000000
+      internalID: 1617314758270223698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_92
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 1053
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef413f7f8bba87a00800000000000000
+      internalID: 754541748506793214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_93
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 1053
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd7391374b75fa8e0800000000000000
+      internalID: -1680027703449143329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_94
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 1053
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c9e1384aaee0a110800000000000000
+      internalID: 1270277510041561542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_95
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 1053
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be84f1040947cad20800000000000000
+      internalID: 3291133590600894699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_96
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 1053
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba5fd4065891e2130800000000000000
+      internalID: 3543798017424225707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_97
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 1053
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d972207a4dfbe1f40800000000000000
+      internalID: 5701205098353534877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_98
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 1053
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a398324de25280e90800000000000000
+      internalID: -7059351532845430470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_99
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 1053
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53208dd3a4e401cc0800000000000000
+      internalID: -3742405209572769227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_100
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 1053
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1d2fa9edb052c190800000000000000
+      internalID: -7943698016128520934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_101
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 972
+        width: 34
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26744aabe77812b50800000000000000
+      internalID: 6566678710049851234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_102
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 972
+        width: 61
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09e0fab6262f2dbe0800000000000000
+      internalID: -1453833225159897456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_103
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 972
+        width: 56
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96133fba11efa7b20800000000000000
+      internalID: 3133095842642342249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_104
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 972
+        width: 42
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d9fe9f6e84027e70800000000000000
+      internalID: 9111350005928491474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_105
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 972
+        width: 27
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c082f0aeb6551ac0800000000000000
+      internalID: -3885103726793162556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_106
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 973
+        width: 43
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfe85656195849430800000000000000
+      internalID: 3788800046043336445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_107
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 973
+        width: 61
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db083d6ce628d51e0800000000000000
+      internalID: -2207464830047911747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_108
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 973
+        width: 61
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f993681ab857a4f0800000000000000
+      internalID: -817587251048113673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_109
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 917
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22a79524268ba30b0800000000000000
+      internalID: -5748079242225550814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_110
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 917
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d78e9413c49a02e0800000000000000
+      internalID: -2158749505785264172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_111
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 917
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b34711154cd7d1cd0800000000000000
+      internalID: -2585772328913636293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_112
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 917
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff85ccd52446f8490800000000000000
+      internalID: -7741858998222300929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_113
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 917
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f465c90baec2cd520800000000000000
+      internalID: 2728104860776683087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_114
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 917
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32ad50ada7fab8800800000000000000
+      internalID: 615778716244892195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_115
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 917
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 397d330955bb5aee0800000000000000
+      internalID: -1250387345359513709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_116
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 917
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bd6316aa80a6d9c0800000000000000
+      internalID: -3902755509717733966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_117
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 917
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c78a759d6b6a3ac0800000000000000
+      internalID: -3874666410995447871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_118
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 917
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5892fd85c99d1faa0800000000000000
+      internalID: -6128878352345388667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_119
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 917
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3591bf8c8b9e30df0800000000000000
+      internalID: -215071377328498349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_120
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 917
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41d2fdece0eeba800800000000000000
+      internalID: 624854720688631060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_121
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 913
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f76672e71c7490a0800000000000000
+      internalID: -6875734289062402059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_122
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 917
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 775eb40512bcd60f0800000000000000
+      internalID: -1122017388203874953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_123
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 917
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b36bf218e930dc180800000000000000
+      internalID: -9093608093284059589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_124
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 917
+        width: 25
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f6710c16eb12e2e0800000000000000
+      internalID: -2098083801274943755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_125
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 917
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcfda0ee935cfbe20800000000000000
+      internalID: 3368627898893918159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_126
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 917
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4441d87a8c031f4e0800000000000000
+      internalID: -1949723525312080828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_127
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 917
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac776bfe9d8c3ca00800000000000000
+      internalID: 775684399193028554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_128
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 917
+        width: 26
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9dbbdd59894e1820800000000000000
+      internalID: 2890828865152466333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_129
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 917
+        width: 28
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cfe1fa9b51a7dee0800000000000000
+      internalID: -1236342157876269117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_130
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 917
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ea0e5bbd90129900800000000000000
+      internalID: 689631962580519650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_131
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 917
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3b324ef3420216f0800000000000000
+      internalID: -715506899746669766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_132
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 917
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e688d005fb81ee750800000000000000
+      internalID: 6336028935717750894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_133
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 917
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 081c6317d310a4880800000000000000
+      internalID: -8626080772870717056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_134
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 917
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dbbf8add876012e0800000000000000
+      internalID: -2157110362555565100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_135
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 917
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30344a3c98d833830800000000000000
+      internalID: 4049736112768566019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_136
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 917
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4185a2db67c47fca0800000000000000
+      internalID: -5983229507074893804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_137
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 917
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a59ac640fbb66170800000000000000
+      internalID: 8171425214564570532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_138
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 917
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae349244740d5a490800000000000000
+      internalID: -7735547780434148374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_139
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 913
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c417c029f992a180800000000000000
+      internalID: -9105546201313897275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_140
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 884
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 446c913ed55161980800000000000000
+      internalID: -8568637748039530940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_141
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 884
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abc873441b89e9a90800000000000000
+      internalID: -7305233658427241286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_142
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 884
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bffdb0cf8eca9a2b0800000000000000
+      internalID: -5572732947233251333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_143
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 884
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1586c93fcb7284fc0800000000000000
+      internalID: -3510512217040852911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_144
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 884
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de55fda0ca2f70050800000000000000
+      internalID: 5766844668601914861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_145
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 884
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a451b203e571e660800000000000000
+      internalID: 7413336079491749031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_146
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 884
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a13ff41ad25afc300800000000000000
+      internalID: 274619717691372314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_147
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 884
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1023b2498155aef60800000000000000
+      internalID: 8064351646813729281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_148
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 884
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3801b7ebb41bdc950800000000000000
+      internalID: 6471023178477670531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_149
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 884
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 618a71f1662ea28e0800000000000000
+      internalID: -1717311379652237290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_150
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 884
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c23c1a670f85b320800000000000000
+      internalID: 2573120024119882440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_151
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 884
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eff107bf7220d110800000000000000
+      internalID: 1283563825727143906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_152
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 868
+        width: 114
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43abbb627b310c450800000000000000
+      internalID: 6106902772064172596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_153
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 868
+        width: 115
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e9f2d3fdbdcc1890800000000000000
+      internalID: -7485882264873403934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_154
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 803
+        width: 29
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 981e5ba8eab82dbf0800000000000000
+      internalID: -301024643312655991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_155
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 803
+        width: 25
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 577d4e3b499198700800000000000000
+      internalID: 542993356538828661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_156
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 803
+        width: 26
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 473d771c58564e8b0800000000000000
+      internalID: -5123858850889870476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_157
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 803
+        width: 35
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94fb48a30fe0af5c0800000000000000
+      internalID: -4181012879123366071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_158
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 803
+        width: 25
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af5d87f0233b01b30800000000000000
+      internalID: 4256098675454432762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_159
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 803
+        width: 30
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e9803deddaaa9af0800000000000000
+      internalID: -388810547670251032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_160
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 803
+        width: 36
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec00c4b932b234cd0800000000000000
+      internalID: -2575167129996492594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_161
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 803
+        width: 37
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fd731461f354e300800000000000000
+      internalID: 280441373035036147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_162
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 803
+        width: 49
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98e5a917d6c274880800000000000000
+      internalID: -8626877712635896183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_163
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 803
+        width: 50
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dfe14ca9f9889a50800000000000000
+      internalID: 6528119365303398352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_164
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 804
+        width: 49
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f52cfbf388c15dd40800000000000000
+      internalID: 5608420282470482527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_165
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 804
+        width: 50
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6889e8b9d1c23cf0800000000000000
+      internalID: -273943486461802387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_166
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 803
+        width: 40
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d5103b2df01b6ea0800000000000000
+      internalID: -5878586209064708648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_167
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 674
+        width: 163
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 921d7bb030d6481b0800000000000000
+      internalID: -5655275372221574871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_168
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 770
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0af7f4157ac43ad10800000000000000
+      internalID: 2135634929811160992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_169
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 668
+        width: 171
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f3efb8ad520be480800000000000000
+      internalID: -8868992439889697807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_170
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 702
+        width: 42
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dedc3f52f035af2b0800000000000000
+      internalID: -5550032266254365203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_171
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 692
+        width: 70
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77581fc8c7c491160800000000000000
+      internalID: 6996707593921070455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_172
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 678
+        width: 117
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6db21f1cf0adbe3b0800000000000000
+      internalID: -5482048360180274218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_173
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 672
+        width: 147
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86edf571d64cc0c60800000000000000
+      internalID: 7785813828639383144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_174
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 509
+        width: 183
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9fc012dced52dc90800000000000000
+      internalID: -7146546386965573730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_175
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 501
+        width: 190
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98cad6ab6abc06ef0800000000000000
+      internalID: -116869673358873463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_176
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 502
+        width: 181
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80ae8d1d68ea1a240800000000000000
+      internalID: 4801310571823163912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_177
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 622
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd1a5eafb1ec9cd10800000000000000
+      internalID: 2146473316987544031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_178
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 506
+        width: 190
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f340c430c82eb840800000000000000
+      internalID: 5241671822289683445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_179
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 547
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11a6c39ab9b19e5f0800000000000000
+      internalID: -727019509470434799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_180
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 389
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da5f1d20c8ace4170800000000000000
+      internalID: 8164685877160834477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_181
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 344
+        width: 182
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a586ff10b37cc3380800000000000000
+      internalID: -8990091699887839142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_182
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 345
+        width: 192
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff37ab0b38afb8290800000000000000
+      internalID: -7886934878896622593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_183
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 212
+        width: 179
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 401e9eed72cbafcf0800000000000000
+      internalID: -217654752544431868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_184
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 208
+        width: 131
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3794289891132000800000000000000
+      internalID: 9870971270108989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_185
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 210
+        width: 105
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0e680f3557430190800000000000000
+      internalID: -7997470081824559605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_186
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 294
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ebd9df3de7e7d9c0800000000000000
+      internalID: -3902395545928737818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_187
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 271
+        width: 40
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f518bbb90b9f30710800000000000000
+      internalID: 1658443624724791647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_188
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 294
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8710a58701fce010800000000000000
+      internalID: 1219614613719488397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_189
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 286
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37be61aa428cfdcb0800000000000000
+      internalID: -4836927414974616717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_190
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 264
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 931610c3c2e0b6810800000000000000
+      internalID: 1759515662566383929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_191
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 274
+        width: 11
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc6666af2de966100800000000000000
+      internalID: 100942670643750603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_192
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 266
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3687ae90e248d4f20800000000000000
+      internalID: 3408525826259056739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_193
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 238
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c3efb43f32dc44f0800000000000000
+      internalID: -843067861315361854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_194
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 262
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d5f9618a712a19e0800000000000000
+      internalID: -1649969503436933677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_195
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 222
+        width: 37
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4d38bad220e33af0800000000000000
+      internalID: -417743900112306869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_196
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 226
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a727373557163530800000000000000
+      internalID: 3834277787518576550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_197
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 211
+        width: 45
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e3519482f5dcb1c0800000000000000
+      internalID: -4486475891184938011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_198
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 234
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f1b648266a5ce850800000000000000
+      internalID: 6407595764650258935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_199
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 216
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2e7b3208e5fecd60800000000000000
+      internalID: 7912531972155211307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_200
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 214
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a64f845f29d98cb50800000000000000
+      internalID: 6613709307299558506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_201
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 214
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0c1e38ad0ae471d0800000000000000
+      internalID: -3353798478106059766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itachipng_202
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 42
+        width: 309
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7145ca5d40576fe50800000000000000
+      internalID: 6842785347461207063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

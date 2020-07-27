@@ -43,6 +43,7 @@ namespace SideScrollerProject
         public MaterialPropertyBlock material;
         public PlayerStatus playerStatus;
         public ParticleSystem dustEffect;
+        public ChangeMotion motion;
 
 
 
@@ -76,6 +77,9 @@ namespace SideScrollerProject
                 if (Input.GetKeyUp(KeyCode.S))
                 {
                     thirdEye.ResizeObject();
+                    animator.SetBool("isEyeOn", thirdEye.thirdEyeOn);
+                    //motion.ChangeAnimationClip();
+                    motion.ChangeMultipleAnimationClips();
                 }
 
                 if (Input.GetKeyDown(KeyCode.Z) && canAttack)

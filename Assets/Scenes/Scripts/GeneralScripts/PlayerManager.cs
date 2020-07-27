@@ -45,7 +45,10 @@ namespace SideScrollerProject
 
             }
         }
-
+        public Transform GetPlayerTransform()
+        {
+            return player.transform;
+        }
         public PlayerStatus GetPlayerStatus()
         {
             return player.GetComponent<PlayerStatus>();
@@ -54,6 +57,10 @@ namespace SideScrollerProject
         public Rigidbody2D GetPlayerRigidbody2D()
         {
             return player.GetComponent<Rigidbody2D>();
+        }
+        public Animator GetPlayerAnimator()
+        {
+            return player.GetComponent<Animator>();
         }
 
         public Actions GetPlayerAction()

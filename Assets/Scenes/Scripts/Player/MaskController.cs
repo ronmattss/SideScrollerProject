@@ -13,6 +13,7 @@ public class MaskController : MonoBehaviour
     public GameObject maskObject;
     public ParticleSystem ripple;
     public ParticleSystem rippleReverse;
+    public TrailRenderer trailEffect;
     public bool thirdEyeOn = false;
     public float scale = 30f;
     void Start()
@@ -33,6 +34,7 @@ public class MaskController : MonoBehaviour
             maskObject.transform.LeanScale(Vector3.zero, 0.25f);
             thirdEyeOn = false;
             rippleReverse.Play();
+             trailEffect.gameObject.SetActive(false);
            // rippleReverse.Stop();
            
         }
@@ -41,6 +43,7 @@ public class MaskController : MonoBehaviour
             maskObject.transform.LeanScale(new Vector3(scale, scale, 1), 0.25f);
             thirdEyeOn = true;
              ripple.Play();
+             trailEffect.gameObject.SetActive(true);
             // ripple.Stop();
         }
 
