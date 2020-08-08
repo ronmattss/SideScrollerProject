@@ -1,0 +1,392 @@
+fileFormatVersion: 2
+guid: 2cacf42485c3d9d47869fb192f02646b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8744008212907093635
+    second: BinagoonanIDLEsheet_0
+  - first:
+      213: 8138116935440735975
+    second: BinagoonanIDLEsheet_1
+  - first:
+      213: 1605331511447248432
+    second: BinagoonanIDLEsheet_2
+  - first:
+      213: 4059012643379817105
+    second: BinagoonanIDLEsheet_3
+  - first:
+      213: 8810823749390722414
+    second: BinagoonanIDLEsheet_4
+  - first:
+      213: 2170911941229977763
+    second: BinagoonanIDLEsheet_5
+  - first:
+      213: 214286896013579354
+    second: BinagoonanIDLEsheet_6
+  - first:
+      213: 2746441372121872897
+    second: BinagoonanIDLEsheet_7
+  - first:
+      213: -6499570098187239550
+    second: BinagoonanIDLEsheet_8
+  - first:
+      213: 3472636547463216341
+    second: BinagoonanIDLEsheet_9
+  - first:
+      213: 4242456466011322684
+    second: BinagoonanIDLEsheet_10
+  - first:
+      213: -3411656968129539421
+    second: BinagoonanIDLEsheet_11
+  - first:
+      213: -8415326025761752841
+    second: BinagoonanIDLEsheet_12
+  - first:
+      213: -2804103745433922293
+    second: BinagoonanIDLEsheet_13
+  - first:
+      213: 460828781087738098
+    second: BinagoonanIDLEsheet_14
+  - first:
+      213: 5358660903320989622
+    second: BinagoonanIDLEsheet_15
+  - first:
+      213: -4723502640540690551
+    second: BinagoonanIDLEsheet_16
+  - first:
+      213: 8690637682062177586
+    second: BinagoonanIDLEsheet_17
+  - first:
+      213: -2310747735140394570
+    second: BinagoonanIDLEsheet_18
+  - first:
+      213: -6803572103530279273
+    second: BinagoonanIDLEsheet_19
+  - first:
+      213: -8278559433225119748
+    second: BinagoonanIDLEsheet_20
+  - first:
+      213: 937220655983506147
+    second: BinagoonanIDLEsheet_21
+  - first:
+      213: 7715305834655574673
+    second: BinagoonanIDLEsheet_22
+  - first:
+      213: 3490547706496456240
+    second: BinagoonanIDLEsheet_23
+  - first:
+      213: 831873699028423068
+    second: BinagoonanIDLEsheet_24
+  - first:
+      213: -6742515716774230005
+    second: BinagoonanIDLEsheet_25
+  - first:
+      213: 2300807136643792138
+    second: BinagoonanIDLEsheet_26
+  - first:
+      213: 4919150137030652786
+    second: BinagoonanIDLEsheet_27
+  - first:
+      213: 5164280863104652078
+    second: BinagoonanIDLEsheet_28
+  - first:
+      213: -3239399306690851277
+    second: BinagoonanIDLEsheet_29
+  - first:
+      213: -1728345475248819187
+    second: BinagoonanIDLEsheet_30
+  - first:
+      213: -8720379073750734822
+    second: BinagoonanIDLEsheet_31
+  - first:
+      213: 5362577754678837749
+    second: BinagoonanIDLEsheet_32
+  - first:
+      213: -592219626232542225
+    second: BinagoonanIDLEsheet_33
+  - first:
+      213: 6321283657781134838
+    second: BinagoonanIDLEsheet_34
+  - first:
+      213: -8095366027895075881
+    second: BinagoonanIDLEsheet_35
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BinagoonanIDLEsheet_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 9
+        width: 130
+        height: 169
+      alignment: 9
+      pivot: {x: 0.515, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38eec635425f85970800000000000000
+      internalID: 8744008212907093635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BinagoonanIDLEsheet_1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 9
+        width: 130
+        height: 169
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ee19853c3660f070800000000000000
+      internalID: 8138116935440735975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BinagoonanIDLEsheet_2
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 9
+        width: 130
+        height: 169
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03edd861188474610800000000000000
+      internalID: 1605331511447248432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BinagoonanIDLEsheet_3
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 9
+        width: 130
+        height: 169
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19a297b5e72845830800000000000000
+      internalID: 4059012643379817105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BinagoonanIDLEsheet_4
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 9
+        width: 135
+        height: 169
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e656201b485564a70800000000000000
+      internalID: 8810823749390722414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BinagoonanIDLEsheet_5
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 9
+        width: 135
+        height: 169
+      alignment: 9
+      pivot: {x: 0.488581, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a0aaa798e0a02e10800000000000000
+      internalID: 2170911941229977763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BinagoonanIDLEsheet_7
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 9
+        width: 134
+        height: 169
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10ab2cd60e15d1620800000000000000
+      internalID: 2746441372121872897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BinagoonanIDLEsheet_8
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 9
+        width: 130
+        height: 170
+      alignment: 9
+      pivot: {x: 0.51, y: 0.49087796}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28f7cc09e63ecc5a0800000000000000
+      internalID: -6499570098187239550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

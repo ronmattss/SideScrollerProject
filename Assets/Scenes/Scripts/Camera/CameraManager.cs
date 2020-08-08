@@ -22,6 +22,7 @@ public class CameraManager : MonoBehaviour
     public float defaultScreenX = 0.5f;
     public float changedYUp = 0.90f;
     public float changedYDown = 0.23f;
+    public CinemachineConfiner confiner;
     // Start is called before the first frame update
     void Start()
     {

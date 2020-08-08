@@ -1,0 +1,572 @@
+fileFormatVersion: 2
+guid: f94ebe72cadcc6f4480b23cbaba506ba
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5471878795129313188
+    second: BinagoonanATAK1Sheet_0
+  - first:
+      213: 4887511074266547954
+    second: BinagoonanATAK1Sheet_1
+  - first:
+      213: 5527739598148797213
+    second: BinagoonanATAK1Sheet_2
+  - first:
+      213: 7865602035568210509
+    second: BinagoonanATAK1Sheet_3
+  - first:
+      213: -7026795618663205175
+    second: BinagoonanATAK1Sheet_4
+  - first:
+      213: -1328629768755312597
+    second: BinagoonanATAK1Sheet_5
+  - first:
+      213: 3215980037559220607
+    second: BinagoonanATAK1Sheet_6
+  - first:
+      213: 4957186236124786086
+    second: BinagoonanATAK1Sheet_7
+  - first:
+      213: -2461339635026258189
+    second: BinagoonanATAK1Sheet_8
+  - first:
+      213: 1058692329515936573
+    second: BinagoonanATAK1Sheet_9
+  - first:
+      213: -3316093259738576998
+    second: BinagoonanATAK1Sheet_10
+  - first:
+      213: 939884981132088944
+    second: BinagoonanATAK1Sheet_11
+  - first:
+      213: 8938669932838558580
+    second: BinagoonanATAK1Sheet_12
+  - first:
+      213: 1066974307947227273
+    second: BinagoonanATAK1Sheet_13
+  - first:
+      213: 4142209559995949573
+    second: BinagoonanATAK1Sheet_14
+  - first:
+      213: -8250737912639042435
+    second: BinagoonanATAK1Sheet_15
+  - first:
+      213: -7454325590041816533
+    second: BinagoonanATAK1Sheet_16
+  - first:
+      213: 7662386836255672288
+    second: BinagoonanATAK1Sheet_17
+  - first:
+      213: -1326329351859845556
+    second: BinagoonanATAK1Sheet_18
+  - first:
+      213: 8470051505618903825
+    second: BinagoonanATAK1Sheet_19
+  - first:
+      213: -1338737852388432751
+    second: BinagoonanATAK1Sheet_20
+  - first:
+      213: 6763724369609439132
+    second: BinagoonanATAK1Sheet_21
+  - first:
+      213: -3623835032538108382
+    second: BinagoonanATAK1Sheet_22
+  - first:
+      213: 2980271277781584917
+    second: BinagoonanATAK1Sheet_23
+  - first:
+      213: 766636213637209129
+    second: BinagoonanATAK1Sheet_24
+  - first:
+      213: 760243604585205172
+    second: BinagoonanATAK1Sheet_25
+  - first:
+      213: 4870646973150400808
+    second: BinagoonanATAK1Sheet_26
+  - first:
+      213: 5917631810318880421
+    second: BinagoonanATAK1Sheet_27
+  - first:
+      213: -3935474267635484016
+    second: BinagoonanATAK1Sheet_28
+  - first:
+      213: -5764246455321007560
+    second: BinagoonanATAK1Sheet_29
+  - first:
+      213: -7993588153251154924
+    second: BinagoonanATAK1Sheet_30
+  - first:
+      213: -1502759227610516113
+    second: BinagoonanATAK1Sheet_31
+  - first:
+      213: 5958508803129653700
+    second: BinagoonanATAK1Sheet_32
+  - first:
+      213: -3336383462733415112
+    second: BinagoonanATAK1Sheet_33
+  - first:
+      213: 9025860030494004526
+    second: BinagoonanATAK1Sheet_34
+  - first:
+      213: 8764552059183761810
+    second: BinagoonanATAK1Sheet_35
+  - first:
+      213: 2004326800416143761
+    second: BinagoonanATAK1Sheet_36
+  - first:
+      213: 1063016892844086329
+    second: BinagoonanATAK1Sheet_37
+  - first:
+      213: 3087438705089024062
+    second: BinagoonanATAK1Sheet_38
+  - first:
+      213: -6229106155006878225
+    second: BinagoonanATAK1Sheet_39
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BinagoonanATAK1Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 240
+        width: 161
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a7dcadd5c400fb40800000000000000
+      internalID: 5471878795129313188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BinagoonanATAK1Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 239
+        width: 161
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f602794d6de3d340800000000000000
+      internalID: 4887511074266547954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BinagoonanATAK1Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 240
+        width: 161
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d13058690e976bc40800000000000000
+      internalID: 5527739598148797213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BinagoonanATAK1Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 240
+        width: 161
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d42f1aaa06b382d60800000000000000
+      internalID: 7865602035568210509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BinagoonanATAK1Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 240
+        width: 170
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c6fe484d9ecb7e90800000000000000
+      internalID: -7026795618663205175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BinagoonanATAK1Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 240
+        width: 180
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b288453c342cf8de0800000000000000
+      internalID: -1328629768755312597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BinagoonanATAK1Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 240
+        width: 180
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ad6ca11e967bc440800000000000000
+      internalID: 4957186236124786086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BinagoonanATAK1Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 240
+        width: 180
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0765a1e19642b0d00800000000000000
+      internalID: 939884981132088944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BinagoonanATAK1Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 15
+        width: 180
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c46483f4b7ee79de0800000000000000
+      internalID: -1326329351859845556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BinagoonanATAK1Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 15
+        width: 114
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1136da5d7faab8570800000000000000
+      internalID: 8470051505618903825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BinagoonanATAK1Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 15
+        width: 114
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 194a4052409db6de0800000000000000
+      internalID: -1338737852388432751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BinagoonanATAK1Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 15
+        width: 114
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9739397a739ddd50800000000000000
+      internalID: 6763724369609439132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BinagoonanATAK1Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 15
+        width: 163
+        height: 148
+      alignment: 9
+      pivot: {x: 0.56, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92cdbc11393a3aa00800000000000000
+      internalID: 766636213637209129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BinagoonanATAK1Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 14
+        width: 163
+        height: 149
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bd401ac78dec8a00800000000000000
+      internalID: 760243604585205172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BinagoonanATAK1Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 15
+        width: 163
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82116f4cd93089340800000000000000
+      internalID: 4870646973150400808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BinagoonanATAK1Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 15
+        width: 163
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83a69c0a3684100b0800000000000000
+      internalID: -5764246455321007560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

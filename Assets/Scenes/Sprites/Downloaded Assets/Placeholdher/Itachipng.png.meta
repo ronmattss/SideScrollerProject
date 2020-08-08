@@ -5013,10 +5013,10 @@ TextureImporter:
       name: Itachipng_176
       rect:
         serializedVersion: 2
-        x: 478
+        x: 464
         y: 502
-        width: 181
-        height: 132
+        width: 195
+        height: 135
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5026,27 +5026,6 @@ TextureImporter:
       bones: []
       spriteID: 80ae8d1d68ea1a240800000000000000
       internalID: 4801310571823163912
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Itachipng_177
-      rect:
-        serializedVersion: 2
-        x: 535
-        y: 622
-        width: 18
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fd1a5eafb1ec9cd10800000000000000
-      internalID: 2146473316987544031
       vertices: []
       indices: 
       edges: []
@@ -5073,54 +5052,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itachipng_179
-      rect:
-        serializedVersion: 2
-        x: 465
-        y: 547
-        width: 8
-        height: 10
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 11a6c39ab9b19e5f0800000000000000
-      internalID: -727019509470434799
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Itachipng_180
-      rect:
-        serializedVersion: 2
-        x: 33
-        y: 389
-        width: 8
-        height: 10
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: da5f1d20c8ace4170800000000000000
-      internalID: 8164685877160834477
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Itachipng_181
       rect:
         serializedVersion: 2
-        x: 46
+        x: 32
         y: 344
-        width: 182
+        width: 196
         height: 123
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -5181,9 +5118,9 @@ TextureImporter:
       name: Itachipng_184
       rect:
         serializedVersion: 2
-        x: 270
+        x: 265
         y: 208
-        width: 131
+        width: 136
         height: 100
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -5202,9 +5139,9 @@ TextureImporter:
       name: Itachipng_185
       rect:
         serializedVersion: 2
-        x: 454
+        x: 443
         y: 210
-        width: 105
+        width: 116
         height: 97
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -5220,286 +5157,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itachipng_186
-      rect:
-        serializedVersion: 2
-        x: 647
-        y: 294
-        width: 18
-        height: 7
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6ebd9df3de7e7d9c0800000000000000
-      internalID: -3902395545928737818
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Itachipng_187
-      rect:
-        serializedVersion: 2
-        x: 652
-        y: 271
-        width: 40
-        height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f518bbb90b9f30710800000000000000
-      internalID: 1658443624724791647
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Itachipng_188
-      rect:
-        serializedVersion: 2
-        x: 759
-        y: 294
-        width: 15
-        height: 7
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d8710a58701fce010800000000000000
-      internalID: 1219614613719488397
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Itachipng_189
-      rect:
-        serializedVersion: 2
-        x: 617
-        y: 286
-        width: 10
-        height: 5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 37be61aa428cfdcb0800000000000000
-      internalID: -4836927414974616717
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Itachipng_190
-      rect:
-        serializedVersion: 2
-        x: 637
-        y: 264
-        width: 13
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 931610c3c2e0b6810800000000000000
-      internalID: 1759515662566383929
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Itachipng_191
-      rect:
-        serializedVersion: 2
-        x: 741
-        y: 274
-        width: 11
-        height: 5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bc6666af2de966100800000000000000
-      internalID: 100942670643750603
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Itachipng_192
-      rect:
-        serializedVersion: 2
-        x: 787
-        y: 266
-        width: 10
-        height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3687ae90e248d4f20800000000000000
-      internalID: 3408525826259056739
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Itachipng_193
-      rect:
-        serializedVersion: 2
-        x: 266
-        y: 238
-        width: 15
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2c3efb43f32dc44f0800000000000000
-      internalID: -843067861315361854
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Itachipng_194
-      rect:
-        serializedVersion: 2
-        x: 443
-        y: 262
-        width: 9
-        height: 10
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3d5f9618a712a19e0800000000000000
-      internalID: -1649969503436933677
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Itachipng_195
-      rect:
-        serializedVersion: 2
-        x: 447
-        y: 222
-        width: 37
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b4d38bad220e33af0800000000000000
-      internalID: -417743900112306869
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Itachipng_196
-      rect:
-        serializedVersion: 2
-        x: 607
-        y: 226
-        width: 20
-        height: 13
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6a727373557163530800000000000000
-      internalID: 3834277787518576550
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Itachipng_197
-      rect:
-        serializedVersion: 2
-        x: 632
-        y: 211
-        width: 45
-        height: 33
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5e3519482f5dcb1c0800000000000000
-      internalID: -4486475891184938011
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Itachipng_198
-      rect:
-        serializedVersion: 2
-        x: 741
-        y: 234
-        width: 6
-        height: 12
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7f1b648266a5ce850800000000000000
-      internalID: 6407595764650258935
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Itachipng_199
       rect:
         serializedVersion: 2
-        x: 680
-        y: 216
-        width: 15
-        height: 18
+        x: 607
+        y: 211
+        width: 88
+        height: 90
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5517,10 +5181,10 @@ TextureImporter:
       name: Itachipng_200
       rect:
         serializedVersion: 2
-        x: 754
+        x: 741
         y: 214
-        width: 20
-        height: 17
+        width: 56
+        height: 87
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5530,27 +5194,6 @@ TextureImporter:
       bones: []
       spriteID: a64f845f29d98cb50800000000000000
       internalID: 6613709307299558506
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Itachipng_201
-      rect:
-        serializedVersion: 2
-        x: 779
-        y: 214
-        width: 8
-        height: 5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a0c1e38ad0ae471d0800000000000000
-      internalID: -3353798478106059766
       vertices: []
       indices: 
       edges: []

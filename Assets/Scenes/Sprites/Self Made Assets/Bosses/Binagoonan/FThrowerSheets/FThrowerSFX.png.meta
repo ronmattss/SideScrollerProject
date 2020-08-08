@@ -1,0 +1,536 @@
+fileFormatVersion: 2
+guid: 5944819359c911049835043a236e25ec
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7334156690319605347
+    second: FThrowerSFX_0
+  - first:
+      213: 5432132856860446756
+    second: FThrowerSFX_1
+  - first:
+      213: -4014728157273440865
+    second: FThrowerSFX_2
+  - first:
+      213: 551911946269260927
+    second: FThrowerSFX_3
+  - first:
+      213: -4057443005473277843
+    second: FThrowerSFX_4
+  - first:
+      213: 3515865921873394259
+    second: FThrowerSFX_5
+  - first:
+      213: -1966905507342013387
+    second: FThrowerSFX_6
+  - first:
+      213: -1882149830499571893
+    second: FThrowerSFX_7
+  - first:
+      213: 5485351503392166894
+    second: FThrowerSFX_8
+  - first:
+      213: -866951281606062019
+    second: FThrowerSFX_9
+  - first:
+      213: -4400294012138352046
+    second: FThrowerSFX_10
+  - first:
+      213: -3150369484396318618
+    second: FThrowerSFX_11
+  - first:
+      213: 6981575414346803580
+    second: FThrowerSFX_12
+  - first:
+      213: -1152738469150699931
+    second: FThrowerSFX_13
+  - first:
+      213: 6133149344420070994
+    second: FThrowerSFX_14
+  - first:
+      213: 4652006368362227117
+    second: FThrowerSFX_15
+  - first:
+      213: -1368694934442702064
+    second: FThrowerSFX_16
+  - first:
+      213: 98371209764905681
+    second: FThrowerSFX_17
+  - first:
+      213: 216050182465500794
+    second: FThrowerSFX_18
+  - first:
+      213: 2122687663086231860
+    second: FThrowerSFX_19
+  - first:
+      213: -8526015497959542147
+    second: FThrowerSFX_20
+  - first:
+      213: -7878719919877351761
+    second: FThrowerSFX_21
+  - first:
+      213: -8216478532036044178
+    second: FThrowerSFX_22
+  - first:
+      213: 6645244189004602260
+    second: FThrowerSFX_23
+  - first:
+      213: -4214428704378496081
+    second: FThrowerSFX_24
+  - first:
+      213: 5595393342539734865
+    second: FThrowerSFX_25
+  - first:
+      213: 4240855482076039254
+    second: FThrowerSFX_26
+  - first:
+      213: -6540458948820658434
+    second: FThrowerSFX_27
+  - first:
+      213: 7790231095170251699
+    second: FThrowerSFX_28
+  - first:
+      213: -2489626932846546759
+    second: FThrowerSFX_29
+  - first:
+      213: -1798862302180693758
+    second: FThrowerSFX_30
+  - first:
+      213: 2799022559120895780
+    second: FThrowerSFX_31
+  - first:
+      213: 2056498881085813587
+    second: FThrowerSFX_32
+  - first:
+      213: -6726900419977887046
+    second: FThrowerSFX_33
+  - first:
+      213: -2528895517217047101
+    second: FThrowerSFX_34
+  - first:
+      213: 7147663691494215425
+    second: FThrowerSFX_35
+  - first:
+      213: -3200231986581945245
+    second: FThrowerSFX_36
+  - first:
+      213: 7800632215545224046
+    second: FThrowerSFX_37
+  - first:
+      213: 5241313920594535402
+    second: FThrowerSFX_38
+  - first:
+      213: 8189304179645349006
+    second: FThrowerSFX_39
+  - first:
+      213: 2158812354313899519
+    second: FThrowerSFX_40
+  - first:
+      213: 1594625449797943768
+    second: FThrowerSFX_41
+  - first:
+      213: 3466513384508195249
+    second: FThrowerSFX_42
+  - first:
+      213: 8849657495536462827
+    second: FThrowerSFX_43
+  - first:
+      213: -5655726454882091892
+    second: FThrowerSFX_44
+  - first:
+      213: -8843544373887344103
+    second: FThrowerSFX_45
+  - first:
+      213: -2310793912938067015
+    second: FThrowerSFX_46
+  - first:
+      213: 2813812303290306974
+    second: FThrowerSFX_47
+  - first:
+      213: 656258806201010091
+    second: FThrowerSFX_48
+  - first:
+      213: -3150158007199830252
+    second: FThrowerSFX_49
+  - first:
+      213: -6593754728281111917
+    second: FThrowerSFX_50
+  - first:
+      213: 3119730262375301484
+    second: FThrowerSFX_51
+  - first:
+      213: -4795570251346323394
+    second: FThrowerSFX_52
+  - first:
+      213: 680687261476057492
+    second: FThrowerSFX_53
+  - first:
+      213: -5656813988504404345
+    second: FThrowerSFX_54
+  - first:
+      213: -2847253448757291058
+    second: FThrowerSFX_55
+  - first:
+      213: 7420462367901323857
+    second: FThrowerSFX_56
+  - first:
+      213: -334628535236869404
+    second: FThrowerSFX_57
+  - first:
+      213: -579743863148304342
+    second: FThrowerSFX_58
+  - first:
+      213: 5224654122088662407
+    second: FThrowerSFX_59
+  - first:
+      213: 5870667118619839922
+    second: FThrowerSFX_60
+  - first:
+      213: -1323664102264002209
+    second: FThrowerSFX_61
+  - first:
+      213: -8758154255556980349
+    second: FThrowerSFX_62
+  - first:
+      213: 4444158741207501813
+    second: FThrowerSFX_63
+  - first:
+      213: -8910727942322733926
+    second: FThrowerSFX_64
+  - first:
+      213: -4605764117317390558
+    second: FThrowerSFX_65
+  - first:
+      213: 1941895067121466659
+    second: FThrowerSFX_66
+  - first:
+      213: 6442061060740184066
+    second: FThrowerSFX_67
+  - first:
+      213: 8384481587706359507
+    second: FThrowerSFX_68
+  - first:
+      213: 5589034498651694823
+    second: FThrowerSFX_69
+  - first:
+      213: 7941688903744705988
+    second: FThrowerSFX_70
+  - first:
+      213: 2745324502688201281
+    second: FThrowerSFX_71
+  - first:
+      213: -6109414260150799980
+    second: FThrowerSFX_72
+  - first:
+      213: -3539855297870528801
+    second: FThrowerSFX_73
+  - first:
+      213: -768983997302487539
+    second: FThrowerSFX_74
+  - first:
+      213: 8771923325388348366
+    second: FThrowerSFX_75
+  - first:
+      213: -8278270940937532654
+    second: FThrowerSFX_76
+  - first:
+      213: 7778152579035749510
+    second: FThrowerSFX_77
+  - first:
+      213: -606182667694441619
+    second: FThrowerSFX_78
+  - first:
+      213: 4929103844204562380
+    second: FThrowerSFX_79
+  - first:
+      213: -4558725612127688217
+    second: FThrowerSFX_80
+  - first:
+      213: 5237247564200877162
+    second: FThrowerSFX_81
+  - first:
+      213: 4208267977892469458
+    second: FThrowerSFX_82
+  - first:
+      213: 3799073456947450196
+    second: FThrowerSFX_83
+  - first:
+      213: -4501865228710407309
+    second: FThrowerSFX_84
+  - first:
+      213: 4856632916708353542
+    second: FThrowerSFX_85
+  - first:
+      213: -8049016789269804416
+    second: FThrowerSFX_86
+  - first:
+      213: 8562390133205293297
+    second: FThrowerSFX_87
+  - first:
+      213: 8694080290189372767
+    second: FThrowerSFX_88
+  - first:
+      213: 6814277389233429256
+    second: FThrowerSFX_89
+  - first:
+      213: 27920436777351630
+    second: FThrowerSFX_90
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FThrowerSFX_0
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 14
+        width: 244
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36efd8dd6a828c560800000000000000
+      internalID: 7334156690319605347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FThrowerSFX_1
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 15
+        width: 252
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42015e97d00d26b40800000000000000
+      internalID: 5432132856860446756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FThrowerSFX_3
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 15
+        width: 244
+        height: 184
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7c7ca0bdf8c8a700800000000000000
+      internalID: 551911946269260927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FThrowerSFX_48
+      rect:
+        serializedVersion: 2
+        x: 1274
+        y: 16
+        width: 204
+        height: 184
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba7455048ef7b1900800000000000000
+      internalID: 656258806201010091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FThrowerSFX_53
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 20
+        width: 94
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 491f9673579427900800000000000000
+      internalID: 680687261476057492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FThrowerSFX_55
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 18
+        width: 180
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec7d051e2168c78d0800000000000000
+      internalID: -2847253448757291058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FThrowerSFX_2
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 14
+        width: 210
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9d35fb0302d848c0800000000000000
+      internalID: -4014728157273440865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -21,9 +21,12 @@ namespace SideScrollerProject
         public MaskController thirdEye;
         public float runSpeed = 40f;
         public float dashForce = 100f;
+        public float smallMovementDuration = 0.025f;
         public int horizontalMovement = 0;
+        public bool canRun = true;
         public Transform attackPoint;
         public float attackRange;
+        public int attackCounter = 0;
         public bool isInteracting = false;
         public Interactable interactables;
         bool jump = false;
@@ -44,6 +47,8 @@ namespace SideScrollerProject
         public PlayerStatus playerStatus;
         public ParticleSystem dustEffect;
         public ChangeMotion motion;
+        [Tooltip("HitStopPausesomething")] public float hitStop = .75f;
+        [Tooltip("HitStopPausesomething")] public const float hitStopDuration = .140f;
 
 
 
@@ -67,7 +72,8 @@ namespace SideScrollerProject
             // Register Movement Bool
             if (canMove)// ifplayer can move
             {
-                horizontalMovement = Convert.ToInt16(Input.GetAxisRaw("Horizontal")); //* runSpeed);
+                if (canRun)
+                    horizontalMovement = Convert.ToInt16(Input.GetAxisRaw("Horizontal")); //* runSpeed);
                 movement.xMovement = horizontalMovement * (runSpeed / 10);
 
                 if (Input.GetKeyDown(KeyCode.DownArrow) && movement.isOnOneWayPlatform)
@@ -84,14 +90,16 @@ namespace SideScrollerProject
 
                 if (Input.GetKeyDown(KeyCode.Z) && canAttack)
                 {
+                   // horizontalMovement = 0;
+                    
                     //  if (InputManager.instance.attackCounter == 0)
                     // {
                     animator.SetBool(AnimatorParams.Attacking.ToString(), true);
                     animator.SetInteger(AnimatorParams.AttackCounter.ToString(), InputManager.instance.attackCounter);
                     if (Input.GetAxisRaw("Horizontal") != 0)
                     {
-                        horizontalMovement = Convert.ToInt16(Input.GetAxisRaw("Horizontal")); //* runSpeed);
-                        movement.xMovement = horizontalMovement * (runSpeed / 10);
+                        //  horizontalMovement = Convert.ToInt16(Input.GetAxisRaw("Horizontal")); //* runSpeed);
+                        //  movement.xMovement = horizontalMovement * (runSpeed / 10);
                     }
 
                     //  }
@@ -163,15 +171,20 @@ namespace SideScrollerProject
             //  movement.jumpDust.Play();
 
         }
+
         void FixedUpdate()
         {
-            if (animator.GetBool(AnimatorParams.Attacking.ToString()))
-            {
-                horizontalMovement = 0;
-            }            //  Debug.Log(Input.GetAxisRaw("Horizontal"));
+            // if (animator.GetBool(AnimatorParams.Attacking.ToString()))
+            // {
+            //     horizontalMovement = 0;
+            //     Debug.Log($" This should be 0{horizontalMovement}");
+
+            // }
+
 
             movement.Move((horizontalMovement * runSpeed) * Time.fixedDeltaTime, (dashForce * this.transform.localScale.x), crouch, jump);
             movement.SmallDash();
+          //  movement.SmallMovement();
             animator.SetInteger("Moving", (int)horizontalMovement);
             animator.SetInteger("Falling", movement.GetFallVelocity());
             jump = false;
@@ -186,6 +199,31 @@ namespace SideScrollerProject
         {
             Gizmos.DrawWireSphere(attackPoint.position, attackRange);
         }
+
+        public IEnumerator HitStop(Animator enemyAnimator = null, float duration = 0.15f)
+        {
+            animator.speed = 0;
+            if (enemyAnimator != null)
+                enemyAnimator.speed = 0;
+            yield return new WaitForSecondsRealtime(duration);
+            Debug.Log("animatorSpeed:" + animator.speed);
+            //animator.speed = 1;
+            animator.speed = LeanTween.easeInOutQuad(0, 1, hitStop);
+            if (enemyAnimator != null)
+            {
+                enemyAnimator.speed = LeanTween.easeInOutQuad(0, 1, hitStop);
+            }
+            yield return null;
+        }
+        public void ApplyHitStop(Animator otherAnimator = null, float duration = hitStopDuration)
+        {
+            StartCoroutine(HitStop(otherAnimator, duration));
+        }
+
+
+
+
+
         //TODO: I need to make a ability class or somesort of ability manager
 
         // private void OnTriggerStay2D(Collider2D other)

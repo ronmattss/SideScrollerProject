@@ -21,7 +21,7 @@ namespace SideScrollerProject
         bool isHit = false;
         AudioSource audio;
         public AudioClip sound;
-
+        int enemyCount = 0;
         public void FreezeHit()
         {
 
@@ -29,7 +29,7 @@ namespace SideScrollerProject
 
         public void RegisterAttack(Animator animator)
         {
-            int enemyCount = 0;
+
             // Register enemies
             Collider2D[] enemyColliders = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayer);
 
@@ -40,7 +40,7 @@ namespace SideScrollerProject
                 Debug.Log($"Enemy hit: {enemy.name} {counter}{enemy.tag}");
                 Status enemyStatus = enemy.gameObject.GetComponent<Status>();
 
-
+                Debug.Log(enemy);
                 if (enemy.tag == "Breakables")
                 {
                     if (enemy.TryGetComponent(out Breakable b))
@@ -51,17 +51,30 @@ namespace SideScrollerProject
                     return;
                 else
                 {
-                    enemyStatus.TakeDamage(attackDamage);
-                    if (hitEffect != null)
+                    if (enemy.CompareTag("Enemy"))
                     {
-                        GameObject hit = Instantiate(hitEffect, enemy.transform.position, Quaternion.identity);
-                        EffectsManager.instance.Spawn(enemy.transform.position, "Hitfx");
-                        hit.transform.localScale = new Vector2(animator.transform.localScale.x, 1);
-                        LeanTween.scaleY(hit, 3f, 0.3f).setEaseOutExpo();
-                        if (!flipEffectatX)
-                            LeanTween.scaleX(hit, 3f * animator.transform.localScale.x, 0.3f).setEaseOutExpo();
-                        else
-                            LeanTween.scaleX(hit, 3f * -animator.transform.localScale.x, 0.3f).setEaseOutExpo();
+                        Debug.Log("WHy is it multiple: " + enemy.tag);
+                        enemyStatus.TakeDamage(attackDamage);
+                        PlayerManager.instance.GetPlayerAction().attackCounter++;
+                        if (PlayerManager.instance.GetPlayerAction().attackCounter == 3)
+                        {
+                            PlayerManager.instance.GetPlayerAction().attackCounter = 0;
+                            PlayerManager.instance.GetPlayerAction().ApplyHitStop(enemy.gameObject.GetComponent<Animator>());
+                            //knockback enemy?
+                        }
+
+
+                        if (hitEffect != null)
+                        {
+                            GameObject hit = Instantiate(hitEffect, enemy.transform.position, Quaternion.identity);
+                            EffectsManager.instance.Spawn(enemy.transform.position, "Hitfx");
+                            hit.transform.localScale = new Vector2(animator.transform.localScale.x, 1);
+                            LeanTween.scaleY(hit, 3f, 0.3f).setEaseOutExpo();
+                            if (!flipEffectatX)
+                                LeanTween.scaleX(hit, 3f * animator.transform.localScale.x, 0.3f).setEaseOutExpo();
+                            else
+                                LeanTween.scaleX(hit, 3f * -animator.transform.localScale.x, 0.3f).setEaseOutExpo();
+                        }
                     }
 
                 }
@@ -76,8 +89,9 @@ namespace SideScrollerProject
             }
             if (enemyCount > 0)
             {
+
                 EffectsManager.instance.Shake();
-                LevelManager.instance.FreezeHit();
+                // LevelManager.instance.FreezeHit();
             }
 
 
@@ -101,7 +115,7 @@ namespace SideScrollerProject
             audio.clip = sound;
             audio.Play();
             RegisterAttack(animator);
-
+            PlayerManager.instance.GetPlayerMovement().isAttackForward = true;
             animator.SetBool(AnimatorParams.Attacking.ToString(), false);
 
 
@@ -111,12 +125,17 @@ namespace SideScrollerProject
         }
         public override void UpdateAbility(BaseState state, Animator animator, AnimatorStateInfo stateInfo)
         {
+            PlayerManager.instance.GetPlayerAction().horizontalMovement = 0;
             //   
             //  Debug.Log("Attack Call");
         }
 
         public override void OnExit(BaseState state, Animator animator, AnimatorStateInfo stateInfo)
         {
+            PlayerManager.instance.GetPlayerAction().canRun = true;
+            //  PlayerManager.instance.GetPlayerMovement().isAttackForward = false;
+            // if (PlayerManager.instance.GetPlayerAction().attackCounter < 3)
+            //    PlayerManager.instance.GetPlayerAction().attackCounter = 0;
 
 
             // if (animator.GetInteger(AnimatorParams.AttackCounter.ToString()) > 1)

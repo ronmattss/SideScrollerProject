@@ -10,6 +10,7 @@ namespace SideScrollerProject
 
         public static PlayerManager instance { get; private set; }
         public GameObject player;
+        public float playerSpriteDirection { get { return player.transform.localScale.x; } }
         void Awake()
         {
             if (instance == null)
@@ -20,6 +21,7 @@ namespace SideScrollerProject
                 return;
             }
             player = GameObject.Find("Player");
+
             playerAbilityManager = GetPlayerAbilities();
 
         }
@@ -52,6 +54,10 @@ namespace SideScrollerProject
         public PlayerStatus GetPlayerStatus()
         {
             return player.GetComponent<PlayerStatus>();
+        }
+        public Movement GetPlayerMovement()
+        {
+            return player.GetComponent<Movement>();
         }
 
         public Rigidbody2D GetPlayerRigidbody2D()

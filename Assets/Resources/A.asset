@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Chat
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 321.69702, y: -150.68607}
+  position: {x: 296, y: -344}
   ports:
     keys:
     - answers
@@ -77,7 +77,7 @@ MonoBehaviour:
   m_Name: Chat
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -515.1094, y: -182.82677}
+  position: {x: -696, y: -376}
   ports:
     keys:
     - answers
@@ -136,7 +136,7 @@ MonoBehaviour:
   m_Name: Chat
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -387.39417, y: 157.99196}
+  position: {x: 648, y: -312}
   ports:
     keys:
     - answers
@@ -199,7 +199,7 @@ MonoBehaviour:
   - {fileID: 3209134554597095616}
   - {fileID: -8680798520566796589}
   - {fileID: -1830279845771625592}
-  current: {fileID: -5316144061028736775}
+  current: {fileID: 0}
 --- !u!114 &3209134554597095616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -213,7 +213,7 @@ MonoBehaviour:
   m_Name: Chat
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -88, y: -184}
+  position: {x: -152, y: -360}
   ports:
     keys:
     - answers

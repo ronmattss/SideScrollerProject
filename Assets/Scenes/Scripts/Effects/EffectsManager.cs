@@ -36,6 +36,7 @@ namespace SideScrollerProject
                 return;
 
             GameObject effectInstance = Instantiate(effect.effectObject, position, Quaternion.identity);
+            Destroy(effectInstance,1);
         }
         public void Shake()
         {

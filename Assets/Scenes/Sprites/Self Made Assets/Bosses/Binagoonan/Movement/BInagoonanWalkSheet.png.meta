@@ -1,0 +1,608 @@
+fileFormatVersion: 2
+guid: 91c1f5cf6206d4d499652afaacd77f91
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3702756485365571140
+    second: BInagoonanWalkSheet_0
+  - first:
+      213: 3712914661536252875
+    second: BInagoonanWalkSheet_1
+  - first:
+      213: 2021241613976061537
+    second: BInagoonanWalkSheet_2
+  - first:
+      213: 3919057230225146357
+    second: BInagoonanWalkSheet_3
+  - first:
+      213: 1560302763703282750
+    second: BInagoonanWalkSheet_4
+  - first:
+      213: -5758894223034376521
+    second: BInagoonanWalkSheet_5
+  - first:
+      213: 3350634407565046121
+    second: BInagoonanWalkSheet_6
+  - first:
+      213: -6278455063200006387
+    second: BInagoonanWalkSheet_7
+  - first:
+      213: 9167182339713528670
+    second: BInagoonanWalkSheet_8
+  - first:
+      213: -5941484475951392191
+    second: BInagoonanWalkSheet_9
+  - first:
+      213: 8377216439763350508
+    second: BInagoonanWalkSheet_10
+  - first:
+      213: -8634153344359252794
+    second: BInagoonanWalkSheet_11
+  - first:
+      213: -3278843426611085369
+    second: BInagoonanWalkSheet_12
+  - first:
+      213: -7905835266595295469
+    second: BInagoonanWalkSheet_13
+  - first:
+      213: -1676760195414757256
+    second: BInagoonanWalkSheet_14
+  - first:
+      213: 2577394438890013876
+    second: BInagoonanWalkSheet_15
+  - first:
+      213: -8710530587752031188
+    second: BInagoonanWalkSheet_16
+  - first:
+      213: -1211243915448897087
+    second: BInagoonanWalkSheet_17
+  - first:
+      213: -298451236879510132
+    second: BInagoonanWalkSheet_18
+  - first:
+      213: 4490975062404403188
+    second: BInagoonanWalkSheet_19
+  - first:
+      213: -116985072612464820
+    second: BInagoonanWalkSheet_0
+  - first:
+      213: 142648584940017341
+    second: BInagoonanWalkSheet_1
+  - first:
+      213: 809086349169300134
+    second: BInagoonanWalkSheet_2
+  - first:
+      213: -4614364310718308200
+    second: BInagoonanWalkSheet_3
+  - first:
+      213: -6913679733767807892
+    second: BInagoonanWalkSheet_4
+  - first:
+      213: -6529710780914253502
+    second: BInagoonanWalkSheet_5
+  - first:
+      213: -6381471717825505958
+    second: BInagoonanWalkSheet_6
+  - first:
+      213: -8167690026545931236
+    second: BInagoonanWalkSheet_7
+  - first:
+      213: -6452803409852456478
+    second: BInagoonanWalkSheet_8
+  - first:
+      213: -5058843868219459849
+    second: BInagoonanWalkSheet_9
+  - first:
+      213: 8501907035444058939
+    second: BInagoonanWalkSheet_10
+  - first:
+      213: -8794122062842399139
+    second: BInagoonanWalkSheet_11
+  - first:
+      213: 8531840375668092935
+    second: BInagoonanWalkSheet_12
+  - first:
+      213: -8796727692148151917
+    second: BInagoonanWalkSheet_13
+  - first:
+      213: 7169904587155128764
+    second: BInagoonanWalkSheet_14
+  - first:
+      213: 4420772734639098148
+    second: BInagoonanWalkSheet_15
+  - first:
+      213: 7524839902940407063
+    second: BInagoonanWalkSheet_16
+  - first:
+      213: 7730455934697401487
+    second: BInagoonanWalkSheet_17
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BInagoonanWalkSheet_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 240
+        width: 104
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4729ee32b2606ef0800000000000000
+      internalID: -116985072612464820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BInagoonanWalkSheet_1
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 240
+        width: 98
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db6df09d12acaf100800000000000000
+      internalID: 142648584940017341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BInagoonanWalkSheet_2
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 240
+        width: 102
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a29ad27fb37a3b00800000000000000
+      internalID: 809086349169300134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BInagoonanWalkSheet_3
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 240
+        width: 115
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 890256b7b1c76ffb0800000000000000
+      internalID: -4614364310718308200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BInagoonanWalkSheet_4
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 240
+        width: 146
+        height: 162
+      alignment: 9
+      pivot: {x: 0.43, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6cd3f199ecad00a0800000000000000
+      internalID: -6913679733767807892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BInagoonanWalkSheet_5
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 240
+        width: 138
+        height: 162
+      alignment: 9
+      pivot: {x: 0.44, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 241419104aec165a0800000000000000
+      internalID: -6529710780914253502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BInagoonanWalkSheet_6
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 240
+        width: 165
+        height: 162
+      alignment: 9
+      pivot: {x: 0.41, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a551fca78457077a0800000000000000
+      internalID: -6381471717825505958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BInagoonanWalkSheet_7
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 240
+        width: 166
+        height: 162
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1c9a34f13986ae80800000000000000
+      internalID: -8167690026545931236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BInagoonanWalkSheet_8
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 240
+        width: 160
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e1a056bc790376a0800000000000000
+      internalID: -6452803409852456478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BInagoonanWalkSheet_9
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 15
+        width: 137
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f6bd940e406bc9b0800000000000000
+      internalID: -5058843868219459849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BInagoonanWalkSheet_10
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 15
+        width: 123
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3b99095767dcf570800000000000000
+      internalID: 8501907035444058939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BInagoonanWalkSheet_11
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 15
+        width: 108
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d567adcb39005f580800000000000000
+      internalID: -8794122062842399139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BInagoonanWalkSheet_12
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 15
+        width: 105
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70038083e9f276670800000000000000
+      internalID: 8531840375668092935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BInagoonanWalkSheet_13
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 15
+        width: 107
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 399eaa365cebbe580800000000000000
+      internalID: -8796727692148151917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BInagoonanWalkSheet_14
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 15
+        width: 118
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb143d6fb3e908360800000000000000
+      internalID: 7169904587155128764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BInagoonanWalkSheet_15
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 15
+        width: 125
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42945e0416db95d30800000000000000
+      internalID: 4420772734639098148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BInagoonanWalkSheet_16
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 15
+        width: 131
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 715a27ef50a9d6860800000000000000
+      internalID: 7524839902940407063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BInagoonanWalkSheet_17
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 15
+        width: 125
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8ce27307b8184b60800000000000000
+      internalID: 7730455934697401487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

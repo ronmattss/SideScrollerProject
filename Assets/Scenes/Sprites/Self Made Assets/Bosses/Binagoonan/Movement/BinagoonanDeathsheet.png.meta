@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: 881c441786ff7904bb437f9255a2ca09
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6262753564902141254
+    second: BinagoonanDeathsheet_0
+  - first:
+      213: 8954298572640819407
+    second: BinagoonanDeathsheet_1
+  - first:
+      213: 4950944345759048881
+    second: BinagoonanDeathsheet_2
+  - first:
+      213: -4396994276295435844
+    second: BinagoonanDeathsheet_3
+  - first:
+      213: 5578843278627803379
+    second: BinagoonanDeathsheet_4
+  - first:
+      213: -4904668008102742153
+    second: BinagoonanDeathsheet_5
+  - first:
+      213: 685085580109425409
+    second: BinagoonanDeathsheet_6
+  - first:
+      213: -6294075916582023116
+    second: BinagoonanDeathsheet_7
+  - first:
+      213: 7537513634528276857
+    second: BinagoonanDeathsheet_8
+  - first:
+      213: 4139517473175274079
+    second: BinagoonanDeathsheet_9
+  - first:
+      213: 6516699906367751698
+    second: BinagoonanDeathsheet_10
+  - first:
+      213: 2316878805464540200
+    second: BinagoonanDeathsheet_11
+  - first:
+      213: 1684739808439357061
+    second: BinagoonanDeathsheet_12
+  - first:
+      213: -3026667201406576282
+    second: BinagoonanDeathsheet_13
+  - first:
+      213: -7081815092640803924
+    second: BinagoonanDeathsheet_14
+  - first:
+      213: 2506881108752193984
+    second: BinagoonanDeathsheet_15
+  - first:
+      213: -3667115111758558676
+    second: BinagoonanDeathsheet_16
+  - first:
+      213: -2146360689587387114
+    second: BinagoonanDeathsheet_17
+  - first:
+      213: 519160809522664402
+    second: BinagoonanDeathsheet_18
+  - first:
+      213: 2094579875056293344
+    second: BinagoonanDeathsheet_19
+  - first:
+      213: -367965633912124137
+    second: BinagoonanDeathsheet_20
+  - first:
+      213: -5402898760901860529
+    second: BinagoonanDeathsheet_21
+  - first:
+      213: 7800041421616390987
+    second: BinagoonanDeathsheet_22
+  - first:
+      213: 8606905683338212281
+    second: BinagoonanDeathsheet_23
+  - first:
+      213: -7215508097127824709
+    second: BinagoonanDeathsheet_24
+  - first:
+      213: -8875449662758088199
+    second: BinagoonanDeathsheet_25
+  - first:
+      213: 2250817805137959203
+    second: BinagoonanDeathsheet_26
+  - first:
+      213: 5544656357024309868
+    second: BinagoonanDeathsheet_27
+  - first:
+      213: -5884294720028328275
+    second: BinagoonanDeathsheet_28
+  - first:
+      213: 4850236272256461953
+    second: BinagoonanDeathsheet_29
+  - first:
+      213: 3871648632064091472
+    second: BinagoonanDeathsheet_30
+  - first:
+      213: -4677400909049401463
+    second: BinagoonanDeathsheet_31
+  - first:
+      213: -7054039660977506144
+    second: BinagoonanDeathsheet_32
+  - first:
+      213: -1710521451623225385
+    second: BinagoonanDeathsheet_33
+  - first:
+      213: -8067196769337976824
+    second: BinagoonanDeathsheet_34
+  - first:
+      213: -5983835284844810606
+    second: BinagoonanDeathsheet_35
+  - first:
+      213: -2491196165493545404
+    second: BinagoonanDeathsheet_36
+  - first:
+      213: -9126396956641011034
+    second: BinagoonanDeathsheet_37
+  - first:
+      213: 6783753008907951093
+    second: BinagoonanDeathsheet_38
+  - first:
+      213: 3229646838322567015
+    second: BinagoonanDeathsheet_39
+  - first:
+      213: -4516420694921726237
+    second: BinagoonanDeathsheet_40
+  - first:
+      213: 4007902815264438043
+    second: BinagoonanDeathsheet_41
+  - first:
+      213: -7243675137960575577
+    second: BinagoonanDeathsheet_42
+  - first:
+      213: 2405161384797000771
+    second: BinagoonanDeathsheet_43
+  - first:
+      213: -3751087317960118109
+    second: BinagoonanDeathsheet_44
+  - first:
+      213: 1564490951739223197
+    second: BinagoonanDeathsheet_45
+  - first:
+      213: 8604636428128157030
+    second: BinagoonanDeathsheet_46
+  - first:
+      213: 3906512578408616260
+    second: BinagoonanDeathsheet_47
+  - first:
+      213: -163359172209857891
+    second: BinagoonanDeathsheet_48
+  - first:
+      213: -5336370486010178524
+    second: BinagoonanDeathsheet_49
+  - first:
+      213: 2173287104641021379
+    second: BinagoonanDeathsheet_50
+  - first:
+      213: -2121004130980105907
+    second: BinagoonanDeathsheet_51
+  - first:
+      213: -2643544037631703813
+    second: BinagoonanDeathsheet_52
+  - first:
+      213: 5455876500661745687
+    second: BinagoonanDeathsheet_53
+  - first:
+      213: 2862995366024312413
+    second: BinagoonanDeathsheet_54
+  - first:
+      213: 8594584143070306241
+    second: BinagoonanDeathsheet_55
+  - first:
+      213: -7730973225456907570
+    second: BinagoonanDeathsheet_56
+  - first:
+      213: -3141927873998198
+    second: BinagoonanDeathsheet_57
+  - first:
+      213: -3048229655684356221
+    second: BinagoonanDeathsheet_58
+  - first:
+      213: 5331257705391676016
+    second: BinagoonanDeathsheet_59
+  - first:
+      213: 3084958161506314719
+    second: BinagoonanDeathsheet_60
+  - first:
+      213: 2862857651819671438
+    second: BinagoonanDeathsheet_61
+  - first:
+      213: -3397960126351121484
+    second: BinagoonanDeathsheet_62
+  - first:
+      213: 5029104764474575374
+    second: BinagoonanDeathsheet_63
+  - first:
+      213: 520132175859457120
+    second: BinagoonanDeathsheet_64
+  - first:
+      213: -5640567178195104055
+    second: BinagoonanDeathsheet_65
+  - first:
+      213: 668407243254604817
+    second: BinagoonanDeathsheet_66
+  - first:
+      213: 2343302700525822021
+    second: BinagoonanDeathsheet_67
+  - first:
+      213: -1810239606762117321
+    second: BinagoonanDeathsheet_68
+  - first:
+      213: 4761383418317039634
+    second: BinagoonanDeathsheet_69
+  - first:
+      213: -8947983114908550903
+    second: BinagoonanDeathsheet_70
+  - first:
+      213: -4719798764082107006
+    second: BinagoonanDeathsheet_71
+  - first:
+      213: 2881473768463899853
+    second: BinagoonanDeathsheet_72
+  - first:
+      213: 1259090514488550416
+    second: BinagoonanDeathsheet_73
+  - first:
+      213: -3821131385271201595
+    second: BinagoonanDeathsheet_74
+  - first:
+      213: 6525210089279387414
+    second: BinagoonanDeathsheet_75
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BinagoonanDeathsheet_0
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 15
+        width: 104
+        height: 102
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab2523070da3619a0800000000000000
+      internalID: -6262753564902141254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BinagoonanDeathsheet_1
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 15
+        width: 105
+        height: 102
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc81b032c1f044c70800000000000000
+      internalID: 8954298572640819407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BinagoonanDeathsheet_2
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 14
+        width: 103
+        height: 103
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b462b7b6a945b440800000000000000
+      internalID: 4950944345759048881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BinagoonanDeathsheet_3
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 14
+        width: 105
+        height: 103
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb91cf1800dbaf2c0800000000000000
+      internalID: -4396994276295435844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BinagoonanDeathsheet_4
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 2
+        width: 188
+        height: 183
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f09f2867680c6d40800000000000000
+      internalID: 5578843278627803379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BinagoonanDeathsheet_5
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 2
+        width: 188
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77730d3ce6e1febb0800000000000000
+      internalID: -4904668008102742153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BinagoonanDeathsheet_6
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 3
+        width: 188
+        height: 184
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10b2a2394b9e18900800000000000000
+      internalID: 685085580109425409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BinagoonanDeathsheet_7
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 4
+        width: 188
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43099c22d43f6a8a0800000000000000
+      internalID: -6294075916582023116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BinagoonanDeathsheet_8
+      rect:
+        serializedVersion: 2
+        x: 1346
+        y: 0
+        width: 187
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 971b8b317b0aa9860800000000000000
+      internalID: 7537513634528276857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

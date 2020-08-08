@@ -47,7 +47,7 @@ namespace SideScrollerProject
             // target = this.transform;
             healthSliderScript.SetMaxValue(maxHealth);
             resourceSliderScript.SetMaxValue(maxResource);
-            
+
 
             currentHealth = maxHealth;
             currentResource = maxResource;
@@ -60,7 +60,7 @@ namespace SideScrollerProject
         void Update()
         {
             RegenerateResource();
-           // impulseSource.GenerateImpulse();
+            // impulseSource.GenerateImpulse();
         }
         private void OnDrawGizmosSelected()
         {
@@ -76,10 +76,14 @@ namespace SideScrollerProject
             currentHealth -= damage;
             healthSliderScript.SetValue(currentHealth);
             impulseSource.GenerateImpulse();
-            CameraManager.instance.Shake(10,0.2f);
+            CameraManager.instance.Shake(10, 0.2f);
             Knockback(enemyAnimator.GetComponentInParent<Transform>().localScale.x);
             animator.SetBool("IsHurt", true);
             ResetCountDown();
+            EffectsManager.instance.Spawn(this.gameObject.transform.position,"PlayerHurt1");
+            EffectsManager.instance.Spawn(this.gameObject.transform.position,"PlayerHurt2");
+            LevelManager.instance.FreezeHit(0.25f);
+            //PlayerManager.instance.GetPlayerAction().ApplyHitStop(null,0.5f);
             if (currentHealth <= 0)
             {
 
@@ -97,8 +101,8 @@ namespace SideScrollerProject
             Debug.Log($"Damage:{damage}");
             currentHealth -= damage;
             healthSliderScript.SetValue(currentHealth);
-           // impulseSource.GenerateImpulse();
-            CameraManager.instance.Shake(10,0.2f);
+            // impulseSource.GenerateImpulse();
+            CameraManager.instance.Shake(10, 0.2f);
             animator.SetBool("IsHurt", true);
             ResetCountDown();
             if (currentHealth <= 0)
