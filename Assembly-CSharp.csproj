@@ -2,8 +2,6 @@
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <LangVersion>latest</LangVersion>
-    <CscToolPath>C:\Program Files\Unity\Hub\Editor\2019.3.10f1\Editor\Data\Tools\RoslynScripts</CscToolPath>
-    <CscToolExe>unity_csc.bat</CscToolExe>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -46,14 +44,6 @@
     <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="UnityEngine">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2019.3.10f1\Editor\Data\Managed/UnityEngine/UnityEngine.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2019.3.10f1\Editor\Data\Managed/UnityEditor.dll</HintPath>
-    </Reference>
-  </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\EZ Camera Shake\Demo\Sample Scripts\ShakeByDistance.cs" />
      <Compile Include="Assets\EZ Camera Shake\Demo\Sample Scripts\ShakeOnKeyPress.cs" />
@@ -127,6 +117,13 @@
      <Compile Include="Assets\Scenes\Scripts\Ability\WindSlashScript.cs" />
      <Compile Include="Assets\Scenes\Scripts\Animator\AnimationClipOverrides.cs" />
      <Compile Include="Assets\Scenes\Scripts\Animator\ChangeMotion.cs" />
+     <Compile Include="Assets\Scenes\Scripts\BossFSM\MeleeAttackAnimationState.cs" />
+     <Compile Include="Assets\Scenes\Scripts\BossFSM\State.cs" />
+     <Compile Include="Assets\Scenes\Scripts\BossFSM\StateIdle.cs" />
+     <Compile Include="Assets\Scenes\Scripts\BossFSM\StateMeleeAttack.cs" />
+     <Compile Include="Assets\Scenes\Scripts\BossFSM\StateMove.cs" />
+     <Compile Include="Assets\Scenes\Scripts\BossFSM\StateUser.cs" />
+     <Compile Include="Assets\Scenes\Scripts\BossFSM\StateWalkingBurner.cs" />
      <Compile Include="Assets\Scenes\Scripts\Camera\CameraController.cs" />
      <Compile Include="Assets\Scenes\Scripts\Camera\CameraLockAxis.cs" />
      <Compile Include="Assets\Scenes\Scripts\Camera\CameraManager.cs" />
@@ -340,6 +337,9 @@
  <Reference Include="UnityEditor.UI">
  <HintPath>C:/Users/Shade/Documents/Programming Stuff/Unity/SideScrollerPrototype/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
+ <Reference Include="UnityEngine">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
  </Reference>
@@ -516,6 +516,9 @@
  </Reference>
  <Reference Include="UnityEngine.XRModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.10f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.10f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -873,7 +876,7 @@
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>

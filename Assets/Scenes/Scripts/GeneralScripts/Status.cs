@@ -136,7 +136,7 @@ namespace SideScrollerProject
             if (groundCollider.collider != null)
             {
                 iSGroundPatrolCheckerGrounded = true;
-                Debug.Log("Ground Check Collider: " + groundCollider.transform.name);
+             //   Debug.Log("Ground Check Collider: " + groundCollider.transform.name);
             }
             else
             {
