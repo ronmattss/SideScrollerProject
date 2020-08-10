@@ -26,7 +26,7 @@ namespace SideScrollerProject
         void Update()
         {
             currentState = currentState.Process();// returns a new state
-            Debug.Log(currentState.name);
+           // Debug.Log(currentState.name);
 
         }
 

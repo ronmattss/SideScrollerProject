@@ -8,28 +8,38 @@ namespace SideScrollerProjectFSM
     public class StateWalkingBurner : State
     {
         int randomNumber = 0;
+        float time = 5;
+        float current;
         public StateWalkingBurner(GameObject _boss, Rigidbody2D _rb, Animator _bossAnimator, Transform _player) : base(_boss, _rb, _bossAnimator, _player)
         {
-            name = STATE.ATTACK;
+            name = STATE.FLAMETHROWER;
         }
 
         public override void Enter()
-        {
+        {//isChestCharging
+            Debug.Log("Is this entering after charging");
+            current = time;
+            // nextState = new StateIdle(boss, bossRb, animator, player);
 
-            randomNumber = Random.Range(1, 3);
-            animator.SetTrigger("isFlameCharging");
-            switch (randomNumber)
+            Debug.Log("Pattern:" + animator.GetInteger("pattern"));
+            switch (animator.GetInteger("pattern"))
             {
-                case 1:
-                    animator.SetInteger("pattern",randomNumber);
+                case 0:
+                    // animator.SetTrigger("isStillBurner");
+                    // Do some time logic here
+                    // Do some damage Calculation
+                    current = 4f;
                     break;
-                case 2:
-                    animator.SetInteger("pattern",randomNumber);
+                case 1:
+                    //  animator.SetTrigger("isWalkingBurner");
+                    current = 4;
+                    // Do some damage Calculation
+                    // Time Logic then Exit
                     break;
                 default:
                     break;
             }
-
+            Debug.Log("Line Before Updating Pattern should be: " + animator.GetInteger("pattern"));
             base.Enter();
         }
 
@@ -45,20 +55,42 @@ namespace SideScrollerProjectFSM
 
         public override void Update()
         {
-            switch (randomNumber)
+
+            //  nextState = new StateIdle(boss, bossRb, animator, player);
+            if (current <= 0)
             {
-                case 1:
-                   // animator.SetTrigger("isStillBurner");
-                    // Do some time logic here
-                    break;
-                case 2:
-                  //  animator.SetTrigger("isWalkingBurner");
-                    MoveEnemy();
-                    // Time Logic then Exit
-                    break;
-                default:
-                    break;
+
+                nextState = new StateIdle(boss, bossRb, animator, player);
+                //nextState = new StateIdle(boss, bossRb, animator, player);
+                stage = EVENT.EXIT;
             }
+            else
+            {
+                current -= Time.fixedDeltaTime;
+                switch (animator.GetInteger("pattern"))
+                {
+                    case 0:
+                        // animator.SetTrigger("isStillBurner");
+                        // Do some time logic here
+                        // Do some damage Calculation
+                        break;
+                    case 1:
+                        //  animator.SetTrigger("isWalkingBurner");
+                        MoveEnemy();
+                        // Do some damage Calculation
+                        // Time Logic then Exit
+                        break;
+                    default:
+                        break;
+                }
+                Debug.Log(" Pattern should be: " + animator.GetInteger("pattern"));
+            }
+
+
+
+            nextState = new StateIdle(boss, bossRb, animator, player);
+            //stage = EVENT.EXIT;
+
         }
         public void MoveEnemy()
         {

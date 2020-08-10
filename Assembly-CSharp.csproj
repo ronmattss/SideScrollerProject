@@ -119,6 +119,9 @@
      <Compile Include="Assets\Scenes\Scripts\Animator\ChangeMotion.cs" />
      <Compile Include="Assets\Scenes\Scripts\BossFSM\MeleeAttackAnimationState.cs" />
      <Compile Include="Assets\Scenes\Scripts\BossFSM\State.cs" />
+     <Compile Include="Assets\Scenes\Scripts\BossFSM\StateCharging.cs" />
+     <Compile Include="Assets\Scenes\Scripts\BossFSM\StateChestAttacking.cs" />
+     <Compile Include="Assets\Scenes\Scripts\BossFSM\StateFlameStill.cs" />
      <Compile Include="Assets\Scenes\Scripts\BossFSM\StateIdle.cs" />
      <Compile Include="Assets\Scenes\Scripts\BossFSM\StateMeleeAttack.cs" />
      <Compile Include="Assets\Scenes\Scripts\BossFSM\StateMove.cs" />

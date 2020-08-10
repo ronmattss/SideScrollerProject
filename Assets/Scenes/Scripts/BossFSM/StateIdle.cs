@@ -42,7 +42,7 @@ namespace SideScrollerProjectFSM
                             nextState = new StateMove(boss, bossRb, animator, player);
                             break;
                         case 1:
-                            nextState = new StateWalkingBurner(boss, bossRb, animator, player);
+                            nextState = new StateCharging(boss, bossRb, animator, player);
                             break;
 
                         default:

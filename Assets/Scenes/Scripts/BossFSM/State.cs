@@ -9,7 +9,7 @@ namespace SideScrollerProjectFSM
     {
         public enum STATE
         {
-            IDLE, MOVE, ATTACK, HURT
+            IDLE, MOVE, ATTACK, HURT, CHARGE, FLAMETHROWER, LASER
         }
         public enum EVENT
         {
@@ -25,7 +25,7 @@ namespace SideScrollerProjectFSM
         protected State nextState;
 
         float attackDistance = 2.0f; ///????
-        public State(GameObject _boss,Rigidbody2D _rb, Animator _bossAnimator, Transform _player)
+        public State(GameObject _boss, Rigidbody2D _rb, Animator _bossAnimator, Transform _player)
         {
             boss = _boss;
             bossRb = _rb;
@@ -36,6 +36,7 @@ namespace SideScrollerProjectFSM
 
         public virtual void Enter()
         {
+            Debug.Log("Entered State:" + name);
             stage = EVENT.UPDATE;
         }
         public virtual void Update()
@@ -48,7 +49,8 @@ namespace SideScrollerProjectFSM
         }
 
         public State Process()
-        {Debug.Log(stage);
+        {
+            Debug.Log(stage);
             if (stage == EVENT.ENTER) Enter();
             if (stage == EVENT.UPDATE) Update();
             if (stage == EVENT.EXIT)
