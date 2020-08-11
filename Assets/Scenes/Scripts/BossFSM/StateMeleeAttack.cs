@@ -16,6 +16,7 @@ namespace SideScrollerProjectFSM
         public override void Enter()
         {
             animator.SetTrigger("isMeleeAttacking");
+            Debug.Log("Am I called in Attack");
             base.Enter();
         }
 
@@ -25,6 +26,8 @@ namespace SideScrollerProjectFSM
             animator.ResetTrigger("isMeleeAttacking");
             base.Exit();
         }
+
+        
 
 
         public override void Update()

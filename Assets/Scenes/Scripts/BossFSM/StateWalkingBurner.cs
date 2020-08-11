@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using SideScrollerProject;
 
 namespace SideScrollerProjectFSM
 {
@@ -10,6 +10,7 @@ namespace SideScrollerProjectFSM
         int randomNumber = 0;
         float time = 5;
         float current;
+        StateUser bossRef;
         public StateWalkingBurner(GameObject _boss, Rigidbody2D _rb, Animator _bossAnimator, Transform _player) : base(_boss, _rb, _bossAnimator, _player)
         {
             name = STATE.FLAMETHROWER;
@@ -19,6 +20,8 @@ namespace SideScrollerProjectFSM
         {//isChestCharging
             Debug.Log("Is this entering after charging");
             current = time;
+            bossRef = boss.GetComponent<StateUser>();
+            bossRef.binagoonanPropeties.flamePosition.SetActive(true);
             // nextState = new StateIdle(boss, bossRb, animator, player);
 
             Debug.Log("Pattern:" + animator.GetInteger("pattern"));
@@ -47,6 +50,7 @@ namespace SideScrollerProjectFSM
 
         public override void Exit()
         {
+            bossRef.binagoonanPropeties.flamePosition.SetActive(false);
             animator.ResetTrigger("isWalkingBurner");
             base.Exit();
         }
@@ -66,6 +70,7 @@ namespace SideScrollerProjectFSM
             }
             else
             {
+                Burn();
                 current -= Time.fixedDeltaTime;
                 switch (animator.GetInteger("pattern"))
                 {
@@ -90,6 +95,26 @@ namespace SideScrollerProjectFSM
 
             nextState = new StateIdle(boss, bossRb, animator, player);
             //stage = EVENT.EXIT;
+
+        }
+        public void Burn()
+        {
+            Vector2 direction = new Vector2(boss.transform.localScale.x, 0);
+            RaycastHit2D[] hit = Physics2D.CircleCastAll(bossRef.binagoonanPropeties.flameHitPosition.transform.position, 5f, direction, bossRef.binagoonanPropeties.playerLayer);
+
+            foreach (var h in hit)
+            {
+                if (h.collider == null) return;
+                else
+                {
+                    Debug.Log("BURN BURN BURN");
+                    if (h.collider.gameObject.CompareTag("Player"))
+                    {
+                        Debug.Log("player?: " + h.collider.name);
+                        PlayerManager.instance.GetPlayerStatus().TakeDamage(1);
+                    }
+                }
+            }
 
         }
         public void MoveEnemy()

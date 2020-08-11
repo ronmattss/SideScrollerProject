@@ -9,7 +9,7 @@ namespace SideScrollerProject
     public class StateUser : MonoBehaviour
     {
         public Transform player;
-        public GameObject flamePosition;
+        public BossProperties binagoonanPropeties;
         Animator animator;
         Rigidbody2D rb;
         public State currentState;
@@ -26,8 +26,17 @@ namespace SideScrollerProject
         void Update()
         {
             currentState = currentState.Process();// returns a new state
-           // Debug.Log(currentState.name);
+                                                  // Debug.Log(currentState.name);
 
+        }
+
+        /// <summary>
+        /// Callback to draw gizmos that are pickable and always drawn.
+        /// </summary>
+        void OnDrawGizmos()
+        {
+            Gizmos.DrawWireSphere(binagoonanPropeties.meleeAttackPosition.position, binagoonanPropeties.diameter);
+            Gizmos.DrawWireSphere(binagoonanPropeties.flameHitPosition.transform.position, 5f);
         }
 
         public void WaitThenExitState()
