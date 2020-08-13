@@ -8,11 +8,18 @@ namespace SideScrollerProject
     public class BossBasicAttack : StateData
     {
         StateUser meleeState;
-        // Start is called before the first frame update
+        public bool shake = false;
+
         public override void OnEnter(BaseState state, Animator animator, AnimatorStateInfo stateInfo)
         {
             meleeState = animator.gameObject.GetComponent<StateUser>();
+            meleeState.c = Color.blue;
+            meleeState.Flip();
             HitPlayer(animator);
+            if(shake)
+            {
+               CameraManager.instance.Shake(10,3f);
+            }
 
         }
 
@@ -28,16 +35,23 @@ namespace SideScrollerProject
 
         void HitPlayer(Animator animator)
         {
-            RaycastHit2D[] hits = Physics2D.CircleCastAll(meleeState.binagoonanPropeties.meleeAttackPosition.position, meleeState.binagoonanPropeties.diameter, new Vector2(animator.gameObject.transform.localScale.x, 0), meleeState.binagoonanPropeties.playerLayer);
+            Collider2D[] hits = Physics2D.OverlapCircleAll(meleeState.binagoonanPropeties.meleeAttackPosition.position, meleeState.binagoonanPropeties.diameter, meleeState.binagoonanPropeties.playerLayer);
+
             foreach (var hit in hits)
             {
-                if (hit.collider == null) return;
+                if (hit == null) return;
                 else
                 {
-                    if (hit.collider.CompareTag("Player"))
-                        PlayerManager.instance.GetPlayerStatus().TakeDamage(10, animator);
+                    if (hit.CompareTag("Player") && hit.GetType() == typeof(CapsuleCollider2D))
+                    {
+
+                        PlayerManager.instance.GetPlayerStatus().TakeDamage(20, animator);
+                        hits = null;
+                        return;
+                    }
                 }
             }
         }
+
     }
 }

@@ -47,6 +47,11 @@ namespace SideScrollerProject
                         b.hit--;
                     Debug.Log("eeeee");
                 }
+                if (enemy.CompareTag("Boss"))
+                {
+                    enemy.GetComponent<StateUser>().TakeDamage(1);
+
+                }
                 if (enemyStatus == null)
                     return;
                 else

@@ -63,8 +63,11 @@ namespace SideScrollerProject
         public AudioSource bowDraw;
         public float range = 7;
         private Rigidbody2D rb;
+        private SpriteRenderer enemyRenderer;
+        public Material whiteFlash;
         void Start()
         {
+            enemyRenderer = GetComponent<SpriteRenderer>();
             LeanTween.init(3000);
             line = GameObject.Find("Line");
             if (line != null)
@@ -136,7 +139,7 @@ namespace SideScrollerProject
             if (groundCollider.collider != null)
             {
                 iSGroundPatrolCheckerGrounded = true;
-             //   Debug.Log("Ground Check Collider: " + groundCollider.transform.name);
+                //   Debug.Log("Ground Check Collider: " + groundCollider.transform.name);
             }
             else
             {
@@ -267,6 +270,7 @@ namespace SideScrollerProject
         {
             //LevelManager.instance.FreezeHit();
             StartCoroutine(Wait());
+            WaitThenExitState();
 
             Debug.Log($"Damage:{damage}");
             if (!animator.GetBool("isAttacking"))
@@ -274,29 +278,30 @@ namespace SideScrollerProject
             currentHealth -= damage;
             slider.SetValue(currentHealth);
             if (target != null)
-               // Knockback();
-            if (currentHealth <= 0)
-            {
-                this.gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-                Destroy(slider.slider);
+                // Knockback();
+                if (currentHealth <= 0)
+                {
+                    this.gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+                    Destroy(slider.slider);
 
-                EffectsManager.instance.Spawn(animator.gameObject.transform.position, "DeathHitfx");
-                EffectsManager.instance.Spawn(animator.gameObject.transform.position, "DeadFx");
-                Destroy(this.gameObject);
-                // animator.SetBool("isDead", true);
-                // moving to dead enemy state
-                // Destroy(this.gameObject);
-            }
-            else
-            {
-                //Hurt
-                Debug.Log(this.name + " " + currentHealth);
-            }
+                    EffectsManager.instance.Spawn(animator.gameObject.transform.position, "DeathHitfx");
+                    EffectsManager.instance.Spawn(animator.gameObject.transform.position, "DeadFx");
+                    Destroy(this.gameObject);
+                    // animator.SetBool("isDead", true);
+                    // moving to dead enemy state
+                    // Destroy(this.gameObject);
+                }
+                else
+                {
+                    //Hurt
+                    Debug.Log(this.name + " " + currentHealth);
+                }
         }
         public void TakeDamage(int damage, bool knockback)
         {
             changeColor = true;
             AudioManager.instance.Play("HitSFX");
+            WaitThenExitState();
             Debug.Log($"Damage:{damage}");
             if (!animator.GetBool("isAttacking"))
                 animator.SetBool("isHurt", true);
@@ -463,8 +468,8 @@ namespace SideScrollerProject
                 RaycastHit2D hit = Physics2D.Linecast(raycastOrigin.position, new Vector2(raycastDirection.x * range + raycastOrigin.position.x, raycastOrigin.position.y), playerLayer);
                 if (target != null && !travelsOnOneAxis)
                 {
-                    hit = Physics2D.Linecast(raycastOrigin.position, new Vector2(raycastDirection.x  + target.position.x, target.position.y),playerLayer);
-                    Debug.DrawLine(raycastOrigin.position, new Vector2(raycastDirection.x  + target.position.x, target.position.y), Color.red);
+                    hit = Physics2D.Linecast(raycastOrigin.position, new Vector2(raycastDirection.x + target.position.x, target.position.y), playerLayer);
+                    Debug.DrawLine(raycastOrigin.position, new Vector2(raycastDirection.x + target.position.x, target.position.y), Color.red);
                 }
                 Debug.DrawLine(raycastOrigin.position, new Vector2(raycastDirection.x * range + raycastOrigin.position.x, raycastOrigin.position.y), Color.red);
                 //if (hit.collider != null)
@@ -591,6 +596,19 @@ namespace SideScrollerProject
                     // moveSpeed *= 1f;
                 }
             //      Debug.Log($"{this.transform.name } is flipping");
+        }
+        IEnumerator DamageIndicator()
+        {
+            var tempShade = enemyRenderer.material;
+            enemyRenderer.material = whiteFlash;
+            yield return new WaitForSecondsRealtime(0.09f); // gonna change to for Real Seconds
+            enemyRenderer.material = tempShade;
+            yield return null;
+        }
+        public void WaitThenExitState()
+        {
+            StartCoroutine(DamageIndicator());
+            StopCoroutine(DamageIndicator());
         }
         IEnumerator Wait()
         {

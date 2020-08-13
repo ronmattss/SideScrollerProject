@@ -9,6 +9,8 @@ namespace SideScrollerProjectFSM
     {
         int randomNumber = 0;
         float time = 5;
+        float hitTickRate = 0.15f;
+        float currentTickRate;
         float current;
         StateUser bossRef;
         public StateWalkingBurner(GameObject _boss, Rigidbody2D _rb, Animator _bossAnimator, Transform _player) : base(_boss, _rb, _bossAnimator, _player)
@@ -20,6 +22,7 @@ namespace SideScrollerProjectFSM
         {//isChestCharging
             Debug.Log("Is this entering after charging");
             current = time;
+            currentTickRate = hitTickRate;
             bossRef = boss.GetComponent<StateUser>();
             bossRef.binagoonanPropeties.flamePosition.SetActive(true);
             // nextState = new StateIdle(boss, bossRb, animator, player);
@@ -31,6 +34,7 @@ namespace SideScrollerProjectFSM
                     // animator.SetTrigger("isStillBurner");
                     // Do some time logic here
                     // Do some damage Calculation
+                     bossRef.Flip();
                     current = 4f;
                     break;
                 case 1:
@@ -72,12 +76,14 @@ namespace SideScrollerProjectFSM
             {
                 Burn();
                 current -= Time.fixedDeltaTime;
+                currentTickRate -= Time.fixedDeltaTime;
                 switch (animator.GetInteger("pattern"))
                 {
                     case 0:
                         // animator.SetTrigger("isStillBurner");
                         // Do some time logic here
                         // Do some damage Calculation
+                       
                         break;
                     case 1:
                         //  animator.SetTrigger("isWalkingBurner");
@@ -100,18 +106,19 @@ namespace SideScrollerProjectFSM
         public void Burn()
         {
             Vector2 direction = new Vector2(boss.transform.localScale.x, 0);
-            RaycastHit2D[] hit = Physics2D.CircleCastAll(bossRef.binagoonanPropeties.flameHitPosition.transform.position, 5f, direction, bossRef.binagoonanPropeties.playerLayer);
+            Collider2D[] hit = Physics2D.OverlapCircleAll(bossRef.binagoonanPropeties.flameHitPosition.transform.position, 5.25f, bossRef.binagoonanPropeties.playerLayer);
 
             foreach (var h in hit)
             {
-                if (h.collider == null) return;
+                if (h == null) return;
                 else
                 {
                     Debug.Log("BURN BURN BURN");
-                    if (h.collider.gameObject.CompareTag("Player"))
+                    if (h.gameObject.CompareTag("Player") && currentTickRate <= 0)
                     {
-                        Debug.Log("player?: " + h.collider.name);
-                        PlayerManager.instance.GetPlayerStatus().TakeDamage(1);
+                        Debug.Log("player?: " + h.name);
+                        PlayerManager.instance.GetPlayerStatus().TakeDamage(2);
+                        currentTickRate = hitTickRate;
                     }
                 }
             }

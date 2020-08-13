@@ -6,7 +6,7 @@ namespace SideScrollerProjectFSM
 {
     public class StateIdle : State
     {
-        public float waitSeconds = 1f;
+        public float waitSeconds = 0.5f;
         public float current;
         public int randNum;
         public StateIdle(GameObject _boss, Rigidbody2D rb, Animator _bossAnimator, Transform _player) : base(_boss, rb, _bossAnimator, _player)

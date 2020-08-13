@@ -531,6 +531,7 @@ MonoBehaviour:
     type: 3}
   bowDraw: {fileID: 5361791337748554478}
   range: 100
+  whiteFlash: {fileID: 2100000, guid: 9a3408731ddadfd438ace9c187b21058, type: 2}
 --- !u!50 &5361791337748554468
 Rigidbody2D:
   serializedVersion: 4

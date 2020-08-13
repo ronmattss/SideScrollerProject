@@ -6,6 +6,8 @@ using UnityEngine;
 public class BossProperties
 {
     public Transform meleeAttackPosition;
+    public Transform chestAttackPosition;
+
     public GameObject flameHitPosition;
     public GameObject flamePosition;
     public float diameter = 3f;

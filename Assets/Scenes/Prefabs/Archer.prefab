@@ -411,6 +411,7 @@ MonoBehaviour:
     type: 3}
   bowDraw: {fileID: 8347120227652421396}
   range: 10
+  whiteFlash: {fileID: 2100000, guid: 9a3408731ddadfd438ace9c187b21058, type: 2}
 --- !u!114 &8347120227652421486
 MonoBehaviour:
   m_ObjectHideFlags: 0

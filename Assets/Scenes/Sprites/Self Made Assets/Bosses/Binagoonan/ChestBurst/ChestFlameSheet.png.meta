@@ -1,7 +1,256 @@
 fileFormatVersion: 2
 guid: 4a260516af3b0194eaad2c4b7565c1b4
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 3305900716894120716
+    second: ChestFlameSheet_0
+  - first:
+      213: 1458522727573473977
+    second: ChestFlameSheet_1
+  - first:
+      213: 7490319890658846105
+    second: ChestFlameSheet_2
+  - first:
+      213: 6346790793619135910
+    second: ChestFlameSheet_3
+  - first:
+      213: 3533900691171052342
+    second: ChestFlameSheet_4
+  - first:
+      213: 152999891502946429
+    second: ChestFlameSheet_5
+  - first:
+      213: 5862338712533934924
+    second: ChestFlameSheet_6
+  - first:
+      213: 1976834475156664190
+    second: ChestFlameSheet_7
+  - first:
+      213: -9171077115720114241
+    second: ChestFlameSheet_8
+  - first:
+      213: -4696879010865550807
+    second: ChestFlameSheet_9
+  - first:
+      213: -1854099802745424121
+    second: ChestFlameSheet_10
+  - first:
+      213: -2324662942523299640
+    second: ChestFlameSheet_11
+  - first:
+      213: -8313662069506069067
+    second: ChestFlameSheet_12
+  - first:
+      213: 4953237603985395889
+    second: ChestFlameSheet_13
+  - first:
+      213: -950567466843691916
+    second: ChestFlameSheet_14
+  - first:
+      213: -6307866457110133404
+    second: ChestFlameSheet_15
+  - first:
+      213: -2629286328069944618
+    second: ChestFlameSheet_16
+  - first:
+      213: 8314359898254327849
+    second: ChestFlameSheet_17
+  - first:
+      213: -3123102693401757658
+    second: ChestFlameSheet_18
+  - first:
+      213: -3786693635015345137
+    second: ChestFlameSheet_19
+  - first:
+      213: -6923662718692173218
+    second: ChestFlameSheet_20
+  - first:
+      213: -1857966740968160754
+    second: ChestFlameSheet_21
+  - first:
+      213: 6716228677360426177
+    second: ChestFlameSheet_22
+  - first:
+      213: -4611886273177635588
+    second: ChestFlameSheet_23
+  - first:
+      213: 2409335961074099346
+    second: ChestFlameSheet_24
+  - first:
+      213: 1862358386749390041
+    second: ChestFlameSheet_25
+  - first:
+      213: 6738005675608960607
+    second: ChestFlameSheet_26
+  - first:
+      213: 7037931951229424402
+    second: ChestFlameSheet_27
+  - first:
+      213: -3282467883047735759
+    second: ChestFlameSheet_28
+  - first:
+      213: -3110505876662331598
+    second: ChestFlameSheet_29
+  - first:
+      213: 1466131685361267748
+    second: ChestFlameSheet_30
+  - first:
+      213: -1516628881629906931
+    second: ChestFlameSheet_31
+  - first:
+      213: 4961362678642942688
+    second: ChestFlameSheet_32
+  - first:
+      213: 8629666046315561821
+    second: ChestFlameSheet_33
+  - first:
+      213: 2182899929106969461
+    second: ChestFlameSheet_34
+  - first:
+      213: 4526953561431772799
+    second: ChestFlameSheet_35
+  - first:
+      213: -8191607374288052336
+    second: ChestFlameSheet_36
+  - first:
+      213: 7438835899062709443
+    second: ChestFlameSheet_37
+  - first:
+      213: -6255081138522675650
+    second: ChestFlameSheet_38
+  - first:
+      213: 6544866311425939275
+    second: ChestFlameSheet_39
+  - first:
+      213: 3749521035530456048
+    second: ChestFlameSheet_40
+  - first:
+      213: -5501298820288986741
+    second: ChestFlameSheet_41
+  - first:
+      213: 1944775854232106424
+    second: ChestFlameSheet_42
+  - first:
+      213: -4979253136481985334
+    second: ChestFlameSheet_43
+  - first:
+      213: 2717655972817507780
+    second: ChestFlameSheet_44
+  - first:
+      213: -5325068135468490595
+    second: ChestFlameSheet_45
+  - first:
+      213: 5611734618923961381
+    second: ChestFlameSheet_46
+  - first:
+      213: -1512967046538584872
+    second: ChestFlameSheet_47
+  - first:
+      213: -9100847730379969030
+    second: ChestFlameSheet_48
+  - first:
+      213: 2346989883968876589
+    second: ChestFlameSheet_49
+  - first:
+      213: 4119686268734436757
+    second: ChestFlameSheet_50
+  - first:
+      213: -8055041684937286768
+    second: ChestFlameSheet_51
+  - first:
+      213: 807352887504380494
+    second: ChestFlameSheet_52
+  - first:
+      213: -8201748895963760212
+    second: ChestFlameSheet_53
+  - first:
+      213: 9123270334848375444
+    second: ChestFlameSheet_54
+  - first:
+      213: -529567115313291428
+    second: ChestFlameSheet_55
+  - first:
+      213: -8170618982476581205
+    second: ChestFlameSheet_56
+  - first:
+      213: -2673432555460920519
+    second: ChestFlameSheet_57
+  - first:
+      213: -4886925922723042471
+    second: ChestFlameSheet_58
+  - first:
+      213: 1249005414158193753
+    second: ChestFlameSheet_59
+  - first:
+      213: -6107356003589877686
+    second: ChestFlameSheet_60
+  - first:
+      213: -8197299607267266915
+    second: ChestFlameSheet_61
+  - first:
+      213: 6878833308836326130
+    second: ChestFlameSheet_62
+  - first:
+      213: 8592925242439353876
+    second: ChestFlameSheet_63
+  - first:
+      213: -7794758317047685635
+    second: ChestFlameSheet_64
+  - first:
+      213: 37780527435086854
+    second: ChestFlameSheet_65
+  - first:
+      213: -2475300642289193372
+    second: ChestFlameSheet_66
+  - first:
+      213: -2352635021810624341
+    second: ChestFlameSheet_67
+  - first:
+      213: 6655853569841447491
+    second: ChestFlameSheet_68
+  - first:
+      213: 3691171170959164695
+    second: ChestFlameSheet_69
+  - first:
+      213: -2519613613493580943
+    second: ChestFlameSheet_70
+  - first:
+      213: 3562278820371398089
+    second: ChestFlameSheet_71
+  - first:
+      213: -4126768228523616082
+    second: ChestFlameSheet_72
+  - first:
+      213: 8832793873524381538
+    second: ChestFlameSheet_73
+  - first:
+      213: 7836417976649106377
+    second: ChestFlameSheet_74
+  - first:
+      213: -5062442189176384903
+    second: ChestFlameSheet_75
+  - first:
+      213: -6265340474594582470
+    second: ChestFlameSheet_76
+  - first:
+      213: 8631002609592870761
+    second: ChestFlameSheet_77
+  - first:
+      213: -7776703022481732456
+    second: ChestFlameSheet_78
+  - first:
+      213: -4562486468649862697
+    second: ChestFlameSheet_79
+  - first:
+      213: -6929301830868420706
+    second: ChestFlameSheet_80
+  - first:
+      213: -6440389364799949663
+    second: ChestFlameSheet_81
+  - first:
+      213: -8866703804696892932
+    second: ChestFlameSheet_82
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -40,12 +289,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 26
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -97,7 +346,70 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: ChestFlameSheet_0
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 501
+        width: 625
+        height: 42
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0bee25cf2be0ed20800000000000000
+      internalID: 3305900716894120716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChestFlameSheet_1
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 319
+        width: 627
+        height: 143
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bac9d171b6bd3410800000000000000
+      internalID: 1458522727573473977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChestFlameSheet_2
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 171
+        width: 628
+        height: 42
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99563c05146f2f760800000000000000
+      internalID: 7490319890658846105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

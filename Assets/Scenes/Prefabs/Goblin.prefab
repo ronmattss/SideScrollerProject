@@ -346,6 +346,7 @@ MonoBehaviour:
   projectilePrefab: {fileID: 0}
   bowDraw: {fileID: 0}
   range: 7
+  whiteFlash: {fileID: 2100000, guid: 9a3408731ddadfd438ace9c187b21058, type: 2}
 --- !u!70 &5175526045966277254
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

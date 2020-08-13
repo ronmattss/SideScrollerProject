@@ -9,7 +9,7 @@ namespace SideScrollerProjectFSM
     {
         public enum STATE
         {
-            IDLE, MOVE, ATTACK, HURT, CHARGE, FLAMETHROWER, LASER
+            IDLE, MOVE, ATTACK, HURT, CHARGE, FLAMETHROWER, LASER, DEAD
         }
         public enum EVENT
         {

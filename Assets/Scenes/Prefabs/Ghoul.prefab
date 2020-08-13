@@ -170,9 +170,11 @@ MonoBehaviour:
   targetLock: 0
   playerPosition: {fileID: 0}
   finalTargetPosition: {x: 0, y: 0}
-  arrowPrefab: {fileID: 0}
+  travelsOnOneAxis: 0
+  projectilePrefab: {fileID: 0}
   bowDraw: {fileID: 0}
   range: 7
+  whiteFlash: {fileID: 2100000, guid: 9a3408731ddadfd438ace9c187b21058, type: 2}
 --- !u!95 &3150360972811459232
 Animator:
   serializedVersion: 3

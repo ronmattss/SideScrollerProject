@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using SideScrollerProject;
 using UnityEngine;
 
 
@@ -16,6 +17,7 @@ namespace SideScrollerProjectFSM
         public override void Enter()
         {
             randomNumber = Random.Range(0, 2);
+            boss.GetComponent<StateUser>().Flip();
             animator.SetInteger("pattern", Random.Range(0, 2));
             switch (randomNumber)
             {
