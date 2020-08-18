@@ -86,6 +86,11 @@
      <Compile Include="Assets\LeanTween\Framework\LeanTest.cs" />
      <Compile Include="Assets\LeanTween\Framework\LeanTween.cs" />
      <Compile Include="Assets\LeanTween\Framework\LeanTweenExt.cs" />
+     <Compile Include="Assets\PixelToMap\PixelGenerator\ListWrapper.cs" />
+     <Compile Include="Assets\PixelToMap\PixelGenerator\NewBehaviourScript.cs" />
+     <Compile Include="Assets\PixelToMap\PixelGenerator\PixelData.cs" />
+     <Compile Include="Assets\PixelToMap\PixelGenerator\PixelReader.cs" />
+     <Compile Include="Assets\PixelToMap\PixelGenerator\TileMapAdder.cs" />
      <Compile Include="Assets\PixelWeatherFX\Scripts\FadeLight.cs" />
      <Compile Include="Assets\PixelWeatherFX\Scripts\ParticleManager.cs" />
      <Compile Include="Assets\PixelWeatherFX\Scripts\RotateObject.cs" />
@@ -169,6 +174,7 @@
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Buffs\ScriptableBuffs\BuffInstaKill.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Buffs\ScriptableBuffs\BuffTest.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Buffs\TimedBuff.cs" />
+     <Compile Include="Assets\Scenes\Scripts\GeneralScripts\ComponentAdder.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Dialogue\DialogueManager.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Dialogue\DialogueTrigger.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Dialogue\Dialouge.cs" />
@@ -195,6 +201,10 @@
      <Compile Include="Assets\Scenes\Scripts\Helpers\Singleton.cs" />
      <Compile Include="Assets\Scenes\Scripts\Helpers\Spawnable.cs" />
      <Compile Include="Assets\Scenes\Scripts\Items\Item.cs" />
+     <Compile Include="Assets\Scenes\Scripts\Managers\ObjectiveHelper\CollectTask.cs" />
+     <Compile Include="Assets\Scenes\Scripts\Managers\ObjectiveHelper\Objective.cs" />
+     <Compile Include="Assets\Scenes\Scripts\Managers\ObjectiveHelper\ObjectiveManager.cs" />
+     <Compile Include="Assets\Scenes\Scripts\Managers\ObjectiveHelper\Task.cs" />
      <Compile Include="Assets\Scenes\Scripts\Node Based Dialogue System\BasicDialogueNode.cs" />
      <Compile Include="Assets\Scenes\Scripts\Node Based Dialogue System\DialogueNodeGraph.cs" />
      <Compile Include="Assets\Scenes\Scripts\Player\Actions.cs" />

@@ -10,7 +10,7 @@ namespace SideScrollerProject
         // Start is called before the first frame update
 
         public float whenToCast = 0;
-        public string abilityName = "ability";
+        public string abilityName = "Wind Slash";
         public string animationParameter = "isCasting";
         int cast = 0;
         AbilityManager abilityCaster;
@@ -19,10 +19,12 @@ namespace SideScrollerProject
             AbilityManager[] abilities = animator.GetComponents<AbilityManager>();
             foreach (AbilityManager a in abilities)
             {
+                Debug.Log("WTFIS THE ABILITY: " + a.nameOfAbility + " Does it use animation: " + a.useAnimation);
+                abilityCaster = a;
+                Debug.Log("Does it find the ability? " + a.nameOfAbility);
                 if (a.nameOfAbility.Equals(abilityName) && a.useAnimation)
                 {
-                    abilityCaster = a;
-                    if (abilityName == "WindSlash")
+                    if (abilityName == "WindSlash" || abilityName == "Wind Slash")
                     {
                         animator.GetComponent<PlayerStatus>().playerRenderer.material = animator.GetComponent<PlayerStatus>().emissionMaterial;
                     }
@@ -35,7 +37,7 @@ namespace SideScrollerProject
         {
 
             cast = 0;
-            if(abilityName == "WindSlash")
+            if (abilityName == "WindSlash" || abilityName == "Wind Slash")
             {
                 animator.GetComponent<PlayerStatus>().playerRenderer.material = animator.GetComponent<PlayerStatus>().baseMaterial;
             }

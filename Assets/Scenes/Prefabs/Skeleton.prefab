@@ -462,7 +462,7 @@ MonoBehaviour:
   iSGroundPatrolCheckerGrounded: 1
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 8192
+    m_Bits: 8193
   target: {fileID: 0}
   searchRange: 3
   attackRange: 1.33

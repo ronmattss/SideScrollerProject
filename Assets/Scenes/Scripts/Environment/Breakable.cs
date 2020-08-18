@@ -23,7 +23,7 @@ namespace SideScrollerProject
                 for (int i = 0; i < transform.childCount; i++)
                 {
                     parts.Add(transform.GetChild(i).gameObject);
-                    parts[i].SetActive(false);
+                    // parts[i].SetActive(false);
                 }
             else
             {
@@ -32,7 +32,7 @@ namespace SideScrollerProject
                 // setactive false
                 foreach (var sprite in listOfSprites)
                 {
-                    var temp = Instantiate(CreateDestroyedVersion(sprite), this.transform.position, Quaternion.identity);
+                    var temp = Instantiate(CreateDestroyedVersion(sprite), this.gameObject.transform.position, Quaternion.identity);
                     parts.Add(temp);
                     temp.transform.parent = this.transform;
                     temp.SetActive(false);
@@ -66,8 +66,13 @@ namespace SideScrollerProject
 
                 if (damagedSprite == null)              // destroy object when damaged
                     Destroy(this.gameObject, 0);
-                else                                    // show show damaged Sprite 
+                else
+                {                                  // show show damaged Sprite 
                     this.gameObject.GetComponent<SpriteRenderer>().sprite = damagedSprite;
+                    this.gameObject.GetComponent<Collider2D>().enabled = false;
+                    //this.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
+                    this.gameObject.tag = "Untagged";
+                }
             }
         }
         void OnDestroy()
@@ -90,6 +95,7 @@ namespace SideScrollerProject
             destroyedObject.GetComponent<SpriteRenderer>().sortingLayerName = this.gameObject.GetComponent<SpriteRenderer>().sortingLayerName;
             //destroyedObject.transform.parent = this.gameObject.transform;
             destroyedObject.tag = "Breakables";
+            destroyedObject.name = "Breakables";
             destroyedObject.layer = LayerMask.NameToLayer("Breakables");
             return destroyedObject;
 

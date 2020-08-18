@@ -41,6 +41,7 @@ namespace SideScrollerProject
         public bool canMove = true;
         public bool canDash = true;
         public bool canAttack = true;
+        public bool canSee = true;
 
         public Animator animator;
         public MaterialPropertyBlock material;
@@ -80,7 +81,7 @@ namespace SideScrollerProject
                 {
                     movement.canGoDown = true;
                 }
-                if (Input.GetKeyUp(KeyCode.S))
+                if (Input.GetKeyUp(KeyCode.S) && canSee)
                 {
                     thirdEye.ResizeObject();
                     animator.SetBool("isEyeOn", thirdEye.thirdEyeOn);
@@ -90,8 +91,8 @@ namespace SideScrollerProject
 
                 if (Input.GetKeyDown(KeyCode.Z) && canAttack)
                 {
-                   // horizontalMovement = 0;
-                    
+                    // horizontalMovement = 0;
+
                     //  if (InputManager.instance.attackCounter == 0)
                     // {
                     animator.SetBool(AnimatorParams.Attacking.ToString(), true);
@@ -184,7 +185,7 @@ namespace SideScrollerProject
 
             movement.Move((horizontalMovement * runSpeed) * Time.fixedDeltaTime, (dashForce * this.transform.localScale.x), crouch, jump);
             movement.SmallDash();
-          //  movement.SmallMovement();
+            //  movement.SmallMovement();
             animator.SetInteger("Moving", (int)horizontalMovement);
             animator.SetInteger("Falling", movement.GetFallVelocity());
             jump = false;
@@ -199,7 +200,14 @@ namespace SideScrollerProject
         {
             Gizmos.DrawWireSphere(attackPoint.position, attackRange);
         }
-
+        public void SetDash(bool decision)
+        {
+            canDash = decision;
+        }
+        public void SetThirdEye(bool decision)
+        {
+            canSee = decision;
+        }
         public IEnumerator HitStop(Animator enemyAnimator = null, float duration = 0.15f)
         {
             animator.speed = 0;

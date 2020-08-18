@@ -26,6 +26,7 @@ namespace SideScrollerProject
         void Start()
         {
             playerStatus = GetComponent<PlayerStatus>();
+            if (ability == null) return;
             Initialize(ability);
             useAnimation = ability.hasAnimation;
             nameOfAbility = ability.aName;
@@ -54,9 +55,13 @@ namespace SideScrollerProject
             }
         }
 
-        private void Initialize(Ability selectedAbility)
+        public void Initialize(Ability selectedAbility)
         {
             ability = selectedAbility;
+            Debug.Log("New Ability Acquired: " + ability.aName);
+            useAnimation = selectedAbility.hasAnimation;
+            if (useAnimation)
+                animator = GetComponent<Animator>();
             abilityImage.sprite = ability.aSprite;
             darkMask.sprite = ability.aSprite;
             coolDownDuration = ability.aBaseCooldown;
@@ -91,6 +96,8 @@ namespace SideScrollerProject
                 coolDownText.enabled = true;
                 if (useAnimation)
                 {
+                    if (animator == null)
+                        animator = this.gameObject.GetComponent<Animator>();
                     animator.SetBool(ability.animatorParameter, true);
                     //Play animation then send the animationTriggerAbility to the State Data
                 }

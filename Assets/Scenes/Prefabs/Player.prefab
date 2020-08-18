@@ -14944,10 +14944,12 @@ MonoBehaviour:
   m_Rigidbody2D: {fileID: 0}
   m_FacingRight: 1
   dashSpeed: 30
+  smallMovementSpeed: 0
   startDashTime: 0.05
   dashCoolDown: 1
   dashCoolDownStart: 0
   isDashing: 0
+  isAttackForward: 0
   isOnOneWayPlatform: 0
   canGoDown: 0
   playerSprite: {fileID: 5642469678187045270}
@@ -14994,18 +14996,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movement: {fileID: 5642469678187045266}
+  thirdEye: {fileID: 0}
   runSpeed: 150
   dashForce: 50
+  smallMovementDuration: 0.025
   horizontalMovement: 0
+  canRun: 1
   attackPoint: {fileID: 5642469677579342954}
   attackRange: 0.62
+  attackCounter: 0
   isInteracting: 0
   interactables: {fileID: 0}
   jumpTime: 0.4
   jumpForce: 10
+  canJump: 1
+  canMove: 1
+  canDash: 1
+  canAttack: 1
   animator: {fileID: 5642469678187045267}
   playerStatus: {fileID: 5642469678187045262}
   dustEffect: {fileID: 5598217502546237476}
+  motion: {fileID: 0}
+  hitStop: 0.75
 --- !u!114 &3987132792402183703
 MonoBehaviour:
   m_ObjectHideFlags: 0
