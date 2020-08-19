@@ -9,6 +9,7 @@ namespace SideScrollerProject
         // Start is called before the first frame update
         public bool triggerOnCollision = false;
         public bool finished;
+        public bool disable = false;
 
         // Update is called once per frame
         /// <summary>
@@ -22,7 +23,8 @@ namespace SideScrollerProject
             {
                 finished = true;
                 isFinished = finished;
-                this.gameObject.SetActive(false);
+                if (disable)
+                    this.gameObject.SetActive(false);
             }
         }
         void Update()
@@ -34,15 +36,18 @@ namespace SideScrollerProject
             if (finished)
             {
                 isFinished = finished;
-                this.gameObject.SetActive(false);
+                if (disable)
+                    this.gameObject.SetActive(false);
             }
         }
         public void Finish()
         {
             if (finished)
                 finished = false;
-            else
+            else{
                 finished = true;
+                isFinished = finished;
+            }
 
         }
     }

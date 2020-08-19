@@ -560,7 +560,8 @@ namespace SideScrollerProject
         }
         public void Patrol(Transform thisTransform, Rigidbody2D rigidbody, float moveSpeed)
         {//Debug.Log($"{this.transform.name } is patrolling");
-            RaycastHit2D lineHit = Physics2D.Linecast(LineRendererLocation.position, new Vector2(LineRendererLocation.position.x + 3, LineRendererLocation.position.y), whatIsGround);
+            Vector2 raycastDirection = this.transform.localScale.x == -1 ? Vector2.left : Vector2.right;
+            RaycastHit2D lineHit = Physics2D.Linecast(LineRendererLocation.position, new Vector2(raycastDirection.x * 3 + LineRendererLocation.position.x, LineRendererLocation.position.y), whatIsGround);
             if (iSGroundPatrolCheckerGrounded == false || lineHit.collider != null)
             {
                 Flip(thisTransform);

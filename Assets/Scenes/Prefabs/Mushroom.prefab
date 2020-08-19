@@ -612,7 +612,7 @@ MonoBehaviour:
   target: {fileID: 0}
   searchRange: 3
   attackRange: 1.33
-  attackDamage: 0
+  attackDamage: 3
   playerLayer:
     serializedVersion: 2
     m_Bits: 256

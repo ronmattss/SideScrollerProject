@@ -384,7 +384,7 @@ MonoBehaviour:
   target: {fileID: 0}
   searchRange: 10.09
   attackRange: 3.04
-  attackDamage: 10
+  attackDamage: 5
   playerLayer:
     serializedVersion: 2
     m_Bits: 256

@@ -120,7 +120,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {x: 0, y: 0}
   explosion: {fileID: 2581405913835591496}
-  damage: 0
+  damage: 5
   speed: 17
   duration: 0
   isTargeting: 0

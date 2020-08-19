@@ -30,7 +30,7 @@ namespace SideScrollerProject
             else
                 this.interactable = true;
             interactEvent.Invoke();
-            someRandomShit.SetActive(this.interactable);
+           // someRandomShit.SetActive(this.interactable);
 
 
         }
