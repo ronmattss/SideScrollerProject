@@ -80,14 +80,14 @@ namespace SideScrollerProject
             Knockback(enemyAnimator.GetComponentInParent<Transform>().localScale.x);
             animator.SetBool("IsHurt", true);
             ResetCountDown();
-            EffectsManager.instance.Spawn(this.gameObject.transform.position,"PlayerHurt1");
-            EffectsManager.instance.Spawn(this.gameObject.transform.position,"PlayerHurt2");
+            EffectsManager.instance.Spawn(this.gameObject.transform.position, "PlayerHurt1");
+            EffectsManager.instance.Spawn(this.gameObject.transform.position, "PlayerHurt2");
             LevelManager.instance.FreezeHit(0.25f);
             //PlayerManager.instance.GetPlayerAction().ApplyHitStop(null,0.5f);
             if (currentHealth <= 0)
             {
 
-                Destroy(this.gameObject);
+                this.gameObject.SetActive(false);
             }
             else
             {
@@ -119,6 +119,25 @@ namespace SideScrollerProject
         }
 
         public void Die(Animator animator)
+        {
+
+        }
+        /// <summary>
+        /// This function is called when the object becomes enabled and active.
+        /// </summary>
+        void OnEnable()
+        {
+            currentHealth = maxHealth;
+            currentResource = maxResource;
+            this.gameObject.transform.position = LevelManager.instance.recentCheckpoint;
+            Debug.Log("Ei im Alive");
+
+            // teleport to latest shrine interacted with
+        }
+        /// <summary>
+        /// This function is called when the behaviour becomes disabled or inactive.
+        /// </summary>
+        void OnDisable()
         {
 
         }
