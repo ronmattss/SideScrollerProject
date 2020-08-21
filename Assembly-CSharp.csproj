@@ -124,6 +124,7 @@
      <Compile Include="Assets\Scenes\Scripts\Animator\ChangeMotion.cs" />
      <Compile Include="Assets\Scenes\Scripts\BossFSM\BossBasicAttack.cs" />
      <Compile Include="Assets\Scenes\Scripts\BossFSM\BossProperties.cs" />
+     <Compile Include="Assets\Scenes\Scripts\BossFSM\BossTriggers.cs" />
      <Compile Include="Assets\Scenes\Scripts\BossFSM\MeleeAttackAnimationState.cs" />
      <Compile Include="Assets\Scenes\Scripts\BossFSM\State.cs" />
      <Compile Include="Assets\Scenes\Scripts\BossFSM\StateCharging.cs" />

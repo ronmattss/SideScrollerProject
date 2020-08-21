@@ -18,6 +18,7 @@ namespace SideScrollerProject
         // Start is called before the first frame update
 
 
+        public GameObject interactText;
         public bool queueNextDialogue;
         public bool loopDialogue;
 
@@ -32,7 +33,9 @@ namespace SideScrollerProject
         public NodePort port = null;
 
         public override void Interact(bool interactable)
-        {   PlayerManager.instance.GetPlayerAction().canMove = false;
+        {
+            PlayerManager.instance.GetPlayerAction().canMove = false;
+            PlayerManager.instance.GetPlayerAction().horizontalMovement = 0;
             Debug.Log("Calling Interactable");
             if (!interactable) return;
             // first Dialogue
@@ -75,11 +78,21 @@ namespace SideScrollerProject
                 }
                 // if it is a trigger
                 // trigger function
-                    PlayerManager.instance.GetPlayerAction().canMove = true;
+                PlayerManager.instance.GetPlayerAction().canMove = true;
             }
 
         }
         void Start()
+        {
+            interactText = GameObject.Find("Interact");
+            if (interactText == null)
+                return;
+            SetUpDialogue(dialogue);
+        }
+        /// <summary>
+        /// This function is called when the object becomes enabled and active.
+        /// </summary>
+        void OnEnable()
         {
             SetUpDialogue(dialogue);
         }
@@ -119,6 +132,8 @@ namespace SideScrollerProject
         }
 
 
+
+
         public Chat ChatDialogue(Chat chat)
         {
             NodePort localPort = null;
@@ -155,7 +170,9 @@ namespace SideScrollerProject
                 {
                     if (!playerInProximity)
                     {
-                        DialogueManager.instance.interactText.GetComponent<TMP_Text>().alpha = 255;
+                        //DialogueManager.instance.interactText.GetComponent<TMP_Text>().alpha = 255;
+                        DialogueManager.instance.interactText.SetActive(true);
+                        DialogueManager.instance.SetTransparency(false);
                         //  DialogueManager.instance.SetTransparency(false);
                         playerInProximity = true;
                         Debug.Log(other.transform.name);
@@ -186,6 +203,8 @@ namespace SideScrollerProject
                 {
                     // DialogueManager.instance.interactText.SetActive(false);
                     DialogueManager.instance.interactText.GetComponent<TMP_Text>().alpha = 0;
+                    DialogueManager.instance.interactText.SetActive(false);
+                    //                    interactText.SetActive(false);
                     interactable = false;
                     // TriggerDialogue();
                     Debug.Log("Started Dialogue");

@@ -379,6 +379,10 @@ namespace SideScrollerProject
                         animator.SetBool("isMoving", false);
                     }
                 }
+                else
+                {
+                    target = null;
+                }
 
             }
             else
@@ -406,6 +410,7 @@ namespace SideScrollerProject
                     }
                     else
                     {
+                        target = player.transform;
                         animator.SetBool("playerOnSight", false);
                     }
                 }
@@ -468,7 +473,8 @@ namespace SideScrollerProject
                 RaycastHit2D hit = Physics2D.Linecast(raycastOrigin.position, new Vector2(raycastDirection.x * range + raycastOrigin.position.x, raycastOrigin.position.y), playerLayer);
                 if (target != null && !travelsOnOneAxis)
                 {
-                    hit = Physics2D.Linecast(raycastOrigin.position, new Vector2(raycastDirection.x + target.position.x, target.position.y), playerLayer);
+                    if (Vector2.Distance(this.transform.position, target.position) <= range)
+                        hit = Physics2D.Linecast(raycastOrigin.position, new Vector2(raycastDirection.x + target.position.x, target.position.y), playerLayer);
                     Debug.DrawLine(raycastOrigin.position, new Vector2(raycastDirection.x + target.position.x, target.position.y), Color.red);
                 }
                 Debug.DrawLine(raycastOrigin.position, new Vector2(raycastDirection.x * range + raycastOrigin.position.x, raycastOrigin.position.y), Color.red);
@@ -483,6 +489,7 @@ namespace SideScrollerProject
                     }
                     else if (hit.collider == null)
                     {
+                        target = null;
                         animator.SetBool("isMoving", false);
                     }
             }

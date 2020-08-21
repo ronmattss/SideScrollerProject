@@ -1,13 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
     public static LevelManager instance;
     public Vector3 recentCheckpoint;
+    public GameObject currentActiveBoss;
     public GameObject player;
+    public UnityEvent deathEvent;
     // public float timeStopDuration = 0.025f;
     bool isFreeze;
     void Start()
@@ -24,8 +27,9 @@ public class LevelManager : MonoBehaviour
         }
     }
     IEnumerator RespawnPlayer()
-    {
+    {   
         yield return new WaitForSeconds(3);
+        deathEvent.Invoke();
         if (CameraManager.instance.confiner.m_BoundingShape2D != null)
             CameraManager.instance.confiner.m_BoundingShape2D = null;
         player.gameObject.SetActive(true);
@@ -36,6 +40,10 @@ public class LevelManager : MonoBehaviour
         yield return new WaitForSeconds(3);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         StopAllCoroutines();
+    }
+    public void Reload()
+    {
+        StartCoroutine(ReloadLevel());
     }
 
     public void SetCurrentCheckpoint(GameObject curr)

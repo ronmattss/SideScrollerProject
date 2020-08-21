@@ -33,6 +33,18 @@ namespace SideScrollerProject
             currentState = new StateIdle(this.gameObject, rb, animator, player);
 
         }
+        /// <summary>
+        /// This function is called when the object becomes enabled and active.
+        /// </summary>
+        void OnEnable()
+        {
+            currentHp = maxHp;
+            bossRenderer = GetComponent<SpriteRenderer>();
+            player = PlayerManager.instance.GetPlayerTransform();
+            animator = GetComponent<Animator>();
+            rb = GetComponent<Rigidbody2D>();
+            currentState = new StateIdle(this.gameObject, rb, animator, player);
+        }
 
         // Update is called once per frame
         void Update()
@@ -49,7 +61,7 @@ namespace SideScrollerProject
         {
             Gizmos.color = c;
             Gizmos.DrawWireSphere(binagoonanPropeties.meleeAttackPosition.position, binagoonanPropeties.diameter);
-              Gizmos.DrawWireSphere(binagoonanPropeties.flameHitPosition.transform.position, 7f);
+            Gizmos.DrawWireSphere(binagoonanPropeties.flameHitPosition.transform.position, 7f);
 
             Vector2 direction = (this.gameObject.transform.localScale.x == -1 ? Vector2.left : Vector2.right);
             Vector2 origPos = binagoonanPropeties.meleeAttackPosition.position;

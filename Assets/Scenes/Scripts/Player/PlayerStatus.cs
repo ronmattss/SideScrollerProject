@@ -108,7 +108,7 @@ namespace SideScrollerProject
             if (currentHealth <= 0)
             {
 
-                Destroy(this.gameObject);
+               this.gameObject.SetActive(false);
             }
             else
             {
@@ -129,6 +129,8 @@ namespace SideScrollerProject
         {
             currentHealth = maxHealth;
             currentResource = maxResource;
+            healthSliderScript.SetValue(currentHealth);
+            resourceSliderScript.SetValue(currentResource);
             this.gameObject.transform.position = LevelManager.instance.recentCheckpoint;
             Debug.Log("Ei im Alive");
 
