@@ -599,6 +599,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 3
+  moveSpeed: 2
   attackPoint: {fileID: 8929255796852579443}
   searchPoint: {fileID: 8929255798443359511}
   ground: {fileID: 4182236446087781650}

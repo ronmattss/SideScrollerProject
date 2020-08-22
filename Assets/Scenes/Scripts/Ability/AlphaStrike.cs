@@ -78,13 +78,17 @@ namespace SideScrollerProject
 
         // will be called in the Sheathe weapon Exit State
 
-        public void FreezeEnemyPositions()
+        public void FreezeEnemyPositions(int freeze = 0)
         {
             foreach (GameObject enemy in listOfDamagables)
             {
-                enemy.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+                if(freeze == 0 )
+                enemy.GetComponent<Status>().moveSpeed = freeze;
+                else
+                enemy.GetComponent<Status>().moveSpeed =  enemy.GetComponent<Status>().speed;
                 if (enemy.TryGetComponent(out Animator anim))
                 {
+                    anim.speed = freeze;
                     anim.SetBool("isBeingAttacked", true);
                 }
             }
@@ -151,8 +155,8 @@ namespace SideScrollerProject
 
             }
             listOfDamagables.Clear();
-  //          Destroy(popUp.gameObject);
-//            Destroy(splash.gameObject);
+            //          Destroy(popUp.gameObject);
+            //            Destroy(splash.gameObject);
         }
         #endregion
         public void SetSplash()
@@ -169,7 +173,7 @@ namespace SideScrollerProject
         {
             int last = listOfDamagables.Count;
             GameObject x = Instantiate(omniHit, listOfDamagables[0].transform.position, Quaternion.identity);
-            x.transform.localScale = new Vector3(Vector3.Distance(listOfDamagables[0].transform.position, listOfDamagables[last-1].transform.position), 3f, 1);
+            x.transform.localScale = new Vector3(Vector3.Distance(listOfDamagables[0].transform.position, listOfDamagables[last - 1].transform.position), 3f, 1);
 
 
         }

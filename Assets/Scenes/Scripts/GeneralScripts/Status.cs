@@ -21,6 +21,8 @@ namespace SideScrollerProject
     public class Status : MonoBehaviour
     {
         public int maxHealth = 100;
+        public float moveSpeed = 0.5f;
+        public float speed = 0.5f;
         public Transform attackPoint;
         public Transform searchPoint;
         public Transform ground;
@@ -66,7 +68,8 @@ namespace SideScrollerProject
         private SpriteRenderer enemyRenderer;
         public Material whiteFlash;
         void Start()
-        {
+        {   
+            speed = moveSpeed;
             enemyRenderer = GetComponent<SpriteRenderer>();
             LeanTween.init(3000);
             line = GameObject.Find("Line");
@@ -616,7 +619,7 @@ namespace SideScrollerProject
         public void WaitThenExitState()
         {
             StartCoroutine(DamageIndicator());
-            StopCoroutine(DamageIndicator());
+         //   StopCoroutine(DamageIndicator());
         }
         IEnumerator Wait()
         {

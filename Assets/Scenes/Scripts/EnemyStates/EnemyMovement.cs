@@ -32,7 +32,7 @@ namespace SideScrollerProject
             rb = animator.gameObject.GetComponent<Rigidbody2D>();
             Flip();
             Vector2 target = new Vector2(playerPosition.position.x, rb.position.y);
-            Vector2 newPos = Vector2.MoveTowards(rb.position, target, moveSpeed * Time.fixedDeltaTime);
+            Vector2 newPos = Vector2.MoveTowards(rb.position, target, animator.gameObject.GetComponent<Status>().moveSpeed * Time.fixedDeltaTime);
             if (!e_Grounded)
             {   animator.ResetTrigger("isMoving");
                 Debug.Log("Aint Grounded");

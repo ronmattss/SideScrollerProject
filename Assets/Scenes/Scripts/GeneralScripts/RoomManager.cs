@@ -61,8 +61,10 @@ namespace SideScrollerProject
             }
             currentRoom.roomObject.SetActive(false);
             currentRoom = currentRoom.adjacentRooms[nextRoomIndex];
-
-
+        }
+        public void SetCurrentRoom(GameObject room)
+        {
+            currentRoom = room.GetComponent<RoomInformation>();
         }
 
     }

@@ -51,7 +51,7 @@ namespace SideScrollerProject
         public override void UpdateAbility(BaseState state, Animator animator, AnimatorStateInfo stateInfo)
         {   // if popUp is deactivated
             strike.LockOnEnemies();
-            strike.FreezeEnemyPositions();
+            strike.FreezeEnemyPositions(0);
 
         }
     }

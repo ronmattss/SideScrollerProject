@@ -35,6 +35,7 @@ namespace SideScrollerProject
 
         public override void OnExit(BaseState state, Animator animator, AnimatorStateInfo stateInfo)
         {
+            strike.FreezeEnemyPositions(1);
             strike.StrikeEnemies();
             animator.SetBool(animationParameter, false);
             animator.SetBool("isSlashing", false);
