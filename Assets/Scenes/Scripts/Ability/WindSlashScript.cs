@@ -18,6 +18,7 @@ namespace SideScrollerProject
         Material material;
         public Buff instaKill;
         private BuffGiver b;
+        private StateUser bossDamage;
         [SerializeField] private BuffInstaKill timed;
         void Start()
         {
@@ -75,6 +76,13 @@ namespace SideScrollerProject
                 enemyStatus.TakeDamage(damage);
                 entitiesPassed++;
 
+            }
+            else if (other.tag == "Boss")
+            {
+                if(other.TryGetComponent(out StateUser bossDamage))
+                {
+                    bossDamage.TakeDamage(damage);
+                }
             }
             else if (other.tag == "Breakables")
             {

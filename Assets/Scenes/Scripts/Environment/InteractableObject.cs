@@ -23,6 +23,10 @@ namespace SideScrollerProject
             if (interactText == null)
                 return;
         }
+        public void DebugInvoke()
+        {
+            interactEvent.Invoke();
+        }
         public override void Interact(bool interactable)
         {
             if (this.interactable)

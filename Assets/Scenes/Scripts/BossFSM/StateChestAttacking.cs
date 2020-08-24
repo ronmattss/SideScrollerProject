@@ -8,9 +8,9 @@ namespace SideScrollerProjectFSM
     public class StateChestAttacking : State
     {
         StateUser bossRef;
-        float time = 3;
+        float time = 6;
         float current;
-        float hitTickRate = 0.15f;
+        float hitTickRate = 0.1f;
         float currentTickRate;
 
         public StateChestAttacking(GameObject _boss, Rigidbody2D _rb, Animator _bossAnimator, Transform _player) : base(_boss, _rb, _bossAnimator, _player)
@@ -44,8 +44,8 @@ namespace SideScrollerProjectFSM
             }
             else
             {
-                current -= Time.fixedDeltaTime;
-                currentTickRate -= Time.fixedDeltaTime;
+                current -= Time.deltaTime;
+                currentTickRate -= Time.deltaTime;
                 Burn();
             }
         }
@@ -66,7 +66,7 @@ namespace SideScrollerProjectFSM
                     if (h.collider.gameObject.CompareTag("Player") && currentTickRate <= 0)
                     {
                         Debug.Log("player?: " + h.collider.name);
-                        PlayerManager.instance.GetPlayerStatus().TakeDamage(5);
+                        PlayerManager.instance.GetPlayerStatus().TakeDamage(10);
                         currentTickRate = hitTickRate;
                     }
                 }

@@ -18,7 +18,8 @@ namespace SideScrollerProject
         float fJumpPressedRemember = 0;
         [SerializeField]
         float fJumpPressedRememberTime = 0.2f;
-
+        float dashCD = 1;
+        float dashCurrent;
         float fGroundedRemember = 0;
         [SerializeField]
         float fGroundedRememberTime = 0.25f;
@@ -97,6 +98,7 @@ namespace SideScrollerProject
 
         private void Awake()
         {
+            dashCurrent = dashCD;
             instance = this;
             source = GetComponent<AudioSource>();
             dashTime = startDashTime;
@@ -267,7 +269,7 @@ namespace SideScrollerProject
         public void SmallDash()
         {
 
-            if (isDashing)
+            if (isDashing && dashCurrent <=0)
             {
                 playerSprite.sprite = sprite;
                 animator.SetBool("isDashing", isDashing);
@@ -280,31 +282,41 @@ namespace SideScrollerProject
                 //  source.Play();
 
                 //dashAfterImage.Play();
-                if (dashTime <= 0)
-                {
-                    dashTime = startDashTime;
-                    isDashing = false;
-                    animator.SetBool("isDashing", isDashing);
-                    dashAfterImage.Stop();
-                    //  m_Rigidbody2D.velocity = Vector2.zero;
-
-
-                }
-                else
-                {
-                    dashTime -= Time.deltaTime;
-                    if (this.transform.localScale.x > 0)
+               
+                    if (dashTime <= 0)
                     {
-                        m_Rigidbody2D.velocity = Vector2.right * dashSpeed;
+                        dashTime = startDashTime;
+                        dashCurrent = dashCD;
+                        isDashing = false;
+                        animator.SetBool("isDashing", isDashing);
+                        dashAfterImage.Stop();
+                        //  m_Rigidbody2D.velocity = Vector2.zero;
+
+
                     }
-                    else if (this.transform.localScale.x < 0)
+                    else
                     {
-                        m_Rigidbody2D.velocity = Vector2.left * dashSpeed;
+                        dashTime -= Time.deltaTime;
+
+                        if (this.transform.localScale.x > 0)
+                        {
+                            m_Rigidbody2D.velocity = Vector2.right * dashSpeed;
+                        }
+                        else if (this.transform.localScale.x < 0)
+                        {
+                            m_Rigidbody2D.velocity = Vector2.left * dashSpeed;
+                        }
+
                     }
 
-                }
 
 
+
+            }
+            else
+            {
+                isDashing = false;
+                dashCurrent -= Time.deltaTime;
             }
         }
 

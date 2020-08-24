@@ -51,7 +51,8 @@ MonoBehaviour:
   input: {fileID: 0}
   output: {fileID: 0}
   character: {fileID: 0}
-  text: Press R to cast a powerful WindSlash, maybe it can destroy certain things...
+  text: Press R to cast a powerful Wind Slash, brown trees can be destroyed when
+    hit
   ListOfGameObjects: []
   ListOfPositions: []
   ListofSpawnables: []

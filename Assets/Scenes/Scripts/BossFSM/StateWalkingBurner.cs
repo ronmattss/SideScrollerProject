@@ -8,7 +8,7 @@ namespace SideScrollerProjectFSM
     public class StateWalkingBurner : State
     {
         int randomNumber = 0;
-        float time = 5;
+        float time = 6;
         float hitTickRate = 0.15f;
         float currentTickRate;
         float current;
@@ -75,8 +75,8 @@ namespace SideScrollerProjectFSM
             else
             {
                 Burn();
-                current -= Time.fixedDeltaTime;
-                currentTickRate -= Time.fixedDeltaTime;
+                current -= Time.deltaTime;
+                currentTickRate -= Time.deltaTime;
                 switch (animator.GetInteger("pattern"))
                 {
                     case 0:
