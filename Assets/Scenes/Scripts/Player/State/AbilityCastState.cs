@@ -14,13 +14,17 @@ namespace SideScrollerProject
         public string animationParameter = "isCasting";
         int cast = 0;
         AbilityManager abilityCaster;
+        //TODO: FIX ANIMATIONS
         public override void OnEnter(BaseState state, Animator animator, AnimatorStateInfo stateInfo)
         {
             AbilityManager[] abilities = animator.GetComponents<AbilityManager>();
+            animator.SetBool(AnimatorParams.IsInCombo.ToString(),false);
+           
             foreach (AbilityManager a in abilities)
             {
                 Debug.Log("WTFIS THE ABILITY: " + a.nameOfAbility + " Does it use animation: " + a.useAnimation);
                 abilityCaster = a;
+                 animator.SetBool(animationParameter,false);
                 Debug.Log("Does it find the ability? " + a.nameOfAbility);
                 if (a.nameOfAbility.Equals(abilityName) && a.useAnimation)
                 {
@@ -41,8 +45,10 @@ namespace SideScrollerProject
             {
                 animator.GetComponent<PlayerStatus>().playerRenderer.material = animator.GetComponent<PlayerStatus>().baseMaterial;
             }
+            
             animator.ResetTrigger(animationParameter);
             animator.SetBool(animationParameter, false);
+            animator.SetBool("IsInCombo", false);
         }
 
         public override void UpdateAbility(BaseState state, Animator animator, AnimatorStateInfo stateInfo)

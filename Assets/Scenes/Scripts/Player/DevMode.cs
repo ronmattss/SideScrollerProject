@@ -7,22 +7,30 @@ public class DevMode : MonoBehaviour
 {
     public UnityEvent debugMode;
     public UnityEvent teleportToBoss;
+    public UnityEvent teleportToLastShrine;
+
+
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyUp(KeyCode.Home))
+        if (Input.GetKeyUp(KeyCode.Home))
         {
             debugMode.Invoke();
         }
-        if(Input.GetKeyUp(KeyCode.Insert))
+        if (Input.GetKeyUp(KeyCode.Insert))
         {
             teleportToBoss.Invoke();
         }
+        if (Input.GetKeyUp(KeyCode.PageUp))
+        {
+            teleportToLastShrine.Invoke();
+        }
+
     }
 }

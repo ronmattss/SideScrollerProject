@@ -96,6 +96,7 @@ namespace SideScrollerProject
                     //  if (InputManager.instance.attackCounter == 0)
                     // {
                     animator.SetBool(AnimatorParams.Attacking.ToString(), true);
+                    animator.SetBool(AnimatorParams.IsInCombo.ToString(), true);
                     animator.SetInteger(AnimatorParams.AttackCounter.ToString(), InputManager.instance.attackCounter);
                     if (Input.GetAxisRaw("Horizontal") != 0)
                     {
