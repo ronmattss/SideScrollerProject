@@ -96,9 +96,8 @@ namespace SideScrollerProject
                 coolDownText.enabled = true;
                 if (useAnimation)
                 {
-                    if (animator == null)
-                        animator = this.gameObject.GetComponent<Animator>();
-                    animator.SetBool(ability.animatorParameter, true);
+                    AttackTriggerManager.instance.attackAnimationController.TriggerAnimationBool(ability.animatorParameter);
+                   // animator.SetBool(ability.animatorParameter, true);
                     //Play animation then send the animationTriggerAbility to the State Data
                 }
                 else

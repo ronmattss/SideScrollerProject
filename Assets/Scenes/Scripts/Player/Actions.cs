@@ -95,8 +95,9 @@ namespace SideScrollerProject
 
                     //  if (InputManager.instance.attackCounter == 0)
                     // {
-                    animator.SetBool(AnimatorParams.Attacking.ToString(), true);
-                    animator.SetBool(AnimatorParams.IsInCombo.ToString(), true);
+                    AttackTriggerManager.instance.attackAnimationController.TriggerAnimationBool(AnimatorParams.Attacking.ToString());
+                    //animator.SetBool(AnimatorParams.Attacking.ToString(), true);
+                    //animator.SetBool(AnimatorParams.IsInCombo.ToString(), true);
                     animator.SetInteger(AnimatorParams.AttackCounter.ToString(), InputManager.instance.attackCounter);
                     if (Input.GetAxisRaw("Horizontal") != 0)
                     {
@@ -106,6 +107,12 @@ namespace SideScrollerProject
 
                     //  }
                     //InputManager.instance.attackCounter++;
+                }
+                if (Input.GetKeyDown(KeyCode.H) && canAttack)
+                {
+                    AttackTriggerManager.instance.attackAnimationController.TriggerAnimationBool(AnimatorParams.IsHeavyAttacking.ToString());
+                    //AttackTriggerManager.instance.attackAnimationController.TriggerAnimationBool(AnimatorParams.Attacking.ToString());
+                    animator.SetInteger(AnimatorParams.AttackCounter.ToString(), InputManager.instance.attackCounter);
                 }
 
                 if (Input.GetKeyDown(KeyCode.X) && movement.availableDash > 0 && canDash)

@@ -19,6 +19,7 @@ public enum AnimatorParams
     Jumping,
     AttackCounter,
     ForceTransition,
+    IsHeavyAttacking,
     IsInCombo
 }
 public class InputManager : MonoBehaviour

@@ -18,7 +18,7 @@ namespace SideScrollerProject
         public override void OnEnter(BaseState state, Animator animator, AnimatorStateInfo stateInfo)
         {
             AbilityManager[] abilities = animator.GetComponents<AbilityManager>();
-            animator.SetBool(AnimatorParams.IsInCombo.ToString(),false);
+          
            
             foreach (AbilityManager a in abilities)
             {
@@ -35,11 +35,12 @@ namespace SideScrollerProject
                     return;
                 }
             }
+           // if(stateInfo.normalizedTime >= 0.99)
         }
 
         public override void OnExit(BaseState state, Animator animator, AnimatorStateInfo stateInfo)
         {
-
+            
             cast = 0;
             if (abilityName == "WindSlash" || abilityName == "Wind Slash")
             {

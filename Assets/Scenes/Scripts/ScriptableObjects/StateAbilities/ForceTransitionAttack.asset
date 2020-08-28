@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: ForceTransitionAttack
   m_EditorClassIdentifier: 
   duration: 0
-  transitionValue: 0.8
+  transitionValue: 0.99

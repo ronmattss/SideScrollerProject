@@ -122,6 +122,7 @@ namespace SideScrollerProject
             RegisterAttack(animator);
             PlayerManager.instance.GetPlayerMovement().isAttackForward = true;
             animator.SetBool(AnimatorParams.Attacking.ToString(), false);
+            animator.SetBool(AnimatorParams.IsHeavyAttacking.ToString(), false);
 
 
 

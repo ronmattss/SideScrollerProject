@@ -19,7 +19,7 @@ MonoBehaviour:
   aBaseCooldown: 3
   depletionValue: 50
   duration: 0.5
-  damage: 3
+  damage: 1
   speed: 30
   maxTarget: 3
   projectile: {fileID: 2124432778311927412, guid: 8ac809a1c232b7d48a6207a0d60f5347,

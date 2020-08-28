@@ -210,7 +210,8 @@
      <Compile Include="Assets\Scenes\Scripts\Node Based Dialogue System\DialogueNodeGraph.cs" />
      <Compile Include="Assets\Scenes\Scripts\Player\Actions.cs" />
      <Compile Include="Assets\Scenes\Scripts\Player\Actions\InputManager.cs" />
-     <Compile Include="Assets\Scenes\Scripts\Player\Combat\AttackLogic.cs" />
+     <Compile Include="Assets\Scenes\Scripts\Player\Combat\AttackTriggerManager.cs" />
+     <Compile Include="Assets\Scenes\Scripts\Player\Combat\TriggerAttackAnimation.cs" />
      <Compile Include="Assets\Scenes\Scripts\Player\DevMode.cs" />
      <Compile Include="Assets\Scenes\Scripts\Player\Jump.cs" />
      <Compile Include="Assets\Scenes\Scripts\Player\MaskController.cs" />
