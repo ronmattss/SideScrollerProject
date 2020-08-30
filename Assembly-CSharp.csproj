@@ -177,6 +177,12 @@
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Buffs\TimedBuff.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\ComponentAdder.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Dialogue\DialogueManager.cs" />
+     <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Dialogue\DialogueSystem\BaseDialogue.cs" />
+     <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Dialogue\DialogueSystem\BranchingDialogue.cs" />
+     <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Dialogue\DialogueSystem\DialogueReader.cs" />
+     <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Dialogue\DialogueSystem\EventDialogue.cs" />
+     <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Dialogue\DialogueSystem\OneTimeDialogue.cs" />
+     <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Dialogue\DialogueSystem\RepeatingDialogue.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Dialogue\DialogueTrigger.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Dialogue\Dialouge.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\EntityManager.cs" />

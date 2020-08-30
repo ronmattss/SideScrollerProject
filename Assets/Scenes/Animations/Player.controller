@@ -1202,91 +1202,91 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Jumping
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Falling
     m_Type: 3
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Attacking
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: AttackCounter
     m_Type: 3
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: ForceTransition
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: EnemiesNear
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: isDashing
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: isCasting
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: IsHurt
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: isBlinking
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: isSlashing
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: isEyeOn
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: IsInCombo
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: IsHeavyAttacking
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -1668,7 +1668,7 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 8551131189666465756}
-    m_Position: {x: 600, y: -360, z: 0}
+    m_Position: {x: 610, y: -350, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1588650000015529924}
     m_Position: {x: 600, y: -440, z: 0}
@@ -1680,13 +1680,13 @@ AnimatorStateMachine:
     m_Position: {x: 280, y: -240, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 2628618108152183034}
-    m_Position: {x: 320, y: -90, z: 0}
+    m_Position: {x: 620, y: -210, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 8328565222663329926}
     m_Position: {x: 830, y: -260, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1161532718877361040}
-    m_Position: {x: 590, y: -150, z: 0}
+    m_Position: {x: 620, y: -160, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 3213770645476790998}
     m_Position: {x: 620, y: -110, z: 0}
@@ -1755,16 +1755,16 @@ AnimatorStateMachine:
     m_Position: {x: 280, y: -540, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 7776239209369850022}
-    m_Position: {x: 440, y: 120, z: 0}
+    m_Position: {x: 620, y: -60, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -739826686816117008}
     m_Position: {x: 0, y: 0, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 2154670437031930641}
-    m_Position: {x: 690, y: 130, z: 0}
+    m_Position: {x: 620, y: -10, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 8603239570490353687}
-    m_Position: {x: 1000, y: 120, z: 0}
+    m_Position: {x: 620, y: 40, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: -4655109602011673967}
