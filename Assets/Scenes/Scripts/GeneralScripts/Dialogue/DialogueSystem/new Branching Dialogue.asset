@@ -14,9 +14,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueName: 
   speaker: 
-  sentences: []
-  nextDialogueSequence: {fileID: 0}
+  sentences:
+  - 'Sometimes '
+  - it is easier
+  - 'to create a '
+  - branching dialogue in a scriptable object
+  nextDialogueSequence: {fileID: 11400000, guid: 82fe6d52ce4a10848b59ae9c5aa878c1,
+    type: 2}
+  continueToNextDialogue: 0
   postDialogueEvent:
     m_PersistentCalls:
       m_Calls: []
-  respondDialogue: []
+  responses:
+  - first response
+  - second response
+  - third response
+  respondDialogue:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

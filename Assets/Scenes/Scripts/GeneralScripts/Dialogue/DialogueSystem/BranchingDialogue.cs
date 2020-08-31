@@ -9,6 +9,7 @@ using System;
 public class BranchingDialogue : OneTimeDialogue
 {
 
-    public List<List<string>> listofResponse;
-    public List<BaseDialogue> respondDialogue;
+    //public List<SentenceWrapper> listofResponse;
+    public List<string> responses = new List<string>();
+    public List<BaseDialogue> respondDialogue = new List<BaseDialogue>();
 }

@@ -40,7 +40,7 @@ namespace SideScrollerProject
         }
         private void OnTriggerEnter2D(Collider2D other)
         {
-            Debug.Log(other.transform.name);
+//            Debug.Log(other.transform.name);
             if (other.transform.tag == "Player")
             {
                 player = other.gameObject;
