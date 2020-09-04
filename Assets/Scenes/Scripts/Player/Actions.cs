@@ -62,7 +62,7 @@ namespace SideScrollerProject
         void Update()
         {
 
-            if (Input.GetKeyDown(KeyCode.F))
+            if (Input.GetKeyUp(KeyCode.F))
             {
                 if (isInteracting)
                 {

@@ -51,9 +51,12 @@ namespace SideScrollerProject
         #region ReadyState
         public void LockOnEnemies()
         {// linecast to a direction, then lock on all targets
-            Vector2 direction = parent.transform.localScale.x == -1 ? Vector2.left : Vector2.right;
-            Debug.DrawLine(parent.transform.position, new Vector2(direction.x * range + parent.transform.position.x, parent.transform.position.y), Color.red, 5);
-            RaycastHit2D[] hit = Physics2D.LinecastAll(parent.transform.position, new Vector2(direction.x * range + parent.transform.position.x, parent.transform.position.y), whatToHit);
+            Vector3 direction = parent.transform.localScale.x == -1 ? Vector2.left : Vector2.right;
+            float distance = direction.x * range;
+            Vector2 fixedPosition = new Vector2(parent.transform.position.x + distance, parent.transform.position.y);
+          //  Vector2 distanceEnd = new Vector2(parent.transform.position.x + distance, parent.transform.position.y);
+            Debug.DrawLine(parent.transform.position, fixedPosition, Color.red, 5);
+            RaycastHit2D[] hit = Physics2D.LinecastAll(parent.transform.position, fixedPosition, whatToHit);
             foreach (RaycastHit2D enemy in hit)
             {
 
@@ -82,10 +85,10 @@ namespace SideScrollerProject
         {
             foreach (GameObject enemy in listOfDamagables)
             {
-                if(freeze == 0 )
-                enemy.GetComponent<Status>().moveSpeed = freeze;
+                if (freeze == 0)
+                    enemy.GetComponent<Status>().moveSpeed = freeze;
                 else
-                enemy.GetComponent<Status>().moveSpeed =  enemy.GetComponent<Status>().speed;
+                    enemy.GetComponent<Status>().moveSpeed = enemy.GetComponent<Status>().speed;
                 if (enemy.TryGetComponent(out Animator anim))
                 {
                     anim.speed = freeze;
@@ -103,36 +106,38 @@ namespace SideScrollerProject
         public void BlinkPlayer()
         {
             Vector3 direction = parent.transform.localScale.x == -1 ? Vector2.left : Vector2.right;
-            direction *= 2;
-            Vector3 pos;
-            try
-            {
-                pos = listOfDamagables[listOfDamagables.FindLastIndex(g => g.CompareTag("Enemy"))].transform.position + direction;
-            }
-            catch (System.ArgumentOutOfRangeException e)
-            {
-                Debug.Log(e.ActualValue);
-                try
-                {
-                    pos = listOfDamagables[listOfDamagables.Count - 1].gameObject.transform.position + direction;
-                }
-                catch (System.ArgumentOutOfRangeException ex)
-                {
-                    // do nothing
-                    Debug.Log(ex.ActualValue);
-                    pos = parent.transform.position;
+            float distance = direction.x * range;
+            Vector3 fixedPosition = new Vector3(parent.transform.position.x + distance, parent.transform.position.y, parent.transform.position.z);
+            //direction *= 2;
+            // Vector3 pos;
+            // try
+            // {
+            //     pos = listOfDamagables[listOfDamagables.FindLastIndex(g => g.CompareTag("Enemy"))].transform.position + direction;
+            // }
+            // catch (System.ArgumentOutOfRangeException e)
+            // {
+            //     Debug.Log(e.ActualValue);
+            //     try
+            //     {
+            //         pos = listOfDamagables[listOfDamagables.Count - 1].gameObject.transform.position + direction;
+            //     }
+            //     catch (System.ArgumentOutOfRangeException ex)
+            //     {
+            //         // do nothing
+            //         Debug.Log(ex.ActualValue);
+            //         pos = parent.transform.position;
 
-                }
-            }
+            //     }
+            // }
 
 
 
-            parent.transform.position = pos + direction;
+            // parent.transform.position = pos + direction;
             // parent.transform.position = listOfDamagables[listOfDamagables.FindLastIndex(g => g.CompareTag("Enemy"))].transform.position;
 
-            LeanTween.move(this.parent, pos, 0.2f);
+            LeanTween.move(this.parent, fixedPosition, 0.2f);
             //            Debug.Log("What is: " + listOfDamagables[listOfDamagables.Count - 1].transform.name);
-            LeanTween.move(Camera.main.gameObject, pos + direction, 0.2f);
+            // LeanTween.move(Camera.main.gameObject,  range * direction + direction, 0.2f);
         }
         #endregion
         #region StrikeState
@@ -171,9 +176,13 @@ namespace SideScrollerProject
         }
         public void SpawnHit()
         {
+            Vector3 direction = parent.transform.localScale.x == -1 ? Vector2.left : Vector2.right;
+            float distance = direction.x * 5;
+            Vector3 fixedPosition = new Vector3(parent.transform.position.x + distance, parent.transform.position.y, parent.transform.position.z);
             int last = listOfDamagables.Count;
-            GameObject x = Instantiate(omniHit, listOfDamagables[0].transform.position, Quaternion.identity);
-            x.transform.localScale = new Vector3(Vector3.Distance(listOfDamagables[0].transform.position, listOfDamagables[last - 1].transform.position), 3f, 1);
+            GameObject x = Instantiate(omniHit, parent.transform.position, Quaternion.identity);
+            x.transform.localScale = new Vector3(direction.x *x.transform.localScale.x,x.transform.localScale.y,x.transform.localScale.z);
+            //   x.transform.localScale = new Vector3(Vector3.Distance(listOfDamagables[0].transform.position, listOfDamagables[last - 1].transform.position), 3f, 1);
 
 
         }

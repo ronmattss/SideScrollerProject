@@ -16,9 +16,9 @@ MonoBehaviour:
   animatorParameter: isBlinking
   hasAnimation: 1
   aSprite: {fileID: 21300000, guid: 7a35197d6fd1b5944a373ef71e2ed23f, type: 3}
-  aBaseCooldown: 10
+  aBaseCooldown: 1
   depletionValue: 40
-  range: 20
+  range: 10
   damage: 20
   whatToHit:
     serializedVersion: 2

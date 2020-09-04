@@ -2,27 +2,29 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-
-public class ImprovedDialogueManager : MonoBehaviour
+namespace SideScrollerProject
 {
-    //handles displaying of dialogues
-    // Queue sentences
-    // 
-    public static ImprovedDialogueManager instance;
-    public GameObject dialogueHolder;
-    public TMP_Text text;
-
-
-
-    void Awake()
+    public class ImprovedDialogueManager : MonoBehaviour
     {
-        instance = this;
+        //handles displaying of dialogues
+        // Queue sentences
+        // 
+        public static ImprovedDialogueManager instance;
+        public GameObject dialogueHolder;
+        public TMP_Text text;
+        [SerializeField] public GameObject responseHolder;
+        public DialogueReader currentReader;
+
+        void Awake()
+        {
+            instance = this;
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+
+        }
+
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
 }

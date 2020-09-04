@@ -12,6 +12,7 @@ namespace SideScrollerProject
         public BaseDialogue dialogue;
         int indexType = -1;
         public Queue<string> sentences;
+        public bool showResponses = false;
 
 
 
@@ -50,9 +51,11 @@ namespace SideScrollerProject
                         break;
                     case 1:
 
+                        indexType = SetupDialogue(dialogue);
                         break;
                     case 2:
-                        if ((dialogue as EventDialogue).postDialogueEvent != null) (dialogue as EventDialogue).InvokePostDialogueEvent();
+                    //one time events ends dialogues
+                        if ((dialogue as EventDialogue).dialogueEvent != null) (dialogue as EventDialogue).InvokePostDialogueEvent();
                         break;
                     default:
                         break;
@@ -64,8 +67,15 @@ namespace SideScrollerProject
             // int x = sentences.Count;
             // if branching Dialogue
             if (indexType == 1 && sentences.Count == 1)
+            {
                 (dialogue as BranchingDialogue).responses.ForEach(x => Debug.Log(x));
+                showResponses = true; // call respond Dialogue
+                ResponseDisplay();
+                // pass all necessary info
+            }
 
+            //setup respond UI
+            //setup respond buttons(that can be triggered)
             // show responses
 
 
@@ -78,6 +88,12 @@ namespace SideScrollerProject
         // Queue Sentences
         //
         // Start is called before the first frame update
+        public void ResponseDisplay()
+        {
+                            ImprovedDialogueManager.instance.responseHolder.SetActive(true);
+                ImprovedDialogueManager.instance.responseHolder.GetComponent<ResponseHolder>().ReadResponses((dialogue as BranchingDialogue));
+                ImprovedDialogueManager.instance.responseHolder.GetComponent<ResponseHolder>().isShowing = true;
+        }
         void Start()
         {
             sentences = new Queue<string>();
@@ -90,6 +106,27 @@ namespace SideScrollerProject
         void Awake()
         {
             //load the dialogue
+
+        }
+        /// <summary>
+        /// LateUpdate is called every frame, if the Behaviour is enabled.
+        /// It is called after all Update functions have been called.
+        /// </summary>
+        void LateUpdate()
+        {
+            // enable when displaying responses
+            if (showResponses)
+            {
+                SetupResponses(dialogue as BranchingDialogue);
+
+            }
+
+        }
+        void SetupResponses(BranchingDialogue d)
+        {
+
+            DisplayNextSentence();
+            showResponses = false;
 
         }
         public void StartDialogue(BaseDialogue d)
@@ -141,6 +178,7 @@ namespace SideScrollerProject
 
                 if (other.GetType() == typeof(CircleCollider2D))
                 {
+                    ImprovedDialogueManager.instance.currentReader = this;
                     indexType = SetupDialogue(dialogue);
                     other.GetComponent<Actions>().isInteracting = true;
                     other.GetComponent<Actions>().interactables = this;
