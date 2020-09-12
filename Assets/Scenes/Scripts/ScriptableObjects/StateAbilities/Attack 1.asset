@@ -19,7 +19,6 @@ MonoBehaviour:
   enemyLayer:
     serializedVersion: 2
     m_Bits: 33280
-  hitEffect: {fileID: 6767871930310856726, guid: f3359c6e7561ce048953122bc595e8b4,
-    type: 3}
+  hitEffect: {fileID: 1258725013165278, guid: f00872eb3daf45d4cb44ebbbf9d203b7, type: 3}
   flipEffectatX: 1
   sound: {fileID: 8300000, guid: f67745180f91f484480f51460b05fe03, type: 3}
