@@ -22,6 +22,7 @@ namespace SideScrollerProject
         AudioSource audio;
         public AudioClip sound;
         int enemyCount = 0;
+        DamageModifier damageModifier = new DamageModifier();
         public void FreezeHit()
         {
 
@@ -32,7 +33,6 @@ namespace SideScrollerProject
 
             // Register enemies
             Collider2D[] enemyColliders = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayer);
-
             // Damage enemies
             counter++;
             foreach (Collider2D enemy in enemyColliders)
@@ -59,7 +59,7 @@ namespace SideScrollerProject
                     if (enemy.CompareTag("Enemy"))
                     {
                         Debug.Log("WHy is it multiple: " + enemy.tag);
-                        enemyStatus.TakeDamage(attackDamage);
+                        damageModifier.DoDamage(animator.gameObject.GetComponent<EntityStatus>().currentStatus.initialDamage, enemy.gameObject);
                         PlayerManager.instance.GetPlayerAction().attackCounter++;
                         if (PlayerManager.instance.GetPlayerAction().attackCounter == 3)
                         {

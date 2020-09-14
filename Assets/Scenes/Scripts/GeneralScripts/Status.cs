@@ -18,7 +18,7 @@ namespace SideScrollerProject
     [RequireComponent(typeof(SliderScript))]
     [RequireComponent(typeof(Animator))]
     [RequireComponent(typeof(AudioSource))]
-    public class Status : MonoBehaviour
+    public class Status : EntityStatus
     {
         public int maxHealth = 100;
         public float moveSpeed = 0.5f;
@@ -67,8 +67,9 @@ namespace SideScrollerProject
         private Rigidbody2D rb;
         private SpriteRenderer enemyRenderer;
         public Material whiteFlash;
+        public DamageModifier damageModifier = new DamageModifier();
         void Start()
-        {   
+        {
             speed = moveSpeed;
             enemyRenderer = GetComponent<SpriteRenderer>();
             LeanTween.init(3000);
@@ -93,8 +94,8 @@ namespace SideScrollerProject
             }
 
             // target = this.transform;
-            currentHealth = maxHealth;
-            slider.SetMaxValue(maxHealth);
+            currentHealth = base.currentStatus.maxHealth;
+            slider.SetMaxValue(base.currentStatus.maxHealth);
             spriteRenderer.material.SetColor("_Color", Color.black);
         }
         void LateUpdate()
@@ -269,16 +270,16 @@ namespace SideScrollerProject
 
         }
         #region TakeDamage
-        public void TakeDamage(int damage)
+        public override void TakeDamage(int baseDamage)
         {
             //LevelManager.instance.FreezeHit();
             StartCoroutine(Wait());
             WaitThenExitState();
 
-            Debug.Log($"Damage:{damage}");
+            Debug.Log($"Damage:{baseDamage}");
             if (!animator.GetBool("isAttacking"))
                 animator.SetBool("isHurt", true);
-            currentHealth -= damage;
+            currentHealth -= baseDamage;
             slider.SetValue(currentHealth);
             if (target != null)
                 // Knockback();
@@ -526,7 +527,7 @@ namespace SideScrollerProject
         }
         #endregion
         #region EnemyAttack 
-        public void RegisterAttack(Animator animator)
+        public void RegisterAttack()
         {
             // Register enemies
             Collider2D[] playerCollider = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, playerLayer);
@@ -537,13 +538,14 @@ namespace SideScrollerProject
                 if (!player.isTrigger)
                 {
                     Debug.Log($"Enemy hit: {player.name}");
-                    PlayerStatus playerStatus = player.gameObject.GetComponent<PlayerStatus>();
+                    EntityStatus playerStatus = player.gameObject.GetComponent<PlayerStatus>();
 
                     if (playerStatus == null)
                         return;
                     else
                     {
-                        playerStatus.TakeDamage(attackDamage, animator);
+                        damageModifier.DoDamage(currentStatus.initialDamage, player.gameObject);
+                        // playerStatus.TakeDamage(attackDamage);
                     }
                 }
 
@@ -619,7 +621,7 @@ namespace SideScrollerProject
         public void WaitThenExitState()
         {
             StartCoroutine(DamageIndicator());
-         //   StopCoroutine(DamageIndicator());
+            //   StopCoroutine(DamageIndicator());
         }
         IEnumerator Wait()
         {
@@ -628,7 +630,6 @@ namespace SideScrollerProject
             while (Time.timeScale != 1.0f)
                 yield return new WaitForSeconds(0.2f);
         }
-
 
 
     }

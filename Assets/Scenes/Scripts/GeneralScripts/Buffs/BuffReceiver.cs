@@ -7,6 +7,7 @@ namespace SideScrollerProject
 {
     // Receiver receives buffs from BuffGiver
     // this is where buffs will live until its duration
+    
     public class BuffReceiver : MonoBehaviour
     {
       [SerializeField]  private readonly Dictionary<Buff, TimedBuff> _buffs = new Dictionary<Buff, TimedBuff>();

@@ -144,6 +144,13 @@
      <Compile Include="Assets\Scenes\Scripts\Camera\CameraManager.cs" />
      <Compile Include="Assets\Scenes\Scripts\Camera\CameraShake.cs" />
      <Compile Include="Assets\Scenes\Scripts\Camera\TrackPlayer.cs" />
+     <Compile Include="Assets\Scenes\Scripts\Combat System\BaseStatus.cs" />
+     <Compile Include="Assets\Scenes\Scripts\Combat System\CharacterStatus.cs" />
+     <Compile Include="Assets\Scenes\Scripts\Combat System\DamageModifier.cs" />
+     <Compile Include="Assets\Scenes\Scripts\Combat System\Enemy.cs" />
+     <Compile Include="Assets\Scenes\Scripts\Combat System\EntityStatus.cs" />
+     <Compile Include="Assets\Scenes\Scripts\Combat System\IDamageable.cs" />
+     <Compile Include="Assets\Scenes\Scripts\Combat System\IDoDamage.cs" />
      <Compile Include="Assets\Scenes\Scripts\Effects\Effect.cs" />
      <Compile Include="Assets\Scenes\Scripts\Effects\EffectsManager.cs" />
      <Compile Include="Assets\Scenes\Scripts\Effects\HitEffect.cs" />

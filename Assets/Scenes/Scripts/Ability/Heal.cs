@@ -33,13 +33,13 @@ namespace SideScrollerProject
                 ParticleSystem particles = Instantiate(healthParticles, playerStatus.transform.position, Quaternion.identity);
                 particles.GetComponent<TrackPlayer>().player = playerStatus.gameObject;
                 healthParticles.Play();
-                if (healValue + playerStatus.currentHealth <= playerStatus.maxHealth)
+                if (healValue + playerStatus.currentHealth <= playerStatus.currentStatus.maxHealth)
                 {
                     playerStatus.ChangeHealthBar(healValue);
                 }
                 else
                 {
-                    int reducedHealing = Mathf.Abs(playerStatus.maxHealth - playerStatus.currentHealth);
+                    int reducedHealing = Mathf.Abs(playerStatus.currentStatus.maxHealth - playerStatus.currentHealth);
 
                     playerStatus.ChangeHealthBar(reducedHealing);
                 }

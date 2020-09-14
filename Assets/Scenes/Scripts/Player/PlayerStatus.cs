@@ -6,16 +6,13 @@ using Cinemachine;
 
 namespace SideScrollerProject
 {
-    public class PlayerStatus : MonoBehaviour
+    public class PlayerStatus : EntityStatus
     {
-        public int maxHealth = 100;
-        public int maxResource = 100;
+        // public Transform attackPoint;
+        // public Transform searchPoint;
+        // // public float searchRange = 0;
+        // // public float attackRange = 0;
         public float knockbackForce = 250f;
-        public Transform attackPoint;
-        public Transform searchPoint;
-        public Transform target;
-        public float searchRange = 0;
-        public float attackRange = 0;
         public Animator animator;
         public Slider healthSlider;
         public Slider resourceSlider;
@@ -45,12 +42,12 @@ namespace SideScrollerProject
             animator.gameObject.SetActive(false);
             animator.gameObject.SetActive(true);
             // target = this.transform;
-            healthSliderScript.SetMaxValue(maxHealth);
-            resourceSliderScript.SetMaxValue(maxResource);
+            healthSliderScript.SetMaxValue(base.currentStatus.maxHealth);
+            resourceSliderScript.SetMaxValue((base.currentStatus as CharacterStatus).maxResource);
 
 
-            currentHealth = maxHealth;
-            currentResource = maxResource;
+            currentHealth = base.currentStatus.maxHealth;
+            currentResource = (base.currentStatus as CharacterStatus).maxResource;
             countDown = timeBeforeRegenerating;
 
         }
@@ -64,10 +61,10 @@ namespace SideScrollerProject
         }
         private void OnDrawGizmosSelected()
         {
-            if (searchPoint != null)
-                Gizmos.DrawWireSphere(searchPoint.position, searchRange);
-            if (attackPoint != null)
-                Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+            // if (searchPoint != null)
+            //     Gizmos.DrawWireSphere(searchPoint.position, searchRange);
+            // if (attackPoint != null)
+            //     Gizmos.DrawWireSphere(attackPoint.position, attackRange);
         }
 
         public void TakeDamage(int damage, Animator enemyAnimator)
@@ -77,7 +74,7 @@ namespace SideScrollerProject
             healthSliderScript.SetValue(currentHealth);
             impulseSource.GenerateImpulse();
             CameraManager.instance.Shake(10, 0.2f);
-            Knockback(enemyAnimator.GetComponentInParent<Transform>().localScale.x);
+          //  Knockback(enemyAnimator.GetComponentInParent<Transform>().localScale.x);
             animator.SetBool("IsHurt", true);
             ResetCountDown();
             EffectsManager.instance.Spawn(this.gameObject.transform.position, "PlayerHurt1");
@@ -96,27 +93,51 @@ namespace SideScrollerProject
             }
 
         }
-        public void TakeDamage(int damage)
+        public sealed override void TakeDamage(int baseDamage)
         {
-            Debug.Log($"Damage:{damage}");
-            currentHealth -= damage;
+            Debug.Log($"Damage:{baseDamage}");
+            currentHealth -= baseDamage;
             healthSliderScript.SetValue(currentHealth);
-            // impulseSource.GenerateImpulse();
+            impulseSource.GenerateImpulse();
             CameraManager.instance.Shake(10, 0.2f);
+          //  Knockback(enemyAnimator.GetComponentInParent<Transform>().localScale.x);
             animator.SetBool("IsHurt", true);
             ResetCountDown();
+            EffectsManager.instance.Spawn(this.gameObject.transform.position, "PlayerHurt1");
+            EffectsManager.instance.Spawn(this.gameObject.transform.position, "PlayerHurt2");
+            LevelManager.instance.FreezeHit(0.25f);
             if (currentHealth <= 0)
             {
 
-               this.gameObject.SetActive(false);
+                this.gameObject.SetActive(false);
             }
             else
             {
                 //Hurt
                 Debug.Log(this.name + " " + currentHealth);
             }
-
         }
+        // public void TakeDamage(int damage)
+        // {
+        //     Debug.Log($"Damage:{damage}");
+        //     currentHealth -= damage;
+        //     healthSliderScript.SetValue(currentHealth);
+        //     // impulseSource.GenerateImpulse();
+        //     CameraManager.instance.Shake(10, 0.2f);
+        //     animator.SetBool("IsHurt", true);
+        //     ResetCountDown();
+        //     if (currentHealth <= 0)
+        //     {
+
+        //         this.gameObject.SetActive(false);
+        //     }
+        //     else
+        //     {
+        //         //Hurt
+        //         Debug.Log(this.name + " " + currentHealth);
+        //     }
+
+        // }
 
         public void Die(Animator animator)
         {
@@ -127,8 +148,8 @@ namespace SideScrollerProject
         /// </summary>
         void OnEnable()
         {
-            currentHealth = maxHealth;
-            currentResource = maxResource;
+            currentHealth = base.currentStatus.maxHealth;
+            currentResource = (base.currentStatus as CharacterStatus).maxResource;
             healthSliderScript.SetValue(currentHealth);
             resourceSliderScript.SetValue(currentResource);
             this.gameObject.transform.position = LevelManager.instance.recentCheckpoint;
@@ -153,7 +174,7 @@ namespace SideScrollerProject
                 }
                 else
                 {
-                    if (currentResource != maxResource)
+                    if (currentResource != (base.currentStatus as CharacterStatus).maxResource)
                     {
                         currentResource += regenerateRate;
                         resourceSliderScript.SetValue(currentResource);
@@ -211,6 +232,8 @@ namespace SideScrollerProject
         {
             return currentResource;
         }
+
+
 
 
 

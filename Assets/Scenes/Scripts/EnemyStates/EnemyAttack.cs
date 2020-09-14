@@ -18,7 +18,7 @@ namespace SideScrollerProject
             //            animator.gameObject.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
             isRange = animator.gameObject.GetComponent<Status>().isRange;
             if (!isRange)
-                animator.gameObject.GetComponent<Status>().RegisterAttack(animator);
+                animator.gameObject.GetComponent<Status>().RegisterAttack();
             else
                 animator.gameObject.GetComponent<Status>().RangeAttack();
         }
