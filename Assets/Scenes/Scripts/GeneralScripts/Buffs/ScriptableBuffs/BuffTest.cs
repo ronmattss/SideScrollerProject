@@ -5,6 +5,7 @@ using UnityEngine;
 namespace SideScrollerProject
 {
 
+    // Buff ScriptableObject
     [CreateAssetMenu(menuName = "ShadedGames/BuffsDebuffs/Buffs/InstaKill")]
 
     public class BuffTest : Buff
@@ -16,9 +17,5 @@ namespace SideScrollerProject
             return new BuffInstaKill(this, obj);
         }
 
-        public override TimedBuff InitializeBuff()
-        {
-            return new BuffInstaKill();
-        }
     }
 }

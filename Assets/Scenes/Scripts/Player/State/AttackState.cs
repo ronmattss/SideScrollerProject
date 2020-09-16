@@ -22,7 +22,7 @@ namespace SideScrollerProject
         AudioSource audio;
         public AudioClip sound;
         int enemyCount = 0;
-        DamageModifier damageModifier = new DamageModifier();
+        DamageModifier damageModifier;
         public void FreezeHit()
         {
 
@@ -59,7 +59,7 @@ namespace SideScrollerProject
                     if (enemy.CompareTag("Enemy"))
                     {
                         Debug.Log("WHy is it multiple: " + enemy.tag);
-                        damageModifier.DoDamage(animator.gameObject.GetComponent<EntityStatus>().currentStatus.initialDamage, enemy.gameObject);
+                        damageModifier.DoDamage(animator.gameObject.GetComponent<PlayerStatus>().playerIngameStats.ModifiedDamage(), enemy.gameObject);
                         PlayerManager.instance.GetPlayerAction().attackCounter++;
                         if (PlayerManager.instance.GetPlayerAction().attackCounter == 3)
                         {
@@ -109,6 +109,7 @@ namespace SideScrollerProject
         public override void OnEnter(BaseState state, Animator animator, AnimatorStateInfo stateInfo)
         {
             Rigidbody2D rb = animator.gameObject.GetComponent<Rigidbody2D>(); ;
+            damageModifier = animator.GetComponent<PlayerStatus>().damageModifier;
             Transform playerFace = animator.gameObject.transform;
 
             rb.AddForce(new Vector2(7f * playerFace.localScale.x, rb.velocity.y), ForceMode2D.Impulse);

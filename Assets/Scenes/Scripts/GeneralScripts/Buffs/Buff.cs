@@ -11,7 +11,7 @@ using UnityEngine;
 // can also be called by abilities and triggers
 namespace SideScrollerProject
 {
-    public enum Buffs
+    public enum StatusEffect
     {   //
         poison,
         stun,
@@ -34,7 +34,7 @@ namespace SideScrollerProject
         public bool isBuffStackable; // if Stackable extend the duration if not reset the counter
         public bool isEffectStacked;
         public abstract TimedBuff InitializeBuff(GameObject obj);
-        public abstract TimedBuff InitializeBuff();
+       // public abstract TimedBuff InitializeBuff();
 
 
 

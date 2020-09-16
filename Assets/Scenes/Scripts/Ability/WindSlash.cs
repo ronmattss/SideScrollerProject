@@ -25,7 +25,7 @@ namespace SideScrollerProject
         public void SpawnProjectile()
         {
 
-            if (playerStatus.currentResource >= depletionValue)
+            if (playerStatus.playerIngameStats.CurrentResource >= depletionValue)
             {
                 playerStatus.DepleteResourceBar(depletionValue);
                 GameObject currentProjectile = Instantiate(projectile, parent.transform.position, parent.transform.rotation);

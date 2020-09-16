@@ -5,7 +5,7 @@ using UnityEngine;
 namespace SideScrollerProject
 {
     [System.Serializable]
-    public abstract class TimedBuff
+    public abstract class   TimedBuff
     {
         protected float duration;
         protected int effectStacks;
@@ -34,7 +34,7 @@ namespace SideScrollerProject
         }
 
         public void Activate()
-        {   Debug.Log("WTF IS THE GAMEOBJECT: "+obj.name);
+        {   Debug.Log("Activated on GAMEOBJECT: "+obj.name);
             if (buff.isEffectStacked || duration <= 0)
             {
                 ApplyEffect();

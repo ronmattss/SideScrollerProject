@@ -16,17 +16,19 @@ namespace SideScrollerProject
     public class DamageModifier : IDoDamage
     {    // Status reference
          // buff/debuff reference
+         
 
 
         public void DoDamage(int initialDamage, GameObject target)
         {
-            EntityStatus targetStatus = target.GetComponent<EntityStatus>(); // calculate damage here
+            EntityStatus targetStatus = target.GetComponent<EntityStatus>();
+            // calculate damage here
             int calculatedDamage = initialDamage;
             // get Idamageable
             // calculate damage
             // add buff if theres any
 
-            targetStatus.TakeDamage(initialDamage);
+            targetStatus.TakeDamage(calculatedDamage);
         }
         int CalculateDamage()
         {

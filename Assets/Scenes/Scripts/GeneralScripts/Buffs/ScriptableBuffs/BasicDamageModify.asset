@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fefc5af64a5f6b2458b428409b82bde9, type: 3}
+  m_Name: BasicDamageModify
+  m_EditorClassIdentifier: 
+  buffName: BasicExtraDamage
+  buffDuration: 10
+  buffTick: 0
+  hasDuration: 0
+  isBuffStackable: 0
+  isEffectStacked: 0

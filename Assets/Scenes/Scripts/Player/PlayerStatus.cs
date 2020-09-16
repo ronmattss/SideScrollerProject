@@ -6,12 +6,18 @@ using Cinemachine;
 
 namespace SideScrollerProject
 {
+    // seperate playerStats?
+    // this now serves as the frontside of the script
+
     public class PlayerStatus : EntityStatus
     {
         // public Transform attackPoint;
         // public Transform searchPoint;
         // // public float searchRange = 0;
         // // public float attackRange = 0;
+        //load base stats from scriptable objects
+        public PlayerStats playerIngameStats;
+        public DamageModifier damageModifier = new DamageModifier();
         public float knockbackForce = 250f;
         public Animator animator;
         public Slider healthSlider;
@@ -19,8 +25,6 @@ namespace SideScrollerProject
         public SliderScript healthSliderScript;
         public SliderScript resourceSliderScript;
         public Actions actions;
-        public int currentHealth;
-        public int currentResource;
         public float timeBeforeRegenerating = 3f;
         public int regenerateRate = 1;
         public bool canRegenerateResource = true;
@@ -35,6 +39,10 @@ namespace SideScrollerProject
         // x+= (target -x) * .1) // go to target 10% of the value at the time fast -> slow
         void Start()
         {
+            playerIngameStats = GetComponent<PlayerStats>();
+            playerIngameStats.CurrentHealth = currentStatus.maxHealth;
+            playerIngameStats.CurrentResource = (base.currentStatus as CharacterStatus).maxResource;
+            playerIngameStats.BaseDamage = currentStatus.initialDamage;
             healthSliderScript.slider = healthSlider;
             resourceSliderScript.slider = resourceSlider;
             animator = this.GetComponent<Animator>();
@@ -44,10 +52,6 @@ namespace SideScrollerProject
             // target = this.transform;
             healthSliderScript.SetMaxValue(base.currentStatus.maxHealth);
             resourceSliderScript.SetMaxValue((base.currentStatus as CharacterStatus).maxResource);
-
-
-            currentHealth = base.currentStatus.maxHealth;
-            currentResource = (base.currentStatus as CharacterStatus).maxResource;
             countDown = timeBeforeRegenerating;
 
         }
@@ -57,6 +61,7 @@ namespace SideScrollerProject
         void Update()
         {
             RegenerateResource();
+            // check current state
             // impulseSource.GenerateImpulse();
         }
         private void OnDrawGizmosSelected()
@@ -70,18 +75,18 @@ namespace SideScrollerProject
         public void TakeDamage(int damage, Animator enemyAnimator)
         {
             Debug.Log($"Damage:{damage}");
-            currentHealth -= damage;
-            healthSliderScript.SetValue(currentHealth);
+            playerIngameStats.CurrentHealth -= damage;
+            healthSliderScript.SetValue(playerIngameStats.CurrentHealth);
             impulseSource.GenerateImpulse();
             CameraManager.instance.Shake(10, 0.2f);
-          //  Knockback(enemyAnimator.GetComponentInParent<Transform>().localScale.x);
+            //  Knockback(enemyAnimator.GetComponentInParent<Transform>().localScale.x);
             animator.SetBool("IsHurt", true);
             ResetCountDown();
             EffectsManager.instance.Spawn(this.gameObject.transform.position, "PlayerHurt1");
             EffectsManager.instance.Spawn(this.gameObject.transform.position, "PlayerHurt2");
             LevelManager.instance.FreezeHit(0.25f);
             //PlayerManager.instance.GetPlayerAction().ApplyHitStop(null,0.5f);
-            if (currentHealth <= 0)
+            if (playerIngameStats.CurrentHealth <= 0)
             {
 
                 this.gameObject.SetActive(false);
@@ -89,24 +94,24 @@ namespace SideScrollerProject
             else
             {
                 //Hurt
-                Debug.Log(this.name + " " + currentHealth);
+                Debug.Log(this.name + " " + playerIngameStats.CurrentHealth);
             }
 
         }
         public sealed override void TakeDamage(int baseDamage)
         {
             Debug.Log($"Damage:{baseDamage}");
-            currentHealth -= baseDamage;
-            healthSliderScript.SetValue(currentHealth);
+            playerIngameStats.CurrentHealth -= baseDamage;
+            healthSliderScript.SetValue(playerIngameStats.CurrentHealth);
             impulseSource.GenerateImpulse();
             CameraManager.instance.Shake(10, 0.2f);
-          //  Knockback(enemyAnimator.GetComponentInParent<Transform>().localScale.x);
+            //  Knockback(enemyAnimator.GetComponentInParent<Transform>().localScale.x);
             animator.SetBool("IsHurt", true);
             ResetCountDown();
             EffectsManager.instance.Spawn(this.gameObject.transform.position, "PlayerHurt1");
             EffectsManager.instance.Spawn(this.gameObject.transform.position, "PlayerHurt2");
             LevelManager.instance.FreezeHit(0.25f);
-            if (currentHealth <= 0)
+            if (playerIngameStats.CurrentHealth <= 0)
             {
 
                 this.gameObject.SetActive(false);
@@ -114,7 +119,7 @@ namespace SideScrollerProject
             else
             {
                 //Hurt
-                Debug.Log(this.name + " " + currentHealth);
+                Debug.Log(this.name + " " + playerIngameStats.CurrentHealth);
             }
         }
         // public void TakeDamage(int damage)
@@ -148,10 +153,10 @@ namespace SideScrollerProject
         /// </summary>
         void OnEnable()
         {
-            currentHealth = base.currentStatus.maxHealth;
-            currentResource = (base.currentStatus as CharacterStatus).maxResource;
-            healthSliderScript.SetValue(currentHealth);
-            resourceSliderScript.SetValue(currentResource);
+            playerIngameStats.CurrentHealth = base.currentStatus.maxHealth;
+            playerIngameStats.CurrentResource = (base.currentStatus as CharacterStatus).maxResource;
+            healthSliderScript.SetValue(playerIngameStats.CurrentHealth);
+            resourceSliderScript.SetValue(playerIngameStats.CurrentHealth);
             this.gameObject.transform.position = LevelManager.instance.recentCheckpoint;
             Debug.Log("Ei im Alive");
 
@@ -174,10 +179,10 @@ namespace SideScrollerProject
                 }
                 else
                 {
-                    if (currentResource != (base.currentStatus as CharacterStatus).maxResource)
+                    if (playerIngameStats.CurrentResource != (base.currentStatus as CharacterStatus).maxResource)
                     {
-                        currentResource += regenerateRate;
-                        resourceSliderScript.SetValue(currentResource);
+                        playerIngameStats.CurrentResource += regenerateRate;
+                        resourceSliderScript.SetValue(playerIngameStats.CurrentResource);
                     }
                     else
                     {
@@ -205,20 +210,20 @@ namespace SideScrollerProject
         }
         public void DepleteResourceBar(int value)
         {
-            currentResource -= value;
-            resourceSliderScript.SetValue(currentResource);
+            playerIngameStats.CurrentResource -= value;
+            resourceSliderScript.SetValue(playerIngameStats.CurrentResource);
         }
         public void ChangeHealthBar(int value)
         {
             if (value > 0)
             {
-                currentHealth += value;
-                healthSliderScript.SetValue(currentHealth);
+                playerIngameStats.CurrentHealth += value;
+                healthSliderScript.SetValue(playerIngameStats.CurrentHealth);
             }
             else
             {
-                currentHealth -= value;
-                healthSliderScript.SetValue(currentHealth);
+                playerIngameStats.CurrentHealth -= value;
+                healthSliderScript.SetValue(playerIngameStats.CurrentHealth);
             }
         }
 
@@ -226,11 +231,11 @@ namespace SideScrollerProject
 
         public int GetHealth()
         {
-            return currentHealth;
+            return playerIngameStats.CurrentHealth;
         }
         public int GetResource()
         {
-            return currentResource;
+            return playerIngameStats.CurrentResource;
         }
 
 

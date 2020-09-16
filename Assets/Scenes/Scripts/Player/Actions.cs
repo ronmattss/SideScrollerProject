@@ -85,6 +85,7 @@ namespace SideScrollerProject
                 {
                     thirdEye.ResizeObject();
                     animator.SetBool("isEyeOn", thirdEye.thirdEyeOn);
+                    GetComponent<BuffGiver>().GiveBuff();
                     //motion.ChangeAnimationClip();
                     motion.ChangeMultipleAnimationClips();
                 }

@@ -183,7 +183,9 @@
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Buffs\BuffGiver.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Buffs\BuffReceiver.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Buffs\ScriptableBuffs\BuffInstaKill.cs" />
+     <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Buffs\ScriptableBuffs\BuffMultiplyDamage.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Buffs\ScriptableBuffs\BuffTest.cs" />
+     <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Buffs\ScriptableBuffs\MultiplyDamageObject.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Buffs\TimedBuff.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\ComponentAdder.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Dialogue\DialogueManager.cs" />
@@ -237,6 +239,7 @@
      <Compile Include="Assets\Scenes\Scripts\Player\MaskController.cs" />
      <Compile Include="Assets\Scenes\Scripts\Player\Movement.cs" />
      <Compile Include="Assets\Scenes\Scripts\Player\PlayerInventory.cs" />
+     <Compile Include="Assets\Scenes\Scripts\Player\PlayerStats.cs" />
      <Compile Include="Assets\Scenes\Scripts\Player\PlayerStatus.cs" />
      <Compile Include="Assets\Scenes\Scripts\Player\State\AbilityCastState.cs" />
      <Compile Include="Assets\Scenes\Scripts\Player\State\AttackState.cs" />

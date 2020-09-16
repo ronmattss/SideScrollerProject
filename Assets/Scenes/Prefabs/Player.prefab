@@ -14675,6 +14675,7 @@ GameObject:
   - component: {fileID: 5642469678187045267}
   - component: {fileID: 5642469678187045265}
   - component: {fileID: 5642469678187045272}
+  - component: {fileID: 1760409069469295298}
   - component: {fileID: 5642469678187045264}
   - component: {fileID: 5642469678187045263}
   - component: {fileID: 5642469678187045268}
@@ -14692,6 +14693,7 @@ GameObject:
   - component: {fileID: 9221021263863542040}
   - component: {fileID: 5642469676446360188}
   - component: {fileID: 5642469676446360192}
+  - component: {fileID: 5642469676446360210}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -14846,6 +14848,18 @@ CapsuleCollider2D:
   m_Offset: {x: -0.16204414, y: -0.0039920807}
   m_Size: {x: 0.51128346, y: 1.9622192}
   m_Direction: 0
+--- !u!114 &1760409069469295298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5642469678187045275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e5bd3583a1355844af4355258b29a54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &5642469678187045264
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14899,14 +14913,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcb90a222e4f2e44abb38f68b5933540, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
-  maxResource: 100
+  currentStatus: {fileID: 11400000, guid: 4c64e81697c893340a7d013f135fed67, type: 2}
+  buffReceiver: {fileID: 5642469676446360210}
+  playerIngameStats: {fileID: 0}
   knockbackForce: 250
-  attackPoint: {fileID: 0}
-  searchPoint: {fileID: 0}
-  target: {fileID: 0}
-  searchRange: 0
-  attackRange: 0
   animator: {fileID: 0}
   healthSlider: {fileID: 0}
   resourceSlider: {fileID: 0}
@@ -15051,7 +15061,7 @@ MonoBehaviour:
   coolDownText: {fileID: 0}
   animator: {fileID: 0}
   useAnimation: 0
-  ability: {fileID: 0}
+  ability: {fileID: 11400000, guid: 0701130af4767394f803c127a976b4b0, type: 2}
   abilityImage: {fileID: 0}
 --- !u!114 &3583090393796434136
 MonoBehaviour:
@@ -15071,7 +15081,7 @@ MonoBehaviour:
   coolDownText: {fileID: 0}
   animator: {fileID: 0}
   useAnimation: 0
-  ability: {fileID: 0}
+  ability: {fileID: 11400000, guid: 99f99958bc2f46642b77aa1915e29e34, type: 2}
   abilityImage: {fileID: 0}
 --- !u!114 &3622997279038760952
 MonoBehaviour:
@@ -15122,7 +15132,7 @@ MonoBehaviour:
   - {x: -0.2603898, y: -0.6481222, z: 0}
   m_ShapePathHash: 1031613069
   m_Mesh: {fileID: 0}
-  m_InstanceId: -6160
+  m_InstanceId: 73526
 --- !u!114 &3583090393796434138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15398,6 +15408,18 @@ MonoBehaviour:
   playerAnimator: {fileID: 0}
   thirdEyeController: {fileID: 5642469676446360188}
   animatorOverrideController: {fileID: 0}
+--- !u!114 &5642469676446360210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5642469678187045275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74d77fb98c7416b4ab45df39519c5a0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6689413625356235089
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15548,15 +15570,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26eaf2f5df52406428cb46e5852e4544, type: 3}
---- !u!198 &4624986289664101859 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 2088213128014643044, guid: 26eaf2f5df52406428cb46e5852e4544,
-    type: 3}
-  m_PrefabInstance: {fileID: 6689413625522008711}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4624986289664101858 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2088213128014643045, guid: 26eaf2f5df52406428cb46e5852e4544,
+    type: 3}
+  m_PrefabInstance: {fileID: 6689413625522008711}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &4624986289664101859 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 2088213128014643044, guid: 26eaf2f5df52406428cb46e5852e4544,
     type: 3}
   m_PrefabInstance: {fileID: 6689413625522008711}
   m_PrefabAsset: {fileID: 0}

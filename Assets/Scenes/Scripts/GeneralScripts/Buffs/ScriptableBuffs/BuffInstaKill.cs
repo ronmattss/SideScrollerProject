@@ -4,6 +4,7 @@ using UnityEngine;
 
 namespace SideScrollerProject
 {
+    // Buff Logic
     [System.Serializable]
     public class BuffInstaKill : TimedBuff
     {

@@ -88,7 +88,7 @@ namespace SideScrollerProject
 
             //abilitySource.Play();
             //abilitySource.clip = ability.aSound;
-            if (playerStatus.currentResource >= ability.depletionValue)
+            if (playerStatus.playerIngameStats.CurrentResource >= ability.depletionValue)
             {
                 nextReadyTime = coolDownDuration + Time.time;
                 coolDownTimeLeft = coolDownDuration;

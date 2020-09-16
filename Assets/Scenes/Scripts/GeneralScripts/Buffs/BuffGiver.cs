@@ -35,7 +35,21 @@ namespace SideScrollerProject
         public void GiveBuff(Buff _buff)
         {
             t = _buff.InitializeBuff(receiver);
-            Debug.Log("Buff Receiever: " + t.obj.name + " "+receiver.name);
+            Debug.Log("Buff Receiever: " + t.obj.name + " " + receiver.name);
+            t.obj = receiver;
+            buffsToGive.Add(t);
+            if (buffsToGive.Count > 0)
+                foreach (var buff in buffsToGive)
+                {
+                    receiver.GetComponent<BuffReceiver>().AddBuff(buff);
+                }
+        }
+
+        // FOR TESTING ONLY
+        public void GiveBuff()
+        {
+            t = buffsToInit[0].InitializeBuff(receiver);
+            Debug.Log("Buff Receiever: " + t.obj.name + " " + receiver.name);
             t.obj = receiver;
             buffsToGive.Add(t);
             if (buffsToGive.Count > 0)
