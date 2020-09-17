@@ -45,6 +45,7 @@ namespace SideScrollerProject
             playerIngameStats.BaseDamage = currentStatus.initialDamage;
             healthSliderScript.slider = healthSlider;
             resourceSliderScript.slider = resourceSlider;
+            damageModifier.entityBuffGiver = GetComponent<BuffGiver>();
             animator = this.GetComponent<Animator>();
             impulseSource = GetComponent<CinemachineImpulseSource>();
             animator.gameObject.SetActive(false);

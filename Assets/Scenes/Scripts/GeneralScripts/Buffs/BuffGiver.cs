@@ -13,7 +13,7 @@ namespace SideScrollerProject
         public List<Buff> buffsToInit = new List<Buff>();
         [SerializeField] public List<TimedBuff> buffsToGive = new List<TimedBuff>();
         public GameObject receiver;
-        public TimedBuff t;
+        public TimedBuff timedBuff;
         void Start()
         {
 
@@ -34,10 +34,10 @@ namespace SideScrollerProject
 
         public void GiveBuff(Buff _buff)
         {
-            t = _buff.InitializeBuff(receiver);
-            Debug.Log("Buff Receiever: " + t.obj.name + " " + receiver.name);
-            t.obj = receiver;
-            buffsToGive.Add(t);
+            timedBuff = _buff.InitializeBuff(receiver);
+            Debug.Log("Buff Receiever: " + timedBuff.obj.name + " " + receiver.name);
+            timedBuff.obj = receiver;
+            buffsToGive.Add(timedBuff);
             if (buffsToGive.Count > 0)
                 foreach (var buff in buffsToGive)
                 {
@@ -48,17 +48,28 @@ namespace SideScrollerProject
         // FOR TESTING ONLY
         public void GiveBuff()
         {
-            t = buffsToInit[0].InitializeBuff(receiver);
-            Debug.Log("Buff Receiever: " + t.obj.name + " " + receiver.name);
-            t.obj = receiver;
-            buffsToGive.Add(t);
+            timedBuff = buffsToInit[0].InitializeBuff(receiver);
+            Debug.Log("Buff Receiever: " + timedBuff.obj.name + " " + receiver.name);
+            timedBuff.obj = receiver;
+            buffsToGive.Add(timedBuff);
             if (buffsToGive.Count > 0)
                 foreach (var buff in buffsToGive)
                 {
                     receiver.GetComponent<BuffReceiver>().AddBuff(buff);
                 }
         }
-
+        public void GiveBuffToEnemy()
+        {
+            timedBuff = buffsToInit[0].InitializeBuff(receiver);
+            Debug.Log("Buff Receiever: " + timedBuff.obj.name + " " + receiver.name);
+            timedBuff.obj = receiver;
+            buffsToGive.Add(timedBuff);
+            if (buffsToGive.Count > 0)
+                foreach (var buff in buffsToGive)
+                {
+                    receiver.GetComponent<BuffReceiver>().AddBuff(buff);
+                }
+        }
 
     }
 

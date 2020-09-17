@@ -28,7 +28,11 @@ namespace SideScrollerProject
             toKillObj.GetComponent<Status>().TakeDamage(10);
         }
 
-
+        protected override void EffectPerSecond(float delta)
+        {
+            Debug.Log("do something");
+           // throw new System.NotImplementedException();
+        }
     }
 
 }

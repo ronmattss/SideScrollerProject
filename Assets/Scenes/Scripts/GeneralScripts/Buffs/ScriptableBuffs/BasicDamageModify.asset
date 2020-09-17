@@ -18,3 +18,4 @@ MonoBehaviour:
   hasDuration: 0
   isBuffStackable: 0
   isEffectStacked: 0
+  additionalDamage: 100

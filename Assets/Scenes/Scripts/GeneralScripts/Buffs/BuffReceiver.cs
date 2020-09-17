@@ -7,11 +7,11 @@ namespace SideScrollerProject
 {
     // Receiver receives buffs from BuffGiver
     // this is where buffs will live until its duration
-    
+
     public class BuffReceiver : MonoBehaviour
     {
-      [SerializeField]  private readonly Dictionary<Buff, TimedBuff> _buffs = new Dictionary<Buff, TimedBuff>();
-        
+        [SerializeField] private readonly Dictionary<Buff, TimedBuff> _buffs = new Dictionary<Buff, TimedBuff>();
+
         void Start()
         {
 
@@ -25,6 +25,8 @@ namespace SideScrollerProject
                 buff.Tick(Time.deltaTime);
                 if (buff.isFinished)
                 {
+                    Debug.Log("Removed: " + buff.buff.buffName);
+                    buff.isFinished = false;
                     _buffs.Remove(buff.buff);
                 }
 

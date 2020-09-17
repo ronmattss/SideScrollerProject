@@ -182,9 +182,11 @@
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Buffs\Buff.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Buffs\BuffGiver.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Buffs\BuffReceiver.cs" />
+     <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Buffs\ScriptableBuffs\BuffIgnite.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Buffs\ScriptableBuffs\BuffInstaKill.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Buffs\ScriptableBuffs\BuffMultiplyDamage.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Buffs\ScriptableBuffs\BuffTest.cs" />
+     <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Buffs\ScriptableBuffs\IgniteObject.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Buffs\ScriptableBuffs\MultiplyDamageObject.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Buffs\TimedBuff.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\ComponentAdder.cs" />

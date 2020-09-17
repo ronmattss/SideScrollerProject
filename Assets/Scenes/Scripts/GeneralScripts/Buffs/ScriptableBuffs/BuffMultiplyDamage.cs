@@ -31,6 +31,12 @@ namespace SideScrollerProject
             entityObject.GetComponent<PlayerStats>().listOfBuffs.Add(this);
         }
 
+        protected override void EffectPerSecond(float delta)
+        {
+            return;
+           // throw new NotImplementedException();
+        }
+
         // Start is called before the first frame update
 
     }
