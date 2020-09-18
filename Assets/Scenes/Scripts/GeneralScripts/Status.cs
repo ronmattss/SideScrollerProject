@@ -97,6 +97,7 @@ namespace SideScrollerProject
             currentHealth = base.currentStatus.maxHealth;
             slider.SetMaxValue(base.currentStatus.maxHealth);
             spriteRenderer.material.SetColor("_Color", Color.black);
+            damageModifier.entityBuffGiver = GetComponent<BuffGiver>();
         }
         void LateUpdate()
         {

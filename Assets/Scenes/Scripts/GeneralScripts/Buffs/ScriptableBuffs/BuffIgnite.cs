@@ -11,14 +11,14 @@ namespace SideScrollerProject
         float tick;
         int damage;
         GameObject target;
-        Status entityStatus;
+        EntityStatus entityStatus;
         public BuffIgnite(Buff buff, GameObject obj) : base(buff, obj)
         {
             target = obj;
             currentTickRate = (buff as IgniteObject).tickRate;
             damage = (buff as IgniteObject).damagePerSecond;
             obj = target;
-            entityStatus = target.GetComponent<Status>();
+            entityStatus = target.GetComponent<EntityStatus>();
 
         }
 
@@ -30,7 +30,6 @@ namespace SideScrollerProject
         protected override void ApplyEffect()
         {
             tick = currentTickRate;
-            Debug.Log($"Duration: {duration} Tick rate:{tick} current Tickrate:{currentTickRate}");
         }
 
         protected override void EffectPerSecond(float delta)
@@ -38,20 +37,32 @@ namespace SideScrollerProject
             if (tick <= 0)
             {
                 tick = currentTickRate;
+                IgniteEntity();
             }
             else
             {
                 tick -= delta;
-                IgniteEntity();
+                //Debug.Log($"current Tick rate:{tick}");
             }
+            //    Debug.Log($"Duration: {duration} Tick rate:{tick} current Tickrate:{currentTickRate}");
         }
 
         private void IgniteEntity()
         {
             //refactor to entityStats
-            if (entityStatus.currentHealth <= 0)
-                return;
-            entityStatus.currentHealth -= damage;
+            if (entityStatus.gameObject.tag == "Player")
+            {
+                Debug.Log("is the player being burned?");
+                entityStatus.gameObject.GetComponent<PlayerStats>().CurrentHealth -= damage;
+            }
+            else
+            {
+                entityStatus.gameObject.GetComponent<Status>().currentHealth -= damage;
+            }
+            // }
+            // if (entityStatus.currentHealth <= 0)
+            //     return;
+            // entityStatus.currentHealth -= damage;
 
         }
 

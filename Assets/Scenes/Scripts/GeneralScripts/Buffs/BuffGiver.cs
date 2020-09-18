@@ -28,6 +28,7 @@ namespace SideScrollerProject
         {
             foreach (var b in buffsToInit)
             {
+                Debug.Log("Is this buff initializing?");
                 buffsToGive.Add(b.InitializeBuff(receiver));
             }
         }

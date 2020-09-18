@@ -26,7 +26,7 @@ namespace SideScrollerProject
         public void Tick(float delta)
         {
             duration -= delta;
-            Debug.Log("Duration of buff: " + duration);
+//            Debug.Log("Duration of buff: " + duration);
             EffectPerSecond(delta);
             if (duration <= 0)
             {

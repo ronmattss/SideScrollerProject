@@ -18,14 +18,17 @@ namespace SideScrollerProject
          // buff/debuff reference
         public BuffGiver entityBuffGiver;
 
-
+        //Refactor to make buffs optional
         public void DoDamage(int initialDamage, GameObject target)
         {
             EntityStatus targetStatus = target.GetComponent<EntityStatus>();
-            entityBuffGiver.receiver = target;
-            entityBuffGiver.GiveBuffToEnemy();
-            Debug.Log("Effet: "+entityBuffGiver.buffsToInit[0].buffName);
-            Debug.Log("IS THIS BUFF GIVER INVOKING?");
+            if (entityBuffGiver.buffsToInit.Count > 0)
+            {
+                entityBuffGiver.receiver = target;
+                entityBuffGiver.GiveBuffToEnemy();
+                Debug.Log("Effet: " + entityBuffGiver.buffsToInit[0].buffName);
+                Debug.Log("IS THIS BUFF GIVER INVOKING?");
+            }
             // calculate damage here
             int calculatedDamage = initialDamage;
             // get Idamageable
