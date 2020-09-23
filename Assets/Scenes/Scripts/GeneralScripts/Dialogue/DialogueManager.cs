@@ -22,6 +22,7 @@ namespace SideScrollerProject
             _instance = this;
             instance = _instance;
             sentences = new Queue<string>();
+            interactText = GameObject.Find("Interact");
 
         }
 

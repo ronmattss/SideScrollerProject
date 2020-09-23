@@ -7,19 +7,21 @@ using TMPro;
 namespace SideScrollerProject
 {
     // Refactor this
-    public class InteractableObject : Interactable
+    public class InteractableObject : Interactable,IOnHoldInteract
     {
 
         public bool playerIsInProximity = false;
         public GameObject interactText;
         public GameObject someRandomShit;
         public UnityEvent interactEvent;
+        public UnityEvent interactHoldEvent;
         public GameObject player;
 
         public void Start()
         {
             interactable = false;
-            interactText = GameObject.Find("Interact");
+            interactText = DialogueManager.instance.interactText;
+            //interactText = GameObject.Find("Interact");
             if (interactText == null)
                 return;
         }
@@ -38,9 +40,13 @@ namespace SideScrollerProject
 
 
         }
+        public void InteractHold()
+        {
+           interactHoldEvent.Invoke();
+        }
         private void OnTriggerEnter2D(Collider2D other)
         {
-//            Debug.Log(other.transform.name);
+           Debug.Log(other.transform.name);
             if (other.transform.tag == "Player")
             {
                 player = other.gameObject;
@@ -52,6 +58,7 @@ namespace SideScrollerProject
                 if (other.GetType() == typeof(CircleCollider2D))
                 {
                     other.GetComponent<Actions>().interactables = this;
+                    other.GetComponent<Actions>().currentHoldTime = this.secondsHold;
                     other.GetComponent<Actions>().isInteracting = true;
                     playerIsInProximity = true;
                 }
@@ -71,8 +78,6 @@ namespace SideScrollerProject
                 }
             }
         }
-
-
 
     }
 }

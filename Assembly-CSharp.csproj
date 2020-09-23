@@ -217,6 +217,7 @@
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\RoomInformation.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\RoomManager.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Sound.cs" />
+     <Compile Include="Assets\Scenes\Scripts\GeneralScripts\SpiritOrb.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Status.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\TriggerArea.cs" />
      <Compile Include="Assets\Scenes\Scripts\Helpers\ColliderTrigger.cs" />

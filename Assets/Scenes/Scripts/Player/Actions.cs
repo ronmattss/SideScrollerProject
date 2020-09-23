@@ -50,7 +50,7 @@ namespace SideScrollerProject
         public ChangeMotion motion;
         [Tooltip("HitStopPausesomething")] public float hitStop = .75f;
         [Tooltip("HitStopPausesomething")] public const float hitStopDuration = .140f;
-
+        [NonSerialized] public float currentHoldTime = 0;
 
 
 
@@ -199,6 +199,38 @@ namespace SideScrollerProject
             animator.SetInteger("Falling", movement.GetFallVelocity());
             jump = false;
             //  Debug.Log(horizontalMovement);
+        }
+        void InputInteract(KeyCode button)
+        {
+
+            // some logic you can add
+            //get keydown activates the moment you pressed the button
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                // logic activate animation?
+            }
+
+            //get key activates While you press the button
+            if (Input.GetKey(KeyCode.F))
+            {
+                if (interactables.holdToInteract)
+                    currentHoldTime++;
+                // logic
+            }
+            //
+            if (Input.GetKeyUp(KeyCode.F))
+            {
+                // if is holdable and currentHoldTime invoke Interact that holds
+                //else
+                if (interactables.holdToInteract && currentHoldTime >= interactables.secondsHold)
+                {
+                    interactables.Interact(isInteracting);
+                    currentHoldTime = 0;
+                }
+                // else  if not holdable
+                else if (!interactables.holdToInteract && interactables.secondsHold == 0)
+                    interactables.Interact(isInteracting);
+            }
         }
 
         void CreateDust()

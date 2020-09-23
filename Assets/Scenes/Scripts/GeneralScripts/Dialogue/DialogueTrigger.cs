@@ -178,7 +178,7 @@ namespace SideScrollerProject
                         Debug.Log(other.transform.name);
                         interactable = true;
                         // TriggerDialogue();
-
+                        
                         Debug.Log("Started Dialogue");
                         other.GetComponent<Actions>().isInteracting = interactable;
                         other.GetComponent<Actions>().interactables = this;

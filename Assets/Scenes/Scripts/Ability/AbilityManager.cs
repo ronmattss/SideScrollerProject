@@ -22,6 +22,7 @@ namespace SideScrollerProject
         private float nextReadyTime;
         private float coolDownTimeLeft;
         private PlayerStatus playerStatus;
+        public float chargeTimer = 0;
 
         void Start()
         {
@@ -38,6 +39,8 @@ namespace SideScrollerProject
         }
         void Update()
         {
+            //NOTE: Ability Manager is just for connecting buttons Ui to the skilss
+            // logic should be done on the skill itself
             bool coolDownComplete = (Time.time > nextReadyTime);
             if (coolDownComplete)
             {
@@ -45,7 +48,21 @@ namespace SideScrollerProject
                                 //                Debug.Log("Ability Ready");
                 if (Input.GetKeyDown(abilityButton))
                 {
-                    ButtonTriggered();
+                    //   ButtonTriggered();
+                }
+                //Charge Casting  Logic
+                if (Input.GetKey(abilityButton))
+                { //  Debug.Log("HEALLIINGGGGG");
+                    //Hold cast logic
+                    // post hold logic
+                    if (ability.holdToCast)
+                        ability.ChargeAbility();
+                }
+                // 
+                if (Input.GetKeyUp(abilityButton))
+                {
+                    if (ability.quickCast || ability.castAfterCharge)
+                        ButtonTriggered();
                 }
             }
             else
@@ -58,6 +75,7 @@ namespace SideScrollerProject
         public void Initialize(Ability selectedAbility)
         {
             ability = selectedAbility;
+            ability.thisAbilityManager = this;
             Debug.Log("New Ability Acquired: " + ability.aName);
             useAnimation = selectedAbility.hasAnimation;
             if (useAnimation)
@@ -83,6 +101,7 @@ namespace SideScrollerProject
             darkMask.fillAmount = (coolDownTimeLeft / coolDownDuration);
         }
 
+        // Triggers Ability
         void ButtonTriggered()
         {
 
@@ -97,12 +116,12 @@ namespace SideScrollerProject
                 if (useAnimation)
                 {
                     AttackTriggerManager.instance.attackAnimationController.TriggerAnimationBool(ability.animatorParameter);
-                   // animator.SetBool(ability.animatorParameter, true);
+                    // animator.SetBool(ability.animatorParameter, true);
                     //Play animation then send the animationTriggerAbility to the State Data
                 }
                 else
                 {
-                    ability.TriggerAbility();
+                    ability.CastAbility();
                 }
             }
 
@@ -110,7 +129,7 @@ namespace SideScrollerProject
         }
         public void AnimationTriggerAbility()
         {
-            ability.TriggerAbility();
+            ability.CastAbility();
         }
     }
 }

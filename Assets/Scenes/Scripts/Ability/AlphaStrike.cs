@@ -35,7 +35,7 @@ namespace SideScrollerProject
             playerStatus = obj.GetComponent<PlayerStatus>();
         }
 
-        public override void TriggerAbility()
+        public override void CastAbility()
         {
 
         }
@@ -225,6 +225,16 @@ namespace SideScrollerProject
             transform.localScale = yHeight;
             //transform.localScale.y = worldScreenHeight / height;
 
+        }
+
+        public override void ChargeAbility()
+        {
+           // throw new NotImplementedException();
+        }
+
+        public override void CastOnPressAbility()
+        {
+        //    throw new NotImplementedException();
         }
 
         // Update is called once per frame

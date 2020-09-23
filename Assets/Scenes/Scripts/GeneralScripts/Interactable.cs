@@ -17,7 +17,13 @@ namespace SideScrollerProject
     public abstract class Interactable : MonoBehaviour
     {
         public bool interactable;
+        public bool holdToInteract = false;
+        public float secondsHold = 0.5f;
         public abstract void Interact(bool interactable);
 
+    }
+    public interface IOnHoldInteract
+    {
+        void InteractHold();
     }
 }

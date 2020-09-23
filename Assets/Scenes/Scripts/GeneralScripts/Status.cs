@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 
 // Status Script
@@ -23,6 +24,7 @@ namespace SideScrollerProject
         public int maxHealth = 100;
         public float moveSpeed = 0.5f;
         public float speed = 0.5f;
+        public UnityEvent onDeathEvent;
         public Transform attackPoint;
         public Transform searchPoint;
         public Transform ground;
@@ -291,6 +293,8 @@ namespace SideScrollerProject
 
                     EffectsManager.instance.Spawn(animator.gameObject.transform.position, "DeathHitfx");
                     EffectsManager.instance.Spawn(animator.gameObject.transform.position, "DeadFx");
+                     if (onDeathEvent != null)
+                    onDeathEvent.Invoke();
                     Destroy(this.gameObject);
                     // animator.SetBool("isDead", true);
                     // moving to dead enemy state
@@ -321,6 +325,7 @@ namespace SideScrollerProject
                 Destroy(slider.slider);
                 EffectsManager.instance.Spawn(animator.gameObject.transform.position, "DeathHitfx");
                 EffectsManager.instance.Spawn(animator.gameObject.transform.position, "DeadFx");
+               
                 Destroy(this.gameObject);
                 //animator.SetBool("isDead", true);
                 // moving to dead enemy state

@@ -18,7 +18,7 @@ namespace SideScrollerProject
 
         }
 
-        public override void TriggerAbility()
+        public override void CastAbility()
         {
             SpawnProjectile();
         }
@@ -34,6 +34,16 @@ namespace SideScrollerProject
                 windSlashScript.Launch();
             }
 
+        }
+
+        public override void ChargeAbility()
+        {
+          //  throw new System.NotImplementedException();
+        }
+
+        public override void CastOnPressAbility()
+        {
+          //  throw new System.NotImplementedException();
         }
     }
 }
