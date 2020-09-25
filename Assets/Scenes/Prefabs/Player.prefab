@@ -14685,6 +14685,7 @@ GameObject:
   - component: {fileID: 3987132792402183703}
   - component: {fileID: 3583090393796434136}
   - component: {fileID: 3622997279038760952}
+  - component: {fileID: 3300479791405079093}
   - component: {fileID: 3583090393796434137}
   - component: {fileID: 3583090393796434138}
   - component: {fileID: 3622997279038760955}
@@ -14860,6 +14861,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e5bd3583a1355844af4355258b29a54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentHealth: 0
+  currentResource: 0
+  baseDamage: 0
+  modifiedDamage: 0
 --- !u!114 &5642469678187045264
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14875,6 +14880,9 @@ MonoBehaviour:
   Move: 0
   jump: 0
   attackCounter: 0
+  getKey: 0
+  getKeyDown: 0
+  getKeyUp: 0
 --- !u!114 &5642469678187045263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14916,6 +14924,8 @@ MonoBehaviour:
   currentStatus: {fileID: 11400000, guid: 4c64e81697c893340a7d013f135fed67, type: 2}
   buffReceiver: {fileID: 5642469676446360210}
   playerIngameStats: {fileID: 0}
+  damageModifier:
+    entityBuffGiver: {fileID: 0}
   knockbackForce: 250
   animator: {fileID: 0}
   healthSlider: {fileID: 0}
@@ -14923,8 +14933,6 @@ MonoBehaviour:
   healthSliderScript: {fileID: 5642469678187045263}
   resourceSliderScript: {fileID: 5642469678187045268}
   actions: {fileID: 5642469678187045269}
-  currentHealth: 0
-  currentResource: 0
   timeBeforeRegenerating: 3
   regenerateRate: 1
   canRegenerateResource: 1
@@ -15063,6 +15071,8 @@ MonoBehaviour:
   useAnimation: 0
   ability: {fileID: 11400000, guid: 0701130af4767394f803c127a976b4b0, type: 2}
   abilityImage: {fileID: 0}
+  chargeTimer: 0
+  abilityActive: 0
 --- !u!114 &3583090393796434136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15083,6 +15093,8 @@ MonoBehaviour:
   useAnimation: 0
   ability: {fileID: 11400000, guid: 99f99958bc2f46642b77aa1915e29e34, type: 2}
   abilityImage: {fileID: 0}
+  chargeTimer: 0
+  abilityActive: 0
 --- !u!114 &3622997279038760952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15103,6 +15115,30 @@ MonoBehaviour:
   useAnimation: 0
   ability: {fileID: 11400000, guid: df614292ae77c4246a2f05c3136b7ac9, type: 2}
   abilityImage: {fileID: 0}
+  chargeTimer: 0
+  abilityActive: 0
+--- !u!114 &3300479791405079093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5642469678187045275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c85e0269d8b5d5347b99eabb35b539fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameOfAbility: Spirit Eye
+  abilityButton: 115
+  darkMask: {fileID: 0}
+  coolDownText: {fileID: 0}
+  animator: {fileID: 0}
+  useAnimation: 0
+  ability: {fileID: 0}
+  abilityImage: {fileID: 0}
+  chargeTimer: 0
+  abilityActive: 0
 --- !u!114 &3583090393796434137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15132,7 +15168,7 @@ MonoBehaviour:
   - {x: -0.2603898, y: -0.6481222, z: 0}
   m_ShapePathHash: 1031613069
   m_Mesh: {fileID: 0}
-  m_InstanceId: 73526
+  m_InstanceId: 47760
 --- !u!114 &3583090393796434138
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -35,10 +35,6 @@ namespace SideScrollerProject
             playerStatus = obj.GetComponent<PlayerStatus>();
         }
 
-        public override void CastAbility()
-        {
-
-        }
 
         // Start is called before the first frame update
         void Start()
@@ -54,7 +50,7 @@ namespace SideScrollerProject
             Vector3 direction = parent.transform.localScale.x == -1 ? Vector2.left : Vector2.right;
             float distance = direction.x * range;
             Vector2 fixedPosition = new Vector2(parent.transform.position.x + distance, parent.transform.position.y);
-          //  Vector2 distanceEnd = new Vector2(parent.transform.position.x + distance, parent.transform.position.y);
+            //  Vector2 distanceEnd = new Vector2(parent.transform.position.x + distance, parent.transform.position.y);
             Debug.DrawLine(parent.transform.position, fixedPosition, Color.red, 5);
             RaycastHit2D[] hit = Physics2D.LinecastAll(parent.transform.position, fixedPosition, whatToHit);
             foreach (RaycastHit2D enemy in hit)
@@ -181,7 +177,7 @@ namespace SideScrollerProject
             Vector3 fixedPosition = new Vector3(parent.transform.position.x + distance, parent.transform.position.y, parent.transform.position.z);
             int last = listOfDamagables.Count;
             GameObject x = Instantiate(omniHit, parent.transform.position, Quaternion.identity);
-            x.transform.localScale = new Vector3(direction.x *x.transform.localScale.x,x.transform.localScale.y,x.transform.localScale.z);
+            x.transform.localScale = new Vector3(direction.x * x.transform.localScale.x, x.transform.localScale.y, x.transform.localScale.z);
             //   x.transform.localScale = new Vector3(Vector3.Distance(listOfDamagables[0].transform.position, listOfDamagables[last - 1].transform.position), 3f, 1);
 
 
@@ -229,12 +225,16 @@ namespace SideScrollerProject
 
         public override void ChargeAbility()
         {
-           // throw new NotImplementedException();
+            // throw new NotImplementedException();
         }
 
         public override void CastOnPressAbility()
         {
-        //    throw new NotImplementedException();
+            //    throw new NotImplementedException();
+        }
+        public override void CastAbility()
+        {
+            AttackTriggerManager.instance.attackAnimationController.TriggerAnimationBool(animatorParameter);
         }
 
         // Update is called once per frame

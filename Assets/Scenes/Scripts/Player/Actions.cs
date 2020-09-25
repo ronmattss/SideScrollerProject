@@ -81,14 +81,14 @@ namespace SideScrollerProject
                 {
                     movement.canGoDown = true;
                 }
-                if (Input.GetKeyUp(KeyCode.S) && canSee)
-                {
-                    thirdEye.ResizeObject();
-                    animator.SetBool("isEyeOn", thirdEye.thirdEyeOn);
-                    GetComponent<BuffGiver>().GiveBuff();
-                    //motion.ChangeAnimationClip();
-                    motion.ChangeMultipleAnimationClips();
-                }
+                // if (Input.GetKeyUp(KeyCode.S) && canSee)
+                // {
+                //     thirdEye.ResizeObject();
+                //     animator.SetBool("isEyeOn", thirdEye.thirdEyeOn);
+                //     GetComponent<BuffGiver>().GiveBuff();
+                //     //motion.ChangeAnimationClip();
+                //     motion.ChangeMultipleAnimationClips();
+                // }
 
                 if (Input.GetKeyDown(KeyCode.Z) && canAttack)
                 {

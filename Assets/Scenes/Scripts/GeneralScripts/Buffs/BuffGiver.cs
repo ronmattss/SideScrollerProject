@@ -45,6 +45,13 @@ namespace SideScrollerProject
                     receiver.GetComponent<BuffReceiver>().AddBuff(buff);
                 }
         }
+        public void SelfBuff(Buff _buff)
+        {
+            timedBuff = _buff.InitializeBuff(receiver);
+            timedBuff.obj = receiver;
+            receiver.GetComponent<BuffReceiver>().AddBuff(timedBuff);
+
+        }
 
         // FOR TESTING ONLY
         public void GiveBuff()

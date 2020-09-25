@@ -15,9 +15,18 @@ MonoBehaviour:
   aName: WindSlash
   animatorParameter: isCasting
   hasAnimation: 1
+  castSomethingWhileCharging: 0
+  holdToCast: 0
+  quickCast: 1
+  castAfterCharge: 0
+  castOnPress: 0
+  depleteResourceWhileCharging: 0
+  depletionValueWhileCharging: 0
+  castLength: 0
   aSprite: {fileID: 21300000, guid: 7a35197d6fd1b5944a373ef71e2ed23f, type: 3}
   aBaseCooldown: 3
   depletionValue: 50
+  thisAbilityManager: {fileID: 0}
   duration: 0.5
   damage: 1
   speed: 30

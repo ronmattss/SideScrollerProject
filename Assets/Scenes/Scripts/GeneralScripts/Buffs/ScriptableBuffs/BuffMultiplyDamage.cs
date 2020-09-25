@@ -19,7 +19,7 @@ namespace SideScrollerProject
 
         public override void End()
         {
-
+            Debug.Log("Entity: "+entityObject.gameObject.name);
             entityObject.GetComponent<PlayerStats>().listOfBuffs.Remove(this);
             Debug.Log("SPirit Buff Ended");
 

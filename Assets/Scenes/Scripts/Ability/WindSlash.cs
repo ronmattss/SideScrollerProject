@@ -5,7 +5,7 @@ using UnityEngine;
 namespace SideScrollerProject
 {
     [CreateAssetMenu(menuName = "Abilities/Player/Wind Slash")]
-    public class WindSlash : ProjectileAbility
+    public class WindSlash : ProjectileAbility,ILaunchProjectile
     {
         GameObject parent;
         PlayerStatus playerStatus;
@@ -20,7 +20,8 @@ namespace SideScrollerProject
 
         public override void CastAbility()
         {
-            SpawnProjectile();
+            AttackTriggerManager.instance.attackAnimationController.TriggerAnimationBool(animatorParameter);
+           // SpawnProjectile();
         }
         public void SpawnProjectile()
         {
@@ -38,12 +39,12 @@ namespace SideScrollerProject
 
         public override void ChargeAbility()
         {
-          //  throw new System.NotImplementedException();
+            //  throw new System.NotImplementedException();
         }
 
         public override void CastOnPressAbility()
         {
-          //  throw new System.NotImplementedException();
+            //  throw new System.NotImplementedException();
         }
     }
 }

@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: BasicDamageModify
   m_EditorClassIdentifier: 
   buffName: BasicExtraDamage
-  buffDuration: 10
+  buffDuration: 0
   buffTick: 0
   hasDuration: 0
   isBuffStackable: 0
   isEffectStacked: 0
-  additionalDamage: 100
+  isTimed: 0
+  additionalDamage: 10

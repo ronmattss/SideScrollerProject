@@ -24,7 +24,7 @@ namespace SideScrollerProject
             {
                 Debug.Log("percentage Healing Cast Length" + castLength);
                 castTime = 0;
-                HealPlayer(1, 2);
+                HealPlayer(20, 30);
             }
             else
             {
@@ -42,7 +42,7 @@ namespace SideScrollerProject
 
         public override void CastAbility()
         {
-            HealPlayer(healValue, depletionValue);
+           // HealPlayer(healValue, depletionValue);
             currentChargeTime = castTime = 0;
         }
 

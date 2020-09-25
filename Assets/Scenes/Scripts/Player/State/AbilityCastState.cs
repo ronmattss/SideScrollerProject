@@ -14,6 +14,7 @@ namespace SideScrollerProject
         public string animationParameter = "isCasting";
         int cast = 0;
         AbilityManager abilityCaster;
+        ILaunchProjectile launchProjectile;
         //TODO: FIX ANIMATIONS
         public override void OnEnter(BaseState state, Animator animator, AnimatorStateInfo stateInfo)
         {
@@ -29,7 +30,7 @@ namespace SideScrollerProject
                 if (a.nameOfAbility.Equals(abilityName) && a.useAnimation)
                 {
                     if (abilityName == "WindSlash" || abilityName == "Wind Slash")
-                    {
+                    {   launchProjectile = (a.GetAbility() as WindSlash);
                         animator.GetComponent<PlayerStatus>().playerRenderer.material = animator.GetComponent<PlayerStatus>().emissionMaterial;
                     }
                     return;
@@ -56,7 +57,7 @@ namespace SideScrollerProject
         {
             if (stateInfo.normalizedTime >= whenToCast && cast == 0)
             {
-                abilityCaster.AnimationTriggerAbility();
+                launchProjectile.SpawnProjectile();
                 cast++;
             }
         }

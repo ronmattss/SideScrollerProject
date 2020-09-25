@@ -15,11 +15,14 @@ MonoBehaviour:
   aName: Instant Heal
   animatorParameter: isCasting
   hasAnimation: 0
-  holdToCast: 0
+  castSomethingWhileCharging: 0
+  holdToCast: 1
+  quickCast: 0
   castAfterCharge: 0
+  castOnPress: 0
   depleteResourceWhileCharging: 1
   depletionValueWhileCharging: 20
-  castLength: 1
+  castLength: 0.5
   aSprite: {fileID: 21300000, guid: a1443664cab9c514a8575e8c121719bb, type: 3}
   aBaseCooldown: 15
   depletionValue: 60

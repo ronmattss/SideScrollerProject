@@ -23,6 +23,7 @@ namespace SideScrollerProject
         private float coolDownTimeLeft;
         private PlayerStatus playerStatus;
         public float chargeTimer = 0;
+        public bool abilityActive = false;
 
         void Start()
         {
@@ -46,23 +47,30 @@ namespace SideScrollerProject
             {
                 AbilityReady(); // UI Display
                                 //                Debug.Log("Ability Ready");
-                if (Input.GetKeyDown(abilityButton))
+                if (playerStatus.playerIngameStats.CurrentResource >= ability.depletionValue)
                 {
-                    //   ButtonTriggered();
-                }
-                //Charge Casting  Logic
-                if (Input.GetKey(abilityButton))
-                { //  Debug.Log("HEALLIINGGGGG");
-                    //Hold cast logic
-                    // post hold logic
-                    if (ability.holdToCast)
-                        ability.ChargeAbility();
-                }
-                // 
-                if (Input.GetKeyUp(abilityButton))
-                {
-                    if (ability.quickCast || ability.castAfterCharge)
-                        ButtonTriggered();
+                    if (Input.GetKeyDown(abilityButton))
+                    {
+                        //   ButtonTriggered();
+                    }
+                    //Charge Casting  Logic
+                    if (Input.GetKey(abilityButton))
+                    { //  Debug.Log("HEALLIINGGGGG");
+                      //Hold cast logic
+                      // post hold logic
+                        if (ability.holdToCast)
+                            ability.ChargeAbility();
+                    }
+                    // 
+                    if (Input.GetKeyUp(abilityButton))
+                    {
+                        if (ability.quickCast || (ability.castAfterCharge && ability.holdToCast))
+                            ability.CastAbility();
+                        nextReadyTime = coolDownDuration + Time.time;
+                        coolDownTimeLeft = coolDownDuration;
+                        darkMask.enabled = true;
+                        coolDownText.enabled = true;
+                    }
                 }
             }
             else
@@ -107,23 +115,23 @@ namespace SideScrollerProject
 
             //abilitySource.Play();
             //abilitySource.clip = ability.aSound;
-            if (playerStatus.playerIngameStats.CurrentResource >= ability.depletionValue)
-            {
-                nextReadyTime = coolDownDuration + Time.time;
-                coolDownTimeLeft = coolDownDuration;
-                darkMask.enabled = true;
-                coolDownText.enabled = true;
-                if (useAnimation)
-                {
-                    AttackTriggerManager.instance.attackAnimationController.TriggerAnimationBool(ability.animatorParameter);
-                    // animator.SetBool(ability.animatorParameter, true);
-                    //Play animation then send the animationTriggerAbility to the State Data
-                }
-                else
-                {
-                    ability.CastAbility();
-                }
-            }
+            //  if (playerStatus.playerIngameStats.CurrentResource >= ability.depletionValue)
+            //  {
+            // nextReadyTime = coolDownDuration + Time.time;
+            // coolDownTimeLeft = coolDownDuration;
+            // darkMask.enabled = true;
+            // coolDownText.enabled = true;
+            // if (useAnimation)
+            // {
+            //     AttackTriggerManager.instance.attackAnimationController.TriggerAnimationBool(ability.animatorParameter);
+            //     // animator.SetBool(ability.animatorParameter, true);
+            //     //Play animation then send the animationTriggerAbility to the State Data
+            // }
+            // else
+            // {
+            //     ability.CastAbility();
+            // }
+            // }
 
 
         }

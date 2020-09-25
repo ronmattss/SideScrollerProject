@@ -13,6 +13,7 @@ namespace SideScrollerProject
         public GameObject obj;
         public bool isFinished;
 
+
         public TimedBuff(Buff buff, GameObject obj)
         {
             this.buff = buff;
@@ -25,29 +26,39 @@ namespace SideScrollerProject
 
         public void Tick(float delta)
         {
-            duration -= delta;
-//            Debug.Log("Duration of buff: " + duration);
+            if (buff.isTimed)
+                duration -= delta;
+            //            Debug.Log("Duration of buff: " + duration);
             EffectPerSecond(delta);
-            if (duration <= 0)
+            if (isFinished || (duration <= 0 && buff.isTimed))
             {
-                End();
                 isFinished = true;
+                End();
             }
         }
 
         public void Activate()
         {
             Debug.Log("Activated on GAMEOBJECT: " + obj.name);
-            Debug.Log("is this Finished? " + isFinished);
-            if (buff.isEffectStacked || duration <= 0)
+            Debug.Log("Will this activate? " + buff.buffName);
+            // if just activate or deactivate
+            if (!buff.isBuffStackable && !buff.isBuffStackable)
             {
                 ApplyEffect();
-                effectStacks++;
+                return;
             }
-            if (buff.isBuffStackable || duration <= 0)
+            else
             {
-                duration += buff.buffDuration;
-                Debug.Log("current Duration: " + duration);
+                if (buff.isEffectStacked || duration <= 0)
+                {
+                    ApplyEffect();
+                    effectStacks++;
+                }
+                if (buff.isBuffStackable || duration <= 0)
+                {
+                    duration += buff.buffDuration;
+                    Debug.Log("current Duration: " + duration);
+                }
             }
         }
         protected abstract void ApplyEffect();

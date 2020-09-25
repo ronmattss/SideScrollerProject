@@ -32,6 +32,15 @@ namespace SideScrollerProject
 
             }
 
+
+        }
+        public void RemoveBuff(Buff buff)
+        {
+            if (!_buffs.ContainsKey(buff)) return;
+            Debug.Log("Removed: " + buff.buffName);
+            _buffs[buff].End();
+            _buffs.Remove(buff);
+            Debug.Log("Active Buff Count: " + _buffs.Count);
         }
 
         public void AddBuff(TimedBuff buff)
@@ -45,6 +54,7 @@ namespace SideScrollerProject
                 _buffs.Add(buff.buff, buff);
                 buff.Activate();
             }
+            Debug.Log("Active Buff Count: " + _buffs.Count);
         }
     }
 

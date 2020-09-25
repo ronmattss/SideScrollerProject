@@ -32,21 +32,31 @@ namespace SideScrollerProject
         // Update is called once per frame
         void Update()
         {
-         modifiedDamage = ModifiedDamage();
+            modifiedDamage = ModifiedDamage();
+            // Debug.Log("Modifiers count: " + listOfBuffs.Count);
+        }
+        public void RemoveModifier(TimedBuff buff)
+        {
+            BuffMultiplyDamage tempBuff = (buff as BuffMultiplyDamage);
+            //  Debug.Log(" removing buff");
+            listOfBuffs.Remove(tempBuff);
+            //  Debug.Log("Modifiers count: " + listOfBuffs.Count);
         }
         public int ModifiedDamage()
         {
+            Debug.Log("Modifiers count: " + listOfBuffs.Count + " Damage: " + modifiedDamage);
             int computedDamage = BaseDamage;  // buffs give status effects (spirit buff, cursed status effect)
-                                                  // buffs also 
-                                                  // damage += for each (status effects that modify damage)
-                                                  // for each status effect add/subtract damage
-                                                  // ex. Spirit buff effect gives + 10 damage
-                                                  // cursed buffect gives -5 damage
-                                                  // compute 10 + -5 + baseDamage
+                                              // buffs also 
+                                              // damage += for each (status effects that modify damage)
+                                              // for each status effect add/subtract damage
+                                              // ex. Spirit buff effect gives + 10 damage
+                                              // cursed buffect gives -5 damage
+                                              // compute 10 + -5 + baseDamage
             if (listOfBuffs.Count == 0)
                 return computedDamage;
             else
             {
+
                 foreach (var buffer in listOfBuffs)
                 {
                     computedDamage += buffer.extraDamage;

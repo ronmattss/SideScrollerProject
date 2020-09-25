@@ -33,8 +33,9 @@ namespace SideScrollerProject
         public bool hasDuration;
         public bool isBuffStackable; // if Stackable extend the duration if not reset the counter
         public bool isEffectStacked;
+        public bool isTimed = true;
         public abstract TimedBuff InitializeBuff(GameObject obj);
-       // public abstract TimedBuff InitializeBuff();
+        // public abstract TimedBuff InitializeBuff();
 
 
 

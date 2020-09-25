@@ -119,8 +119,10 @@
      <Compile Include="Assets\Scenes\Scripts\Ability\AbilityManager.cs" />
      <Compile Include="Assets\Scenes\Scripts\Ability\AlphaStrike.cs" />
      <Compile Include="Assets\Scenes\Scripts\Ability\Heal.cs" />
+     <Compile Include="Assets\Scenes\Scripts\Ability\ILaunchProjectile.cs" />
      <Compile Include="Assets\Scenes\Scripts\Ability\OmniSlashChangeMaterial.cs" />
      <Compile Include="Assets\Scenes\Scripts\Ability\ProjectileAbility.cs" />
+     <Compile Include="Assets\Scenes\Scripts\Ability\SpiritEye.cs" />
      <Compile Include="Assets\Scenes\Scripts\Ability\WindSlash.cs" />
      <Compile Include="Assets\Scenes\Scripts\Ability\WindSlashScript.cs" />
      <Compile Include="Assets\Scenes\Scripts\Animator\AnimationClipOverrides.cs" />
