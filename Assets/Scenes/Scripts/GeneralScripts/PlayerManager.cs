@@ -10,7 +10,18 @@ namespace SideScrollerProject
 
         public static PlayerManager instance { get; private set; }
         public GameObject player;
+        public GameObject cameraTarget;
+        public GameObject fallTarget;
         public float playerSpriteDirection { get { return player.transform.localScale.x; } }
+        public Transform PlayerTransform => player.transform;
+        public PlayerStatus PlayerStatus => player.GetComponent<PlayerStatus>();
+        public Movement PlayerMovement => player.GetComponent<Movement>();
+
+        public Rigidbody2D PlayerRigidbody2D => player.GetComponent<Rigidbody2D>();
+        public MaskController thirdEye => player.GetComponent<MaskController>();
+        public bool thirdEyeState => thirdEye.thirdEyeOn;
+        public Animator PlayerAnimator => player.GetComponent<Animator>();
+        public AbilityManager[] PlayerAbilities => player.GetComponents<AbilityManager>();
         void Awake()
         {
             if (instance == null)
@@ -22,13 +33,13 @@ namespace SideScrollerProject
             }
             player = GameObject.Find("Player");
 
-            playerAbilityManager = GetPlayerAbilities();
+            playerAbilityManager = PlayerAbilities;
 
         }
 
         public void EnableDisableSkill(int abilityIndex) // should also be changeable via Ability name
         {
-            AbilityManager[] ability = GetPlayerAbilities();
+            AbilityManager[] ability = PlayerAbilities;
             for (int i = 0; i < ability.Length; i++)
             {
                 if (abilityIndex == i)
@@ -47,32 +58,9 @@ namespace SideScrollerProject
 
             }
         }
-        public Transform GetPlayerTransform()
-        {
-            return player.transform;
-        }
-        public PlayerStatus GetPlayerStatus()
-        {
-            return player.GetComponent<PlayerStatus>();
-        }
-        public Movement GetPlayerMovement()
-        {
-            return player.GetComponent<Movement>();
-        }
 
-        public Rigidbody2D GetPlayerRigidbody2D()
-        {
-            return player.GetComponent<Rigidbody2D>();
-        }
-        public Animator GetPlayerAnimator()
-        {
-            return player.GetComponent<Animator>();
-        }
 
-        public Actions GetPlayerAction()
-        {
-            return player.GetComponent<Actions>();
-        }
+        public Actions PlayerAction => player.GetComponent<Actions>();
         public AbilityManager GetPlayerAbility(string abilityName)
         {
             foreach (AbilityManager ability in player.GetComponents<AbilityManager>())
@@ -83,10 +71,6 @@ namespace SideScrollerProject
             }
             return null;
 
-        }
-        public AbilityManager[] GetPlayerAbilities()
-        {
-            return player.GetComponents<AbilityManager>();
         }
 
     }

@@ -27,7 +27,7 @@ namespace SideScrollerProject
         {
             currentHp = maxHp;
             bossRenderer = GetComponent<SpriteRenderer>();
-            player = PlayerManager.instance.GetPlayerTransform();
+            player = PlayerManager.instance.PlayerTransform;
             animator = GetComponent<Animator>();
             rb = GetComponent<Rigidbody2D>();
             currentState = new StateIdle(this.gameObject, rb, animator, player);
@@ -40,7 +40,7 @@ namespace SideScrollerProject
         {
             currentHp = maxHp;
             bossRenderer = GetComponent<SpriteRenderer>();
-            player = PlayerManager.instance.GetPlayerTransform();
+            player = PlayerManager.instance.PlayerTransform;
             animator = GetComponent<Animator>();
             rb = GetComponent<Rigidbody2D>();
             currentState = new StateIdle(this.gameObject, rb, animator, player);

@@ -50,7 +50,7 @@ public class CameraManager : MonoBehaviour
     {
         direction = playerTransform.localScale.x;
         vDirection = player.GetComponent<Animator>().GetInteger("Falling");
-        Look();
+      //  Look();
     }
 
     public void Look()

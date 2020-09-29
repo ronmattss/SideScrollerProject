@@ -28,7 +28,7 @@ namespace SideScrollerProject
         {
             if (buff.isTimed)
                 duration -= delta;
-            //            Debug.Log("Duration of buff: " + duration);
+            Debug.Log("Duration of buff: " + duration);
             EffectPerSecond(delta);
             if (isFinished || (duration <= 0 && buff.isTimed))
             {
@@ -40,7 +40,8 @@ namespace SideScrollerProject
         public void Activate()
         {
             Debug.Log("Activated on GAMEOBJECT: " + obj.name);
-            Debug.Log("Will this activate? " + buff.buffName);
+            Debug.Log("Will this activate? " + buff.buffName+ " Duration: "+buff.buffDuration);
+            duration = buff.buffDuration;
             // if just activate or deactivate
             if (!buff.isBuffStackable && !buff.isBuffStackable)
             {

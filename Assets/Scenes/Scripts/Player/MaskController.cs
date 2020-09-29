@@ -16,9 +16,14 @@ public class MaskController : MonoBehaviour
     public TrailRenderer trailEffect;
     public bool thirdEyeOn = false;
     public float scale = 30f;
+    public float scaleX;
+    public float scaleY;
+    [SerializeField] float sWidth = 6;
+    [SerializeField] float sHeight = 6;
     void Start()
     {
-
+        //sWidth = Camera.main.scaledPixelWidth;
+        //sHeight = Camera.main.scaledPixelHeight;
     }
 
     // Update is called once per frame
@@ -26,6 +31,23 @@ public class MaskController : MonoBehaviour
     {
 
     }
+    private void LateUpdate()
+    {
+       // sWidth = getScreenWidth();
+       // sHeight = getScreenHeight();
+
+
+    }
+    public float getScreenHeight()
+    {
+        return Camera.main.orthographicSize * 2.0f;
+
+    }
+    public float getScreenWidth()
+    {
+        return getScreenHeight() * Screen.width / Screen.height;
+    }
+  
 
     public void ResizeObject()
     {
@@ -34,16 +56,16 @@ public class MaskController : MonoBehaviour
             maskObject.transform.LeanScale(Vector3.zero, 0.25f);
             thirdEyeOn = false;
             rippleReverse.Play();
-             trailEffect.gameObject.SetActive(false);
-           // rippleReverse.Stop();
-           
+            trailEffect.gameObject.SetActive(false);
+            // rippleReverse.Stop();
+
         }
         else
         {
-            maskObject.transform.LeanScale(new Vector3(scale, scale, 1), 0.25f);
+            maskObject.transform.LeanScale(new Vector3(sWidth, sHeight, 1), 0.25f);
             thirdEyeOn = true;
-             ripple.Play();
-             trailEffect.gameObject.SetActive(true);
+            ripple.Play();
+            trailEffect.gameObject.SetActive(true);
             // ripple.Stop();
         }
 

@@ -40,7 +40,7 @@ namespace SideScrollerProject
         public AnimatorOverrideController animatorOverrideController;
         void Start()
         {
-            playerAnimator = PlayerManager.instance.GetPlayerAnimator();
+            playerAnimator = PlayerManager.instance.PlayerAnimator;
             animatorOverrideController = new AnimatorOverrideController(playerAnimator.runtimeAnimatorController);
 
             playerAnimator.runtimeAnimatorController = animatorOverrideController;

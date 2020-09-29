@@ -60,11 +60,11 @@ namespace SideScrollerProject
                     {
                         Debug.Log("WHy is it multiple: " + enemy.tag);
                         damageModifier.DoDamage(animator.gameObject.GetComponent<PlayerStatus>().playerIngameStats.ModifiedDamage(), enemy.gameObject);
-                        PlayerManager.instance.GetPlayerAction().attackCounter++;
-                        if (PlayerManager.instance.GetPlayerAction().attackCounter == 3)
+                        PlayerManager.instance.PlayerAction.attackCounter++;
+                        if (PlayerManager.instance.PlayerAction.attackCounter == 3)
                         {
-                            PlayerManager.instance.GetPlayerAction().attackCounter = 0;
-                            PlayerManager.instance.GetPlayerAction().ApplyHitStop(enemy.gameObject.GetComponent<Animator>());
+                            PlayerManager.instance.PlayerAction.attackCounter = 0;
+                            PlayerManager.instance.PlayerAction.ApplyHitStop(enemy.gameObject.GetComponent<Animator>());
                             //knockback enemy?
                         }
 
@@ -121,7 +121,7 @@ namespace SideScrollerProject
             audio.clip = sound;
             audio.Play();
             RegisterAttack(animator);
-            PlayerManager.instance.GetPlayerMovement().isAttackForward = true;
+            PlayerManager.instance.PlayerMovement.isAttackForward = true;
             animator.SetBool(AnimatorParams.Attacking.ToString(), false);
             animator.SetBool(AnimatorParams.IsHeavyAttacking.ToString(), false);
 
@@ -132,14 +132,14 @@ namespace SideScrollerProject
         }
         public override void UpdateAbility(BaseState state, Animator animator, AnimatorStateInfo stateInfo)
         {
-            PlayerManager.instance.GetPlayerAction().horizontalMovement = 0;
+            PlayerManager.instance.PlayerAction.horizontalMovement = 0;
             //   
             //  Debug.Log("Attack Call");
         }
 
         public override void OnExit(BaseState state, Animator animator, AnimatorStateInfo stateInfo)
         {
-            PlayerManager.instance.GetPlayerAction().canRun = true;
+            PlayerManager.instance.PlayerAction.canRun = true;
             //  PlayerManager.instance.GetPlayerMovement().isAttackForward = false;
             // if (PlayerManager.instance.GetPlayerAction().attackCounter < 3)
             //    PlayerManager.instance.GetPlayerAction().attackCounter = 0;

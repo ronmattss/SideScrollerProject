@@ -10,12 +10,12 @@ namespace SideScrollerProject
     {
         public override void OnEnter(BaseState state, Animator animator, AnimatorStateInfo stateInfo)
         {
-            PlayerManager.instance.GetPlayerAction().canRun = true;
+            PlayerManager.instance.PlayerAction.canRun = true;
             animator.SetInteger(AnimatorParams.AttackCounter.ToString(), 0);
             animator.GetComponentInParent<InputManager>().attackCounter = 0;
             animator.SetBool(AnimatorParams.Attacking.ToString(), false);
             animator.SetBool("IsInCombo",false);
-            PlayerManager.instance.GetPlayerAction().attackCounter = 0;
+            PlayerManager.instance.PlayerAction.attackCounter = 0;
 
         }
 

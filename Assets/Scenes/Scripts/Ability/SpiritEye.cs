@@ -49,7 +49,7 @@ namespace SideScrollerProject
             }
             //motion.ChangeAnimationClip();
         }
-
+         
         public override void CastOnPressAbility()
         {
             //  throw new System.NotImplementedException();

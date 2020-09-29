@@ -25,9 +25,10 @@ namespace SideScrollerProject
                 buff.Tick(Time.deltaTime);
                 if (buff.isFinished)
                 {
-                    Debug.Log("Removed: " + buff.buff.buffName);
                     buff.isFinished = false;
+
                     _buffs.Remove(buff.buff);
+                    Debug.Log("Removed: " + buff.buff.buffName + " " + buff.isFinished + " " + _buffs.Count);
                 }
 
             }
@@ -45,6 +46,7 @@ namespace SideScrollerProject
 
         public void AddBuff(TimedBuff buff)
         {
+            Debug.Log("Added Buff is finished?:"+buff.isFinished);
             if (_buffs.ContainsKey(buff.buff))
             {
                 _buffs[buff.buff].Activate();

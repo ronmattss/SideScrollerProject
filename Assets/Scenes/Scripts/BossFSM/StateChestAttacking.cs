@@ -66,7 +66,7 @@ namespace SideScrollerProjectFSM
                     if (h.collider.gameObject.CompareTag("Player") && currentTickRate <= 0)
                     {
                         Debug.Log("player?: " + h.collider.name);
-                        PlayerManager.instance.GetPlayerStatus().TakeDamage(10);
+                        PlayerManager.instance.PlayerStatus.TakeDamage(10);
                         currentTickRate = hitTickRate;
                     }
                 }

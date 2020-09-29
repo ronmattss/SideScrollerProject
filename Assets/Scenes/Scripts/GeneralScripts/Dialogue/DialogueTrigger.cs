@@ -34,8 +34,8 @@ namespace SideScrollerProject
 
         public override void Interact(bool interactable)
         {
-            PlayerManager.instance.GetPlayerAction().canMove = false;
-            PlayerManager.instance.GetPlayerAction().horizontalMovement = 0;
+            PlayerManager.instance.PlayerAction.canMove = false;
+            PlayerManager.instance.PlayerAction.horizontalMovement = 0;
             Debug.Log("Calling Interactable");
             if (!interactable) return;
             // first Dialogue
@@ -78,7 +78,7 @@ namespace SideScrollerProject
                 }
                 // if it is a trigger
                 // trigger function
-                PlayerManager.instance.GetPlayerAction().canMove = true;
+                PlayerManager.instance.PlayerAction.canMove = true;
             }
 
         }

@@ -19,7 +19,7 @@ namespace SideScrollerProject
         }
         public void AbsorbSpirit()
         {
-            PlayerManager.instance.GetPlayerStatus().playerIngameStats.CurrentResource += spiritAmount;
+            PlayerManager.instance.PlayerStatus.playerIngameStats.CurrentResource += spiritAmount;
             Destroy(this.gameObject);
         }
         public void OnEntityDeath()

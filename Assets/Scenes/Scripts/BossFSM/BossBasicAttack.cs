@@ -45,7 +45,7 @@ namespace SideScrollerProject
                     if (hit.CompareTag("Player") && hit.GetType() == typeof(CapsuleCollider2D))
                     {
 
-                        PlayerManager.instance.GetPlayerStatus().TakeDamage(20, animator);
+                        PlayerManager.instance.PlayerStatus.TakeDamage(20, animator);
                         hits = null;
                         return;
                     }

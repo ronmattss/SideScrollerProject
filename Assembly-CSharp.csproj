@@ -142,6 +142,7 @@
      <Compile Include="Assets\Scenes\Scripts\BossFSM\StateUser.cs" />
      <Compile Include="Assets\Scenes\Scripts\BossFSM\StateWalkingBurner.cs" />
      <Compile Include="Assets\Scenes\Scripts\Camera\CameraController.cs" />
+     <Compile Include="Assets\Scenes\Scripts\Camera\CameraFollowSettings.cs" />
      <Compile Include="Assets\Scenes\Scripts\Camera\CameraLockAxis.cs" />
      <Compile Include="Assets\Scenes\Scripts\Camera\CameraManager.cs" />
      <Compile Include="Assets\Scenes\Scripts\Camera\CameraShake.cs" />
@@ -219,6 +220,7 @@
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\RoomInformation.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\RoomManager.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Sound.cs" />
+     <Compile Include="Assets\Scenes\Scripts\GeneralScripts\SpiritObject.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\SpiritOrb.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\Status.cs" />
      <Compile Include="Assets\Scenes\Scripts\GeneralScripts\TriggerArea.cs" />
@@ -287,6 +289,8 @@
      <Compile Include="Assets\xNode\Scripts\NodePort.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
+     <None Include="Assets\Scenes\Sprites\Self Made Assets\Main Character\MC V2 Sheets\Third Eye On\Third Eye ON POP UP\Size.txt" />
+     <None Include="Assets\Scenes\Sprites\Self Made Assets\Main Character\MC V2 Sheets\Movements\Dash\Size.txt" />
      <None Include="Assets\Scenes\Sprites\Self Made Assets\Main Character\WindSlash\NOTE.txt" />
      <None Include="Assets\LeanTween\ReadMe.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
@@ -294,8 +298,11 @@
      <None Include="Assets\Scenes\Sprites\Self Made Assets\SG Game 1 Spritesheets\OmniSlash\NOTE.txt" />
      <None Include="Assets\Scenes\Sprites\Self Made Assets\BackGround\caveBG\notice.txt" />
      <None Include="Assets\LeanTween\License.txt" />
+     <None Include="Assets\Scenes\Sprites\Self Made Assets\Main Character\MC V2 Sheets\Attacks\HeavyCombo 1\Size.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\Scenes\Sprites\Downloaded Assets\Free Pixel Art Forest\readme.txt" />
+     <None Include="Assets\Scenes\Sprites\Self Made Assets\Main Character\MC V2 Sheets\Movements\Jump and Fall\Size FOR BOTH.txt" />
+     <None Include="Assets\Scenes\Sprites\Self Made Assets\Main Character\MC V2 Sheets\Attacks\LightCombo 1\Size for LC1Strike2.txt" />
      <None Include="Assets\Scenes\Sprites\Self Made Assets\Main Character\OmniSlash\NOTE.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
      <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
@@ -305,15 +312,20 @@
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
      <None Include="Assets\Scenes\ShaderMaterials\NewUnlitShader.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
+     <None Include="Assets\Scenes\Sprites\Self Made Assets\Main Character\MC V2 Sheets\Movements\Run\Size.txt" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
      <None Include="Assets\LeanTween\Examples\Archived\2dUnlitWithFade.shader" />
      <None Include="Assets\Scenes\ShaderMaterials\GrassSwaying.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
+     <None Include="Assets\Scenes\Sprites\Self Made Assets\Main Character\MC V2 Sheets\Movements\Idles\Out of Combat\Size.txt" />
      <None Include="Assets\Scenes\Sprites\Downloaded Assets\HeroandOpponents_v1\license.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+     <None Include="Assets\Scenes\Sprites\Self Made Assets\Main Character\MC V2 Sheets\Attacks\LightCombo 1\Size.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
+     <None Include="Assets\Scenes\Sprites\Self Made Assets\Main Character\MC V2 Sheets\Movements\Idles\Recent movement-Combat\Size.txt" />
+     <None Include="Assets\Scenes\Sprites\Self Made Assets\Main Character\MC V2 Sheets\Movements\Death\Size.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
  <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
  <HintPath>C:/Users/Shade/Documents/Programming Stuff/Unity/SideScrollerPrototype/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>

@@ -83,7 +83,7 @@ namespace SideScrollerProject
         }
         public void RandomForce(GameObject obj)
         {
-            obj.GetComponent<Rigidbody2D>().AddForceAtPosition(new Vector2(PlayerManager.instance.GetPlayerTransform().localScale.x * Random.Range(100, 1000), Random.Range(10, 1000)), obj.transform.position);
+            obj.GetComponent<Rigidbody2D>().AddForceAtPosition(new Vector2(PlayerManager.instance.PlayerTransform.localScale.x * Random.Range(100, 1000), Random.Range(10, 1000)), obj.transform.position);
         }
         public GameObject CreateDestroyedVersion(Sprite sprite)
         {

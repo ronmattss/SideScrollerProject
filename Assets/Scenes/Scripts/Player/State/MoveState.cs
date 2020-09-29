@@ -12,7 +12,7 @@ namespace SideScrollerProject
         private Rigidbody2D rb;
         public override void OnEnter(BaseState state, Animator animator, AnimatorStateInfo stateInfo)
         { 
-            PlayerManager.instance.GetPlayerAction().canRun = false;
+            PlayerManager.instance.PlayerAction.canRun = false;
             // Debug.Log("WTFFF");
             
             //dash.horizontalMovement =0;
@@ -32,7 +32,7 @@ namespace SideScrollerProject
 
         public override void UpdateAbility(BaseState state, Animator animator, AnimatorStateInfo stateInfo)
         {
-            PlayerManager.instance.GetPlayerAction().horizontalMovement =0;
+            PlayerManager.instance.PlayerAction.horizontalMovement =0;
             //  Debug.Log("MoveState");
         }
 

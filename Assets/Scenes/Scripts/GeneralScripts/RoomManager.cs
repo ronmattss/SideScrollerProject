@@ -50,7 +50,7 @@ namespace SideScrollerProject
             if (currentRoom.adjacentRooms[nextRoomIndex].spawnPairCode.TryGetValue(locations, out x))
             {
                 Debug.Log(x.position);
-                PlayerManager.instance.GetPlayerTransform().position = x.position;
+                PlayerManager.instance.PlayerTransform.position = x.position;
                 CameraManager.instance.confiner.m_BoundingShape2D = currentRoom.adjacentRooms[nextRoomIndex].cameraBounds;
                 CameraManager.instance.confiner.InvalidatePathCache();
             }
