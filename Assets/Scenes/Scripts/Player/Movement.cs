@@ -157,6 +157,7 @@ namespace SideScrollerProject
                 source.clip = jumpSound;
                 source.Play();
             }
+            animator.SetBool("IsGrounded", m_Grounded);
         }
 
         private void FixedUpdate()
@@ -269,9 +270,9 @@ namespace SideScrollerProject
         public void SmallDash()
         {
 
-            if (isDashing && dashCurrent <=0)
+            if (isDashing && dashCurrent <= 0)
             {
-                playerSprite.sprite = sprite;
+                // playerSprite.sprite = sprite;
                 animator.SetBool("isDashing", isDashing);
                 dashMaterial.SetTexture("_MainTex", sprite.texture);
                 dashAfterImage.GetComponent<ParticleSystemRenderer>().material = dashMaterial;
@@ -282,32 +283,32 @@ namespace SideScrollerProject
                 //  source.Play();
 
                 //dashAfterImage.Play();
-               
-                    if (dashTime <= 0)
+
+                if (dashTime <= 0)
+                {
+                    dashTime = startDashTime;
+                    dashCurrent = dashCD;
+                    isDashing = false;
+                    animator.SetBool("isDashing", isDashing);
+                    dashAfterImage.Stop();
+                    //  m_Rigidbody2D.velocity = Vector2.zero;
+
+
+                }
+                else
+                {
+                    dashTime -= Time.deltaTime;
+
+                    if (this.transform.localScale.x > 0)
                     {
-                        dashTime = startDashTime;
-                        dashCurrent = dashCD;
-                        isDashing = false;
-                        animator.SetBool("isDashing", isDashing);
-                        dashAfterImage.Stop();
-                        //  m_Rigidbody2D.velocity = Vector2.zero;
-
-
+                        m_Rigidbody2D.velocity = Vector2.right * dashSpeed;
                     }
-                    else
+                    else if (this.transform.localScale.x < 0)
                     {
-                        dashTime -= Time.deltaTime;
-
-                        if (this.transform.localScale.x > 0)
-                        {
-                            m_Rigidbody2D.velocity = Vector2.right * dashSpeed;
-                        }
-                        else if (this.transform.localScale.x < 0)
-                        {
-                            m_Rigidbody2D.velocity = Vector2.left * dashSpeed;
-                        }
-
+                        m_Rigidbody2D.velocity = Vector2.left * dashSpeed;
                     }
+
+                }
 
 
 
@@ -323,22 +324,9 @@ namespace SideScrollerProject
         public void SmallMovement()
         {
 
-
-
-
-
-
-
-
-
             m_Rigidbody2D.AddForce(new Vector2(PlayerManager.instance.playerSpriteDirection * smallMovementSpeed, 1), ForceMode2D.Impulse);
             Debug.Log("Small Movement");
             isAttackForward = false;
-
-
-
-
-
         }
 
         public void Recharge()
@@ -367,6 +355,10 @@ namespace SideScrollerProject
         public int GetFallVelocity()
         {
             return (int)m_Rigidbody2D.velocity.y;
+        }
+        public void PlayFootStep(string sound)
+        {
+            AudioManager.instance.Play(sound);
         }
     }
 

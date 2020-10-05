@@ -10,10 +10,11 @@ namespace SideScrollerProject
         // Start is called before the first frame update
         private int attackCounter = 0;
         private int counter = 0;
-
+        public float forceAmount = 4f;
         public Transform attackPoint;
         public float attackRange;
         public int attackDamage = 20;
+        public float knockbackStrength = 4f;
         //    public GameObject gameObject;
         public LayerMask enemyLayer;
         public GameObject hitEffect;
@@ -65,9 +66,9 @@ namespace SideScrollerProject
                         {
                             PlayerManager.instance.PlayerAction.attackCounter = 0;
                             PlayerManager.instance.PlayerAction.ApplyHitStop(enemy.gameObject.GetComponent<Animator>());
-                            //knockback enemy?
-                        }
 
+                        }
+                        enemy.GetComponent<Status>().Knockback(knockbackStrength);
 
                         if (hitEffect != null)
                         {
@@ -112,7 +113,7 @@ namespace SideScrollerProject
             damageModifier = animator.GetComponent<PlayerStatus>().damageModifier;
             Transform playerFace = animator.gameObject.transform;
 
-            rb.AddForce(new Vector2(7f * playerFace.localScale.x, rb.velocity.y), ForceMode2D.Impulse);
+            rb.AddForce(new Vector2(forceAmount * playerFace.localScale.x, rb.velocity.y), ForceMode2D.Impulse);
             //  Debug.Log(attackPoint.name);
 
             attackPoint = animator.gameObject.GetComponent<Transform>().GetChild(0);

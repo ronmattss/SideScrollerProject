@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5e2612c93597b942899cd7ee1430f8b, type: 3}
   m_Name: DummyData
   m_EditorClassIdentifier: 
-  maxHealth: 3
-  initialDamage: 10
+  maxHealth: 10000
+  initialDamage: 0
   range: 0

@@ -11,7 +11,7 @@ namespace SideScrollerProject
     {
         public override void OnEnter(BaseState state, Animator animator, AnimatorStateInfo stateInfo)
         {
-            animator.gameObject.GetComponent<Status>().Knockback();
+           // animator.gameObject.GetComponent<Status>().Knockback();
             if (animator.gameObject.GetComponent<Status>().currentHealth <= 0)
             {
                 animator.SetBool("isDead", true);

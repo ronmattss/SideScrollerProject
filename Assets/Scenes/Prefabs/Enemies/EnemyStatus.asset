@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: EnemyStatus
   m_EditorClassIdentifier: 
   maxHealth: 5
-  initialDamage: 2
+  initialDamage: 0
   range: 0

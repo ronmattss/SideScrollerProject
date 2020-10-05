@@ -68,11 +68,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22d478604f719f44a9c17286a3953fc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screenYBias: 0.2
+  screenYDefault: 0.2
+  screenYFalling: 0.2
   screenXBias: 0
-  vCam: {fileID: 0}
+  vCam: {fileID: 1780182799166562689}
   defaultTarget: {fileID: 0}
   fallTarget: {fileID: 0}
+  yPlayerVelocity: 0
 --- !u!1001 &4144171042439008452
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -229,6 +231,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 4144171042439008452}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1780182799166562689 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2393512885786308933, guid: bed3e88f93f24c845bffb6ba7938b140,
+    type: 3}
+  m_PrefabInstance: {fileID: 4144171042439008452}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780182799166562695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1780182798606375178 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2393512886333344206, guid: bed3e88f93f24c845bffb6ba7938b140,

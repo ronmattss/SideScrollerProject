@@ -47,6 +47,7 @@ namespace SideScrollerProject
         public Transform pointA;
         public Transform pointB;
         public Vector2 nextPoint;
+
         private Vector2 pA;
         private Vector2 pB;
         public bool isPatrolling = false;
@@ -293,8 +294,8 @@ namespace SideScrollerProject
 
                     EffectsManager.instance.Spawn(animator.gameObject.transform.position, "DeathHitfx");
                     EffectsManager.instance.Spawn(animator.gameObject.transform.position, "DeadFx");
-                     if (onDeathEvent != null)
-                    onDeathEvent.Invoke();
+                    if (onDeathEvent != null)
+                        onDeathEvent.Invoke();
                     Destroy(this.gameObject);
                     // animator.SetBool("isDead", true);
                     // moving to dead enemy state
@@ -306,37 +307,6 @@ namespace SideScrollerProject
                     Debug.Log(this.name + " " + currentHealth);
                 }
         }
-        public void TakeDamage(int damage, bool knockback)
-        {
-            changeColor = true;
-            AudioManager.instance.Play("HitSFX");
-            WaitThenExitState();
-            Debug.Log($"Damage:{damage}");
-            if (!animator.GetBool("isAttacking"))
-                animator.SetBool("isHurt", true);
-            currentHealth -= damage;
-            slider.SetValue(currentHealth);
-            if (target != null)
-                if (knockback)
-                    Knockback();
-            if (currentHealth <= 0)
-            {
-                this.gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-                Destroy(slider.slider);
-                EffectsManager.instance.Spawn(animator.gameObject.transform.position, "DeathHitfx");
-                EffectsManager.instance.Spawn(animator.gameObject.transform.position, "DeadFx");
-               
-                Destroy(this.gameObject);
-                //animator.SetBool("isDead", true);
-                // moving to dead enemy state
-                // Destroy(this.gameObject);
-            }
-            else
-            {
-                //Hurt
-                Debug.Log(this.name + " " + currentHealth);
-            }
-        }
         #endregion
 
         public void Die()
@@ -344,7 +314,7 @@ namespace SideScrollerProject
             Destroy(this.gameObject);
         }
         #region Knockback
-        public void Knockback()
+        public void Knockback(float knockbackStrenth)
         {
             if (target == null)
             {
@@ -354,7 +324,7 @@ namespace SideScrollerProject
             // (250) needs to be substituted to a variable, also the 100
             // fucking FIX THIS
             float direction = target.localScale.x;//==1 ? 1:-1;
-            Vector2 knockback = new Vector2(3 * direction, 10);
+            Vector2 knockback = new Vector2(knockbackStrenth * direction, 10);
             this.gameObject.GetComponent<Rigidbody2D>().AddForce((knockback), ForceMode2D.Impulse);
 
         }

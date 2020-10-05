@@ -142,7 +142,7 @@ namespace SideScrollerProject
             foreach (GameObject enemy in listOfDamagables)
             {
                 if (enemy.TryGetComponent(out Status enemyStatus))
-                    enemyStatus.TakeDamage(damage, false);
+                    enemyStatus.TakeDamage(damage);
 
                 if (enemy.TryGetComponent(out Breakable b))
                 {
