@@ -8,10 +8,10 @@ namespace SideScrollerProject
     [CreateAssetMenu(fileName = "New Enemy MeleeAttackAnimation State", menuName = "ShadedGames/StateAbilityData/Enemy/MeleeAttackAnimationState")]
     public class MeleeAttackAnimationState : StateData
     {
-        public StateUser currentState;
+        public Scenes.Scripts.BossFSM.StateUser currentState;
         public override void OnEnter(BaseState state, Animator animator, AnimatorStateInfo stateInfo)
         {
-            currentState = animator.gameObject.GetComponent<StateUser>();
+            currentState = animator.gameObject.GetComponent<Scenes.Scripts.BossFSM.StateUser>();
             Debug.Log("Anim:State:");
         }
 

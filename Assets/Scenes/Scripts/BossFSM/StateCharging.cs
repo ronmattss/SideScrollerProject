@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Scenes.Scripts.BossFSM;
 using SideScrollerProject;
 using UnityEngine;
 

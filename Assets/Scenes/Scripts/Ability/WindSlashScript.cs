@@ -18,7 +18,7 @@ namespace SideScrollerProject
         Material material;
         public Buff instaKill;
         private BuffGiver b;
-        private StateUser bossDamage;
+        private Scenes.Scripts.BossFSM.StateUser bossDamage;
         [SerializeField] private BuffInstaKill timed;
         void Start()
         {
@@ -79,7 +79,7 @@ namespace SideScrollerProject
             }
             else if (other.tag == "Boss")
             {
-                if(other.TryGetComponent(out StateUser bossDamage))
+                if(other.TryGetComponent(out Scenes.Scripts.BossFSM.StateUser bossDamage))
                 {
                     bossDamage.TakeDamage(damage);
                 }

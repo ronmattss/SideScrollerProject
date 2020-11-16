@@ -1,10 +1,9 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+using SideScrollerProject;
 using SideScrollerProjectFSM;
+using UnityEngine;
 
-
-namespace SideScrollerProject
+namespace Scenes.Scripts.BossFSM
 {
     /// <summary>
     /// Script that enables the enemy to use an FSM for deciding what actions to do next

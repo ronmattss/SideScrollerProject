@@ -2,6 +2,9 @@
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <LangVersion>latest</LangVersion>
+    <_TargetFrameworkDirectories>non_empty_path_generated_by_unity.rider.package</_TargetFrameworkDirectories>
+    <_FullFrameworkReferenceAssemblyPaths>non_empty_path_generated_by_unity.rider.package</_FullFrameworkReferenceAssemblyPaths>
+    <DisableHandlePackageFileConflicts>true</DisableHandlePackageFileConflicts>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -27,6 +30,7 @@
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
     <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -36,6 +40,7 @@
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
     <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
   </PropertyGroup>
   <PropertyGroup>
     <NoConfig>true</NoConfig>
@@ -44,6 +49,14 @@
     <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2019.3.10f1\Editor\Data\Managed/UnityEngine/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2019.3.10f1\Editor\Data\Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Downloaded\Hit &amp; Slashes Vol.3\Demo Scene\ButtonAnimation.cs" />
      <Compile Include="Assets\Downloaded\Hit &amp; Slashes Vol.3\Demo Scene\GameManager.cs" />
@@ -235,6 +248,9 @@
      <Compile Include="Assets\Scenes\Scripts\Managers\ObjectiveHelper\Objective.cs" />
      <Compile Include="Assets\Scenes\Scripts\Managers\ObjectiveHelper\ObjectiveManager.cs" />
      <Compile Include="Assets\Scenes\Scripts\Managers\ObjectiveHelper\Task.cs" />
+     <Compile Include="Assets\Scenes\Scripts\NPCFSM\NpcProperties.cs" />
+     <Compile Include="Assets\Scenes\Scripts\NPCFSM\StateMachine.cs" />
+     <Compile Include="Assets\Scenes\Scripts\NPCFSM\StateMachineDriver.cs" />
      <Compile Include="Assets\Scenes\Scripts\Node Based Dialogue System\BasicDialogueNode.cs" />
      <Compile Include="Assets\Scenes\Scripts\Node Based Dialogue System\DialogueNodeGraph.cs" />
      <Compile Include="Assets\Scenes\Scripts\Player\Actions.cs" />
@@ -398,9 +414,6 @@
  </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>C:/Users/Shade/Documents/Programming Stuff/Unity/SideScrollerPrototype/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine">
- <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -578,9 +591,6 @@
  </Reference>
  <Reference Include="UnityEngine.XRModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor">
- <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.10f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.10f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -938,7 +948,7 @@
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>

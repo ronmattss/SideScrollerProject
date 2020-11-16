@@ -1,9 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using SideScrollerProject;
+using SideScrollerProjectFSM;
 using UnityEngine;
-using SideScrollerProject;
 
-namespace SideScrollerProjectFSM
+namespace Scenes.Scripts.BossFSM
 {
     public class StateChestAttacking : State
     {

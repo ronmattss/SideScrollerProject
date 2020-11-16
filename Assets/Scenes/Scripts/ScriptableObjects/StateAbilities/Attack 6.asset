@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8868d2a676d67d44a366ebdb9bdd2df, type: 3}
+  m_Name: Attack 6
+  m_EditorClassIdentifier: 
+  duration: 0
+  forceAmount: 2
+  attackPoint: {fileID: 0}
+  attackRange: 0.62
+  attackDamage: 1
+  knockbackStrength: 8.5
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 33280
+  hitEffect: {fileID: 1416824176164296, guid: dc1397204bb5ee84895af2b49dac2d49, type: 3}
+  flipEffectatX: 0
+  sound: {fileID: 8300000, guid: ca4f9702a3d6ee94ba80fdc970853459, type: 3}

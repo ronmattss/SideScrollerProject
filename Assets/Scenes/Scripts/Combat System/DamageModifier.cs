@@ -21,7 +21,7 @@ namespace SideScrollerProject
         //Refactor to make buffs optional
         public void DoDamage(int initialDamage, GameObject target)
         {
-            EntityStatus targetStatus = target.GetComponent<EntityStatus>();
+            var targetStatus = target.GetComponent<IDamageable>();
             if (entityBuffGiver != null)
                 if (entityBuffGiver.buffsToInit.Count > 0)
                 {

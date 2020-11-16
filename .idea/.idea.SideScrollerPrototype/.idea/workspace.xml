@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8b582693-11ac-40ee-b918-311b9350cd76" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Animations/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Animations/Player.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Animations/PlayerPreAttack1.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Animations/PlayerPreAttack1.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Animations/PlayerPreAttack2.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Animations/PlayerPreAttack2.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Animations/PlayerPreAttack3.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Animations/PlayerPreAttack3.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Animations/PlayerPreHeavyAttack1.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Animations/PlayerPreHeavyAttack1.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scenes/Levels/New Test Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scenes/Levels/New Test Level.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scripts/Ability/WindSlashScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scripts/Ability/WindSlashScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scripts/BossFSM/BossBasicAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scripts/BossFSM/BossBasicAttack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scripts/BossFSM/MeleeAttackAnimationState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scripts/BossFSM/MeleeAttackAnimationState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scripts/BossFSM/StateCharging.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scripts/BossFSM/StateCharging.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scripts/BossFSM/StateChestAttacking.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scripts/BossFSM/StateChestAttacking.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scripts/BossFSM/StateUser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scripts/BossFSM/StateUser.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scripts/BossFSM/StateWalkingBurner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scripts/BossFSM/StateWalkingBurner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scripts/Combat System/DamageModifier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scripts/Combat System/DamageModifier.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scripts/GeneralScripts/Status.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scripts/GeneralScripts/Status.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scripts/Player/State/AttackState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scripts/Player/State/AttackState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/Hierarchy/6222af-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/Hierarchy/6222af-mainStage.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/Scripts/NPCFSM/StateMachineDriver.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/Scripts/NPCFSM/NpcProperties.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scenes/Scripts/NPCFSM/StateUser.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Scripts/BossFSM/StateChestAttacking.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Scripts/BossFSM/StateCharging.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Scripts/BossFSM/StateWalkingBurner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Scripts/BossFSM/StateUser.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Scripts/BossFSM/State.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Scripts/NPCFSM/NPCProperties.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Scripts/NPCFSM/StateMachineDriver.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Scripts/NPCFSM/StateMachine.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Scripts/Combat System/EntityStatus.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Scripts/NPCFSM/NpcProperties.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Scripts/Combat System/DamageModifier.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Scripts/GeneralScripts/Status.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1kLzAcZj0fBUIlU20yk4GiGneRr" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34993774" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.30012453" />
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.smartKeys_rider" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/build/MobilityTestBuild/Spirit Guardian.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\Shade\Documents\Programming Stuff\Unity\SideScrollerPrototype\build\MobilityTestBuild" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="84">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" value="84" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8b582693-11ac-40ee-b918-311b9350cd76" name="Default Changelist" comment="" />
+      <created>1605494523611</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605494523611</updated>
+      <workItem from="1605494536139" duration="22276000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1637" height="363" key="GridCell.Tab.0.bottom" timestamp="1605519891426">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="363" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1605519891426" />
+    <state width="1637" height="363" key="GridCell.Tab.0.center" timestamp="1605519891426">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="363" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1605519891426" />
+    <state width="1637" height="363" key="GridCell.Tab.0.left" timestamp="1605519891425">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="363" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1605519891425" />
+    <state width="1637" height="363" key="GridCell.Tab.0.right" timestamp="1605519891426">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="363" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1605519891426" />
+    <state width="1637" height="363" key="GridCell.Tab.1.bottom" timestamp="1605519891426">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="363" key="GridCell.Tab.1.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1605519891426" />
+    <state width="1637" height="363" key="GridCell.Tab.1.center" timestamp="1605519891426">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="363" key="GridCell.Tab.1.center/0.0.1680.1010@0.0.1680.1010" timestamp="1605519891426" />
+    <state width="1637" height="363" key="GridCell.Tab.1.left" timestamp="1605519891426">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="363" key="GridCell.Tab.1.left/0.0.1680.1010@0.0.1680.1010" timestamp="1605519891426" />
+    <state width="1637" height="363" key="GridCell.Tab.1.right" timestamp="1605519891426">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="363" key="GridCell.Tab.1.right/0.0.1680.1010@0.0.1680.1010" timestamp="1605519891426" />
+    <state width="1637" height="363" key="GridCell.Tab.2.bottom" timestamp="1605519891426">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="363" key="GridCell.Tab.2.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1605519891426" />
+    <state width="1637" height="363" key="GridCell.Tab.2.center" timestamp="1605519891426">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="363" key="GridCell.Tab.2.center/0.0.1680.1010@0.0.1680.1010" timestamp="1605519891426" />
+    <state width="1637" height="363" key="GridCell.Tab.2.left" timestamp="1605519891426">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="363" key="GridCell.Tab.2.left/0.0.1680.1010@0.0.1680.1010" timestamp="1605519891426" />
+    <state width="1637" height="363" key="GridCell.Tab.2.right" timestamp="1605519891426">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="363" key="GridCell.Tab.2.right/0.0.1680.1010@0.0.1680.1010" timestamp="1605519891426" />
+    <state width="1637" height="363" key="GridCell.Tab.3.bottom" timestamp="1605519891426">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="363" key="GridCell.Tab.3.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1605519891426" />
+    <state width="1637" height="363" key="GridCell.Tab.3.center" timestamp="1605519891426">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="363" key="GridCell.Tab.3.center/0.0.1680.1010@0.0.1680.1010" timestamp="1605519891426" />
+    <state width="1637" height="363" key="GridCell.Tab.3.left" timestamp="1605519891426">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="363" key="GridCell.Tab.3.left/0.0.1680.1010@0.0.1680.1010" timestamp="1605519891426" />
+    <state width="1637" height="363" key="GridCell.Tab.3.right" timestamp="1605519891426">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="363" key="GridCell.Tab.3.right/0.0.1680.1010@0.0.1680.1010" timestamp="1605519891426" />
+    <state x="341" y="150" key="SettingsEditor" timestamp="1605513277639">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="341" y="150" key="SettingsEditor/0.0.1680.1010@0.0.1680.1010" timestamp="1605513277639" />
+    <state x="92" y="92" width="1496" height="826" key="VCS.FileHistoryDialog" timestamp="1605520095491">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="92" y="92" width="1496" height="826" key="VCS.FileHistoryDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1605520095491" />
+  </component>
+</project>

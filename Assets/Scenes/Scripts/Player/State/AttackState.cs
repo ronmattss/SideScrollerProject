@@ -50,7 +50,7 @@ namespace SideScrollerProject
                 }
                 if (enemy.CompareTag("Boss"))
                 {
-                    enemy.GetComponent<StateUser>().TakeDamage(1);
+                    enemy.GetComponent<Scenes.Scripts.BossFSM.StateUser>().TakeDamage(1);
 
                 }
                 if (enemyStatus == null)

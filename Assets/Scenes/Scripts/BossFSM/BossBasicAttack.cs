@@ -7,12 +7,12 @@ namespace SideScrollerProject
     [CreateAssetMenu(fileName = "New BossBasicAttack State", menuName = "ShadedGames/StateAbilityData/Enemy/BossBasicAttack")]
     public class BossBasicAttack : StateData
     {
-        StateUser meleeState;
+        Scenes.Scripts.BossFSM.StateUser meleeState;
         public bool shake = false;
 
         public override void OnEnter(BaseState state, Animator animator, AnimatorStateInfo stateInfo)
         {
-            meleeState = animator.gameObject.GetComponent<StateUser>();
+            meleeState = animator.gameObject.GetComponent<Scenes.Scripts.BossFSM.StateUser>();
             meleeState.c = Color.blue;
             meleeState.Flip();
             HitPlayer(animator);

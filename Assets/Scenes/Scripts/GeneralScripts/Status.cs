@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 
 
 // Status Script
@@ -20,40 +21,44 @@ namespace SideScrollerProject
     [RequireComponent(typeof(Animator))]
     [RequireComponent(typeof(AudioSource))]
     public class Status : EntityStatus
-    {
+    {    [Header("Base Properties")]
         public int maxHealth = 100;
+        public int currentHealth;
         public float moveSpeed = 0.5f;
         public float speed = 0.5f;
         public UnityEvent onDeathEvent;
+        [Header("Collision Points")]
         public Transform attackPoint;
         public Transform searchPoint;
         public Transform ground;
         public Transform groundPatrolChecker;
-        public Transform LineRendererLocation;
+        public Transform lineRendererLocation;
+        [Header("NPC is on Ground")]
         public bool isGrounded;
         public bool iSGroundPatrolCheckerGrounded = true;
         public LayerMask whatIsGround;
+        [Header("Range and Target Properties ")]
         public Transform target;
         public float searchRange = 0;
         public float attackRange = 0;
-        public int attackDamage = 10;
         public LayerMask playerLayer;
-        public int currentHealth;
-        Animator animator;
+        [Header("Component References")]
         public SpriteRenderer spriteRenderer;
         public Material materialProperty;
         public float dissolveValue = 1f;
         public SliderScript slider;
+        private SpriteRenderer enemyRenderer;
+        public Material whiteFlash;
+        [Header("Patrol Properties")]
         public Transform pointA;
         public Transform pointB;
         public Vector2 nextPoint;
-
+        private Animator animator;
         private Vector2 pA;
         private Vector2 pB;
         public bool isPatrolling = false;
         [Header("Range Properties")]
         public bool isRange = false;
-
         public Transform raycastOrigin;
         public Transform targetLastPosition;
         public Transform targetInitialPosition;
@@ -62,14 +67,12 @@ namespace SideScrollerProject
         public bool targetLock = false;
         private bool changeColor = false;
         public GameObject playerPosition;
-        public Vector2 finalTargetPosition = Vector2.zero;
         public bool travelsOnOneAxis;
         public GameObject projectilePrefab;
         public AudioSource bowDraw;
         public float range = 7;
         private Rigidbody2D rb;
-        private SpriteRenderer enemyRenderer;
-        public Material whiteFlash;
+
         public DamageModifier damageModifier = new DamageModifier();
         void Start()
         {
@@ -111,8 +114,8 @@ namespace SideScrollerProject
         {
             Gizmos.DrawWireSphere(ground.position, 0.3f);
             Gizmos.DrawRay(groundPatrolChecker.position, Vector2.down);
-            Gizmos.DrawRay(LineRendererLocation.position, Vector2.down);
-            Debug.DrawLine(LineRendererLocation.position, new Vector2(LineRendererLocation.position.x + 3, LineRendererLocation.position.y));
+            Gizmos.DrawRay(lineRendererLocation.position, Vector2.down);
+            Debug.DrawLine(lineRendererLocation.position, new Vector2(lineRendererLocation.position.x + 3, lineRendererLocation.position.y));
         }
         public Vector2 ChangeDirection()
         {
@@ -229,7 +232,7 @@ namespace SideScrollerProject
                 //     //           Debug.Log("Patrolneed to changed: " + nextPoint);
                 // }
                 //Patrol(this.animator, this.transform, nextPoint, rb, 1);
-                Patrol(this.transform, rb, 2);
+                Patrol(this.transform, 2);
             }
             // if (isPatrolling && isRange)
             // {
@@ -269,10 +272,6 @@ namespace SideScrollerProject
             if (isRange)
                 Gizmos.DrawRay(raycastOrigin.position, Vector2.right);
         }
-        public void Die(Animator animator)
-        {
-
-        }
         #region TakeDamage
         public override void TakeDamage(int baseDamage)
         {
@@ -294,8 +293,7 @@ namespace SideScrollerProject
 
                     EffectsManager.instance.Spawn(animator.gameObject.transform.position, "DeathHitfx");
                     EffectsManager.instance.Spawn(animator.gameObject.transform.position, "DeadFx");
-                    if (onDeathEvent != null)
-                        onDeathEvent.Invoke();
+                    onDeathEvent?.Invoke();
                     Destroy(this.gameObject);
                     // animator.SetBool("isDead", true);
                     // moving to dead enemy state
@@ -546,10 +544,10 @@ namespace SideScrollerProject
             //            Debug.Log(thisTransform.position.x <= currentPoint.x);
 
         }
-        public void Patrol(Transform thisTransform, Rigidbody2D rigidbody, float moveSpeed)
+        public void Patrol(Transform thisTransform, float moveSpeed)
         {//Debug.Log($"{this.transform.name } is patrolling");
             Vector2 raycastDirection = this.transform.localScale.x == -1 ? Vector2.left : Vector2.right;
-            RaycastHit2D lineHit = Physics2D.Linecast(LineRendererLocation.position, new Vector2(raycastDirection.x * 3 + LineRendererLocation.position.x, LineRendererLocation.position.y), whatIsGround);
+            RaycastHit2D lineHit = Physics2D.Linecast(lineRendererLocation.position, new Vector2(raycastDirection.x * 3 + lineRendererLocation.position.x, lineRendererLocation.position.y), whatIsGround);
             if (iSGroundPatrolCheckerGrounded == false || lineHit.collider != null)
             {
                 Flip(thisTransform);
