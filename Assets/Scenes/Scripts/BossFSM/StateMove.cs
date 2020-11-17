@@ -50,7 +50,7 @@ namespace SideScrollerProjectFSM
             //base.Update();
         }
 
-        public void MoveEnemy()
+        private void MoveEnemy()
         {
 
             Flip();

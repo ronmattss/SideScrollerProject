@@ -251,6 +251,10 @@
      <Compile Include="Assets\Scenes\Scripts\NPCFSM\NpcProperties.cs" />
      <Compile Include="Assets\Scenes\Scripts\NPCFSM\StateMachine.cs" />
      <Compile Include="Assets\Scenes\Scripts\NPCFSM\StateMachineDriver.cs" />
+     <Compile Include="Assets\Scenes\Scripts\NPCFSM\States\StateAttack.cs" />
+     <Compile Include="Assets\Scenes\Scripts\NPCFSM\States\StateIdle.cs" />
+     <Compile Include="Assets\Scenes\Scripts\NPCFSM\States\StateMove.cs" />
+     <Compile Include="Assets\Scenes\Scripts\NPCFSM\States\StatePrepAttack.cs" />
      <Compile Include="Assets\Scenes\Scripts\Node Based Dialogue System\BasicDialogueNode.cs" />
      <Compile Include="Assets\Scenes\Scripts\Node Based Dialogue System\DialogueNodeGraph.cs" />
      <Compile Include="Assets\Scenes\Scripts\Player\Actions.cs" />

@@ -330,6 +330,12 @@
               <e p="NPCProperties.cs" t="Include" />
               <e p="StateMachine.cs" t="Include" />
               <e p="StateMachineDriver.cs" t="Include" />
+              <e p="States" t="Include">
+                <e p="StateAttack.cs" t="Include" />
+                <e p="StateIdle.cs" t="Include" />
+                <e p="StateMove.cs" t="Include" />
+                <e p="StatePrepAttack.cs" t="Include" />
+              </e>
             </e>
             <e p="Player" t="Include">
               <e p="Actions" t="Include">

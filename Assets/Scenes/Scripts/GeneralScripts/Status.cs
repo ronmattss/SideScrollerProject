@@ -27,15 +27,25 @@ namespace SideScrollerProject
         public float moveSpeed = 0.5f;
         public float speed = 0.5f;
         public UnityEvent onDeathEvent;
+        [Header("Inputs for state machine")] 
+        public bool isPlayerInRange;
+        public bool isPlayerInSight;
+        public bool isNpcPatrolling;
+        public bool isNpcAttacking;
+        public bool isNpcHurt;
+        public bool isNpcDead;
+        public bool isNpcMoving;
+        [Header("NPC is on Ground")]
+        public bool isGrounded;
+        public bool iSGroundPatrolCheckerGrounded = true;
+        
         [Header("Collision Points")]
         public Transform attackPoint;
         public Transform searchPoint;
         public Transform ground;
         public Transform groundPatrolChecker;
         public Transform lineRendererLocation;
-        [Header("NPC is on Ground")]
-        public bool isGrounded;
-        public bool iSGroundPatrolCheckerGrounded = true;
+
         public LayerMask whatIsGround;
         [Header("Range and Target Properties ")]
         public Transform target;
@@ -59,8 +69,8 @@ namespace SideScrollerProject
         public bool isPatrolling = false;
         [Header("Range Properties")]
         public bool isRange = false;
+        [Tooltip("Point in the game object where a line will be cast as line of sight ")]
         public Transform raycastOrigin;
-        public Transform targetLastPosition;
         public Transform targetInitialPosition;
         public LineRenderer laser;
         public GameObject line;
@@ -72,6 +82,8 @@ namespace SideScrollerProject
         public AudioSource bowDraw;
         public float range = 7;
         private Rigidbody2D rb;
+        [Header ("Debug")]
+        public bool useStateMachine = false;
 
         public DamageModifier damageModifier = new DamageModifier();
         void Start()
@@ -121,7 +133,7 @@ namespace SideScrollerProject
         {
             return nextPoint = nextPoint != pA ? pA : pB;
         }
-        private void CheckGround()
+        public void CheckGround()
         {
             isGrounded = false;
             Collider2D[] groundCollider = Physics2D.OverlapCircleAll(ground.position, 0.3f, whatIsGround);
@@ -143,7 +155,7 @@ namespace SideScrollerProject
             }
         }
 
-        private void CheckGroundPoint()
+        public void CheckGroundPoint()
         {
             // iSGroundPatrolCheckerGrounded = false;
             RaycastHit2D groundCollider = Physics2D.Raycast(groundPatrolChecker.position, Vector2.down, 1, whatIsGround);
@@ -171,7 +183,7 @@ namespace SideScrollerProject
 
         void Update()
         {
-
+            if (useStateMachine == true) return;
             CheckGround();
             CheckGroundPoint();
             // if player is not on Sight
@@ -189,6 +201,7 @@ namespace SideScrollerProject
             {
                 animator.SetBool("isMoving", true);
             }
+
             if (target == null)
             {
                 //
@@ -203,6 +216,7 @@ namespace SideScrollerProject
                 animator.SetBool("isPatrolling", false);
                 isPatrolling = false;
             }
+
             if (isPatrolling && target == null)
             {
                 animator.SetBool("isPatrolling", true);
@@ -213,6 +227,7 @@ namespace SideScrollerProject
                     //                    Debug.Log("Patrolneed to changed: " + nextPoint);
                 }
             }
+
             if ((isRange && isPatrolling) && target == null)
             {
                 animator.SetBool("isPatrolling", true);
@@ -223,6 +238,7 @@ namespace SideScrollerProject
                     //                    Debug.Log("Patrolneed to changed: " + nextPoint);
                 }
             }
+
             if (isPatrolling)
             {
                 // if (Vector2.Distance(this.transform.position, nextPoint) <= 1)
@@ -234,6 +250,7 @@ namespace SideScrollerProject
                 //Patrol(this.animator, this.transform, nextPoint, rb, 1);
                 Patrol(this.transform, 2);
             }
+
             // if (isPatrolling && isRange)
             // {
             //     // if (Vector2.Distance(this.transform.position, nextPoint) <= 1)
@@ -399,8 +416,9 @@ namespace SideScrollerProject
         public void RangeAttack()
         {
             Vector2 raycastDirection = this.transform.localScale.x == -1 ? Vector2.left : Vector2.right;
-            RaycastHit2D hit = Physics2D.Linecast(raycastOrigin.position, new Vector2(raycastDirection.x * range + raycastOrigin.position.x, raycastOrigin.position.y), playerLayer);
-            Debug.DrawLine(raycastOrigin.position, new Vector2(raycastDirection.x * range + raycastOrigin.position.x, raycastOrigin.position.y), Color.blue);
+            var position = raycastOrigin.position;
+            RaycastHit2D hit = Physics2D.Linecast(position, new Vector2(raycastDirection.x * range + position.x, position.y), playerLayer);
+            Debug.DrawLine(position, new Vector2(raycastDirection.x * range + position.x, position.y), Color.blue);
             GameObject arrow = Instantiate(projectilePrefab, attackPoint.position, Quaternion.identity);
             Projectile proj = arrow.GetComponent<Projectile>();
             if (target != null && !travelsOnOneAxis)
