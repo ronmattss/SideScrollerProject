@@ -117,6 +117,13 @@ namespace SideScrollerProject
             spriteRenderer.material.SetColor("_Color", Color.black);
             damageModifier.entityBuffGiver = GetComponent<BuffGiver>();
         }
+
+        public void TurnOffAttack()
+        {
+            Debug.Log("Attack finished");
+            isNpcAttacking = false;
+        }
+
         void LateUpdate()
         {
             if (changeColor)

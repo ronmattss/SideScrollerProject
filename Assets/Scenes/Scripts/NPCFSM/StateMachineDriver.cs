@@ -25,7 +25,7 @@ namespace Scenes.Scripts.NPCFSM
 
         // Update is called once per frame
         void Update()
-        {
+        {   
             baseState = baseState.Process();
         }
     }

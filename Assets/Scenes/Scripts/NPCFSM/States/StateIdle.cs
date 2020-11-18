@@ -23,7 +23,12 @@ namespace Scenes.Scripts.NPCFSM.States
             //code goes brrrt;
           
             // Condition To Exit Here
-            if (npcStatus.isPlayerInSight)
+            if (npcStatus.isPlayerInRange && npcStatus.isPlayerInSight && npcStatus.isNpcAttacking == false)
+            {
+                nextState = new StateAttack(thisNpc,animator,npcRn);
+                stateStatus = StateProcess.Exit;
+            }
+            else if (npcStatus.isPlayerInSight)
             {
                 nextState = new StateMove(thisNpc, animator, npcRn);
                 stateStatus = StateProcess.Exit;
