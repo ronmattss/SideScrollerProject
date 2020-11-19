@@ -20,22 +20,26 @@ namespace Scenes.Scripts.NPCFSM.States
 
         public override void Update()
         {
-            if (npcStatus.isPlayerInRange && npcStatus.isPlayerInSight)
+            base.Update();
+            if (!npcStatus.isNpcHurt)
             {
-                nextState = new StateAttack(thisNpc,animator,npcRn);
-                stateStatus = StateProcess.Exit;
+                if (npcStatus.isPlayerInRange && npcStatus.isPlayerInSight)
+                {
+                    nextState = new StateAttack(thisNpc, animator, npcRn);
+                    stateStatus = StateProcess.Exit;
+                    return;
+                }
+
+                if (!npcStatus.isPlayerInSight)
+                {
+                    Debug.Log(npcStatus.isPlayerInSight);
+                    nextState = new StateIdle(thisNpc, animator, npcRn);
+                    stateStatus = StateProcess.Exit;
+                    return;
+                }
             }
-            else if (!npcStatus.isPlayerInSight)
-            {
-                Debug.Log(npcStatus.isPlayerInSight);
-                nextState = new StateIdle(thisNpc, animator, npcRn);
-                stateStatus = StateProcess.Exit;
-            }
-            else
-            {
-                MoveEnemy();
-                base.Update();
-            }
+
+            MoveEnemy();
         }
 
         public override void Exit()
@@ -43,10 +47,9 @@ namespace Scenes.Scripts.NPCFSM.States
             npcStatus.isNpcMoving = false;
             base.Exit();
         }
-        
+
         private void MoveEnemy()
         {
-
             Flip();
             var position = npcRn.position;
             var target = new Vector2(npcStatus.target.position.x, position.y);
@@ -55,8 +58,8 @@ namespace Scenes.Scripts.NPCFSM.States
 
 
             npcRn.MovePosition(newPos);
-
         }
+
         private void Flip()
         {
             if (npcStatus.target != null)
@@ -64,7 +67,5 @@ namespace Scenes.Scripts.NPCFSM.States
                     ? new Vector3(-1, 1, 1)
                     : new Vector3(1, 1, 1);
         }
-        
-        
     }
 }

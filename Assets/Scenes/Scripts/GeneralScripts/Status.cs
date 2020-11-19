@@ -35,6 +35,9 @@ namespace SideScrollerProject
         public bool isNpcHurt;
         public bool isNpcDead;
         public bool isNpcMoving;
+        public bool npcFinishedDeathAnimation;
+        [Tooltip("variable that checks when the npc will flinch if damaged")]
+        public int flinchCounter;
         [Header("NPC is on Ground")]
         public bool isGrounded;
         public bool iSGroundPatrolCheckerGrounded = true;
@@ -118,11 +121,12 @@ namespace SideScrollerProject
             damageModifier.entityBuffGiver = GetComponent<BuffGiver>();
         }
 
-        public void TurnOffAttack()
-        {
-            Debug.Log("Attack finished");
-            isNpcAttacking = false;
+        public void TurnOffAttack() => isNpcAttacking = false;
+        public void SetHurtState(){
+            Debug.Log("NPC IS BEING DAMAGED!!!");
+            isNpcHurt = false;
         }
+        public void DestroyNpc() => Destroy(this.gameObject);
 
         void LateUpdate()
         {
@@ -308,6 +312,7 @@ namespace SideScrollerProject
                 animator.SetBool("isHurt", true);
             currentHealth -= baseDamage;
             slider.SetValue(currentHealth);
+            flinchCounter--;
             if (target != null)
                 // Knockback();
                 if (currentHealth <= 0)

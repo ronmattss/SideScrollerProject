@@ -332,6 +332,8 @@
               <e p="StateMachineDriver.cs" t="Include" />
               <e p="States" t="Include">
                 <e p="StateAttack.cs" t="Include" />
+                <e p="StateDead.cs" t="Include" />
+                <e p="StateHurt.cs" t="Include" />
                 <e p="StateIdle.cs" t="Include" />
                 <e p="StateMove.cs" t="Include" />
                 <e p="StatePrepAttack.cs" t="Include" />

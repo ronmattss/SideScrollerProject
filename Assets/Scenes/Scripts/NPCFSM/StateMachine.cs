@@ -1,4 +1,5 @@
 ﻿using System;
+using Scenes.Scripts.NPCFSM.States;
 using SideScrollerProject;
 using UnityEngine;
 
@@ -7,7 +8,11 @@ namespace Scenes.Scripts.NPCFSM
     [Serializable]
     public class StateMachine
     {
+        /// <summary>
+        /// State Parameters
+        /// </summary>
         [SerializeField] private StateMachine nextStateMachine;
+
         public CurrentState currentStateName;
         protected StateProcess stage;
         public Status npcStatus;
@@ -15,7 +20,7 @@ namespace Scenes.Scripts.NPCFSM
         protected GameObject thisNpc;
         protected Rigidbody2D npcRn; // player ref
         protected StateMachine nextState;
-
+        protected int currentFlinchCounter = 1;
 
         protected StateProcess stateStatus;
         private bool isRange;
@@ -25,7 +30,7 @@ namespace Scenes.Scripts.NPCFSM
         private Transform target;
         private int playerLayer;
 
-        public StateMachine(GameObject npc,Animator animator,
+        public StateMachine(GameObject npc, Animator animator,
             Rigidbody2D npcRn)
         {
             thisNpc = npc;
@@ -33,6 +38,7 @@ namespace Scenes.Scripts.NPCFSM
             this.npcRn = npcRn;
             npcStatus = npc.GetComponent<Status>();
             InitializeFields();
+            //currentFlinchCounter = npcStatus.flinchCounter;
             stateStatus = StateProcess.Enter;
         }
 
@@ -44,9 +50,11 @@ namespace Scenes.Scripts.NPCFSM
 
         public virtual void Update()
         {
+            stateStatus = StateProcess.Update; // run update while no condition to exit
             CheckGround(); // always check if AI is touching ground
             ScanEnemy();
-            stateStatus = StateProcess.Update; // run update while no condition to exit
+            
+            AtAnyState();
         }
 
         public virtual void Exit()
@@ -77,7 +85,6 @@ namespace Scenes.Scripts.NPCFSM
         }
 
 
-
         private void InitializeFields()
         {
             transform = npcStatus.transform;
@@ -87,14 +94,33 @@ namespace Scenes.Scripts.NPCFSM
         }
 
         #region AtAnyStateLogic
+
         // AI logic that is always called on whatever state the AI is currently at
-        // These are methods that actively Checks conditions like ground checking  
+        // These are methods that actively Checks conditions like ground checking, and health
         private void CheckGround()
         {
             // TODO: Double check if ground checking is redundant
             npcStatus.CheckGround();
             npcStatus.CheckGroundPoint();
         }
+
+        /// <summary>
+        /// At Any State call this function to check the npc status
+        /// can also transition to other states if necessary
+        /// </summary>
+        private void AtAnyState()
+        {
+            if (npcStatus.flinchCounter <= 0 && !npcStatus.isNpcHurt)
+            {
+                nextState = new StateHurt(thisNpc, animator, npcRn);
+                stateStatus = StateProcess.Exit;
+                return;
+            }
+
+            if (!npcStatus.isGrounded)
+                return;
+        }
+
         private void ScanEnemy()
         {
             //This Raycast In a Direction Code <->
@@ -129,27 +155,32 @@ namespace Scenes.Scripts.NPCFSM
                 target = null;
                 npcStatus.isPlayerInSight = false;
                 npcStatus.isPlayerInRange = false;
-
             }
 
-            npcStatus.target = target;    // npc target acquired
+            npcStatus.target = target; // npc target acquired
             //<-->
         }
-        
+
         private void EnemyInRange(LayerMask playerMask, Animator animator)
         {
-
             if (isRange)
             {
                 Vector2 raycastDirection = this.transform.localScale.x == -1 ? Vector2.left : Vector2.right;
-                RaycastHit2D hit = Physics2D.Linecast(raycastOrigin.position, new Vector2(raycastDirection.x * range + raycastOrigin.position.x, raycastOrigin.position.y), playerLayer);
+                RaycastHit2D hit = Physics2D.Linecast(raycastOrigin.position,
+                    new Vector2(raycastDirection.x * range + raycastOrigin.position.x, raycastOrigin.position.y),
+                    playerLayer);
                 if (target != null && !npcStatus.travelsOnOneAxis)
                 {
                     if (Vector2.Distance(this.transform.position, target.position) <= range)
-                        hit = Physics2D.Linecast(raycastOrigin.position, new Vector2(raycastDirection.x + target.position.x, target.position.y), playerLayer);
-                    Debug.DrawLine(raycastOrigin.position, new Vector2(raycastDirection.x + target.position.x, target.position.y), Color.red);
+                        hit = Physics2D.Linecast(raycastOrigin.position,
+                            new Vector2(raycastDirection.x + target.position.x, target.position.y), playerLayer);
+                    Debug.DrawLine(raycastOrigin.position,
+                        new Vector2(raycastDirection.x + target.position.x, target.position.y), Color.red);
                 }
-                Debug.DrawLine(raycastOrigin.position, new Vector2(raycastDirection.x * range + raycastOrigin.position.x, raycastOrigin.position.y), Color.red);
+
+                Debug.DrawLine(raycastOrigin.position,
+                    new Vector2(raycastDirection.x * range + raycastOrigin.position.x, raycastOrigin.position.y),
+                    Color.red);
                 //if (hit.collider != null)
                 // Debug.Log("Name: " + hit.collider.name);
                 if (hit.collider != null) // overwrite if projectile
@@ -165,7 +196,8 @@ namespace Scenes.Scripts.NPCFSM
             }
             else
             {
-                Collider2D[] playerCollider = Physics2D.OverlapCircleAll(npcStatus.attackPoint.position, npcStatus.attackRange, playerLayer);
+                Collider2D[] playerCollider = Physics2D.OverlapCircleAll(npcStatus.attackPoint.position,
+                    npcStatus.attackRange, playerLayer);
                 foreach (Collider2D player in playerCollider)
                 {
                     if (player.CompareTag("Player") && player.GetType() == typeof(CapsuleCollider2D))
@@ -191,7 +223,9 @@ namespace Scenes.Scripts.NPCFSM
                 }
             }
         }
+
         #endregion
+
         public enum CurrentState
         {
             Idle,

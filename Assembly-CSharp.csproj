@@ -252,6 +252,8 @@
      <Compile Include="Assets\Scenes\Scripts\NPCFSM\StateMachine.cs" />
      <Compile Include="Assets\Scenes\Scripts\NPCFSM\StateMachineDriver.cs" />
      <Compile Include="Assets\Scenes\Scripts\NPCFSM\States\StateAttack.cs" />
+     <Compile Include="Assets\Scenes\Scripts\NPCFSM\States\StateDead.cs" />
+     <Compile Include="Assets\Scenes\Scripts\NPCFSM\States\StateHurt.cs" />
      <Compile Include="Assets\Scenes\Scripts\NPCFSM\States\StateIdle.cs" />
      <Compile Include="Assets\Scenes\Scripts\NPCFSM\States\StateMove.cs" />
      <Compile Include="Assets\Scenes\Scripts\NPCFSM\States\StatePrepAttack.cs" />

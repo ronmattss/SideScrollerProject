@@ -2,6 +2,7 @@
 using SideScrollerProject;
 using SideScrollerProjectFSM;
 using UnityEngine;
+using StateDead = Scenes.Scripts.NPCFSM.States.StateDead;
 
 namespace Scenes.Scripts.BossFSM
 {
@@ -82,7 +83,7 @@ namespace Scenes.Scripts.BossFSM
             WaitThenExitState();
             if (currentHp <= 0)
             {
-                currentState = new StateDead(this.gameObject, rb, animator, player);
+                currentState = new State(this.gameObject, rb, animator, player);
 
             }
         }

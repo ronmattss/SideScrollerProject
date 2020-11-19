@@ -21,23 +21,32 @@ namespace Scenes.Scripts.NPCFSM.States
         public override void Update()
         {
             //code goes brrrt;
-          
+
             // Condition To Exit Here
-            if (npcStatus.isPlayerInRange && npcStatus.isPlayerInSight && npcStatus.isNpcAttacking == false)
+            base.Update();
+            if (!npcStatus.isNpcHurt)
             {
-                nextState = new StateAttack(thisNpc,animator,npcRn);
-                stateStatus = StateProcess.Exit;
-            }
-            else if (npcStatus.isPlayerInSight)
-            {
-                nextState = new StateMove(thisNpc, animator, npcRn);
-                stateStatus = StateProcess.Exit;
-            }
-            else
-            {
-                base.Update();
+                if (npcStatus.isPlayerInRange && npcStatus.isPlayerInSight && npcStatus.isNpcAttacking == false)
+                {
+                    nextState = new StateAttack(thisNpc, animator, npcRn);
+                    stateStatus = StateProcess.Exit;
+                    return;
+                }
+
+                if (npcStatus.isPlayerInSight)
+                {
+                    nextState = new StateMove(thisNpc, animator, npcRn);
+                    stateStatus = StateProcess.Exit;
+                    return;
+                }
             }
         }
+
+
+
+
+
+
 
         public override void Exit()
         {    
