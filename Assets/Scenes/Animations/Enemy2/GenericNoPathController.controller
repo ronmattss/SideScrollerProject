@@ -147,7 +147,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: cb71a3398e2df7d40859d78d4e649883, type: 2}
+  m_Motion: {fileID: 7400000, guid: ad4e33a9b9bfa104db345b6ff0883b2e, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -353,7 +353,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: EnemyAttack
+  m_Name: EnemyAttack1
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []

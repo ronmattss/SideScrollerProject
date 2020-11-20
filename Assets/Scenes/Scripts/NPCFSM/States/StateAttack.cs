@@ -14,7 +14,7 @@ namespace Scenes.Scripts.NPCFSM.States
         {
             npcStatus.isNpcAttacking = true;
             Debug.Log("Attacking: "+npcStatus.isNpcAttacking);
-            animator.Play("EnemyAttack");
+            animator.Play("EnemyAttack1");
             base.Enter();
         }
 

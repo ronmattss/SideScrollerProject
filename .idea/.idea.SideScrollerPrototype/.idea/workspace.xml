@@ -20,27 +20,71 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b582693-11ac-40ee-b918-311b9350cd76" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SideScrollerPrototype/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SideScrollerPrototype/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SideScrollerPrototype/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SideScrollerPrototype/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SideScrollerPrototype/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SideScrollerPrototype/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Animations/Enemy2/MushroomDeath.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Animations/Enemy2/MushroomDeath.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Animations/Enemy2/MushroomHit.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Animations/Enemy2/MushroomHit.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Prefabs/Enemies/DummyData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Prefabs/Enemies/DummyData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Animations/Animator Preset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Animations/Animator Preset/Enemy.preset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Animations/Animator Preset/Enemy.preset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Animations/Enemy2/GenericNoPathController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Animations/Enemy2/GenericNoPathController.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Animations/Enemy2/MushroomControlleTest.overrideController" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Animations/Enemy2/MushroomControlleTest.overrideController.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scenes/Levels/New Test Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scenes/Levels/New Test Level.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scripts/BossFSM/StateUser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scripts/BossFSM/StateUser.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scripts/GeneralScripts/Status.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scripts/GeneralScripts/Status.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scripts/NPCFSM/StateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scripts/NPCFSM/StateMachine.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scripts/NPCFSM/States/StateIdle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scripts/NPCFSM/States/StateIdle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scripts/NPCFSM/States/StateMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scripts/NPCFSM/States/StateMove.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scripts/NPCFSM/States/StatePrepAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scripts/NPCFSM/States/StatePrepAttack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scripts/NPCFSM/States/StateAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scripts/NPCFSM/States/StateAttack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/AirAttack1/adventurer-air-attack1-00.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/AirAttack1/adventurer-air-attack1-00.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/AirAttack1/adventurer-air-attack1-01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/AirAttack1/adventurer-air-attack1-01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/AirAttack1/adventurer-air-attack1-02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/AirAttack1/adventurer-air-attack1-02.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/AirAttack1/adventurer-air-attack1-03.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/AirAttack1/adventurer-air-attack1-03.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/AirAttack2/adventurer-air-attack2-00.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/AirAttack2/adventurer-air-attack2-00.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/AirAttack2/adventurer-air-attack2-01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/AirAttack2/adventurer-air-attack2-01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/AirAttack2/adventurer-air-attack2-02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/AirAttack2/adventurer-air-attack2-02.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/AirAttack3/adventurer-air-attack3-loop-00.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/AirAttack3/adventurer-air-attack3-loop-00.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/AirAttack3/adventurer-air-attack3-loop-01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/AirAttack3/adventurer-air-attack3-loop-01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/AirAttack3/adventurer-air-attack3-rdy-00.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/AirAttack3/adventurer-air-attack3-rdy-00.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/AirAttackEnd/adventurer-air-attack-3-end-00.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/AirAttackEnd/adventurer-air-attack-3-end-00.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/AirAttackEnd/adventurer-air-attack-3-end-01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/AirAttackEnd/adventurer-air-attack-3-end-01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/AirAttackEnd/adventurer-air-attack-3-end-02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/AirAttackEnd/adventurer-air-attack-3-end-02.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/Attack1/adventurer-attack1-00.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/Attack1/adventurer-attack1-00.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/Attack1/adventurer-attack1-01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/Attack1/adventurer-attack1-01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/Attack1/adventurer-attack1-02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/Attack1/adventurer-attack1-02.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/Attack1/adventurer-attack1-03.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/Attack1/adventurer-attack1-03.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/Attack1/adventurer-attack1-04.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/Attack1/adventurer-attack1-04.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/Attack3/adventurer-attack3-00.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/Attack3/adventurer-attack3-00.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/Attack3/adventurer-attack3-01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/Attack3/adventurer-attack3-01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/Attack3/adventurer-attack3-02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/Attack3/adventurer-attack3-02.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/Attack3/adventurer-attack3-03.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/Attack3/adventurer-attack3-03.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/Attack3/adventurer-attack3-04.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/Attack3/adventurer-attack3-04.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/Attack3/adventurer-attack3-05.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/Attack3/adventurer-attack3-05.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/Die/adventurer-die-00.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/Die/adventurer-die-00.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/Die/adventurer-die-01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/Die/adventurer-die-01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/Die/adventurer-die-02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/Die/adventurer-die-02.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/Die/adventurer-die-03.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/Die/adventurer-die-03.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/Die/adventurer-die-04.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/Die/adventurer-die-04.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/Die/adventurer-die-05.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/Die/adventurer-die-05.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/Die/adventurer-die-06.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/Die/adventurer-die-06.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/IdleSwordDrawn/adventurer-idle-2-00.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/IdleSwordDrawn/adventurer-idle-2-00.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/IdleSwordDrawn/adventurer-idle-2-01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/IdleSwordDrawn/adventurer-idle-2-01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/IdleSwordDrawn/adventurer-idle-2-02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/IdleSwordDrawn/adventurer-idle-2-02.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/IdleSwordDrawn/adventurer-idle-2-03.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/IdleSwordDrawn/adventurer-idle-2-03.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/Jump/adventurer-jump-00.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/Jump/adventurer-jump-00.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/Jump/adventurer-jump-01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/Jump/adventurer-jump-01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/Jump/adventurer-jump-02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/Jump/adventurer-jump-02.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/Jump/adventurer-jump-03.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/Jump/adventurer-jump-03.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/Run/adventurer-run-00.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/Run/adventurer-run-00.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/Run/adventurer-run-01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/Run/adventurer-run-01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/Run/adventurer-run-02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/Run/adventurer-run-02.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/Run/adventurer-run-03.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/Run/adventurer-run-03.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/Run/adventurer-run-04.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/Run/adventurer-run-04.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/Run/adventurer-run-05.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sprites/Downloaded Assets/Adventurer-1.5/Individual Sprites/Run/adventurer-run-05.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sprites/Medieval/spr_Attack_strip.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sprites/Medieval/spr_Attack_strip.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/Hierarchy/6222af-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/Hierarchy/6222af-mainStage.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +101,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Scripts/NPCFSM/StateMachineDriver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/05F2AC9C-8847-4269-9276-5A22EF6D94CA/16/8fab0432/Component.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/437BA245-D840-4784-B9FB-AB9B439AC908/b2/eb736cdb/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/437BA245-D840-4784-B9FB-AB9B439AC908/ae/c4a27ee8/IntPtr.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/437BA245-D840-4784-B9FB-AB9B439AC908/ae/c4a27ee8/IntPtr.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Scripts/NPCFSM/NpcProperties.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/05F2AC9C-8847-4269-9276-5A22EF6D94CA/3c/121f82ac/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/05F2AC9C-8847-4269-9276-5A22EF6D94CA/da/6b14d5e9/Color.cs" root0="SKIP_HIGHLIGHTING" />
@@ -77,7 +121,6 @@
         <option value="$PROJECT_DIR$/Assets/Scenes/Scripts/Combat System/DamageModifier.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/Scripts/BossFSM/StateMove.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/Scripts/NPCFSM/StateMachineDriver.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scenes/Scripts/NPCFSM/States/StateAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/Scripts/BossFSM/StateUser.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/Scripts/NPCFSM/States/StatePrepAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/Scripts/NPCFSM/States/StateIdle.cs" />
@@ -86,6 +129,7 @@
         <option value="$PROJECT_DIR$/Assets/Scenes/Scripts/NPCFSM/StateMachine.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/Scripts/NPCFSM/States/StateHurt.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/Scripts/NPCFSM/States/StateDead.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Scripts/NPCFSM/States/StateAttack.cs" />
       </list>
     </option>
   </component>
@@ -122,10 +166,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="14316">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="14316" />
+      <option name="pid" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -145,6 +189,7 @@
       <workItem from="1605665899053" duration="17313000" />
       <workItem from="1605751122984" duration="9485000" />
       <workItem from="1605784498292" duration="4531000" />
+      <workItem from="1605852776805" duration="2264000" />
     </task>
     <servers />
   </component>
